@@ -11,7 +11,7 @@ with open('CORDEX_CMIP6_experiments.yaml') as fp:
 
 domains = config.keys()
 
-f = open(f'CORDEX_CMIP6_experiments.html','w')
+f = open(f'docs/CORDEX_CMIP6_status_by_experiment.html','w')
 f.write(f'''<!DOCTYPE html>
 <html><head>
 <style>
@@ -34,10 +34,10 @@ ul.twocol {{ columns: 2; -webkit-columns: 2; -moz-columns: 2; }}
 <h1 id="top"> CORDEX-CMIP6 experiment summary tables</h1>
 <p style="text-align: right;">(Version: {datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")})</p>
 <p style="text-align: justify;">
-Simulation status for different experiments within domains, as collected from the CORDEX-CMIP6 downscaling plans reported by the groups in <a href="https://github.com/jesusff/cmip6-for-cordex/blob/main/CMIP6_downscaling_plans.csv">CMIP6_downscaling_plans.csv</a>. Check that file for further details. Experiment descriptions are provided at <a href="https://github.com/jesusff/cmip6-for-cordex/blob/main/CORDEX_CMIP6_experiments.yaml">CORDEX_CMIP6_experiments.yaml</a>.
+Simulation status for different experiments within domains, as collected from the CORDEX-CMIP6 downscaling plans reported by the groups in <a href="https://github.com/WCRP-CORDEX/cmip6-for-cordex/blob/main/CMIP6_downscaling_plans.csv">CMIP6_downscaling_plans.csv</a>. Check that file for further details. Experiment descriptions are provided at <a href="https://github.com/WCRP-CORDEX/cmip6-for-cordex/blob/main/CORDEX_CMIP6_experiments.yaml">CORDEX_CMIP6_experiments.yaml</a>.
 To contribute/update simulations use this <a href="https://docs.google.com/document/d/1Jy53yvB9SDOiWcwKRJc_HpWVgmjxZhy-qVviHl6ymDM/edit?usp=sharing">Google doc</a>.
 <p style="text-align: justify;">
-See also other views of this simulations as a single table <a href="https://jesusff.github.io/cmip6-for-cordex/CMIP6_downscaling_plans_tables.html">per domain</a> or <a href="https://jesusff.github.io/cmip6-for-cordex/util/CMIP6_matrix.html">per SSP</a>.
+See also other views of this simulations as a single table <a href="https://wcrp-cordex.github.io/cmip6-for-cordex/CMIP6_downscaling_plans_tables.html">per domain</a> or <a href="https://wcrp-cordex.github.io/cmip6-for-cordex/util/CMIP6_matrix.html">per SSP</a>.
 <ul>
 ''')
 

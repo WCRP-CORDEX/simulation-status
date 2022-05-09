@@ -50,7 +50,7 @@ domains = sorted(list(set(df.domain)))
 df = df.assign(status='published') # These are only ESGF published data
 df['model'].replace({'REMO2009': 'REMO', 'REMO2015': 'REMO'}, inplace=True)
 
-f = open(f'CMIP5_matrix.html','w')
+f = open(f'docs/CORDEX_CMIP5_status_by_scenario.html','w')
 f.write(f'''<!DOCTYPE html>
 <html><head>
 <style>

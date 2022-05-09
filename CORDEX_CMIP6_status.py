@@ -6,7 +6,7 @@ collapse_institutions = True
 plans = pd.read_csv('CMIP6_downscaling_plans.csv', na_filter=False)
 domains = sorted(list(set(plans.domain)))
 
-f = open(f'CMIP6_downscaling_plans_tables.html','w')
+f = open(f'docs/CORDEX_CMIP6_status.html','w')
 f.write(f'''<!DOCTYPE html>
 <html><head>
 <style>
@@ -28,7 +28,7 @@ a:active {{ text-decoration: underline;}}
 <h1 id="top"> CORDEX-CMIP6 downscaling plans summary tables</h1>
 <p style="text-align: right;">(Version: {datetime.datetime.now().strftime("%Y-%m-%d %H:%M")})</p>
 <p style="text-align: justify;">
-Simulation status according to CORDEX-CMIP6 downscaling plans reported by the groups and collected in <a href="https://github.com/jesusff/cmip6-for-cordex/blob/main/CMIP6_downscaling_plans.csv">CMIP6_downscaling_plans.csv</a>. Check that file for further details.
+Simulation status according to CORDEX-CMIP6 downscaling plans reported by the groups and collected in <a href="https://github.com/WCRP-CORDEX/cmip6-for-cordex/blob/main/CMIP6_downscaling_plans.csv">CMIP6_downscaling_plans.csv</a>. Check that file for further details.
 To contribute/update simulations use this <a href="https://docs.google.com/document/d/1Jy53yvB9SDOiWcwKRJc_HpWVgmjxZhy-qVviHl6ymDM/edit?usp=sharing">Google doc</a>.
 <p style="text-align:left"> Domains: |
 ''')
