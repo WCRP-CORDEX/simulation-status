@@ -37,7 +37,7 @@ ul.twocol {{ columns: 2; -webkit-columns: 2; -moz-columns: 2; }}
 Simulation status for different experiments within domains, as collected from the CORDEX-CMIP6 downscaling plans reported by the groups in <a href="https://github.com/WCRP-CORDEX/simulation-status/blob/main/CMIP6_downscaling_plans.csv">CMIP6_downscaling_plans.csv</a>. Check that file for further details. Experiment descriptions are provided at <a href="https://github.com/WCRP-CORDEX/simulation-status/blob/main/CORDEX_CMIP6_experiments.yaml">CORDEX_CMIP6_experiments.yaml</a>.
 To contribute/update simulations use this <a href="https://docs.google.com/document/d/1Jy53yvB9SDOiWcwKRJc_HpWVgmjxZhy-qVviHl6ymDM/edit?usp=sharing">Google doc</a>.
 <p style="text-align: justify;">
-See also other views of these simulations as a single table <a href="https://wcrp-cordex.github.io/simulation-status/CORDEX_CMIP6_status.html">per domain</a> or <a href="https://wcrp-cordex.github.io/simulation-status/util/CORDEX_CMIP6_status_by_scenario.html">per SSP</a>.
+See also other views of these simulations as a single table <a href="https://wcrp-cordex.github.io/simulation-status/CORDEX_CMIP6_status.html">per domain</a> or <a href="https://wcrp-cordex.github.io/simulation-status/CORDEX_CMIP6_status_by_scenario.html">per SSP</a>.
 <ul>
 ''')
 
