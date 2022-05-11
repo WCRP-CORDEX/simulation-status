@@ -2,6 +2,7 @@
 
 These are different views of the CORDEX-CMIP6 simulations status:
 
+ * [Full list of simulations](CMIP6_downscaling_plans.html)
  * [Summary by domain](CORDEX_CMIP6_status.html)
  * [Summary by scenario](CORDEX_CMIP6_status_by_scenario.html)
  * [Summary by experiment](CORDEX_CMIP6_status_by_experiment.html)
