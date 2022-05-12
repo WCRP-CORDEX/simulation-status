@@ -4,6 +4,8 @@ def addtag(word):
   rval = word
   if word.startswith('#'):
     rval = f'<span class="tag">{word[1:]}</span>'
+  if word.startswith('http'):
+    rval = f'<a href="{word}">{word}</a>'
   return(rval)
 
 def taggify(text):
@@ -28,7 +30,8 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     });
 } );
-</script>''')
+</script>
+''')
   if title:
     fp.write(f'<title>{title}</title>')
   fp.write('''
@@ -44,7 +47,8 @@ span.tag {
 }
 </style>
 </head>
-<body>''')
+<body>
+''')
   if title:
     fp.write(f'<h1>{title}</h1>')
   if intro:
@@ -53,13 +57,13 @@ span.tag {
 <table id="table_id" class="display">
     <thead>
         <tr>
-  ''')
+''')
   [fp.write(f'              <th>{col}</th>\n') for col in plans]
   fp.write(f'''
         </tr>
     </thead>
     <tbody>
-  ''')
+''')
   for idx, plan in plans.iterrows():
     fp.write(f'        <tr>\n')
     [fp.write(f'            <td>{taggify(item)}</td>\n') for item in plan]
