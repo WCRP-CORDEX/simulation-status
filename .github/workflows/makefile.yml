@@ -3,8 +3,12 @@ name: Update
 on:
   push:
     branches: [ main ]
+    paths:
+      - CMIP6_downscaling_plans.csv
   pull_request:
     branches: [ main ]
+    paths:
+      - CMIP6_downscaling_plans.csv
 
 jobs:
   build:
