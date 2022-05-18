@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <meta name="author" content="J. Fernandez" />
-<meta name="description" content="CORDEX CMIP6 downscaling plans" />
 <meta name="keywords" content="HTML, CSS, JavaScript" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,6 +25,11 @@ span.tag {
   border: 1px solid transparent;
   border-radius: 2em;
 }
+span.selected {color: #3399FF}
+span.planned {color: #FF9999}
+span.running {color: #009900}
+span.completed {color: black; font-weight: bold}
+span.published {color: #3399FF; font-weight: bold}
 </style>
 </head>
 <body>
@@ -50,7 +54,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
               <th>ensemble</th>
               <th>experiment</th>
               <th>status</th>
-              <th>estimated_completion_date</th>
+              <th>ECD</th>
               <th>comments</th>
 
         </tr>
@@ -64,7 +68,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td>running</td>
+            <td><span class="running">running</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -76,7 +80,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ACCESS-CM2</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -88,7 +92,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ACCESS-CM2</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -100,7 +104,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ACCESS-CM2</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -112,7 +116,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ACCESS-ESM1-5</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -124,7 +128,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ACCESS-ESM1-5</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -136,7 +140,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ACCESS-ESM1-5</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td>may target also one of the ensemble members with a larger amount of warming</td>
         </tr>
@@ -148,7 +152,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CESM2</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -160,7 +164,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CESM2</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -172,7 +176,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CESM2</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -184,7 +188,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CMCC-CM2-SR5</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -196,7 +200,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CMCC-CM2-SR5</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -208,7 +212,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CMCC-CM2-SR5</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -220,7 +224,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -232,7 +236,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -244,7 +248,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -256,7 +260,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -268,7 +272,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -280,7 +284,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -292,7 +296,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MRI-ESM2-0</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -304,7 +308,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MRI-ESM2-0</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -316,7 +320,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MRI-ESM2-0</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -328,7 +332,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>running</td>
+            <td><span class="running">running</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -340,7 +344,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>running</td>
+            <td><span class="running">running</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -352,7 +356,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>running</td>
+            <td><span class="running">running</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -364,7 +368,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -376,7 +380,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ACCESS-CM2</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -388,7 +392,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ACCESS-CM2</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -400,7 +404,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ACCESS-CM2</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -412,7 +416,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ACCESS-ESM1-5</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -424,7 +428,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ACCESS-ESM1-5</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -436,7 +440,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ACCESS-ESM1-5</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -448,7 +452,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CESM2</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -460,7 +464,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CESM2</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -472,7 +476,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CESM2</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -484,7 +488,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CMCC-CM2-SR5</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -496,7 +500,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CMCC-CM2-SR5</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -508,7 +512,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CMCC-CM2-SR5</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -520,7 +524,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -532,7 +536,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -544,7 +548,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -556,7 +560,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -568,7 +572,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -580,7 +584,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -592,7 +596,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MRI-ESM2-0</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -604,7 +608,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MRI-ESM2-0</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -616,7 +620,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MRI-ESM2-0</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -628,7 +632,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -640,7 +644,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -652,7 +656,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -664,7 +668,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -676,7 +680,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -688,7 +692,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -700,7 +704,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span> Method: BCSD (Wood et al. 2004) or delta (Navarro-Racines et al. 2020)</td>
         </tr>
@@ -712,7 +716,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ACCESS-CM2</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -724,7 +728,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ACCESS-CM2</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -736,7 +740,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ACCESS-CM2</td>
             <td>r1i1p1f1</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -748,7 +752,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ACCESS-CM2</td>
             <td>r1i1p1f1</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -760,7 +764,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>AWI-CM-1-1-MR</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -772,7 +776,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>AWI-CM-1-1-MR</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -784,7 +788,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>AWI-CM-1-1-MR</td>
             <td>r1i1p1f1</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -796,7 +800,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>AWI-CM-1-1-MR</td>
             <td>r1i1p1f1</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -808,7 +812,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CAMS-CSM1-0</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -820,7 +824,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CAMS-CSM1-0</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -832,7 +836,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CAMS-CSM1-0</td>
             <td>r1i1p1f1</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -844,7 +848,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CAMS-CSM1-0</td>
             <td>r1i1p1f1</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -856,7 +860,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-CC</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -868,7 +872,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-CC</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -880,7 +884,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-CC</td>
             <td>r1i1p1f1</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -892,7 +896,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-CC</td>
             <td>r1i1p1f1</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -904,7 +908,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -916,7 +920,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -928,7 +932,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -940,7 +944,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -952,7 +956,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>GFDL-ESM4</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -964,7 +968,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>GFDL-ESM4</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -976,7 +980,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>GFDL-ESM4</td>
             <td>r1i1p1f1</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -988,7 +992,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>GFDL-ESM4</td>
             <td>r1i1p1f1</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -1000,7 +1004,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -1012,7 +1016,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -1024,7 +1028,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -1036,7 +1040,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -1048,7 +1052,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r1i1p1f2</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -1060,7 +1064,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r1i1p1f2</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -1072,7 +1076,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r1i1p1f2</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -1084,7 +1088,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r1i1p1f2</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -1096,7 +1100,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -1108,7 +1112,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -1120,7 +1124,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -1132,7 +1136,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -1144,7 +1148,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -1156,7 +1160,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -1168,7 +1172,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -1180,7 +1184,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -1192,7 +1196,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r15i1p1f2</td>
             <td>historical</td>
-            <td>completed</td>
+            <td><span class="completed">completed</span></td>
             <td></td>
             <td>see <a href="http://cordex-ea.climate.go.kr/cordex/models.do">http://cordex-ea.climate.go.kr/cordex/models.do</a></td>
         </tr>
@@ -1204,7 +1208,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r15i1p1f2</td>
             <td>ssp126</td>
-            <td>completed</td>
+            <td><span class="completed">completed</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -1216,7 +1220,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r15i1p1f2</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -1228,7 +1232,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r15i1p1f2</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -1240,7 +1244,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r15i1p1f2</td>
             <td>ssp585</td>
-            <td>completed</td>
+            <td><span class="completed">completed</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -1252,7 +1256,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r15i1p1f2</td>
             <td>historical</td>
-            <td>completed</td>
+            <td><span class="completed">completed</span></td>
             <td></td>
             <td>HadGEM3-RA (UM v8.1) see <a href="http://cordex-ea.climate.go.kr/cordex/models.do">http://cordex-ea.climate.go.kr/cordex/models.do</a></td>
         </tr>
@@ -1264,7 +1268,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r15i1p1f2</td>
             <td>ssp126</td>
-            <td>completed</td>
+            <td><span class="completed">completed</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -1276,7 +1280,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r15i1p1f2</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -1288,7 +1292,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r15i1p1f2</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -1300,7 +1304,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r15i1p1f2</td>
             <td>ssp585</td>
-            <td>completed</td>
+            <td><span class="completed">completed</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -1312,7 +1316,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r15i1p1f2</td>
             <td>historical</td>
-            <td>completed</td>
+            <td><span class="completed">completed</span></td>
             <td></td>
             <td>see <a href="http://cordex-ea.climate.go.kr/cordex/models.do">http://cordex-ea.climate.go.kr/cordex/models.do</a></td>
         </tr>
@@ -1324,7 +1328,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r15i1p1f2</td>
             <td>ssp126</td>
-            <td>completed</td>
+            <td><span class="completed">completed</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -1336,7 +1340,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r15i1p1f2</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -1348,7 +1352,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r15i1p1f2</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -1360,7 +1364,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r15i1p1f2</td>
             <td>ssp585</td>
-            <td>completed</td>
+            <td><span class="completed">completed</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -1372,7 +1376,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r15i1p1f2</td>
             <td>historical</td>
-            <td>completed</td>
+            <td><span class="completed">completed</span></td>
             <td></td>
             <td>see <a href="http://cordex-ea.climate.go.kr/cordex/models.do">http://cordex-ea.climate.go.kr/cordex/models.do</a></td>
         </tr>
@@ -1384,7 +1388,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r15i1p1f2</td>
             <td>ssp126</td>
-            <td>completed</td>
+            <td><span class="completed">completed</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -1396,7 +1400,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r15i1p1f2</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -1408,7 +1412,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r15i1p1f2</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -1420,7 +1424,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r15i1p1f2</td>
             <td>ssp585</td>
-            <td>completed</td>
+            <td><span class="completed">completed</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -1432,7 +1436,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r15i1p1f2</td>
             <td>historical</td>
-            <td>completed</td>
+            <td><span class="completed">completed</span></td>
             <td></td>
             <td>RegCM v4.6.1 see <a href="http://cordex-ea.climate.go.kr/cordex/models.do">http://cordex-ea.climate.go.kr/cordex/models.do</a> We have completed the ERA-Interim evaluation runs. ERA5 evaluation runs not planned yet.</td>
         </tr>
@@ -1444,7 +1448,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r15i1p1f2</td>
             <td>ssp126</td>
-            <td>completed</td>
+            <td><span class="completed">completed</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -1456,7 +1460,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r15i1p1f2</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -1468,7 +1472,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r15i1p1f2</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -1480,7 +1484,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r15i1p1f2</td>
             <td>ssp585</td>
-            <td>completed</td>
+            <td><span class="completed">completed</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -1492,7 +1496,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -1504,7 +1508,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span> Split of scenarios TBD among AUTH CESAM and IDL</td>
         </tr>
@@ -1516,7 +1520,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span> Split of scenarios TBD among AUTH CESAM and IDL</td>
         </tr>
@@ -1528,7 +1532,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-06</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -1540,7 +1544,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-06</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -1552,7 +1556,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CESM2</td>
             <td>r11i1p1f1</td>
             <td>selected</td>
-            <td>published</td>
+            <td><span class="selected">selected</span></td>
             <td></td>
             <td>Model selected in EURO-CORDEX GA 2022</td>
         </tr>
@@ -1564,7 +1568,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CMCC-CM2-SR5</td>
             <td>r1i1p1f1</td>
             <td>selected</td>
-            <td>published</td>
+            <td><span class="selected">selected</span></td>
             <td></td>
             <td>Model selected in EURO-CORDEX GA 2022</td>
         </tr>
@@ -1576,7 +1580,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td>selected</td>
-            <td>published</td>
+            <td><span class="selected">selected</span></td>
             <td></td>
             <td>Model selected in EURO-CORDEX GA 2022</td>
         </tr>
@@ -1588,7 +1592,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>selected</td>
-            <td>published</td>
+            <td><span class="selected">selected</span></td>
             <td></td>
             <td>Model selected in EURO-CORDEX GA 2022</td>
         </tr>
@@ -1600,7 +1604,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>IPSL-CM6A-LR</td>
             <td>r1i1p1f1</td>
             <td>selected</td>
-            <td>published</td>
+            <td><span class="selected">selected</span></td>
             <td></td>
             <td>Model selected in EURO-CORDEX GA 2022</td>
         </tr>
@@ -1612,7 +1616,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MIROC6</td>
             <td>r1i1p1f1</td>
             <td>selected</td>
-            <td>published</td>
+            <td><span class="selected">selected</span></td>
             <td></td>
             <td>Model selected in EURO-CORDEX GA 2022</td>
         </tr>
@@ -1624,7 +1628,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>selected</td>
-            <td>published</td>
+            <td><span class="selected">selected</span></td>
             <td></td>
             <td>Model selected in EURO-CORDEX GA 2022</td>
         </tr>
@@ -1636,7 +1640,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>selected</td>
-            <td>published</td>
+            <td><span class="selected">selected</span></td>
             <td></td>
             <td>Model selected in EURO-CORDEX GA 2022</td>
         </tr>
@@ -1648,7 +1652,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>UKESM1-0-LL</td>
             <td>r1i1p1f2</td>
             <td>selected</td>
-            <td>published</td>
+            <td><span class="selected">selected</span></td>
             <td></td>
             <td>Model selected in EURO-CORDEX GA 2022</td>
         </tr>
@@ -1660,7 +1664,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -1672,7 +1676,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">ManySSP</span> Split of scenarios TBD among AUTH CESAM and IDL</td>
         </tr>
@@ -1684,7 +1688,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>TBD</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2024-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -1696,7 +1700,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>TBD</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2024-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -1708,7 +1712,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>TBD</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2024-12</td>
             <td><span class="tag">ManySSP</span></td>
         </tr>
@@ -1720,7 +1724,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>TBD</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2024-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -1732,7 +1736,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>TBD</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2024-12</td>
             <td><span class="tag">ManySSP</span></td>
         </tr>
@@ -1744,7 +1748,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td>completed</td>
+            <td><span class="completed">completed</span></td>
             <td>2022-02</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">NUKLEUS</span></td>
         </tr>
@@ -1756,7 +1760,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-05</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">NUKLEUS</span></td>
         </tr>
@@ -1768,7 +1772,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-08</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">NUKLEUS</span></td>
         </tr>
@@ -1780,7 +1784,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">NUKLEUS</span></td>
         </tr>
@@ -1792,7 +1796,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">NUKLEUS</span></td>
         </tr>
@@ -1804,7 +1808,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MIROC6</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">NUKLEUS</span></td>
         </tr>
@@ -1816,7 +1820,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MIROC6</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">NUKLEUS</span></td>
         </tr>
@@ -1828,7 +1832,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">EURbalanced</span> <span class="tag">ManyGCM</span> RCM version TBD</td>
         </tr>
@@ -1840,7 +1844,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CMCC-CM2-SR5</td>
             <td>TBD</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">EURbalanced</span> <span class="tag">ManyGCM</span></td>
         </tr>
@@ -1852,7 +1856,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CMCC-CM2-SR5</td>
             <td>TBD</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">EURbalanced</span> <span class="tag">ManyGCM</span></td>
         </tr>
@@ -1864,7 +1868,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CMCC-CM2-SR5</td>
             <td>TBD</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">EURbalanced</span> <span class="tag">ManyGCM</span></td>
         </tr>
@@ -1876,7 +1880,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -1888,7 +1892,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MIROC6</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -1900,7 +1904,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -1912,7 +1916,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td>completed</td>
+            <td><span class="completed">completed</span></td>
             <td></td>
             <td><span class="tag">EURcoupled</span> COSMO-CLM + Community Land Model + ParFlow hydrological model. There aree currently 2 runs: 3D subsurface hydrodynmics and one with 3D subsurface hydrodynamics and human water use; a run with 1D subsurface hydrodynamics might be added</td>
         </tr>
@@ -1924,7 +1928,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURcoupled</span></td>
         </tr>
@@ -1936,7 +1940,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURcoupled</span></td>
         </tr>
@@ -1948,7 +1952,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURcoupled</span></td>
         </tr>
@@ -1960,7 +1964,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td>running</td>
+            <td><span class="running">running</span></td>
             <td>2022-02</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">EURcoupled</span> <span class="tag">NUKLEUS</span> <span class="tag">ManyGCM</span></td>
         </tr>
@@ -1972,7 +1976,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">NUKLEUS</span> <span class="tag">ManyGCM</span></td>
         </tr>
@@ -1984,7 +1988,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">NUKLEUS</span> <span class="tag">ManyGCM</span></td>
         </tr>
@@ -1996,7 +2000,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MIROC6</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">NUKLEUS</span> <span class="tag">ManyGCM</span></td>
         </tr>
@@ -2008,7 +2012,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MIROC6</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">NUKLEUS</span> <span class="tag">ManyGCM</span></td>
         </tr>
@@ -2020,7 +2024,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-05</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">EURcoupled</span> <span class="tag">NUKLEUS</span> <span class="tag">ManyGCM</span></td>
         </tr>
@@ -2032,7 +2036,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-08</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">EURcoupled</span> <span class="tag">NUKLEUS</span> <span class="tag">ManyGCM</span></td>
         </tr>
@@ -2044,7 +2048,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">EURbalanced</span> <span class="tag">ManyGCM</span> to be confirmed</td>
         </tr>
@@ -2056,7 +2060,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td><span class="tag">ManyGCM</span> to be confirmed</td>
         </tr>
@@ -2068,7 +2072,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">ManyGCM</span></td>
         </tr>
@@ -2080,7 +2084,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">ManyGCM</span></td>
         </tr>
@@ -2092,7 +2096,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CMCC-CM2-SR5</td>
             <td>TBD</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2024-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -2104,7 +2108,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CMCC-CM2-SR5</td>
             <td>TBD</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2024-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -2116,7 +2120,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span> Version to be defined later in 2022</td>
         </tr>
@@ -2128,7 +2132,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -2140,7 +2144,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -2152,7 +2156,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -2164,7 +2168,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td></td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">ManySSP</span>  Considering ssp245 / 585</td>
         </tr>
@@ -2176,7 +2180,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CMCC-CM2-SR5</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -2188,7 +2192,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CMCC-CM2-SR5</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -2200,7 +2204,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CMCC-CM2-SR5</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -2212,7 +2216,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2024-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -2224,7 +2228,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2024-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -2236,116 +2240,8 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2024-12</td>
-            <td><span class="tag">EURbalanced</span></td>
-        </tr>
-        <tr>
-            <td>EUR-11</td>
-            <td>CNRM</td>
-            <td>S. Somot</td>
-            <td>ALADIN6x</td>
-            <td>TBD2</td>
-            <td>TBD</td>
-            <td>historical</td>
-            <td>planned</td>
-            <td>2023-12</td>
-            <td><span class="tag">EURbalanced</span></td>
-        </tr>
-        <tr>
-            <td>EUR-11</td>
-            <td>CNRM</td>
-            <td>S. Somot</td>
-            <td>ALADIN6x</td>
-            <td>TBD2</td>
-            <td>TBD</td>
-            <td>ssp126</td>
-            <td>planned</td>
-            <td>2023-12</td>
-            <td><span class="tag">EURbalanced</span></td>
-        </tr>
-        <tr>
-            <td>EUR-11</td>
-            <td>CNRM</td>
-            <td>S. Somot</td>
-            <td>ALADIN6x</td>
-            <td>TBD2</td>
-            <td>TBD</td>
-            <td>ssp370</td>
-            <td>planned</td>
-            <td>2023-12</td>
-            <td><span class="tag">EURbalanced</span></td>
-        </tr>
-        <tr>
-            <td>EUR-11</td>
-            <td>CNRM</td>
-            <td>S. Somot</td>
-            <td>ALADIN6x</td>
-            <td>TBD3</td>
-            <td>TBD</td>
-            <td>historical</td>
-            <td>planned</td>
-            <td>2023-12</td>
-            <td><span class="tag">EURbalanced</span></td>
-        </tr>
-        <tr>
-            <td>EUR-11</td>
-            <td>CNRM</td>
-            <td>S. Somot</td>
-            <td>ALADIN6x</td>
-            <td>TBD3</td>
-            <td>TBD</td>
-            <td>ssp126</td>
-            <td>planned</td>
-            <td>2023-12</td>
-            <td><span class="tag">EURbalanced</span></td>
-        </tr>
-        <tr>
-            <td>EUR-11</td>
-            <td>CNRM</td>
-            <td>S. Somot</td>
-            <td>ALADIN6x</td>
-            <td>TBD3</td>
-            <td>TBD</td>
-            <td>ssp370</td>
-            <td>planned</td>
-            <td>2023-12</td>
-            <td><span class="tag">EURbalanced</span></td>
-        </tr>
-        <tr>
-            <td>EUR-11</td>
-            <td>CNRM</td>
-            <td>S. Somot</td>
-            <td>ALADIN6x</td>
-            <td>TBD4</td>
-            <td>TBD</td>
-            <td>historical</td>
-            <td>planned</td>
-            <td>2023-12</td>
-            <td><span class="tag">EURbalanced</span></td>
-        </tr>
-        <tr>
-            <td>EUR-11</td>
-            <td>CNRM</td>
-            <td>S. Somot</td>
-            <td>ALADIN6x</td>
-            <td>TBD4</td>
-            <td>TBD</td>
-            <td>ssp126</td>
-            <td>planned</td>
-            <td>2023-12</td>
-            <td><span class="tag">EURbalanced</span></td>
-        </tr>
-        <tr>
-            <td>EUR-11</td>
-            <td>CNRM</td>
-            <td>S. Somot</td>
-            <td>ALADIN6x</td>
-            <td>TBD4</td>
-            <td>TBD</td>
-            <td>ssp370</td>
-            <td>planned</td>
-            <td>2023-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
         <tr>
@@ -2356,7 +2252,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -2368,7 +2264,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -2380,7 +2276,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -2392,7 +2288,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -2404,7 +2300,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td>running</td>
+            <td><span class="running">running</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">NUKLEUS</span></td>
         </tr>
@@ -2416,7 +2312,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">NUKLEUS</span></td>
         </tr>
@@ -2428,7 +2324,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -2440,7 +2336,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">NUKLEUS</span></td>
         </tr>
@@ -2452,7 +2348,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">NUKLEUS</span></td>
         </tr>
@@ -2464,7 +2360,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -2476,7 +2372,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">NUKLEUS</span></td>
         </tr>
@@ -2488,7 +2384,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MIROC6</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">NUKLEUS</span></td>
         </tr>
@@ -2500,7 +2396,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MIROC6</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -2512,7 +2408,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MIROC6</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">NUKLEUS</span></td>
         </tr>
@@ -2524,7 +2420,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURcoupled</span> <span class="tag">EURintvar</span> <span class="tag">LUCAS</span></td>
         </tr>
@@ -2536,7 +2432,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURcoupled</span> <span class="tag">EURintvar</span> <span class="tag">LUCAS</span></td>
         </tr>
@@ -2548,7 +2444,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r2i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">LUCAS</span> <span class="tag">EURintvar</span></td>
         </tr>
@@ -2560,7 +2456,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r2i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">LUCAS</span> <span class="tag">EURintvar</span></td>
         </tr>
@@ -2572,7 +2468,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">ManyGCM</span></td>
         </tr>
@@ -2584,7 +2480,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">EURintvar</span> <span class="tag">ManyGCM</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -2596,7 +2492,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp119</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURintvar</span> <span class="tag">ManyGCM</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -2608,7 +2504,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">EURintvar</span> <span class="tag">ManyGCM</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -2620,7 +2516,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURintvar</span> <span class="tag">ManyGCM</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -2632,7 +2528,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">EURintvar</span> <span class="tag">ManyGCM</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -2644,7 +2540,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURintvar</span> <span class="tag">ManyGCM</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -2656,7 +2552,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r2i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURintvar</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -2668,7 +2564,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r2i1p1f1</td>
             <td>ssp119</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURintvar</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -2680,7 +2576,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r2i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURintvar</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -2692,7 +2588,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r2i1p1f1</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURintvar</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -2704,7 +2600,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r2i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURintvar</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -2716,7 +2612,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r2i1p1f1</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURintvar</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -2728,7 +2624,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r3i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURintvar</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -2740,7 +2636,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r3i1p1f1</td>
             <td>ssp119</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURintvar</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -2752,7 +2648,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r3i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURintvar</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -2764,7 +2660,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r3i1p1f1</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURintvar</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -2776,7 +2672,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r3i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURintvar</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -2788,7 +2684,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r3i1p1f1</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURintvar</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -2800,7 +2696,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>TBD</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">ManyGCM</span></td>
         </tr>
@@ -2812,7 +2708,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>TBD</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">ManyGCM</span></td>
         </tr>
@@ -2824,7 +2720,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>TBD</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">ManyGCM</span></td>
         </tr>
@@ -2836,7 +2732,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD2</td>
             <td>TBD</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">ManyGCM</span></td>
         </tr>
@@ -2848,7 +2744,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD2</td>
             <td>TBD</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">ManyGCM</span></td>
         </tr>
@@ -2860,7 +2756,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD2</td>
             <td>TBD</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">ManyGCM</span></td>
         </tr>
@@ -2872,7 +2768,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD3</td>
             <td>TBD</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">ManyGCM</span></td>
         </tr>
@@ -2884,7 +2780,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD3</td>
             <td>TBD</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">ManyGCM</span></td>
         </tr>
@@ -2896,7 +2792,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD3</td>
             <td>TBD</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">ManyGCM</span></td>
         </tr>
@@ -2908,7 +2804,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD4</td>
             <td>TBD</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">ManyGCM</span></td>
         </tr>
@@ -2920,7 +2816,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD4</td>
             <td>TBD</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">ManyGCM</span></td>
         </tr>
@@ -2932,7 +2828,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD4</td>
             <td>TBD</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">ManyGCM</span></td>
         </tr>
@@ -2944,7 +2840,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">ManyGCM</span></td>
         </tr>
@@ -2956,7 +2852,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">ManyGCM</span></td>
         </tr>
@@ -2968,7 +2864,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">ManyGCM</span></td>
         </tr>
@@ -2980,7 +2876,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">ManyGCM</span></td>
         </tr>
@@ -2992,7 +2888,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -3004,7 +2900,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -3016,7 +2912,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -3028,7 +2924,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -3040,7 +2936,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -3052,7 +2948,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -3064,7 +2960,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -3076,7 +2972,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -3088,7 +2984,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -3100,7 +2996,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -3112,7 +3008,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-08</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -3124,7 +3020,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td>Split of scenarios TBD among AUTH CESAM and IDL</td>
         </tr>
@@ -3136,7 +3032,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">EURbalanced</span> Split of scenarios TBD among AUTH CESAM and IDL</td>
         </tr>
@@ -3148,7 +3044,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -3160,7 +3056,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -3172,7 +3068,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -3184,7 +3080,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -3196,7 +3092,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -3208,7 +3104,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -3220,7 +3116,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">ManySSP</span></td>
         </tr>
@@ -3232,7 +3128,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -3244,7 +3140,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">ManySSP</span></td>
         </tr>
@@ -3256,7 +3152,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -3268,7 +3164,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -3280,7 +3176,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -3292,7 +3188,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -3304,7 +3200,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -3316,7 +3212,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td>scenario TBD</td>
         </tr>
@@ -3328,7 +3224,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td>scenario TBD</td>
         </tr>
@@ -3340,7 +3236,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-06</td>
             <td><span class="tag">EURbalanced</span></td>
         </tr>
@@ -3352,7 +3248,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-09</td>
             <td><span class="tag">ESD</span></td>
         </tr>
@@ -3364,7 +3260,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>TBD</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -3376,7 +3272,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>TBD</td>
             <td>ssp119</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -3388,7 +3284,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>TBD</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -3400,7 +3296,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>TBD</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -3412,7 +3308,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>TBD</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -3424,7 +3320,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>TBD</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -3436,7 +3332,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD2</td>
             <td>TBD</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -3448,7 +3344,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD2</td>
             <td>TBD</td>
             <td>ssp119</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -3460,7 +3356,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD2</td>
             <td>TBD</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -3472,7 +3368,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD2</td>
             <td>TBD</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -3484,7 +3380,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD2</td>
             <td>TBD</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -3496,7 +3392,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD2</td>
             <td>TBD</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -3508,7 +3404,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD3</td>
             <td>TBD</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -3520,7 +3416,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD3</td>
             <td>TBD</td>
             <td>ssp119</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -3532,7 +3428,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD3</td>
             <td>TBD</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -3544,7 +3440,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD3</td>
             <td>TBD</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -3556,7 +3452,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD3</td>
             <td>TBD</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -3568,7 +3464,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD3</td>
             <td>TBD</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -3580,7 +3476,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD4</td>
             <td>TBD</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -3592,7 +3488,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD4</td>
             <td>TBD</td>
             <td>ssp119</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -3604,7 +3500,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD4</td>
             <td>TBD</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -3616,7 +3512,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD4</td>
             <td>TBD</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -3628,7 +3524,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD4</td>
             <td>TBD</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -3640,7 +3536,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD4</td>
             <td>TBD</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
@@ -3652,7 +3548,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r12i1p1f1</td>
             <td>historical</td>
-            <td>running</td>
+            <td><span class="running">running</span></td>
             <td>2022-04</td>
             <td></td>
         </tr>
@@ -3664,7 +3560,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r12i1p1f1</td>
             <td>ssp585</td>
-            <td>running</td>
+            <td><span class="running">running</span></td>
             <td>2022-04</td>
             <td></td>
         </tr>
@@ -3676,7 +3572,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -3688,7 +3584,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -3700,7 +3596,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -3712,7 +3608,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -3724,7 +3620,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -3736,7 +3632,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -3748,7 +3644,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -3760,7 +3656,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td></td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td>Considering scenarios ssp245 and/or ssp585</td>
         </tr>
@@ -3772,7 +3668,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>TBD</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td></td>
         </tr>
@@ -3784,7 +3680,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>TBD</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td></td>
         </tr>
@@ -3796,7 +3692,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>TBD</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td></td>
         </tr>
@@ -3808,7 +3704,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td>running</td>
+            <td><span class="running">running</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -3820,7 +3716,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CESM2</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -3832,7 +3728,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CESM2</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -3844,7 +3740,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CESM2</td>
             <td>r1i1p1f1</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -3856,7 +3752,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CESM2</td>
             <td>r1i1p1f1</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -3868,7 +3764,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -3880,7 +3776,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -3892,7 +3788,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -3904,7 +3800,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -3916,7 +3812,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -3928,7 +3824,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -3940,7 +3836,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -3952,7 +3848,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -3964,7 +3860,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td></td>
         </tr>
@@ -3976,7 +3872,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td></td>
         </tr>
@@ -3988,7 +3884,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td></td>
         </tr>
@@ -4000,7 +3896,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td>completed</td>
+            <td><span class="completed">completed</span></td>
             <td>2022-12</td>
             <td>Two members with perturbed initial conditions</td>
         </tr>
@@ -4012,7 +3908,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CanESM5</td>
             <td>r1i1p2f1</td>
             <td>historical</td>
-            <td>completed</td>
+            <td><span class="completed">completed</span></td>
             <td>2022-01</td>
             <td></td>
         </tr>
@@ -4024,7 +3920,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CanESM5</td>
             <td>r1i1p2f1</td>
             <td>ssp126</td>
-            <td>running</td>
+            <td><span class="running">running</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4036,7 +3932,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CanESM5</td>
             <td>r1i1p2f1</td>
             <td>ssp370</td>
-            <td>running</td>
+            <td><span class="running">running</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4048,7 +3944,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>running</td>
+            <td><span class="running">running</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4060,7 +3956,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4072,7 +3968,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4084,7 +3980,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td>historical</td>
-            <td>running</td>
+            <td><span class="running">running</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4096,7 +3992,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4108,7 +4004,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td>completed</td>
+            <td><span class="completed">completed</span></td>
             <td>2022-01</td>
             <td></td>
         </tr>
@@ -4120,7 +4016,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>TBD</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td></td>
         </tr>
@@ -4132,7 +4028,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>TBD</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td></td>
         </tr>
@@ -4144,7 +4040,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>TBD</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td></td>
         </tr>
@@ -4156,7 +4052,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>TBD</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td></td>
         </tr>
@@ -4168,7 +4064,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>TBD</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td></td>
         </tr>
@@ -4180,7 +4076,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td>completed</td>
+            <td><span class="completed">completed</span></td>
             <td>2022-01</td>
             <td>20-km resolution</td>
         </tr>
@@ -4192,7 +4088,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>TBD</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -4204,7 +4100,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>TBD</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td></td>
             <td></td>
         </tr>
@@ -4216,7 +4112,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4228,7 +4124,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>TBD</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4240,7 +4136,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>TBD</td>
             <td>ssp119</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td></td>
         </tr>
@@ -4252,7 +4148,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>TBD</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4264,7 +4160,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>TBD</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4276,7 +4172,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>TBD</td>
             <td></td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td>Considering ssp245 and/or ssp585</td>
         </tr>
@@ -4288,7 +4184,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>TBD</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4300,7 +4196,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>TBD</td>
             <td>ssp119</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td></td>
         </tr>
@@ -4312,7 +4208,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>TBD</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4324,7 +4220,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>TBD</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4336,7 +4232,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>TBD</td>
             <td></td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td>Considering ssp245 and/or ssp585</td>
         </tr>
@@ -4348,7 +4244,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>HadGEM3-GC31-MM</td>
             <td>TBD</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4360,7 +4256,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>HadGEM3-GC31-MM</td>
             <td>TBD</td>
             <td>ssp119</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td></td>
         </tr>
@@ -4372,7 +4268,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>HadGEM3-GC31-MM</td>
             <td>TBD</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4384,7 +4280,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>HadGEM3-GC31-MM</td>
             <td>TBD</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4396,7 +4292,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>HadGEM3-GC31-MM</td>
             <td>TBD</td>
             <td></td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td>Considering ssp245 and/or ssp585</td>
         </tr>
@@ -4408,7 +4304,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>TBD</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4420,7 +4316,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>TBD</td>
             <td>ssp119</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td></td>
         </tr>
@@ -4432,7 +4328,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>TBD</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4444,7 +4340,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>TBD</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4456,7 +4352,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>TBD</td>
             <td></td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td>Considering ssp245 and/or ssp585</td>
         </tr>
@@ -4468,7 +4364,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>TBD</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4480,7 +4376,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>TBD</td>
             <td>ssp119</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td></td>
         </tr>
@@ -4492,7 +4388,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>TBD</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4504,7 +4400,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>TBD</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4516,7 +4412,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>TBD</td>
             <td></td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td>Considering ssp245 and/or ssp585</td>
         </tr>
@@ -4528,7 +4424,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4540,7 +4436,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp119</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td></td>
         </tr>
@@ -4552,7 +4448,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4564,7 +4460,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4576,7 +4472,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td></td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td>maybe ssp245 and/or ssp585</td>
         </tr>
@@ -4588,7 +4484,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>HadGEM3-GC31-MM</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4600,7 +4496,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>HadGEM3-GC31-MM</td>
             <td>r1i1p1f1</td>
             <td>ssp119</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td></td>
         </tr>
@@ -4612,7 +4508,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>HadGEM3-GC31-MM</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4624,7 +4520,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>HadGEM3-GC31-MM</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4636,7 +4532,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>HadGEM3-GC31-MM</td>
             <td>r1i1p1f1</td>
             <td></td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td>maybe ssp245 and/or ssp585</td>
         </tr>
@@ -4648,7 +4544,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4660,7 +4556,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4672,7 +4568,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp119</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td></td>
         </tr>
@@ -4684,7 +4580,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4696,7 +4592,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4708,7 +4604,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td></td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td>maybe ssp245 and/or ssp585</td>
         </tr>
@@ -4720,7 +4616,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4732,7 +4628,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f1</td>
             <td>ssp119</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td></td>
         </tr>
@@ -4744,7 +4640,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4756,7 +4652,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4768,7 +4664,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f1</td>
             <td></td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td>maybe ssp245 and/or ssp585</td>
         </tr>
@@ -4780,7 +4676,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4792,7 +4688,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>ssp119</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td></td>
         </tr>
@@ -4804,7 +4700,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4816,7 +4712,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2022-12</td>
             <td></td>
         </tr>
@@ -4828,7 +4724,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td></td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td>maybe ssp245 and/or ssp585</td>
         </tr>
@@ -4840,7 +4736,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td>completed</td>
+            <td><span class="completed">completed</span></td>
             <td>2022-02</td>
             <td>27 km resolution global model</td>
         </tr>
@@ -4852,7 +4748,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>IITM-ESM</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td>running</td>
+            <td><span class="running">running</span></td>
             <td>2023-12</td>
             <td>27 km resolution global model</td>
         </tr>
@@ -4864,7 +4760,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>IITM-ESM</td>
             <td>r1i1p1f1</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td>27 km resolution global model</td>
         </tr>
@@ -4876,7 +4772,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>IITM-ESM</td>
             <td>r1i1p1f1</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td>27 km resolution global model</td>
         </tr>
@@ -4888,7 +4784,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>TBD</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td>27 km resolution global model</td>
         </tr>
@@ -4900,7 +4796,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>TBD</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td>27 km resolution global model</td>
         </tr>
@@ -4912,7 +4808,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD</td>
             <td>TBD</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td>27 km resolution global model</td>
         </tr>
@@ -4924,7 +4820,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD2</td>
             <td>TBD</td>
             <td>historical</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td>27 km resolution global model</td>
         </tr>
@@ -4936,7 +4832,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD2</td>
             <td>TBD</td>
             <td>ssp245</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td>27 km resolution global model</td>
         </tr>
@@ -4948,7 +4844,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>TBD2</td>
             <td>TBD</td>
             <td>ssp585</td>
-            <td>planned</td>
+            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
             <td>27 km resolution global model</td>
         </tr>
