@@ -14,5 +14,6 @@ Several terms can be entered (e.g. "evaluation completed" or "mpi ssp585") to sh
 The table contents can be downloaded as a CSV file <a href="https://github.com/WCRP-CORDEX/simulation-status/raw/main/CMIP6_downscaling_plans.csv">here</a>.
 To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/simulation-status">https://github.com/WCRP-CORDEX/simulation-status</a>.
 </p>
-'''
+''',
+  rename_fields = {'estimated_completion_date': 'ECD'}
 )

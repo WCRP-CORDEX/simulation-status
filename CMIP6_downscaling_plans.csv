@@ -123,15 +123,15 @@ EUR-11,AUTH,E. Katragkou / V. Pavlidis,WRF,MPI-ESM1-2-HR,r1i1p1f1,historical,pla
 EUR-11,AUTH,E. Katragkou / V. Pavlidis,WRF,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2022-12,#EURbalanced Split of scenarios TBD among AUTH CESAM and IDL
 EUR-11,BCCR,S. Sobolowski / T. Lorenz,WRF,NorESM2-MM,r1i1p1f1,historical,planned,2023-06,#EURbalanced
 EUR-11,BCCR,S. Sobolowski / T. Lorenz,WRF,NorESM2-MM,r1i1p1f1,ssp370,planned,2023-06,#EURbalanced
-EUR-11,EURO-CORDEX,,. Comunity selected GCMs,CESM2,r11i1p1f1,selected,published,,Model selected in EURO-CORDEX GA 2022
-EUR-11,EURO-CORDEX,,. Comunity selected GCMs,CMCC-CM2-SR5,r1i1p1f1,selected,published,,Model selected in EURO-CORDEX GA 2022
-EUR-11,EURO-CORDEX,,. Comunity selected GCMs,CNRM-ESM2-1,r1i1p1f2,selected,published,,Model selected in EURO-CORDEX GA 2022
-EUR-11,EURO-CORDEX,,. Comunity selected GCMs,EC-Earth3-Veg,r1i1p1f1,selected,published,,Model selected in EURO-CORDEX GA 2022
-EUR-11,EURO-CORDEX,,. Comunity selected GCMs,IPSL-CM6A-LR,r1i1p1f1,selected,published,,Model selected in EURO-CORDEX GA 2022
-EUR-11,EURO-CORDEX,,. Comunity selected GCMs,MIROC6,r1i1p1f1,selected,published,,Model selected in EURO-CORDEX GA 2022
-EUR-11,EURO-CORDEX,,. Comunity selected GCMs,MPI-ESM1-2-HR,r1i1p1f1,selected,published,,Model selected in EURO-CORDEX GA 2022
-EUR-11,EURO-CORDEX,,. Comunity selected GCMs,NorESM2-MM,r1i1p1f1,selected,published,,Model selected in EURO-CORDEX GA 2022
-EUR-11,EURO-CORDEX,,. Comunity selected GCMs,UKESM1-0-LL,r1i1p1f2,selected,published,,Model selected in EURO-CORDEX GA 2022
+EUR-11,EURO-CORDEX,,. Comunity selected GCMs,CESM2,r11i1p1f1,selected,selected,,Model selected in EURO-CORDEX GA 2022
+EUR-11,EURO-CORDEX,,. Comunity selected GCMs,CMCC-CM2-SR5,r1i1p1f1,selected,selected,,Model selected in EURO-CORDEX GA 2022
+EUR-11,EURO-CORDEX,,. Comunity selected GCMs,CNRM-ESM2-1,r1i1p1f2,selected,selected,,Model selected in EURO-CORDEX GA 2022
+EUR-11,EURO-CORDEX,,. Comunity selected GCMs,EC-Earth3-Veg,r1i1p1f1,selected,selected,,Model selected in EURO-CORDEX GA 2022
+EUR-11,EURO-CORDEX,,. Comunity selected GCMs,IPSL-CM6A-LR,r1i1p1f1,selected,selected,,Model selected in EURO-CORDEX GA 2022
+EUR-11,EURO-CORDEX,,. Comunity selected GCMs,MIROC6,r1i1p1f1,selected,selected,,Model selected in EURO-CORDEX GA 2022
+EUR-11,EURO-CORDEX,,. Comunity selected GCMs,MPI-ESM1-2-HR,r1i1p1f1,selected,selected,,Model selected in EURO-CORDEX GA 2022
+EUR-11,EURO-CORDEX,,. Comunity selected GCMs,NorESM2-MM,r1i1p1f1,selected,selected,,Model selected in EURO-CORDEX GA 2022
+EUR-11,EURO-CORDEX,,. Comunity selected GCMs,UKESM1-0-LL,r1i1p1f2,selected,selected,,Model selected in EURO-CORDEX GA 2022
 EUR-11,CESAM,D. Carvalho,WRF,ERA5,,evaluation,planned,2023-12,#EURbalanced
 EUR-11,CESAM,D. Carvalho,WRF,MPI-ESM1-2-HR,r1i1p1f1,ssp585,planned,2023-12,#ManySSP Split of scenarios TBD among AUTH CESAM and IDL
 EUR-11,CESAM,D. Carvalho,WRF,TBD,TBD,historical,planned,2024-12,#EURbalanced
@@ -181,15 +181,6 @@ EUR-11,CNRM,S. Somot,ALADIN6x,CMCC-CM2-SR5,r1i1p1f1,ssp370,planned,2023-12,#EURb
 EUR-11,CNRM,S. Somot,ALADIN6x,NorESM2-MM,r1i1p1f1,historical,planned,2024-12,#EURbalanced
 EUR-11,CNRM,S. Somot,ALADIN6x,NorESM2-MM,r1i1p1f1,ssp126,planned,2024-12,#EURbalanced
 EUR-11,CNRM,S. Somot,ALADIN6x,NorESM2-MM,r1i1p1f1,ssp370,planned,2024-12,#EURbalanced
-EUR-11,CNRM,S. Somot,ALADIN6x,TBD2,TBD,historical,planned,2023-12,#EURbalanced
-EUR-11,CNRM,S. Somot,ALADIN6x,TBD2,TBD,ssp126,planned,2023-12,#EURbalanced
-EUR-11,CNRM,S. Somot,ALADIN6x,TBD2,TBD,ssp370,planned,2023-12,#EURbalanced
-EUR-11,CNRM,S. Somot,ALADIN6x,TBD3,TBD,historical,planned,2023-12,#EURbalanced
-EUR-11,CNRM,S. Somot,ALADIN6x,TBD3,TBD,ssp126,planned,2023-12,#EURbalanced
-EUR-11,CNRM,S. Somot,ALADIN6x,TBD3,TBD,ssp370,planned,2023-12,#EURbalanced
-EUR-11,CNRM,S. Somot,ALADIN6x,TBD4,TBD,historical,planned,2023-12,#EURbalanced
-EUR-11,CNRM,S. Somot,ALADIN6x,TBD4,TBD,ssp126,planned,2023-12,#EURbalanced
-EUR-11,CNRM,S. Somot,ALADIN6x,TBD4,TBD,ssp370,planned,2023-12,#EURbalanced
 EUR-11,CUNI,M. Belda,RegCM,ERA5,,evaluation,planned,2022-12,#EURbalanced
 EUR-11,CUNI,M. Belda,RegCM,CNRM-ESM2-1,r1i1p1f2,historical,planned,2023-12,#EURbalanced
 EUR-11,CUNI,M. Belda,RegCM,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2023-12,#EURbalanced

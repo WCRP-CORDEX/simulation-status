@@ -1,24 +1,30 @@
 import pandas as pd
 
-def addtag(word):
+def addtag(word, field):
   rval = word
-  if word.startswith('#'):
+  if (field == 'comments') and word.startswith('#'):
     rval = f'<span class="tag">{word[1:]}</span>'
-  if word.startswith('http'):
+  elif (field == 'comments') and word.startswith('http'):
     rval = f'<a href="{word}">{word}</a>'
+  elif (field == 'status') and word in ['selected', 'planned', 'running', 'completed', 'published']:
+    rval = f'<span class="{word}">{word}</span>'
   return(rval)
 
-def taggify(text):
-  return(' '.join([addtag(x) for x in text.split(' ')]))
+def taggify(text, field):
+  rval = text
+  if field in ['status', 'comments']:
+    rval = ' '.join([addtag(x, field) for x in text.split(' ')])
+  return(rval)
 
-def csv2datatable(csvfile, htmlout, title='', intro=''):
+def csv2datatable(csvfile, htmlout, title='', intro='', rename_fields = {}):
   plans = pd.read_csv(csvfile, na_filter=False)
+  field_names = dict(zip(plans.columns,plans.columns))
+  field_names.update(rename_fields)
   fp = open(htmlout,'w')
   fp.write('''<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta name="author" content="J. Fernandez" />
-<meta name="description" content="CORDEX CMIP6 downscaling plans" />
 <meta name="keywords" content="HTML, CSS, JavaScript" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -45,6 +51,11 @@ span.tag {
   border: 1px solid transparent;
   border-radius: 2em;
 }
+span.selected {color: #3399FF}
+span.planned {color: #FF9999}
+span.running {color: #009900}
+span.completed {color: black; font-weight: bold}
+span.published {color: #3399FF; font-weight: bold}
 </style>
 </head>
 <body>
@@ -58,7 +69,7 @@ span.tag {
     <thead>
         <tr>
 ''')
-  [fp.write(f'              <th>{col}</th>\n') for col in plans]
+  [fp.write(f'              <th>{field_names[x]}</th>\n') for x in plans]
   fp.write(f'''
         </tr>
     </thead>
@@ -66,7 +77,8 @@ span.tag {
 ''')
   for idx, plan in plans.iterrows():
     fp.write(f'        <tr>\n')
-    [fp.write(f'            <td>{taggify(item)}</td>\n') for item in plan]
+    for field,item in zip(plans.columns, plan):
+      fp.write(f'            <td>{taggify(item, field)}</td>\n')
     fp.write(f'        </tr>\n')
   fp.write('''
     </tbody>
