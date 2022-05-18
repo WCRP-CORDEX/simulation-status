@@ -1,4 +1,5 @@
 CAM-11:
+
   ESD:
     title: Empirical-statistical downscaling
 
@@ -72,10 +73,10 @@ EUR-11:
       - rcm_name == 'WRF'
     collapse_institutions: False
 
-  HCLIM:
+  HCLIMcom:
     title: HCLIM community
     condition:
-      - rcm_name == 'ALADIN-43'
+      - rcm_name == 'HCLIM43-ALADIN'
     collapse_institutions: False
 
   REGCM:
