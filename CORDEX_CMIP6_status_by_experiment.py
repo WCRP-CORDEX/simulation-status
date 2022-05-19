@@ -58,7 +58,7 @@ for domain in domains:
     The following experiments contribute to CORDEX {domain} domain:
     <ul class="twocol">'''
   )
-  [f.write(f'<li><a href="#{i}">{dconf[i]["title"]}</a></li>') for i in dconf.keys()]
+  [f.write(f'<li><a href="#{domain}-{i}">{dconf[i]["title"]}</a></li>') for i in dconf.keys()]
   f.write('</ul>')
   for tag in dconf.keys():
     tconf = dconf[tag]
@@ -101,7 +101,7 @@ for domain in domains:
     title = tconf['title'] if 'title' in tconf else tag
     descr = tconf['description'] if 'description' in tconf else ''
     url = f'<p>URL: <a href="{tconf["url"]}">{tconf["url"]}</a>' if 'url' in tconf else ''
-    f.write(f'''<h3 id="{tag}">{title} <a href="#{domain}">^</a></h3>
+    f.write(f'''<h3 id="{domain}-{tag}">{title} <a href="#{domain}">^</a></h3>
       <p> {descr}
       {url}
       <p style="font-size: smaller;"> Colour legend:

@@ -147,9 +147,9 @@ EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,EC-Earth3-Veg,r1i1p1f1,ssp37
 EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,MIROC6,r1i1p1f1,historical,planned,2022-12,#EURbalanced #NUKLEUS
 EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,MIROC6,r1i1p1f1,ssp370,planned,2022-12,#EURbalanced #NUKLEUS
 EUR-11,CLMcom-CMCC,M. Raffa / M. Adinolfi,COSMO-CLM,ERA5,,evaluation,planned,,#EURbalanced #ManyGCM RCM version TBD
-EUR-11,CLMcom-CMCC,M. Raffa / M. Adinolfi,COSMO-CLM,CMCC-CM2-SR5,TBD,historical,planned,,#EURbalanced #ManyGCM
-EUR-11,CLMcom-CMCC,M. Raffa / M. Adinolfi,COSMO-CLM,CMCC-CM2-SR5,TBD,ssp126,planned,,#EURbalanced #ManyGCM
-EUR-11,CLMcom-CMCC,M. Raffa / M. Adinolfi,COSMO-CLM,CMCC-CM2-SR5,TBD,ssp370,planned,,#EURbalanced #ManyGCM
+EUR-11,CLMcom-CMCC,M. Raffa / M. Adinolfi,COSMO-CLM,CMCC-CM2-SR5,r1i1p1f1,historical,planned,,#EURbalanced #ManyGCM
+EUR-11,CLMcom-CMCC,M. Raffa / M. Adinolfi,COSMO-CLM,CMCC-CM2-SR5,r1i1p1f1,ssp126,planned,,#EURbalanced #ManyGCM
+EUR-11,CLMcom-CMCC,M. Raffa / M. Adinolfi,COSMO-CLM,CMCC-CM2-SR5,r1i1p1f1,ssp370,planned,,#EURbalanced #ManyGCM
 EUR-11,CLMcom-DWD,C. Steger,ICON-CLM,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2023-12,#EURbalanced
 EUR-11,CLMcom-DWD,C. Steger,ICON-CLM,MIROC6,r1i1p1f1,ssp126,planned,2023-12,#EURbalanced
 EUR-11,CLMcom-DWD,C. Steger,ICON-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2023-12,#EURbalanced
@@ -157,6 +157,7 @@ EUR-11,CLMcom-FZJ,K. Goergen,COSMO-CLM5-01-CLM3-5-0-ParFlow3-9-0,ERA5,,evaluatio
 EUR-11,CLMcom-FZJ,K. Goergen,COSMO-CLM5-01-CLM3-5-0-ParFlow3-9-0,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-12,#EURcoupled
 EUR-11,CLMcom-FZJ,K. Goergen,COSMO-CLM5-01-CLM3-5-0-ParFlow3-9-0,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2022-12,#EURcoupled
 EUR-11,CLMcom-FZJ,K. Goergen,COSMO-CLM5-01-CLM3-5-0-ParFlow3-9-0,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-12,#EURcoupled
+EUR-11,CLMcom-FZJ,K. Goergen,COSMO-CLM,MIROC6,r1i1p1f1,ssp126,planned,2023-12,#EURbalanced
 EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,ERA5,,evaluation,running,2022-02,#EURbalanced #EURcoupled #NUKLEUS #ManyGCM
 EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,historical,planned,2022-12,#EURbalanced #NUKLEUS #ManyGCM
 EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2022-12,#EURbalanced #NUKLEUS #ManyGCM
@@ -168,8 +169,8 @@ EUR-11,CLMcom-LIST,M. Sulis,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,,#EU
 EUR-11,CLMcom-LIST,M. Sulis,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp585,planned,,#ManyGCM to be confirmed
 EUR-11,CLMcom-LIST,M. Sulis,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2023-12,#EURbalanced #ManyGCM
 EUR-11,CLMcom-LIST,M. Sulis,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp585,planned,2023-12,#ManyGCM
-EUR-11,CLMcom-WEGC,H. Truhetz,ICON-CLM,CMCC-CM2-SR5,TBD,historical,planned,2024-12,#EURbalanced
-EUR-11,CLMcom-WEGC,H. Truhetz,ICON-CLM,CMCC-CM2-SR5,TBD,ssp370,planned,2024-12,#EURbalanced
+EUR-11,CLMcom-WEGC,H. Truhetz,ICON-CLM,CMCC-CM2-SR5,r1i1p1f1,historical,planned,2024-12,#EURbalanced
+EUR-11,CLMcom-WEGC,H. Truhetz,ICON-CLM,CMCC-CM2-SR5,r1i1p1f1,ssp370,planned,2024-12,#EURbalanced
 EUR-11,CNRM,S. Somot,ALADIN6x,ERA5,,evaluation,planned,2022-12,#EURbalanced Version to be defined later in 2022
 EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,historical,planned,2022-12,#EURbalanced
 EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2022-12,#EURbalanced
@@ -186,8 +187,8 @@ EUR-11,CUNI,M. Belda,RegCM,CNRM-ESM2-1,r1i1p1f2,historical,planned,2023-12,#EURb
 EUR-11,CUNI,M. Belda,RegCM,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2023-12,#EURbalanced
 EUR-11,CUNI,M. Belda,RegCM,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2023-12,#EURbalanced
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,ERA5,,evaluation,running,2022-12,#EURbalanced #NUKLEUS
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2023-12,#EURbalanced #NUKLEUS
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2023-12,#EURbalanced
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2023-12,#EURbalanced #NUKLEUS #EURcoupled
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2023-12,#EURbalanced #EURcoupled
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2023-12,#EURbalanced #NUKLEUS
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,EC-Earth3-Veg,r1i1p1f1,historical,planned,2023-12,#EURbalanced #NUKLEUS
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2023-12,#EURbalanced
