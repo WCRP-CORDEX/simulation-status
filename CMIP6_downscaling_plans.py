@@ -1,3 +1,4 @@
+import datetime
 import pandas as pd
 from funs import *
 
@@ -5,7 +6,8 @@ csv2datatable(
   'CMIP6_downscaling_plans.csv',
   'docs/CMIP6_downscaling_plans.html',
   title = 'CORDEX CMIP6 downscaling plans',
-  intro = '''
+  intro = f'''
+<p style="text-align: right;">(Last update: {datetime.datetime.now().strftime("%Y-%m-%d %H:%M")})</p>
 <p>
 This is an interactive table view of each of the CORDEX-CMIP6 simulations.
 The table can be sorted by the different columns.
