@@ -1,11 +1,11 @@
 domain,institute,contact,rcm_name,driving_model,ensemble,experiment,status,estimated_completion_date,comments
-AUS-11,CSIRO,M. Thatcher,CCAM,ERA5,,evaluation,running,2022-12,
-AUS-11,CSIRO,M. Thatcher,CCAM,ACCESS-CM2,r1i1p1f1,historical,planned,,
-AUS-11,CSIRO,M. Thatcher,CCAM,ACCESS-CM2,r1i1p1f1,ssp126,planned,,
-AUS-11,CSIRO,M. Thatcher,CCAM,ACCESS-CM2,r1i1p1f1,ssp370,planned,,
-AUS-11,CSIRO,M. Thatcher,CCAM,ACCESS-ESM1-5,r1i1p1f1,historical,planned,,
-AUS-11,CSIRO,M. Thatcher,CCAM,ACCESS-ESM1-5,r1i1p1f1,ssp126,planned,,
-AUS-11,CSIRO,M. Thatcher,CCAM,ACCESS-ESM1-5,r1i1p1f1,ssp370,planned,,may target also one of the ensemble members with a larger amount of warming
+AUS-11,CSIRO,M. Thatcher,CCAM,ERA5,,evaluation,completed,2022-06,
+AUS-11,CSIRO,M. Thatcher,CCAM,ACCESS-CM2,r4i1p1f1,historical,running,,
+AUS-11,CSIRO,M. Thatcher,CCAM,ACCESS-CM2,r4i1p1f1,ssp126,running,,
+AUS-11,CSIRO,M. Thatcher,CCAM,ACCESS-CM2,r4i1p1f1,ssp370,running,,
+AUS-11,CSIRO,M. Thatcher,CCAM,ACCESS-ESM1-5,r6i1p1f1,historical,running,,
+AUS-11,CSIRO,M. Thatcher,CCAM,ACCESS-ESM1-5,r6i1p1f1,ssp126,running,,
+AUS-11,CSIRO,M. Thatcher,CCAM,ACCESS-ESM1-5,r6i1p1f1,ssp370,running,,may target also one of the ensemble members with a larger amount of warming
 AUS-11,CSIRO,M. Thatcher,CCAM,CESM2,r1i1p1f1,historical,planned,,
 AUS-11,CSIRO,M. Thatcher,CCAM,CESM2,r1i1p1f1,ssp126,planned,,
 AUS-11,CSIRO,M. Thatcher,CCAM,CESM2,r1i1p1f1,ssp370,planned,,
@@ -21,16 +21,16 @@ AUS-11,CSIRO,M. Thatcher,CCAM,EC-Earth3,r1i1p1f1,ssp370,planned,,
 AUS-11,CSIRO,M. Thatcher,CCAM,MRI-ESM2-0,r1i1p1f1,historical,planned,,
 AUS-11,CSIRO,M. Thatcher,CCAM,MRI-ESM2-0,r1i1p1f1,ssp126,planned,,
 AUS-11,CSIRO,M. Thatcher,CCAM,MRI-ESM2-0,r1i1p1f1,ssp370,planned,,
-AUS-11,CSIRO,M. Thatcher,CCAM,NorESM2-MM,r1i1p1f1,historical,running,2022-12,
-AUS-11,CSIRO,M. Thatcher,CCAM,NorESM2-MM,r1i1p1f1,ssp126,running,2022-12,
-AUS-11,CSIRO,M. Thatcher,CCAM,NorESM2-MM,r1i1p1f1,ssp370,running,2022-12,
-AUS-17,BoM,A. Dowdy,BARPA,ERA5,,evaluation,planned,,
-AUS-17,BoM,A. Dowdy,BARPA,ACCESS-CM2,r1i1p1f1,historical,planned,,
-AUS-17,BoM,A. Dowdy,BARPA,ACCESS-CM2,r1i1p1f1,ssp126,planned,,
-AUS-17,BoM,A. Dowdy,BARPA,ACCESS-CM2,r1i1p1f1,ssp370,planned,,
-AUS-17,BoM,A. Dowdy,BARPA,ACCESS-ESM1-5,r1i1p1f1,historical,planned,,
-AUS-17,BoM,A. Dowdy,BARPA,ACCESS-ESM1-5,r1i1p1f1,ssp126,planned,,
-AUS-17,BoM,A. Dowdy,BARPA,ACCESS-ESM1-5,r1i1p1f1,ssp370,planned,,
+AUS-11,CSIRO,M. Thatcher,CCAM,NorESM2-MM,r1i1p1f1,historical,completed,2022-06,
+AUS-11,CSIRO,M. Thatcher,CCAM,NorESM2-MM,r1i1p1f1,ssp126,completed,2022-06,
+AUS-11,CSIRO,M. Thatcher,CCAM,NorESM2-MM,r1i1p1f1,ssp370,completed,2022-06,
+AUS-17,BoM,A. Dowdy,BARPA,ERA5,,evaluation,running,,
+AUS-17,BoM,A. Dowdy,BARPA,ACCESS-CM2,r4i1p1f1,historical,running,,
+AUS-17,BoM,A. Dowdy,BARPA,ACCESS-CM2,r4i1p1f1,ssp126,running,,
+AUS-17,BoM,A. Dowdy,BARPA,ACCESS-CM2,r4i1p1f1,ssp370,running,,
+AUS-17,BoM,A. Dowdy,BARPA,ACCESS-ESM1-5,r6i1p1f1,historical,running,,
+AUS-17,BoM,A. Dowdy,BARPA,ACCESS-ESM1-5,r6i1p1f1,ssp126,running,,
+AUS-17,BoM,A. Dowdy,BARPA,ACCESS-ESM1-5,r6i1p1f1,ssp370,running,,
 AUS-17,BoM,A. Dowdy,BARPA,CESM2,r1i1p1f1,historical,planned,,
 AUS-17,BoM,A. Dowdy,BARPA,CESM2,r1i1p1f1,ssp126,planned,,
 AUS-17,BoM,A. Dowdy,BARPA,CESM2,r1i1p1f1,ssp370,planned,,
@@ -155,12 +155,12 @@ EUR-11,CLMcom-FZJ,K. Goergen,COSMO-CLM5-01-CLM3-5-0-ParFlow3-9-0,MPI-ESM1-2-HR,r
 EUR-11,CLMcom-FZJ,K. Goergen,COSMO-CLM5-01-CLM3-5-0-ParFlow3-9-0,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2022-12,#EURcoupled
 EUR-11,CLMcom-FZJ,K. Goergen,COSMO-CLM5-01-CLM3-5-0-ParFlow3-9-0,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-12,#EURcoupled
 EUR-11,CLMcom-FZJ,K. Goergen,COSMO-CLM,MIROC6,r1i1p1f1,ssp126,planned,2023-12,#EURbalanced
-EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,ERA5,,evaluation,running,2022-02,#EURbalanced #EURcoupled #NUKLEUS #ManyGCM
-EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,historical,planned,2022-12,#EURbalanced #NUKLEUS #ManyGCM
+EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,ERA5,,evaluation,completed,2022-06,#EURbalanced #EURcoupled #NUKLEUS #ManyGCM
+EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,historical,running,2022-12,#EURbalanced #NUKLEUS #ManyGCM
 EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2022-12,#EURbalanced #NUKLEUS #ManyGCM
 EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MIROC6,r1i1p1f1,historical,planned,2022-12,#EURbalanced #NUKLEUS #ManyGCM
 EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MIROC6,r1i1p1f1,ssp370,planned,2022-12,#EURbalanced #NUKLEUS #ManyGCM
-EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-05,#EURbalanced #EURcoupled #NUKLEUS #ManyGCM
+EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2022-05,#EURbalanced #EURcoupled #NUKLEUS #ManyGCM
 EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-08,#EURbalanced #EURcoupled #NUKLEUS #ManyGCM
 EUR-11,CLMcom-LIST,M. Sulis,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,,#EURbalanced #ManyGCM to be confirmed
 EUR-11,CLMcom-LIST,M. Sulis,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp585,planned,,#ManyGCM to be confirmed
@@ -335,11 +335,12 @@ NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,ERA5,,evaluation,completed,2022-12,Tw
 NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,CanESM5,r1i1p2f1,historical,completed,2022-01,
 NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,CanESM5,r1i1p2f1,ssp126,running,2022-12,
 NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,CanESM5,r1i1p2f1,ssp370,running,2022-12,
-NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2022-12,
+NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2022-06,
 NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2022-12,
-NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-12,
-NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,CNRM-ESM2-1,r1i1p1f2,historical,running,2022-12,
+NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,MPI-ESM1-2-HR,r1i1p1f1,ssp370,running,2022-12,
+NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,CNRM-ESM2-1,r1i1p1f2,historical,completed,2022-06,
 NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2022-12,
+NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,CNRM-ESM2-1,r1i1p1f2,ssp370,running,2022-12,
 MENA-22,DGM-UIZ,K. El Rhaz / M. Rachid,WRF,ERA5,,evaluation,completed,2022-01,
 MENA-22,DGM-UIZ,K. El Rhaz / M. Rachid,WRF,TBD,TBD,historical,planned,2023-12,
 MENA-22,DGM-UIZ,K. El Rhaz / M. Rachid,WRF,TBD,TBD,ssp126,planned,2023-12,
