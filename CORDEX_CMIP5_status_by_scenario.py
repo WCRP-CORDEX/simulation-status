@@ -45,13 +45,12 @@ df.drop(
 df.drop_duplicates(inplace = True)
 df.drop(df[df.ensemble == 'r0i0p0'].index, axis=0, inplace=True)
 df.drop(df[df.model.isin(['STARS3','WETTREG2013'])].index, axis=0, inplace=True)
-df.sort_values(['domain', 'institution', 'model', 'model_version', 'driving_model', 'ensemble', 'experiment'])
+df.sort_values(['domain', 'institution', 'model', 'model_version', 'driving_model', 'ensemble', 'experiment'], inplace = True)
 
 collapse_institutions = True
 
 domains = sorted(list(set(df.domain)))
 df = df.assign(status='published') # These are only ESGF published data
-df['model'].replace({'REMO2009': 'REMO', 'REMO2015': 'REMO'}, inplace=True)
 df.to_csv('docs/CORDEX_CMIP5_status.csv', index = False)
 csv2datatable(
   'docs/CORDEX_CMIP5_status.csv',
