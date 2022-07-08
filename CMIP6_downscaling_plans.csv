@@ -412,3 +412,11 @@ WAS-22,IITM,T. P. Sabin,IITM-AGCM,TBD,TBD,ssp585,planned,2023-12,27 km resolutio
 WAS-22,IITM,T. P. Sabin,IITM-AGCM,TBD2,TBD,historical,planned,2023-12,27 km resolution global model forced by the SST of the driving GCM
 WAS-22,IITM,T. P. Sabin,IITM-AGCM,TBD2,TBD,ssp245,planned,2023-12,27 km resolution global model forced by the SST of the driving GCM
 WAS-22,IITM,T. P. Sabin,IITM-AGCM,TBD2,TBD,ssp585,planned,2023-12,27 km resolution global model forced by the SST of the driving GCM
+WAS-22,Uni-Hamburg,S. U. Hasson,WRF,ERA5,,evaluation,planned,2023-12,
+WAS-22,Uni-Hamburg,S. U. Hasson,WRF,MPI-ESM1-2-LR,r1i1p1f1,historical,planned,2023-12,
+WAS-22,Uni-Hamburg,S. U. Hasson,WRF,MPI-ESM1-2-LR,r1i1p1f1,ssp126,planned,2023-12,
+WAS-22,Uni-Hamburg,S. U. Hasson,WRF,MPI-ESM1-2-LR,r1i1p1f1,ssp245,planned,2023-12,
+WAS-22,Uni-Hamburg,S. U. Hasson,WRF,MPI-ESM1-2-LR,r1i1p1f1,ssp370,planned,2023-12,
+WAS-22,Uni-Hamburg,S. U. Hasson,WRF,MPI-ESM1-2-LR,r1i1p1f1,ssp585,planned,2023-12,
+WAS-22,Uni-Hamburg,S. U. Hasson,WRF,MPI-ESM1-2-HAM,r1i1p1f1,historical,planned,2023-12,
+WAS-22,Uni-Hamburg,S. U. Hasson,WRF,MPI-ESM1-2-HAM,r1i1p1f1,ssp370,planned,2023-12,
