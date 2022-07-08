@@ -43,7 +43,7 @@ for domain in domains:
     index = ('driving_model', 'ensemble'),
     columns = column_id,
     values = 'htmlstatus',
-    aggfunc = lambda x: ' '.join(x.dropna())
+    aggfunc = lambda x: ' '.join(sorted(x.dropna()))
   )
   dom_plans_matrix = pd.concat([  # Bring ERA5 to the top
     dom_plans_matrix.query("driving_model == 'ERA5'"),
