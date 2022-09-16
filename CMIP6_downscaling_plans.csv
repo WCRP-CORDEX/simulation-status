@@ -168,14 +168,15 @@ EUR-11,CLMcom-LIST,M. Sulis,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2023
 EUR-11,CLMcom-LIST,M. Sulis,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp585,planned,2023-12,#ManyGCM
 EUR-11,CLMcom-WEGC,H. Truhetz,ICON-CLM,CMCC-CM2-SR5,r1i1p1f1,historical,planned,2024-12,
 EUR-11,CLMcom-WEGC,H. Truhetz,ICON-CLM,CMCC-CM2-SR5,r1i1p1f1,ssp370,planned,2024-12,
-EUR-11,CNRM,S. Somot,ALADIN6x,ERA5,,evaluation,planned,2022-12,#EURbalanced Version to be defined later in 2022
-EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,historical,planned,2022-12,#EURbalanced
-EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2022-12,#EURbalanced
-EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2022-12,#EURbalanced
-EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,,planned,2023-12,#ManySSP  Considering ssp245 / 585
-EUR-11,CNRM,S. Somot,ALADIN6x,CMCC-CM2-SR5,r1i1p1f1,historical,planned,2023-12,#EURbalanced
-EUR-11,CNRM,S. Somot,ALADIN6x,CMCC-CM2-SR5,r1i1p1f1,ssp126,planned,2023-12,#EURbalanced
-EUR-11,CNRM,S. Somot,ALADIN6x,CMCC-CM2-SR5,r1i1p1f1,ssp370,planned,2023-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,ERA5,,evaluation,planned,2022-12,#EURbalanced preliminary version completed for 1979-2020 if somebody is interested to look at it
+EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,historical,planned,2023-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2023-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,ssp245,planned,2024-12,#ManySSP
+EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2023-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,ssp585,planned,2024-12,#ManySSP
+EUR-11,CNRM,S. Somot,ALADIN6x,CMCC-CM2-SR5,r1i1p1f1,historical,planned,2024-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,CMCC-CM2-SR5,r1i1p1f1,ssp126,planned,2024-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,CMCC-CM2-SR5,r1i1p1f1,ssp370,planned,2024-12,#EURbalanced
 EUR-11,CNRM,S. Somot,ALADIN6x,NorESM2-MM,r1i1p1f1,historical,planned,2024-12,#EURbalanced
 EUR-11,CNRM,S. Somot,ALADIN6x,NorESM2-MM,r1i1p1f1,ssp126,planned,2024-12,#EURbalanced
 EUR-11,CNRM,S. Somot,ALADIN6x,NorESM2-MM,r1i1p1f1,ssp370,planned,2024-12,#EURbalanced
@@ -307,9 +308,9 @@ MED-11,CLMcom-GUF,M. Hamouda,CCLM5-0-9-NEMOMED12-3-6,EC-Earth3-Veg,r12i1p1f1,ssp
 MED-11,CLMcom-IMS,P. Khain,ICON-CLM,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,,
 MED-11,CLMcom-IMS,P. Khain,ICON-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp245,planned,,
 MED-11,CLMcom-IMS,P. Khain,ICON-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp585,planned,,
-MED-11,CNRM,S. Somot,RCSM6,ERA5,,evaluation,planned,2022-12,
-MED-11,CNRM,S. Somot,RCSM6,CNRM-ESM2-1,r1i1p1f2,historical,planned,2022-12,
-MED-11,CNRM,S. Somot,RCSM6,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2022-12,
+MED-11,CNRM,S. Somot,RCSM6,ERA5,,evaluation,planned,2023-12,
+MED-11,CNRM,S. Somot,RCSM6,CNRM-ESM2-1,r1i1p1f2,historical,running,2022-12,
+MED-11,CNRM,S. Somot,RCSM6,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2023-12,
 MED-11,CNRM,S. Somot,RCSM6,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2022-12,
 MED-11,CNRM,S. Somot,RCSM6,CNRM-ESM2-1,r1i1p1f2,,planned,2023-12,Considering scenarios ssp245 and/or ssp585
 MED-11,CNRM,S. Somot,RCSM6,TBD,TBD,historical,planned,2023-12,
