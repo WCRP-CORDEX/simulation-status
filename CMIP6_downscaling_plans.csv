@@ -103,11 +103,11 @@ EAS-22,NIMS,Y.-H. Byun / J.-U. Kim,HadGEM3-RA,UKESM1-0-LL,r15i1p1f2,ssp126,compl
 EAS-22,NIMS,Y.-H. Byun / J.-U. Kim,HadGEM3-RA,UKESM1-0-LL,r15i1p1f2,ssp245,planned,2022-12,
 EAS-22,NIMS,Y.-H. Byun / J.-U. Kim,HadGEM3-RA,UKESM1-0-LL,r15i1p1f2,ssp370,planned,2022-12,
 EAS-22,NIMS,Y.-H. Byun / J.-U. Kim,HadGEM3-RA,UKESM1-0-LL,r15i1p1f2,ssp585,completed,,
-EAS-22,PNU,J.-B. Ahn / G.-Y. Seo,WRF370,UKESM1-0-LL,r15i1p1f2,historical,completed,,see http://cordex-ea.climate.go.kr/cordex/models.do
-EAS-22,PNU,J.-B. Ahn / G.-Y. Seo,WRF370,UKESM1-0-LL,r15i1p1f2,ssp126,completed,2022-12,
-EAS-22,PNU,J.-B. Ahn / G.-Y. Seo,WRF370,UKESM1-0-LL,r15i1p1f2,ssp245,planned,2022-12,
-EAS-22,PNU,J.-B. Ahn / G.-Y. Seo,WRF370,UKESM1-0-LL,r15i1p1f2,ssp370,planned,2022-12,
-EAS-22,PNU,J.-B. Ahn / G.-Y. Seo,WRF370,UKESM1-0-LL,r15i1p1f2,ssp585,completed,,
+EAS-22,PNU,J.-B. Ahn / G.-Y. Seo,WRF400,UKESM1-0-LL,r15i1p1f2,historical,completed,,see http://cordex-ea.climate.go.kr/cordex/models.do
+EAS-22,PNU,J.-B. Ahn / G.-Y. Seo,WRF400,UKESM1-0-LL,r15i1p1f2,ssp126,completed,2022-12,
+EAS-22,PNU,J.-B. Ahn / G.-Y. Seo,WRF400,UKESM1-0-LL,r15i1p1f2,ssp245,planned,2022-12,
+EAS-22,PNU,J.-B. Ahn / G.-Y. Seo,WRF400,UKESM1-0-LL,r15i1p1f2,ssp370,planned,2022-12,
+EAS-22,PNU,J.-B. Ahn / G.-Y. Seo,WRF400,UKESM1-0-LL,r15i1p1f2,ssp585,completed,,
 EAS-22,POSTECH,S.-K. Min / S.-Y. Jo,COSMO-CLM5-0-9,UKESM1-0-LL,r15i1p1f2,historical,completed,,see http://cordex-ea.climate.go.kr/cordex/models.do
 EAS-22,POSTECH,S.-K. Min / S.-Y. Jo,COSMO-CLM5-0-9,UKESM1-0-LL,r15i1p1f2,ssp126,completed,2022-12,
 EAS-22,POSTECH,S.-K. Min / S.-Y. Jo,COSMO-CLM5-0-9,UKESM1-0-LL,r15i1p1f2,ssp245,planned,2022-12,
