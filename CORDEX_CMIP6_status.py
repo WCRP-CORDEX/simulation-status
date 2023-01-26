@@ -36,7 +36,7 @@ To contribute/update simulations use this <a href="https://docs.google.com/docum
 d1 = dict(selector=".level0", props=[('min-width', '130px')])
 for domain in domains:
   dom_plans = plans[plans.domain == domain]
-  dom_plans = dom_plans.assign(htmlstatus=pd.Series('<span class="' + dom_plans.status + '">' + dom_plans.experiment + '</span>', index=dom_plans.index))
+  dom_plans = dom_plans.assign(htmlstatus=pd.Series('<span sort="' + dom_plans.experiment +'" class="' + dom_plans.status + '">' + dom_plans.experiment + '</span>', index=dom_plans.index))
   dom_plans = dom_plans.assign(model_id=pd.Series(dom_plans.institute + '-' + dom_plans.rcm_name, index=dom_plans.index))
   column_id = 'rcm_name' if collapse_institutions else 'model_id'
   dom_plans_matrix = dom_plans.pivot_table(
