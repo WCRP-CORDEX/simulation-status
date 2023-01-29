@@ -19,8 +19,8 @@ body {{ padding-bottom: 600px; }}
 tr:hover {{background-color:#f5f5f5;}}
 th, td {{text-align: center; padding: 3px;}}
 table {{border-collapse: collapse;}}
-span.planned {{color: #FF9999}}
-span.running {{color: #009900}}
+span.planned {{color: #F54d4d; font-weight: bold}}
+span.running {{color: #009900; font-weight: bold}}
 span.completed {{color: black; font-weight: bold}}
 span.published {{color: #3399FF; font-weight: bold}}
 a {{color: DodgerBlue}}

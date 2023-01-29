@@ -12,14 +12,34 @@ EUR-11:
       GCM-RCM-SSP combination matrix with a fractional factorial design.
   
   EURexpress:
-    title: EUR-11 balanced "express" stream (ECD by 2022-12)
+    title: EUR-11 balanced "express" stream (ECD by 2023-12)
     description: >
-      Expected status of the balanced matrix experiment by 2022-12 (according to
+      Expected status of the balanced matrix experiment by 2023-12 (according to
       expected completion date provided).
     condition:
       - tag:EURbalanced
       - experiment != 'evaluation'
-      - estimated_completion_date <= '2022-12'
+      - estimated_completion_date <= '2023-12'
+
+  EURexpress24:
+    title: EUR-11 balanced (ECD by 2024-12)
+    description: >
+      Expected status of the balanced matrix experiment by 2024-12 (according to
+      expected completion date provided).
+    condition:
+      - tag:EURbalanced
+      - experiment != 'evaluation'
+      - estimated_completion_date <= '2024-12'
+
+  EURexpress25:
+    title: EUR-11 balanced (ECD by 2025-12)
+    description: >
+      Expected status of the balanced matrix experiment by 2025-12 (according to
+      expected completion date provided).
+    condition:
+      - tag:EURbalanced
+      - experiment != 'evaluation'
+      - estimated_completion_date <= '2025-12'
 
   EURcoupled:
     title: Coupled simulations
