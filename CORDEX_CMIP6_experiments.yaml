@@ -2,6 +2,10 @@ CAM-11:
 
   ESD:
     title: Empirical-statistical downscaling
+    description: >
+      Preliminary collection of various empirical-statistical downscaling (ESD) 
+      activities that may contribute to CORDEX-CMIP6 ESD. Standard, perfect-prog
+      ESD efforts producing gridded output on a EUR-11 compatible grid.
 
 EUR-11:
 
@@ -111,7 +115,9 @@ EUR-11:
   ESD:
     title: Empirical-statistical downscaling
     description: >
-      Standard, perfect-prog ESD efforts producing gridded output on a EUR-11 compatible grid
+      Preliminary collection of various empirical-statistical downscaling (ESD)
+      activities that may contribute to CORDEX-CMIP6 ESD. Standard, perfect-prog
+      ESD efforts producing gridded output on a EUR-11 compatible grid.
 
   Emulator:
     title: Statistical emulators
