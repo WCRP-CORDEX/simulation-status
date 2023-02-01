@@ -20,6 +20,7 @@ EUR-11:
       - tag:EURbalanced
       - experiment != 'evaluation'
       - estimated_completion_date <= '2023-12'
+      - estimated_completion_date > '2020-01'
 
   EURexpress24:
     title: EUR-11 balanced (ECD by 2024-12)
@@ -30,6 +31,7 @@ EUR-11:
       - tag:EURbalanced
       - experiment != 'evaluation'
       - estimated_completion_date <= '2024-12'
+      - estimated_completion_date > '2020-01'
 
   EURexpress25:
     title: EUR-11 balanced (ECD by 2025-12)
@@ -40,6 +42,7 @@ EUR-11:
       - tag:EURbalanced
       - experiment != 'evaluation'
       - estimated_completion_date <= '2025-12'
+      - estimated_completion_date > '2020-01'
 
   EURcoupled:
     title: Coupled simulations
