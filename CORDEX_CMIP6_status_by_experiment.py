@@ -93,7 +93,7 @@ for domain in domains:
         columns = 'rcm_name',
         values = 'institute',
         aggfunc = lambda x: ', '.join(sorted(x.dropna()))
-      ).agg(lambda x: ', '.join(x.dropna()))
+      ).agg(lambda x: ', '.join(sorted(x.dropna())))
       inst.name = ('','Institutes')
       dom_plans_matrix = dom_plans_matrix.append(inst)
       dom_plans_matrix = dom_plans_matrix.T.set_index([('','Institutes'),dom_plans_matrix.columns]).T
