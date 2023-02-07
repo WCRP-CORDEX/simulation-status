@@ -388,7 +388,7 @@ SEA-22,RU-CORE-UKM,J. Liew,RegCM,EC-Earth3-Veg,r1i1p1f1,historical,completed,202
 SEA-22,RU-CORE-UKM,J. Liew,RegCM,EC-Earth3-Veg,r1i1p1f1,ssp119,planned,2023-12,
 SEA-22,RU-CORE-UKM,J. Liew,RegCM,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2022-12,
 SEA-22,RU-CORE-UKM,J. Liew,RegCM,EC-Earth3-Veg,r1i1p1f1,ssp370,running,2023-12,
-SEA-22,RU-CORE-UKM,J. Liew,RegCM,EC-Earth3-Veg,r1i1p1f1,planned,2023-12,maybe ssp245 and/or ssp585
+SEA-22,RU-CORE-UKM,J. Liew,RegCM,EC-Earth3-Veg,r1i1p1f1,,planned,2023-12,maybe ssp245 and/or ssp585
 SEA-22,UMT,J. X. Chung,RegCM,ERA5,,evaluation,completed,2022-12,
 SEA-22,UKM-UMT,J. Liew,RegCM,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2022-12,
 SEA-22,UKM-UMT,J. Liew,RegCM,MPI-ESM1-2-HR,r1i1p1f1,ssp119,planned,2023-12,
