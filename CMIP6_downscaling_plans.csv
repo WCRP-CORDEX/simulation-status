@@ -203,7 +203,7 @@ EUR-11,HCLIMcom-DMI,O. B. Christensen,HCLIM43-ALADIN,IPSL-CM6A-LR,r1i1p1f1,ssp12
 EUR-11,HCLIMcom-DMI,O. B. Christensen,HCLIM43-ALADIN,IPSL-CM6A-LR,r1i1p1f1,ssp370,planned,2023-12,#ManyGCM
 EUR-11,HCLIMcom-METNo,A. Dobler,HCLIM43-ALADIN,NorESM2-MM,r1i1p1f1,historical,completed,2023-01,#EURbalanced #ManyGCM
 EUR-11,HCLIMcom-METNo,A. Dobler,HCLIM43-ALADIN,NorESM2-MM,r1i1p1f1,ssp126,planned,2023-12,#EURbalanced #ManyGCM
-EUR-11,HCLIMcom-METNo,A. Dobler,HCLIM43-ALADIN,NorESM2-MM,r1i1p1f1,ssp370,running,2023-06,#EURbalanced #ManyGCM
+EUR-11,HCLIMcom-METNo,A. Dobler,HCLIM43-ALADIN,NorESM2-MM,r1i1p1f1,ssp370,completed,2023-04,#EURbalanced #ManyGCM
 EUR-11,HCLIMcom-METNo,A. Dobler,HCLIM43-ALADIN,NorESM2-MM,r1i1p1f1,ssp585,planned,2023-12,#ManyGCM
 EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,ERA5,,evaluation,running,2023-12,#EURbalanced #ManyGCM
 EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,CESM2,r11i1p1f1,historical,planned,2024-12,#ManyGCM
