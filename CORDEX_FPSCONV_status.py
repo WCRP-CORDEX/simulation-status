@@ -27,10 +27,11 @@ facets = (
 #
 #   Load search results
 #
-conn = SearchConnection('http://esgf-data.dkrz.de/esg-search', distrib=True)
+#conn = SearchConnection('http://esgf-data.dkrz.de/esg-search', distrib=True)
+conn = SearchConnection('https://esgf-node.ipsl.upmc.fr/esg-search', distrib=True)
 logging.getLogger('pyesgf.search.connection').setLevel(loglevel)
 df = pd.DataFrame()
-for proj in ['cordex-fpsconv']:
+for proj in ['cordex-fpsconv','CORDEX-FPSCONV']:
   logger.info(f'Retrieving {proj} variables ...')
   ctx = conn.new_context(project = proj)
   dids = [result.dataset_id for result in ctx.search(batch_size=1000, ignore_facet_check=True)]
@@ -79,7 +80,7 @@ csv2datatable(
   'docs/CORDEX_FPSCONV_varlist.html',
   title = 'CORDEX-FPSCONV on ESGF',
   intro = f'''
-<p> CORDEX-FPSCONV simulations providing some data on ESGF as of <b>{datetime.datetime.now().strftime("%Y-%m-%d %H:%M")}</b>. The full list as CSV can be obtained from <a href="https://github.com/WCRP-CORDEX/simulation-status/raw/main/docs/CORDEX_CMIP5_FPSCONV_all_variables.csv">here</a>.
+<p> CORDEX-FPSCONV simulations providing some data on ESGF as of <b>{datetime.datetime.now().strftime("%Y-%m-%d %H:%M")}</b>. The full list as CSV can be obtained from <a href="https://github.com/WCRP-CORDEX/simulation-status/raw/main/docs/CORDEX_FPSCONV_ESGF_all_variables.csv">here</a>.
 </p>
 <img src="CORDEX_FPSCONV_varlist.png"/>
 '''
