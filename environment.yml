@@ -9,5 +9,7 @@ dependencies:
   - seaborn
   - xarray
   - pyyaml
+  # Other
+  - pip
   - pip:
     - esgf-pyclient
