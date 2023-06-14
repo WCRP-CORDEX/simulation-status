@@ -8,7 +8,6 @@ import pandas as pd
 import re
 import seaborn as sns
 
-
 from funs import *
 from pyesgf.search import SearchConnection
 
@@ -53,16 +52,15 @@ df.sort_values(['domain', 'institution', 'model', 'model_version', 'driving_mode
 #  Plot variable availability as heatmap
 #
 data = pd.read_csv('docs/CORDEX_FPSCONV_ESGF_all_variables.csv', usecols=['variable', 'frequency', 'model'])
-data['varfreq'] = data['variable'] + ' (' + data['frequency'] + ')'
-data.drop(['variable', 'frequency'], axis = 'columns', inplace = True)
 data.drop_duplicates(inplace = True)
 # matrix with models as rows and variables as columns
-matrix = data.pivot_table(index='model', columns='varfreq', aggfunc='size', fill_value=0)
+matrix = data.pivot_table(index='model', columns=['frequency', 'variable'], aggfunc='size', fill_value=0)
 matrix = matrix.replace(0, np.nan)
 # Plot as heatmap (make sure to show all ticks and labels)
 ax = sns.heatmap(matrix, cmap='YlGnBu_r', annot=False, cbar=False)
 ax.set_xticks(0.5+np.arange(len(matrix.columns)))
-ax.set_xticklabels(matrix.columns)
+xticklabels = [f'{v} ({f})' for f,v in matrix.columns]
+ax.set_xticklabels(xticklabels)
 ax.set_xlabel("variable (freq.)")
 ax.set_yticks(0.5+np.arange(len(matrix.index)))
 ax.set_yticklabels(matrix.index)
