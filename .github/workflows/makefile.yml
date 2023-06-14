@@ -26,11 +26,14 @@ jobs:
       with:
         python-version: '3.10'
 
-    - uses: mamba-org/setup-micromamba@v1
-      with:
-        environment-file: environment.yml
-        init-shell: bash
-        cache-environment: true
+    - name: Add conda to system path
+      run: |
+        # $CONDA is an environment variable pointing to the root of the miniconda directory
+        echo $CONDA/bin >> $GITHUB_PATH
+
+    - name: Install dependencies
+      run: |
+        conda env update --file environment.yml --name base
 
     - name: Update tables
       run: make update
@@ -41,5 +44,3 @@ jobs:
         git config --global user.email 'actions@github.com'
         git commit -am "[Actions] Update"
         git push
-
-
