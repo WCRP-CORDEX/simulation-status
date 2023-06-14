@@ -57,13 +57,14 @@ data.drop_duplicates(inplace = True)
 matrix = data.pivot_table(index='model', columns=['frequency', 'variable'], aggfunc='size', fill_value=0)
 matrix = matrix.replace(0, np.nan)
 # Plot as heatmap (make sure to show all ticks and labels)
-ax = sns.heatmap(matrix, cmap='YlGnBu_r', annot=False, cbar=False)
+ax = sns.heatmap(matrix, cmap='YlGnBu_r', annot=False, cbar=False, linewidths=1, linecolor='lightgray')
 ax.set_xticks(0.5+np.arange(len(matrix.columns)))
 xticklabels = [f'{v} ({f})' for f,v in matrix.columns]
 ax.set_xticklabels(xticklabels)
 ax.set_xlabel("variable (freq.)")
 ax.set_yticks(0.5+np.arange(len(matrix.index)))
 ax.set_yticklabels(matrix.index)
+ax.set_aspect('equal')
 plt.savefig('docs/CORDEX_FPSCONV_varlist.png', bbox_inches='tight')
 
 #
