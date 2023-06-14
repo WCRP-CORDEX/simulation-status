@@ -1,4 +1,5 @@
 domain,institution,driving_model,experiment,ensemble,model,model_version,frequency,variable,status
+ALP-3,CLMcom-CMCC,ECMWF-ERAINT,evaluation,r1i1p1,CCLM5-0-9,fpsconv-x2yn2-v1,day,tasmin,published
 ALP-3,CNRM,ECMWF-ERAINT,evaluation,r1i1p1,AROME41t1,fpsconv-x2yn2-v1,day,pr,published
 ALP-3,ICTP,ECMWF-ERAINT,evaluation,r1i1p1,RegCM4-7,fpsconv-x2yn2-v1,1hr,pr,published
 ALP-3,UCAN,ECMWF-ERAINT,evaluation,r1i1p1,WRF381BI,fpsconv-x1n2-v1,1hr,tas,published
