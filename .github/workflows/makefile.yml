@@ -16,6 +16,9 @@ jobs:
   update-tables:
 
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -l {0}
 
     steps:
     - name: Checkout repository
