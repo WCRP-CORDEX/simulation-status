@@ -1,13 +1,13 @@
 name: base
 channels:
   - conda-forge
-  - defaults
+  - nodefaults
 dependencies:
   # Python
+  - python ==3.11
   - natsort
-  - pandas
+  - pandas <2
   - seaborn
-  - xarray
   - pyyaml
   # Other
   - pip
