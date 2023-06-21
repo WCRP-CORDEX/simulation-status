@@ -29,7 +29,10 @@ jobs:
         miniforge-variant: Mambaforge
 
     - name: Update tables
-      run: make update
+      run: |
+        which -a python
+        conda activate test
+        make update
        
     - name: Commit
       run: |
