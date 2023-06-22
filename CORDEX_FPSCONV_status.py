@@ -147,7 +147,7 @@ for domain in domains:
       aggfunc = lambda x: ', '.join(x.dropna())
     ).agg(lambda x: ', '.join(x.dropna()))
     inst.name = ('','Institutes')
-    dom_df_matrix = pd.concat([dom_df_matrix, inst])
+    dom_df_matrix = pd.concat([dom_df_matrix, inst.to_frame().T])
     dom_df_matrix = dom_df_matrix.T.set_index([('','Institutes'),dom_df_matrix.columns]).T
     dom_df_matrix.columns.names = ['Institution(s)','RCM']
   # Drop evaluation runs and r0 members (coming from static variables)

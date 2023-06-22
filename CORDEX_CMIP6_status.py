@@ -57,7 +57,7 @@ for domain in domains:
       aggfunc = lambda x: ', '.join(x.dropna())
     ).agg(lambda x: ', '.join(x.dropna()))
     inst.name = ('','Institutes')
-    dom_plans_matrix = pd.concat([dom_plans_matrix, inst])
+    dom_plans_matrix = pd.concat([dom_plans_matrix, inst.to_frame().T])
     dom_plans_matrix = dom_plans_matrix.T.set_index([('','Institutes'),dom_plans_matrix.columns]).T
     dom_plans_matrix.columns.names = ['Institution(s)','RCM']
   f.write(f'''<h2 id="{domain}">{domain}<a href="#top">^</a></h2>
