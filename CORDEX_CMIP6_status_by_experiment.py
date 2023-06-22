@@ -95,7 +95,7 @@ for domain in domains:
         aggfunc = lambda x: ', '.join(sorted(x.dropna()))
       ).agg(lambda x: ', '.join(sorted(x.dropna())))
       inst.name = ('','Institutes')
-      dom_plans_matrix = dom_plans_matrix.append(inst)
+      dom_plans_matrix = pd.concat([dom_plans_matrix, inst])
       dom_plans_matrix = dom_plans_matrix.T.set_index([('','Institutes'),dom_plans_matrix.columns]).T
       dom_plans_matrix.columns.names = ['Institution(s)','RCM']
     title = tconf['title'] if 'title' in tconf else tag

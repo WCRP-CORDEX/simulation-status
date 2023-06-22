@@ -26,14 +26,15 @@ facets = (
 #
 conn = SearchConnection('http://esgf-data.dkrz.de/esg-search', distrib=True)
 logging.getLogger('pyesgf.search.connection').setLevel(loglevel)
-df = pd.DataFrame()
+dflist = []
 for proj in ['CORDEX', 'CORDEX-Reklies']:
   logger.info(f'Retrieving {proj} variables ...')
   ctx = conn.new_context(project = proj)
   dids = [result.dataset_id for result in ctx.search(batch_size=1000, ignore_facet_check=True)]
   datanode_part = re.compile('\|.*$')
   dataset_ids = [datanode_part.sub('', did).split('.') for did in dids]
-  df = df.append(pd.DataFrame(dataset_ids))
+  dflist.append(pd.DataFrame(dataset_ids))
+df = pd.concat(dflist)
 
 df.columns = facets
 df.to_csv('docs/CORDEX_CMIP5_ESGF_all_variables.csv', index = False)

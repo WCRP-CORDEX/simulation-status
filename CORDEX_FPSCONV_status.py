@@ -29,14 +29,15 @@ facets = (
 #conn = SearchConnection('http://esgf-data.dkrz.de/esg-search', distrib=True)
 conn = SearchConnection('https://esgf-node.ipsl.upmc.fr/esg-search', distrib=True)
 logging.getLogger('pyesgf.search.connection').setLevel(loglevel)
-df = pd.DataFrame()
+dflist = []
 for proj in ['cordex-fpsconv','CORDEX-FPSCONV']:
   logger.info(f'Retrieving {proj} variables ...')
   ctx = conn.new_context(project = proj)
   dids = [result.dataset_id for result in ctx.search(batch_size=1000, ignore_facet_check=True)]
   datanode_part = re.compile('\|.*$')
   dataset_ids = [datanode_part.sub('', did).split('.') for did in dids]
-  df = df.append(pd.DataFrame(dataset_ids))
+  dflist.append(pd.DataFrame(dataset_ids))
+df = pd.concat(dflist)
 
 df.columns = facets
 df.to_csv('docs/CORDEX_FPSCONV_ESGF_all_variables.csv', index = False)
@@ -146,7 +147,7 @@ for domain in domains:
       aggfunc = lambda x: ', '.join(x.dropna())
     ).agg(lambda x: ', '.join(x.dropna()))
     inst.name = ('','Institutes')
-    dom_df_matrix = dom_df_matrix.append(inst)
+    dom_df_matrix = pd.concat([dom_df_matrix, inst])
     dom_df_matrix = dom_df_matrix.T.set_index([('','Institutes'),dom_df_matrix.columns]).T
     dom_df_matrix.columns.names = ['Institution(s)','RCM']
   # Drop evaluation runs and r0 members (coming from static variables)
