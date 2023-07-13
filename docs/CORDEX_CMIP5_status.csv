@@ -1394,6 +1394,7 @@ SEA-22,ICTP,NCC-NorESM1-M,rcp26,r1i1p1,RegCM4-7,v0,published
 SEA-22,ICTP,NCC-NorESM1-M,rcp85,r1i1p1,RegCM4-7,v0,published
 SEA-22,RU-CORE,CNRM-CERFACS-CNRM-CM5,historical,r1i1p1,RegCM4-3,v4,published
 SEA-22,RU-CORE,CNRM-CERFACS-CNRM-CM5,rcp45,r1i1p1,RegCM4-3,v4,published
+SEA-22,RU-CORE,CNRM-CERFACS-CNRM-CM5,rcp85,r1i1p1,RegCM4-3,v4,published
 SEA-22,RU-CORE,ICHEC-EC-EARTH,historical,r1i1p1,RegCM4-3,v4,published
 SEA-22,RU-CORE,ICHEC-EC-EARTH,rcp45,r1i1p1,RegCM4-3,v4,published
 SEA-22,RU-CORE,ICHEC-EC-EARTH,rcp85,r1i1p1,RegCM4-3,v4,published
