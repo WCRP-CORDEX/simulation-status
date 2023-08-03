@@ -308,37 +308,37 @@ EUR-11,UCAN,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,NorESM2-MM,r1i1p1f1,ssp12
 EUR-11,UCAN,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,NorESM2-MM,r1i1p1f1,ssp245,planned,2023-12,#ESD #ManySSP
 EUR-11,UCAN,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,NorESM2-MM,r1i1p1f1,ssp370,planned,2023-12,#ESD #ManySSP
 EUR-11,UCAN,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,NorESM2-MM,r1i1p1f1,ssp585,planned,2023-12,#ESD #ManySSP
-EUR-11,CLMcom-GUF,M. Hamouda,CCLM5-0-9-NEMOMED12-3-6,EC-Earth3-Veg,r12i1p1f1,historical,completed,2022-05,#EURcoupled
-EUR-11,CLMcom-GUF,M. Hamouda,CCLM5-0-9-NEMOMED12-3-6,EC-Earth3-Veg,r12i1p1f1,ssp585,completed,2022-05,#EURcoupled
-MED-11,CLMcom-IMS,L. Uzan,ICON-CLM,ERA5,,evaluation,planned,2023-12,
+EUR-11,CLMcom-GUF,M. Hamouda,CCLM5-0-9-NEMOMED12-3-6,ERA5,,evaluation,planned,2023-12,This sim. contributes to both EUR- and MED-CORDEX
+EUR-11,CLMcom-GUF,M. Hamouda,CCLM5-0-9-NEMOMED12-3-6,EC-Earth3-Veg,r12i1p1f1,historical,completed,2022-05,#EURcoupled This sim. contributes to both EUR- and MED-CORDEX
+EUR-11,CLMcom-GUF,M. Hamouda,CCLM5-0-9-NEMOMED12-3-6,EC-Earth3-Veg,r12i1p1f1,ssp585,completed,2022-05,#EURcoupled This sim. contributes to both EUR- and MED-CORDEX
+MED-11,CLMcom-GUF,M. Hamouda,CCLM5-0-9-NEMOMED12-3-6,ERA5,,evaluation,planned,2023-12,This sim. contributes to both EUR- and MED-CORDEX
+MED-11,CLMcom-GUF,M. Hamouda,CCLM5-0-9-NEMOMED12-3-6,EC-Earth3-Veg,r12i1p1f1,historical,completed,2022-05,This sim. contributes to both EUR- and MED-CORDEX
+MED-11,CLMcom-GUF,M. Hamouda,CCLM5-0-9-NEMOMED12-3-6,EC-Earth3-Veg,r12i1p1f1,ssp585,completed,2022-05,This sim. contributes to both EUR- and MED-CORDEX
+MED-11,CLMcom-IMS,L. Uzan,ICON-OASIS-NEMO,ERA5,,evaluation,planned,2023-12,
 MED-11,CNRM,S. Somot,RCSM6,CNRM-ESM2-1,r1i1p1f2,historical,completed,2022-12,
 MED-11,CNRM,S. Somot,RCSM6,CNRM-ESM2-1,r1i1p1f2,ssp585,completed,2022-12,
 MED-11,CNRM,S. Somot,RCSM6X,ERA5,,evaluation,planned,2023-12,
 MED-11,CNRM,S. Somot,RCSM6X,CNRM-ESM2-1,r1i1p1f2,historical,running,2023-12,
 MED-11,CNRM,S. Somot,RCSM6X,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2023-12,
 MED-11,CNRM,S. Somot,RCSM6X,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2023-12,
-MED-11,CNRM,S. Somot,RCSM6X,CNRM-ESM2-1,r1i1p1f2,,planned,2024-12,Considering scenarios ssp245 and/or ssp585
 MED-11,CNRM,S. Somot,RCSM6X,TBD,TBD,historical,planned,2024-12,
 MED-11,CNRM,S. Somot,RCSM6X,TBD,TBD,ssp126,planned,2024-12,
 MED-11,CNRM,S. Somot,RCSM6X,TBD,TBD,ssp370,planned,2024-12,
-MED-11,ENEA,G. Sannino,WRF-MITgcm,ERA5,,evaluation,running,2022-12,
-MED-11,ENEA,G. Sannino,WRF-MITgcm,CESM2,r1i1p1f1,historical,planned,2022-12,
-MED-11,ENEA,G. Sannino,WRF-MITgcm,CESM2,r1i1p1f1,ssp126,planned,2022-12,
-MED-11,ENEA,G. Sannino,WRF-MITgcm,CESM2,r1i1p1f1,ssp245,planned,2022-12,
-MED-11,ENEA,G. Sannino,WRF-MITgcm,CESM2,r1i1p1f1,ssp585,planned,2022-12,
-MED-11,ENEA,G. Sannino,WRF-MITgcm,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2023-05,
-MED-11,ENEA,G. Sannino,WRF-MITgcm,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2023-05,
-MED-11,ENEA,G. Sannino,WRF-MITgcm,MPI-ESM1-2-HR,r1i1p1f1,ssp245,completed,2023-05,
-MED-11,ENEA,G. Sannino,WRF-MITgcm,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2023-12,
-MED-11,ENEA,G. Sannino,WRF-MITgcm,MPI-ESM1-2-HR,r1i1p1f1,ssp585,completed,2023-05,
-MED-11,ENEA,G. Sannino,WRF-MITgcm,EC-Earth3,r1i1p1f1,ssp370,planned,2023-12,
-MED-11,ENEA,G. Sannino,WRF-MITgcm,NorESM2-MM,r1i1p1f1,historical,planned,2022-12,
-MED-11,ENEA,G. Sannino,WRF-MITgcm,NorESM2-MM,r1i1p1f1,ssp126,planned,2022-12,
-MED-11,ENEA,G. Sannino,WRF-MITgcm,NorESM2-MM,r1i1p1f1,ssp245,planned,2022-12,
-MED-11,ENEA,G. Sannino,WRF-MITgcm,NorESM2-MM,r1i1p1f1,ssp585,planned,2022-12,
-MED-11,ICTP,E. Coppola,RegCM5-MITgcm,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2023-12,
-MED-11,ICTP,E. Coppola,RegCM5-MITgcm,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2023-12,
-MED-11,ICTP,E. Coppola,RegCM5-MITgcm,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2023-12,
+MED-11,ENEA,G. Sannino,ENEA-REG,ERA5,,evaluation,completed,2022-12,period 1980-2014
+MED-11,ENEA,G. Sannino,ENEA-REG,ERA5,,evaluation,planned,2023-12,period 1970-2020
+MED-11,ENEA,G. Sannino,ENEA-REG,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2023-05,
+MED-11,ENEA,G. Sannino,ENEA-REG,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2023-05,
+MED-11,ENEA,G. Sannino,ENEA-REG,MPI-ESM1-2-HR,r1i1p1f1,ssp245,completed,2023-05,
+MED-11,ENEA,G. Sannino,ENEA-REG,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2023-12,
+MED-11,ENEA,G. Sannino,ENEA-REG,MPI-ESM1-2-HR,r1i1p1f1,ssp585,completed,2023-05,
+MED-11,ENEA,G. Sannino,ENEA-REG,EC-Earth3,r1i1p1f1,historical,planned,2023-12,
+MED-11,ENEA,G. Sannino,ENEA-REG,EC-Earth3,r1i1p1f1,ssp370,planned,2023-12,
+MED-11,ICTP-OGS,E. Coppola,RegCM-ES,ERA5,,evaluation,planned,2023-12,
+MED-11,ICTP-OGS,E. Coppola,RegCM-ES,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2023-12,
+MED-11,ICTP-OGS,E. Coppola,RegCM-ES,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2023-12,
+MED-11,ICTP-OGS,E. Coppola,RegCM-ES,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2023-12,
+MED-11,IPSL,J. Polcher,RegIPSLv2,ERA5,,evaluation,planned,2023-12,
+MED-11,UBEL,V. Djurdjevic,EBUPOM2e,ERA5,,evaluation,planned,2023-12,
 NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,ERA5,,evaluation,completed,2022-12,Two members with perturbed initial conditions
 NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,CanESM5,r1i1p2f1,historical,completed,2022-01,
 NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,CanESM5,r1i1p2f1,ssp126,completed,2023-04,
