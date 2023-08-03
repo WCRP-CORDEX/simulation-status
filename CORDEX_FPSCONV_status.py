@@ -64,7 +64,7 @@ xticklabels = [f'{v} ({f})' for f,v in matrix.columns]
 ax.set_xticklabels(xticklabels)
 ax.set_xlabel("variable (freq.)")
 ax.set_yticks(0.5+np.arange(len(matrix.index)))
-ax.set_yticklabels(matrix.index)
+ax.set_yticklabels(matrix.index, rotation=0)
 ax.set_aspect('equal')
 plt.savefig('docs/CORDEX_FPSCONV_varlist.png', bbox_inches='tight')
 
