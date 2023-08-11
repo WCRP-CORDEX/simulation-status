@@ -6,6 +6,7 @@ cordex-fpsconv,output,ALP-3,ICTP,ECMWF-ERAINT,evaluation,r1i1p1,RegCM4-7,fpsconv
 cordex-fpsconv,output,ALP-3,ICTP,ECMWF-ERAINT,evaluation,r1i1p1,RegCM4-7,fpsconv-x2yn2-v1,1hr,vas,v20230731
 cordex-fpsconv,output,ALP-3,ICTP,ECMWF-ERAINT,evaluation,r1i1p1,RegCM4-7,fpsconv-x2yn2-v1,1hr,prw,v20230731
 cordex-fpsconv,output,ALP-3,CLMcom-CMCC,ECMWF-ERAINT,evaluation,r1i1p1,CCLM5-0-9,fpsconv-x2yn2-v1,day,tasmin,v20230608
+cordex-fpsconv,output,ALP-3,HCLIMcom,ECMWF-ERAINT,evaluation,r1i1p1,HCLIM38-AROME,fpsconv-x2yn2-v1,day,tasmin,v20230711
 cordex-fpsconv,output,ALP-3,CNRM,ECMWF-ERAINT,evaluation,r1i1p1,AROME41t1,fpsconv-x2yn2-v1,day,pr,v20230620
 cordex-fpsconv,output,ALP-3,CNRM,ECMWF-ERAINT,evaluation,r1i1p1,AROME41t1,fpsconv-x2yn2-v1,day,pr,v20230314
 cordex-fpsconv,output,ALP-3,CNRM,CNRM-CERFACS-CNRM-CM5,rcp85,r1i1p1,AROME41t1,fpsconv-x2yn2-v1,1hr,pr,v20230620
