@@ -205,18 +205,18 @@ EUR-11,HCLIMcom-METNo,A. Dobler,HCLIM43-ALADIN,NorESM2-MM,r1i1p1f1,historical,co
 EUR-11,HCLIMcom-METNo,A. Dobler,HCLIM43-ALADIN,NorESM2-MM,r1i1p1f1,ssp126,planned,2023-12,#EURbalanced #ManyGCM
 EUR-11,HCLIMcom-METNo,A. Dobler,HCLIM43-ALADIN,NorESM2-MM,r1i1p1f1,ssp370,completed,2023-04,#EURbalanced #ManyGCM
 EUR-11,HCLIMcom-METNo,A. Dobler,HCLIM43-ALADIN,NorESM2-MM,r1i1p1f1,ssp585,planned,2023-12,#ManyGCM
-EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,ERA5,,evaluation,running,2023-12,#EURbalanced #ManyGCM
+EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,ERA5,,evaluation,completed,2023-08,#EURbalanced #ManyGCM
 EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,CESM2,r11i1p1f1,historical,planned,2024-12,#ManyGCM
 EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,CESM2,r11i1p1f1,ssp126,planned,2024-12,#ManyGCM
 EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,CESM2,r11i1p1f1,ssp370,planned,2024-12,#ManyGCM
 EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,CNRM-ESM2-1,r1i1p1f2,historical,completed,2023-01,#EURbalanced #ManyGCM
-EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2023-12,#EURbalanced #ManyGCM
-EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2023-12,#EURbalanced #ManyGCM
-EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r1i1p1f1,historical,planned,2023-12,#EURbalanced #EURintvar #ManyGCM #ManySSP
+EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,CNRM-ESM2-1,r1i1p1f2,ssp126,completed,2023-08,#EURbalanced #ManyGCM
+EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,CNRM-ESM2-1,r1i1p1f2,ssp370,completed,2023-08,#EURbalanced #ManyGCM
+EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r1i1p1f1,historical,completed,2023-08,#EURbalanced #EURintvar #ManyGCM #ManySSP
 EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r1i1p1f1,ssp119,planned,2023-12,#EURintvar #ManyGCM #ManySSP
-EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2023-12,#EURbalanced #EURintvar #ManyGCM #ManySSP
+EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r1i1p1f1,ssp126,completed,2023-08,#EURbalanced #EURintvar #ManyGCM #ManySSP
 EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r1i1p1f1,ssp245,planned,2023-12,#EURintvar #ManyGCM #ManySSP
-EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2023-12,#EURbalanced #EURintvar #ManyGCM #ManySSP
+EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r1i1p1f1,ssp370,running,2023-12,#EURbalanced #EURintvar #ManyGCM #ManySSP
 EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r1i1p1f1,ssp585,planned,2023-12,#EURintvar #ManyGCM #ManySSP
 EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r2i1p1f1,historical,planned,2023-12,#EURintvar #ManySSP
 EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r2i1p1f1,ssp119,planned,2023-12,#EURintvar #ManySSP
@@ -231,8 +231,8 @@ EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r3i1p1f1,ssp245,pla
 EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r3i1p1f1,ssp370,planned,2023-12,#EURintvar #ManySSP
 EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r3i1p1f1,ssp585,planned,2023-12,#EURintvar #ManySSP
 EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,MIROC6,r1i1p1f1,historical,completed,2023-01,#EURbalanced #ManyGCM
-EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,MIROC6,r1i1p1f1,ssp126,planned,2023-12,#EURbalanced #ManyGCM
-EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,MIROC6,r1i1p1f1,ssp370,planned,2023-12,#EURbalanced #ManyGCM
+EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,MIROC6,r1i1p1f1,ssp126,completed,2023-08,#EURbalanced #ManyGCM
+EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,MIROC6,r1i1p1f1,ssp370,completed,2023-08,#EURbalanced #ManyGCM
 EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2023-12,#EURbalanced #ManyGCM
 EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2023-12,#EURbalanced #ManyGCM
 EUR-11,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2023-12,#EURbalanced #ManyGCM
