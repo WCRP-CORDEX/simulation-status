@@ -1,4 +1,4 @@
-CAM-11:
+CAM-12:
 
   ESD:
     title: Empirical-statistical downscaling
@@ -7,7 +7,7 @@ CAM-11:
       activities that may contribute to CORDEX-CMIP6 ESD. Standard, perfect-prog
       ESD efforts producing gridded output on a EUR-11 compatible grid.
 
-EUR-11:
+EUR-12:
 
   EURbalanced:
     title: EUR-11 balanced matrix experiment
