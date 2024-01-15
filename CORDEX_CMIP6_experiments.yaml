@@ -5,29 +5,29 @@ CAM-12:
     description: >
       Preliminary collection of various empirical-statistical downscaling (ESD) 
       activities that may contribute to CORDEX-CMIP6 ESD. Standard, perfect-prog
-      ESD efforts producing gridded output on a EUR-11 compatible grid.
+      ESD efforts producing gridded output on a EUR-12 compatible grid.
 
 EUR-12:
 
   EURbalanced:
-    title: EUR-11 balanced matrix experiment
+    title: EUR-12 balanced matrix experiment
     description: >
       The EURO-CORDEX balanced matrix experiment comprises simulations filling a
       GCM-RCM-SSP combination matrix with a fractional factorial design.
   
   EURexpress:
-    title: EUR-11 balanced "express" stream (ECD by 2023-12)
+    title: EUR-12 balanced "express" stream (ECD by 2024-06)
     description: >
-      Expected status of the balanced matrix experiment by 2023-12 (according to
+      Expected status of the balanced matrix experiment by 2024-06 (according to
       expected completion date provided).
     condition:
       - tag:EURbalanced
       - experiment != 'evaluation'
-      - estimated_completion_date <= '2023-12'
+      - estimated_completion_date <= '2024-06'
       - estimated_completion_date > '2020-01'
 
   EURexpress24:
-    title: EUR-11 balanced (ECD by 2024-12)
+    title: EUR-12 balanced (ECD by 2024-12)
     description: >
       Expected status of the balanced matrix experiment by 2024-12 (according to
       expected completion date provided).
@@ -38,7 +38,7 @@ EUR-12:
       - estimated_completion_date > '2020-01'
 
   EURexpress25:
-    title: EUR-11 balanced (ECD by 2025-12)
+    title: EUR-12 balanced (ECD by 2025-12)
     description: >
       Expected status of the balanced matrix experiment by 2025-12 (according to
       expected completion date provided).
@@ -117,7 +117,7 @@ EUR-12:
     description: >
       Preliminary collection of various empirical-statistical downscaling (ESD)
       activities that may contribute to CORDEX-CMIP6 ESD. Standard, perfect-prog
-      ESD efforts producing gridded output on a EUR-11 compatible grid.
+      ESD efforts producing gridded output on a EUR-12 compatible grid.
 
   Emulator:
     title: Statistical emulators

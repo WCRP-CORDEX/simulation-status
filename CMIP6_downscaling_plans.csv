@@ -251,10 +251,10 @@ EUR-12,CLMcom-LIST,M. Sulis,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp585,planned,2023
 EUR-12,CLMcom-WEGC,H. Truhetz,ICON-CLM,CMCC-CM2-SR5,r1i1p1f1,historical,planned,2024-12,#ManyGCM
 EUR-12,CLMcom-WEGC,H. Truhetz,ICON-CLM,CMCC-CM2-SR5,r1i1p1f1,ssp370,planned,2024-12,#ManyGCM
 EUR-12,CNRM-MF,P. Nabat,ALADIN64E1,ERA5,,evaluation,completed,2023-11,#EURbalanced
-EUR-12,CNRM-MF,P. Nabat,ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,historical,running,2023-12,#EURbalanced Started in 1850
-EUR-12,CNRM-MF,P. Nabat,ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2024-12,#EURbalanced
+EUR-12,CNRM-MF,P. Nabat,ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,historical,running,2023-12,#EURbalanced #ManySSP Started in 1850
+EUR-12,CNRM-MF,P. Nabat,ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2024-12,#EURbalanced #ManySSP
 EUR-12,CNRM-MF,P. Nabat,ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp245,planned,2024-12,#ManySSP
-EUR-12,CNRM-MF,P. Nabat,ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2024-12,#EURbalanced
+EUR-12,CNRM-MF,P. Nabat,ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2024-12,#EURbalanced #ManySSP
 EUR-12,CNRM-MF,P. Nabat,ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp585,planned,2024-12,#ManySSP
 EUR-12,CNRM-MF,P. Nabat,ALADIN64E1,CMCC-CM2-SR5,r1i1p1f1,historical,planned,2025-12,#EURbalanced
 EUR-12,CNRM-MF,P. Nabat,ALADIN64E1,CMCC-CM2-SR5,r1i1p1f1,ssp126,planned,2025-12,#EURbalanced
