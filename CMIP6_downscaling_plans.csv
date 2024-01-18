@@ -298,26 +298,26 @@ EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r1i1p1f1,historical
 EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r1i1p1f1,ssp119,planned,2023-12,#EURintvar #ManyGCM #ManySSP
 EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r1i1p1f1,ssp126,completed,2023-08,#EURbalanced #EURintvar #ManyGCM #ManySSP
 EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r1i1p1f1,ssp245,planned,2023-12,#EURintvar #ManyGCM #ManySSP
-EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r1i1p1f1,ssp370,running,2023-12,#EURbalanced #EURintvar #ManyGCM #ManySSP
+EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r1i1p1f1,ssp370,completed,2023-12,#EURbalanced #EURintvar #ManyGCM #ManySSP
 EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r1i1p1f1,ssp585,planned,2023-12,#EURintvar #ManyGCM #ManySSP
 EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r2i1p1f1,historical,completed,2023-08,#EURintvar #ManySSP
 EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r2i1p1f1,ssp119,planned,2023-12,#EURintvar #ManySSP
-EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r2i1p1f1,ssp126,planned,2023-12,#EURintvar #ManySSP
+EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r2i1p1f1,ssp126,completed,2023-12,#EURintvar #ManySSP
 EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r2i1p1f1,ssp245,planned,2023-12,#EURintvar #ManySSP
-EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r2i1p1f1,ssp370,planned,2023-12,#EURintvar #ManySSP
+EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r2i1p1f1,ssp370,completed,2023-12,#EURintvar #ManySSP
 EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r2i1p1f1,ssp585,planned,2023-12,#EURintvar #ManySSP
-EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r3i1p1f1,historical,planned,2023-12,#EURintvar #ManySSP
+EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r3i1p1f1,historical,completed,2023-12,#EURintvar #ManySSP
 EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r3i1p1f1,ssp119,planned,2023-12,#EURintvar #ManySSP
-EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r3i1p1f1,ssp126,planned,2023-12,#EURintvar #ManySSP
+EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r3i1p1f1,ssp126,completed,2023-12,#EURintvar #ManySSP
 EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r3i1p1f1,ssp245,planned,2023-12,#EURintvar #ManySSP
-EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r3i1p1f1,ssp370,planned,2023-12,#EURintvar #ManySSP
+EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r3i1p1f1,ssp370,completed,2023-12,#EURintvar #ManySSP
 EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,EC-Earth3-Veg,r3i1p1f1,ssp585,planned,2023-12,#EURintvar #ManySSP
 EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,MIROC6,r1i1p1f1,historical,completed,2023-01,#EURbalanced #ManyGCM
 EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,MIROC6,r1i1p1f1,ssp126,completed,2023-08,#EURbalanced #ManyGCM
 EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,MIROC6,r1i1p1f1,ssp370,completed,2023-08,#EURbalanced #ManyGCM
-EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2023-12,#EURbalanced #ManyGCM
-EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2023-12,#EURbalanced #ManyGCM
-EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2023-12,#EURbalanced #ManyGCM
+EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2023-12,#EURbalanced #ManyGCM
+EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2023-12,#EURbalanced #ManyGCM
+EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,MPI-ESM1-2-HR,r1i1p1f1,ssp370,completed,2023-12,#EURbalanced #ManyGCM
 EUR-12,ICTP,E. Coppola,RegCM,ERA5,,evaluation,planned,2022-12,#EURbalanced
 EUR-12,ICTP,E. Coppola,RegCM,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-12,#EURbalanced
 EUR-12,ICTP,E. Coppola,RegCM,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2022-12,#EURbalanced
