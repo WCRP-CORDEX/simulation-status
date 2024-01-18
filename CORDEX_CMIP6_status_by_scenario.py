@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 import datetime
-from pyesgf.search import SearchConnection
 import natsort as ns
 import numpy as np
 import pandas as pd
 import re
+from funs import html_style
+from pyesgf.search import SearchConnection
 
 df = pd.read_csv('CMIP6_downscaling_plans.csv')
 
@@ -22,21 +23,7 @@ domains = sorted(list(set(df.domain)))
 f = open(f'docs/CORDEX_CMIP6_status_by_scenario.html','w')
 f.write(f'''<!DOCTYPE html>
 <html><head>
-<style>
-body {{ padding-bottom: 600px; }}
-tr:hover {{background-color:#f5f5f5;}}
-th, td {{text-align: center; padding: 3px;}}
-table {{border-collapse: collapse;}}
-span.planned {{color: #FF9999}}
-span.running {{color: #009900}}
-span.completed {{color: black; font-weight: bold}}
-span.published {{color: #3399FF; font-weight: bold}}
-a {{color: DodgerBlue}}
-a:link {{ text-decoration: none; }}
-a:visited {{ text-decoration: none; }}
-a:hover {{ text-decoration: underline; }}
-a:active {{ text-decoration: underline;}}
-</style>
+{html_style}
 </head><body>
 <h1> CORDEX-CMIP6 downscaling plans summary tables (split by SSP)</h1>
 <p style="text-align: right;">(Version: {datetime.datetime.now().strftime("%Y-%m-%d %H:%M")})</p>

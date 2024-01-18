@@ -1,6 +1,7 @@
 import datetime
 import pandas as pd
 import yaml
+from funs import html_style
 
 collapse_institutions = True
 
@@ -14,22 +15,7 @@ domains = config.keys()
 f = open(f'docs/CORDEX_CMIP6_status_by_experiment.html','w')
 f.write(f'''<!DOCTYPE html>
 <html><head>
-<style>
-body {{ padding-bottom: 600px; }}
-tr:hover {{background-color:#f5f5f5;}}
-th, td {{text-align: center; padding: 3px;}}
-table {{border-collapse: collapse;}}
-span.planned {{color: #F54d4d; font-weight: bold}}
-span.running {{color: #009900; font-weight: bold}}
-span.completed {{color: black; font-weight: bold}}
-span.published {{color: #3399FF; font-weight: bold}}
-a {{color: DodgerBlue}}
-a:link {{ text-decoration: none; }}
-a:visited {{ text-decoration: none; }}
-a:hover {{ text-decoration: underline; }}
-a:active {{ text-decoration: underline;}}
-ul.twocol {{ columns: 2; -webkit-columns: 2; -moz-columns: 2; }}
-</style>
+{html_style}
 </head><body>
 <h1 id="top"> CORDEX-CMIP6 experiment summary tables</h1>
 <p style="text-align: right;">(Version: {datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")})</p>

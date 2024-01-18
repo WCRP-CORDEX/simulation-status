@@ -1,5 +1,29 @@
 import pandas as pd
 
+span_style = '''
+span.planned {color: #F54d4d; font-weight: bold}
+span.running {color: #009900; font-weight: bold}
+span.completed {color: black; font-weight: bold}
+span.published {color: #3399FF; font-weight: bold}
+'''
+
+html_style = '''
+<style>
+body { padding-bottom: 600px; }
+tr:hover {background-color:#f5f5f5;}
+th, td {text-align: center; padding: 3px;}
+table {border-collapse: collapse;}''' + span_style + '''
+a {color: DodgerBlue}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:active { text-decoration: underline;}
+ul.twocol { columns: 2; -webkit-columns: 2; -moz-columns: 2; }
+</style>
+'''
+
+table_props = [('width', '100px')]
+
 def addtag(word, field):
   rval = word
   if (field == 'comments') and word.startswith('#'):
@@ -40,9 +64,9 @@ $(document).ready( function () {
 ''')
   if title:
     fp.write(f'<title>{title}</title>')
-  fp.write('''
+  fp.write(f'''
 <style>
-span.tag {
+span.tag {{
   background-color: #c5def5;
   padding: 0 10px;
   font-size: 12px;
@@ -50,12 +74,8 @@ span.tag {
   line-height: 22px !important;
   border: 1px solid transparent;
   border-radius: 2em;
-}
-span.selected {color: #3399FF}
-span.planned {color: #FF9999}
-span.running {color: #009900}
-span.completed {color: black; font-weight: bold}
-span.published {color: #3399FF; font-weight: bold}
+}}
+{span_style}
 </style>
 </head>
 <body>

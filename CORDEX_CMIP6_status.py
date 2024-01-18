@@ -1,5 +1,6 @@
 import datetime
 import pandas as pd
+from funs import html_style, table_props
 
 collapse_institutions = True
 
@@ -9,21 +10,7 @@ domains = sorted(list(set(plans.domain)))
 f = open(f'docs/CORDEX_CMIP6_status.html','w')
 f.write(f'''<!DOCTYPE html>
 <html><head>
-<style>
-body {{ padding-bottom: 600px; }}
-tr:hover {{background-color:#f5f5f5;}}
-th, td {{text-align: center; padding: 3px;}}
-table {{border-collapse: collapse;}}
-span.planned {{color: #FF9999}}
-span.running {{color: #009900}}
-span.completed {{color: black; font-weight: bold}}
-span.published {{color: #3399FF; font-weight: bold}}
-a {{color: DodgerBlue}}
-a:link {{ text-decoration: none; }}
-a:visited {{ text-decoration: none; }}
-a:hover {{ text-decoration: underline; }}
-a:active {{ text-decoration: underline;}}
-</style>
+{html_style}
 </head><body>
 <h1 id="top"> CORDEX-CMIP6 downscaling plans summary tables</h1>
 <p style="text-align: right;">(Version: {datetime.datetime.now().strftime("%Y-%m-%d %H:%M")})</p>
@@ -33,7 +20,7 @@ To contribute/update simulations use this <a href="https://docs.google.com/docum
 <p style="text-align:left"> Domains: |
 ''')
 [f.write(f'<a href="#{dom}">{dom}</a> | ') for dom in domains]
-d1 = dict(selector=".level0", props=[('min-width', '130px')])
+d1 = dict(selector=".level1", props=table_props)
 for domain in domains:
   dom_plans = plans[plans.domain == domain]
   dom_plans = dom_plans.assign(htmlstatus=pd.Series('<span sort="' + dom_plans.experiment +'" class="' + dom_plans.status + '">' + dom_plans.experiment + '</span>', index=dom_plans.index))
