@@ -75,7 +75,7 @@ for domain in domains:
       continue
     collapse_institutions = tconf['collapse_institutions'] if 'collapse_institutions' in tconf else collapse_institutions
     df = df.assign(htmlstatus=pd.Series('<span sort="' + df.experiment +'" class="' + df.status + '">' + df.experiment + '</span>', index=df.index))
-    df = df.assign(model_id=pd.Series(df.institute + '-' + df.rcm_name, index=df.index))
+    df = df.assign(model_id=pd.Series(df.institute + '_' + df.rcm_name, index=df.index))
     column_id = 'rcm_name' if collapse_institutions else 'model_id'
     dom_plans_matrix = df.pivot_table(
       index = ('driving_model', 'ensemble'),

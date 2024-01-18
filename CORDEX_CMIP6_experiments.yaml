@@ -91,7 +91,7 @@ EUR-12:
   ICLMcom:
     title: CLM community (ICON-CLM)
     condition:
-      - rcm_name == 'ICON-CLM'
+      - rcm_name.str.startswith('ICON-CLM')
     collapse_institutions: False
 
   eWRFcom:
