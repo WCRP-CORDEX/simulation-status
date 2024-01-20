@@ -1,7 +1,7 @@
 import datetime
 import pandas as pd
 import yaml
-from funs import html_style
+from funs import html_style, table_props
 
 collapse_institutions = True
 
@@ -33,7 +33,7 @@ f.write(f'''
 </ul>
 ''')
 
-d1 = dict(selector=".level0", props=[('min-width', '130px')])
+d1 = dict(selector=".level1", props=table_props)
 for domain in domains:
   dom_plans = plans[plans.domain == domain]
   tags = sorted(list(set(filter(lambda x: x.startswith('#'), dom_plans.comments.str.split(' ').agg(sum)))))

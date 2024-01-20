@@ -85,7 +85,7 @@ EUR-12:
   CCLMcom:
     title: CLM community (COSMO-CLM)
     condition:
-      - rcm_name == 'COSMO-CLM'
+      - rcm_name.str.startswith('COSMO')
     collapse_institutions: False
 
   ICLMcom:
@@ -97,7 +97,7 @@ EUR-12:
   eWRFcom:
     title: EURO-CORDEX WRF community
     condition:
-      - rcm_name == 'WRF'
+      - rcm_name.str.startswith('WRF')
     collapse_institutions: False
 
   HCLIMcom:
