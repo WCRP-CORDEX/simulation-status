@@ -231,6 +231,26 @@ EUR-12,CLMcom-FZJ,K. Goergen,COSMO5-01-CLM3-5-0-ParFlow3-9-0,MPI-ESM1-2-HR,r1i1p
 EUR-12,CLMcom-FZJ,K. Goergen,COSMO5-01-CLM3-5-0-ParFlow3-9-0,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2023-12,#EURcoupled
 EUR-12,CLMcom-FZJ,K. Goergen,COSMO5-01-CLM3-5-0-ParFlow3-9-0,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2023-12,#EURcoupled
 EUR-12,CLMcom-FZJ,K. Goergen,COSMO-CLM,MIROC6,r1i1p1f1,ssp126,planned,2023-12,#EURbalanced
+EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,ERA5,,evaluation,running,2024-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2024-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2024-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2024-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,EC-Earth3-Veg,r1i1p1f1,historical,running,2024-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2024-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2024-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,MIROC6,r1i1p1f1,historical,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,MIROC6,r1i1p1f1,ssp126,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,MIROC6,r1i1p1f1,ssp370,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,ERA5,,evaluation,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,EC-Earth3-Veg,r1i1p1f1,historical,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,MIROC6,r1i1p1f1,historical,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,MIROC6,r1i1p1f1,ssp126,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,MIROC6,r1i1p1f1,ssp370,planned,2025-12,#EURcoupled
 EUR-12,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,ERA5,,evaluation,completed,2022-06,#EURbalanced #EURcoupled #NUKLEUS #ManyGCM
 EUR-12,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,historical,completed,2022-10,#EURbalanced #EURcoupled #NUKLEUS #ManyGCM
 EUR-12,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp370,completed,2022-10,#EURbalanced #EURcoupled #NUKLEUS #ManyGCM
@@ -472,6 +492,13 @@ MENA-25,DGM-UIZ,K. El Rhaz / M. Rachid,WRF,TBD,TBD,ssp585,planned,2023-12,
 SAM-25,CIMA,L. Fita,RegIPSL,ERA5,,evaluation,completed,2022-01,20-km resolution
 SAM-25,CIMA,L. Fita,RegIPSL,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2023-12,
 SAM-25,CIMA,L. Fita,RegIPSL,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2023-12,
+SEA-12,MOHC,G.Redmond,HadREM3-GA7-05,ERA5,,evaluation,running,2024-03,
+SEA-12,MOHC,G.Redmond,HadREM3-GA7-05,EC-EARTH3-Veg,r1i1p1f1,historical,running,2024-04,
+SEA-12,MOHC,G.Redmond,HadREM3-GA7-05,NorESM2-MM,r1i1p1f1,historical,running,2024-04,
+SEA-12,MOHC,G.Redmond,HadREM3-GA7-05,UKESM1-0-LL,r1i1p1f2,historical,running,2024-04,
+SEA-12,MOHC,G.Redmond,HadREM3-GA7-05,EC-EARTH3-Veg,r1i1p1f1,ssp370,planned,,
+SEA-12,MOHC,G.Redmond,HadREM3-GA7-05,NorESM2-MM,r1i1p1f1,ssp370,planned,,
+SEA-12,MOHC,G.Redmond,HadREM3-GA7-05,UKESM1-0-LL,r1i1p1f2,ssp370,planned,,
 SEA-25,MET-Malaysia,M. F. Ammar,WRF,ERA5,,evaluation,planned,2022-12,
 SEA-25,MET-Malaysia,M. F. Ammar,WRF,CNRM-ESM2-1,TBD,historical,planned,2022-12,
 SEA-25,MET-Malaysia,M. F. Ammar,WRF,CNRM-ESM2-1,TBD,ssp119,planned,2023-12,
