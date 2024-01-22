@@ -1,3 +1,4 @@
+import datetime
 import pandas as pd
 
 span_style = '''
@@ -22,7 +23,44 @@ ul.twocol { columns: 2; -webkit-columns: 2; -moz-columns: 2; }
 </style>
 '''
 
+html_legend = '''
+      <p style="font-size: smaller;"> Colour legend:
+        <span class="planned">planned</span>
+        <span class="running">running</span>
+        <span class="completed">completed</span>
+        <span class="published">published</span>
+      </p>
+'''
+
 table_props = [('width', '100px')]
+
+def html_header(title = 'CORDEX-CMIP6 downscaling plans'):
+  return(f'''<!DOCTYPE html>
+<html><head>
+{html_style}
+</head><body>
+<h1 id="top">{title}</h1>
+<div style="display:table;width:100%;">
+  <div style="display:table-row;">
+    <div style="display:table-cell;width:50%;">
+      <a href="https://wcrp-cordex.github.io/simulation-status">Back to main</a> or see tables by 
+      <a href="./CORDEX_CMIP6_status.html">domain</a>,
+      <a href="./CORDEX_CMIP6_status_by_scenario.html">scenario</a> or
+      <a href="./CORDEX_CMIP6_status_by_experiment.html">experiment</a>
+    </div>
+    <div style="display:table-cell;text-align:right;width:50%;">
+      (Version: {datetime.datetime.now().strftime("%Y-%m-%d %H:%M")})
+    </div>
+  </div>
+</div>
+<p style="text-align: justify;">
+Simulation status according to CORDEX-CMIP6 downscaling plans reported by the groups and collected in <a href="https://github.com/WCRP-CORDEX/simulation-status/blob/main/CMIP6_downscaling_plans.csv">CMIP6_downscaling_plans.csv</a>. Check that file for further details.
+To contribute/update simulations use this <a href="https://docs.google.com/document/d/1Jy53yvB9SDOiWcwKRJc_HpWVgmjxZhy-qVviHl6ymDM/edit?usp=sharing">Google doc</a>.
+'''
+  )
+
+def html_footer():
+  return('</body></html>')
 
 def addtag(word, field):
   rval = word

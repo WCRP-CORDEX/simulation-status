@@ -1,7 +1,6 @@
-import datetime
 import pandas as pd
 import yaml
-from funs import html_style, table_props
+from funs import html_header, html_footer, html_legend, table_props
 
 collapse_institutions = True
 
@@ -13,25 +12,10 @@ with open('CORDEX_CMIP6_experiments.yaml') as fp:
 domains = config.keys()
 
 f = open(f'docs/CORDEX_CMIP6_status_by_experiment.html','w')
-f.write(f'''<!DOCTYPE html>
-<html><head>
-{html_style}
-</head><body>
-<h1 id="top"> CORDEX-CMIP6 experiment summary tables</h1>
-<p style="text-align: right;">(Version: {datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")})</p>
-<p style="text-align: justify;">
-Simulation status for different experiments within domains, as collected from the CORDEX-CMIP6 downscaling plans reported by the groups in <a href="https://github.com/WCRP-CORDEX/simulation-status/blob/main/CMIP6_downscaling_plans.csv">CMIP6_downscaling_plans.csv</a>. Check that file for further details. Experiment descriptions are provided at <a href="https://github.com/WCRP-CORDEX/simulation-status/blob/main/CORDEX_CMIP6_experiments.yaml">CORDEX_CMIP6_experiments.yaml</a>.
-To contribute/update simulations use this <a href="https://docs.google.com/document/d/1Jy53yvB9SDOiWcwKRJc_HpWVgmjxZhy-qVviHl6ymDM/edit?usp=sharing">Google doc</a>.
-<p style="text-align: justify;">
-See also other views of these simulations as a single table <a href="https://wcrp-cordex.github.io/simulation-status/CORDEX_CMIP6_status.html">per domain</a> or <a href="https://wcrp-cordex.github.io/simulation-status/CORDEX_CMIP6_status_by_scenario.html">per SSP</a>.
-<ul>
-''')
-
+f.write(html_header('CORDEX-CMIP6 experiment summary tables'))
+f.write('<ul>')
 [f.write(f'<li><a href="#{i}">{i}</a></li>') for i in domains]
-
-f.write(f'''
-</ul>
-''')
+f.write('</ul>')
 
 d1 = dict(selector=".level1", props=table_props)
 for domain in domains:
@@ -90,12 +74,7 @@ for domain in domains:
     f.write(f'''<h3 id="{domain}-{tag}">{title} <a href="#{domain}">^</a></h3>
       <p> {descr}
       {url}
-      <p style="font-size: smaller;"> Colour legend:
-        <span class="planned">planned</span>
-        <span class="running">running</span>
-        <span class="completed">completed</span>
-        <span class="published">published</span>
-      </p>
+      {html_legend}
     ''')
     f.write(dom_plans_matrix.style
        .set_properties(**{'font-size':'8pt', 'border':'1px lightgrey solid !important'})
@@ -108,5 +87,5 @@ for domain in domains:
        .replace('historical','hist')
     )
     collapse_institutions = True
-f.write('</body></html>')
+f.write(html_footer())
 f.close()
