@@ -206,7 +206,7 @@ EUR-12,EURO-CORDEX,,. Comunity selected GCMs,EC-Earth3-Veg,r1i1p1f1,selected,sel
 EUR-12,EURO-CORDEX,,. Comunity selected GCMs,MIROC6,r1i1p1f1,selected,selected,,Model selected in EURO-CORDEX GA 2022
 EUR-12,EURO-CORDEX,,. Comunity selected GCMs,MPI-ESM1-2-HR,r1i1p1f1,selected,selected,,Model selected in EURO-CORDEX GA 2022
 EUR-12,EURO-CORDEX,,. Comunity selected GCMs,NorESM2-MM,r1i1p1f1,selected,selected,,Model selected in EURO-CORDEX GA 2022
-EUR-12,AUTH,E. Katragkou / V. Pavlidis,WRF451Q,ERA5,,evaluation,planned,2024-06,#EURbalanced
+EUR-12,AUTH,E. Katragkou / V. Pavlidis,WRF451Q,ERA5,,evaluation,running,2024-06,#EURbalanced
 EUR-12,AUTH,E. Katragkou / V. Pavlidis,WRF451Q,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2024-12,#EURbalanced #ManySSP
 EUR-12,AUTH,E. Katragkou / V. Pavlidis,WRF451Q,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2024-12,#EURbalanced #ManySSP
 EUR-12,BCCR,S. Sobolowski / O. Gokturk,WRF451Q,NorESM2-MM,r1i1p1f1,historical,running,2024-04,#EURbalanced
@@ -225,12 +225,12 @@ EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,COSMO-CLM,CMCC-CM2-SR5,
 EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,COSMO-CLM,CMCC-CM2-SR5,r1i1p1f1,ssp370,planned,2024-12,#EURbalanced #ManyGCM
 EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2023-12,#ManyGCM
 EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2023-12,#ManyGCM
-EUR-12,CLMcom-FZJ,K. Goergen,COSMO5-01-CLM3-5-0-ParFlow3-9-0,ERA5,,evaluation,running,2023-06,#EURcoupled COSMO-CLM + Community Land Model + ParFlow hydrological model. There are currently 2 runs: 3D subsurface hydrodynmics and one with 3D subsurface hydrodynamics and human water use; a run with 1D subsurface hydrodynamics might be added
-EUR-12,CLMcom-FZJ,K. Goergen,COSMO5-01-CLM3-5-0-ParFlow3-9-0,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2023-12,#EURcoupled
-EUR-12,CLMcom-FZJ,K. Goergen,COSMO5-01-CLM3-5-0-ParFlow3-9-0,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2023-12,#EURcoupled
-EUR-12,CLMcom-FZJ,K. Goergen,COSMO5-01-CLM3-5-0-ParFlow3-9-0,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2023-12,#EURcoupled
+EUR-12,CLMcom-FZJ,K. Goergen,COSMO5-01-CLM3-5-0-ParFlow3-12-0,ERA5,,evaluation,completed,2023-12,#EURcoupled COSMO-CLM + Community Land Model + ParFlow hydrological model. There are currently 2 runs: 3D subsurface hydrodynmics and one with 3D subsurface hydrodynamics and human water use; a run with 1D subsurface hydrodynamics might be added
+EUR-12,CLMcom-FZJ,K. Goergen,COSMO5-01-CLM3-5-0-ParFlow3-12-0,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2024-06,#EURcoupled
+EUR-12,CLMcom-FZJ,K. Goergen,COSMO5-01-CLM3-5-0-ParFlow3-12-0,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2024-06,#EURcoupled
+EUR-12,CLMcom-FZJ,K. Goergen,COSMO5-01-CLM3-5-0-ParFlow3-12-0,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2024-06,#EURcoupled
 EUR-12,CLMcom-FZJ,K. Goergen,COSMO-CLM,MIROC6,r1i1p1f1,ssp126,planned,2023-12,#EURbalanced
-EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,ERA5,,evaluation,running,2024-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,ERA5,,evaluation,running,2024-12,#EURcoupled ORAS5 BC in the ocean
 EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2024-12,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2024-12,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2024-12,#EURcoupled
@@ -240,7 +240,7 @@ EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,EC-Earth3-Veg,r1i1p1f1,ssp
 EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,MIROC6,r1i1p1f1,historical,planned,2025-12,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,MIROC6,r1i1p1f1,ssp126,planned,2025-12,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,MIROC6,r1i1p1f1,ssp370,planned,2025-12,#EURcoupled
-EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,ERA5,,evaluation,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,ERA5,,evaluation,planned,2025-12,#EURcoupled ORAS5 BC in the ocean
 EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2025-12,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2025-12,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2025-12,#EURcoupled
@@ -257,9 +257,9 @@ EUR-12,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MIROC6,r1i1p1f1,histo
 EUR-12,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MIROC6,r1i1p1f1,ssp370,completed,2022-10,#EURbalanced #NUKLEUS #ManyGCM
 EUR-12,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2022-12,#EURbalanced #EURcoupled #NUKLEUS #ManyGCM
 EUR-12,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,running,2023-04,#EURbalanced #EURcoupled #NUKLEUS #ManyGCM
-EUR-12,CLMcom-IMWM,A. Jaczewski,COSMO-CLM,NorESM2-MM,r1i1p1f1,historical,planned,2023-12,#ManyGCM
-EUR-12,CLMcom-IMWM,A. Jaczewski,COSMO-CLM,NorESM2-MM,r1i1p1f1,ssp126,planned,2023-12,#ManyGCM
-EUR-12,CLMcom-IMWM,A. Jaczewski,COSMO-CLM,NorESM2-MM,r1i1p1f1,ssp370,planned,2023-12,#ManyGCM
+EUR-12,CLMcom-IMWM,A. Jaczewski,COSMO-CLM,NorESM2-MM,r1i1p1f1,historical,planned,2024-12,#ManyGCM
+EUR-12,CLMcom-IMWM,A. Jaczewski,COSMO-CLM,NorESM2-MM,r1i1p1f1,ssp126,planned,2024-12,#ManyGCM
+EUR-12,CLMcom-IMWM,A. Jaczewski,COSMO-CLM,NorESM2-MM,r1i1p1f1,ssp370,planned,2024-12,#ManyGCM
 EUR-12,CLMcom-IMWM,A. Jaczewski,ICON-CLM,NorESM2-MM,r1i1p1f1,historical,planned,2025-12,#ManyGCM
 EUR-12,CLMcom-IMWM,A. Jaczewski,ICON-CLM,NorESM2-MM,r1i1p1f1,ssp126,planned,2025-12,#ManyGCM
 EUR-12,CLMcom-IMWM,A. Jaczewski,ICON-CLM,NorESM2-MM,r1i1p1f1,ssp370,planned,2025-12,#ManyGCM
@@ -331,7 +331,7 @@ EUR-12,HCLIMcom-DMI,O. B. Christensen,HCLIM43-ALADIN,IPSL-CM6A-LR,r1i1p1f1,ssp37
 EUR-12,HCLIMcom-METNo,A. Dobler,HCLIM43-ALADIN,NorESM2-MM,r1i1p1f1,historical,completed,2023-01,#EURbalanced #ManyGCM
 EUR-12,HCLIMcom-METNo,A. Dobler,HCLIM43-ALADIN,NorESM2-MM,r1i1p1f1,ssp126,completed,2023-12,#EURbalanced #ManyGCM
 EUR-12,HCLIMcom-METNo,A. Dobler,HCLIM43-ALADIN,NorESM2-MM,r1i1p1f1,ssp370,completed,2023-04,#EURbalanced #ManyGCM
-EUR-12,HCLIMcom-METNo,A. Dobler,HCLIM43-ALADIN,NorESM2-MM,r1i1p1f1,ssp585,running,2024-02,#ManyGCM
+EUR-12,HCLIMcom-METNo,A. Dobler,HCLIM43-ALADIN,NorESM2-MM,r1i1p1f1,ssp585,completed,2024-01,#ManyGCM
 EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,ERA5,,evaluation,completed,2023-08,#EURbalanced #ManyGCM
 EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,CESM2,r11i1p1f1,historical,planned,2024-12,#ManyGCM
 EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,CESM2,r11i1p1f1,ssp126,planned,2024-12,#ManyGCM
@@ -376,7 +376,7 @@ EUR-12,ICTP,E. Coppola,RegCM,NorESM2-MM,r1i1p1f1,ssp370,planned,2022-12,#EURbala
 EUR-12,IDL,P. Soares / R. M. Cardoso,WRF451Q,ERA5,,evaluation,running,2024-04,#EURbalanced
 EUR-12,IDL,P. Soares / R. M. Cardoso,WRF451Q,MPI-ESM1-2-HR,r1i1p1f1,ssp245,planned,2025-08,#ManySSP Split of scenarios TBD among AUTH CESAM and IDL
 EUR-12,IDL,P. Soares / R. M. Cardoso,WRF451Q,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2024-12,#EURbalanced #ManySSP Split of scenarios TBD among AUTH CESAM and IDL
-EUR-12,IMWM,M. Figurski / A. Jaczewski,WRF451Q,CMCC-CM2-SR5,r1i1p1f1,historical,planned,2024-12,#EURbalanced
+EUR-12,IMWM,M. Figurski / A. Jaczewski,WRF451Q,CMCC-CM2-SR5,r1i1p1f1,historical,running,2024-12,#EURbalanced
 EUR-12,IMWM,M. Figurski / A. Jaczewski,WRF451Q,CMCC-CM2-SR5,r1i1p1f1,ssp126,planned,2024-12,#EURbalanced
 EUR-12,IMWM,M. Figurski / A. Jaczewski,WRF451Q,CMCC-CM2-SR5,r1i1p1f1,ssp370,planned,2024-12,#EURbalanced
 EUR-12,KNMI,E. van Meijgaard,RACMO23E,ERA5,,evaluation,planned,2024-02,#EURbalanced
