@@ -4,8 +4,5 @@ This repository stores a machine-readable version ([CMIP6_downscaling_plans.csv]
 
 How to contribute
 -----------------
-You can add or update your simulations by either:
-
- * Modifying [this Google doc](https://docs.google.com/document/d/1Jy53yvB9SDOiWcwKRJc_HpWVgmjxZhy-qVviHl6ymDM/edit?usp=sharing) or
- * Opening an [issue](https://github.com/WCRP-CORDEX/simulation-status/issues/new) or PR in this repository
+You can add or update your simulations by opening an [issue](https://github.com/WCRP-CORDEX/simulation-status/issues/new) or PR in this repository
 

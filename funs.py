@@ -54,8 +54,8 @@ def html_header(title = 'CORDEX-CMIP6 downscaling plans'):
   </div>
 </div>
 <p style="text-align: justify;">
-Simulation status according to CORDEX-CMIP6 downscaling plans reported by the groups and collected in <a href="https://github.com/WCRP-CORDEX/simulation-status/blob/main/CMIP6_downscaling_plans.csv">CMIP6_downscaling_plans.csv</a>. Check that file for further details.
-To contribute/update simulations use this <a href="https://docs.google.com/document/d/1Jy53yvB9SDOiWcwKRJc_HpWVgmjxZhy-qVviHl6ymDM/edit?usp=sharing">Google doc</a>.
+Simulation status according to CORDEX-CMIP6 downscaling plans reported by the groups and collected in <a href="https://github.com/WCRP-CORDEX/simulation-status/blob/main/CMIP6_downscaling_plans.csv">CMIP6_downscaling_plans.csv</a>. 
+To contribute/update simulations open and issue or pull request at <a href="https://github.com/WCRP-CORDEX/simulation-status">https://github.com/WCRP-CORDEX/simulation-status</a>.
 '''
   )
 
@@ -113,6 +113,11 @@ span.tag {{
   border: 1px solid transparent;
   border-radius: 2em;
 }}
+a {{color: DodgerBlue}}
+a:link {{ text-decoration: none; }}
+a:visited {{ text-decoration: none; }}
+a:hover {{ text-decoration: underline; }}
+a:active {{ text-decoration: underline;}}
 {span_style}
 </style>
 </head>
