@@ -25,6 +25,11 @@ span.tag {
   border: 1px solid transparent;
   border-radius: 2em;
 }
+a {color: DodgerBlue}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:active { text-decoration: underline;}
 
 span.planned {color: #F54d4d; font-weight: bold}
 span.running {color: #009900; font-weight: bold}
@@ -35,14 +40,26 @@ span.published {color: #3399FF; font-weight: bold}
 </head>
 <body>
 <h1>CORDEX CMIP6 downscaling plans</h1>
-<p style="text-align: right;">(Last update: 2024-01-22 13:16)</p>
+<div style="display:table;width:100%;">
+  <div style="display:table-row;">
+    <div style="display:table-cell;width:50%;">
+      <a href="https://wcrp-cordex.github.io/simulation-status">Back to main</a> or see tables by 
+      <a href="./CORDEX_CMIP6_status.html">domain</a>,
+      <a href="./CORDEX_CMIP6_status_by_scenario.html">scenario</a> or
+      <a href="./CORDEX_CMIP6_status_by_experiment.html">experiment</a>
+    </div>
+    <div style="display:table-cell;text-align:right;width:50%;">
+      (Version: 2024-01-23 06:34)
+    </div>
+  </div>
+</div>
 <p>
 This is an interactive table view of each of the CORDEX-CMIP6 simulations.
 The table can be sorted by the different columns.
 The search field can be used to filter the table.
 Several terms can be entered (e.g. "evaluation completed" or "mpi ssp585") to show the rows matching all terms.
 The table contents can be downloaded as a CSV file <a href="https://github.com/WCRP-CORDEX/simulation-status/raw/main/CMIP6_downscaling_plans.csv">here</a>.
-To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/simulation-status">https://github.com/WCRP-CORDEX/simulation-status</a>.
+To contribute/update simulations open and issue or pull request at <a href="https://github.com/WCRP-CORDEX/simulation-status">https://github.com/WCRP-CORDEX/simulation-status</a>.
 </p>
 
 <table id="table_id" class="display">
@@ -4870,8 +4887,8 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td><span class="running">running</span></td>
-            <td>2024-01</td>
+            <td><span class="completed">completed</span></td>
+            <td>2023-12</td>
             <td><span class="tag">ESD</span></td>
         </tr>
         <tr>
@@ -4882,8 +4899,8 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CMCC-CM2-SR5</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td><span class="running">running</span></td>
+            <td>2024-03</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -4895,7 +4912,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>r1i1p1f1</td>
             <td>ssp119</td>
             <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td>2024-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -4906,8 +4923,8 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CMCC-CM2-SR5</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td><span class="running">running</span></td>
+            <td>2024-03</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -4919,7 +4936,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>r1i1p1f1</td>
             <td>ssp245</td>
             <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td>2024-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -4930,8 +4947,8 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CMCC-CM2-SR5</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td><span class="running">running</span></td>
+            <td>2024-03</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -4943,7 +4960,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>r1i1p1f1</td>
             <td>ssp585</td>
             <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td>2024-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -4955,7 +4972,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>r1i1p1f2</td>
             <td>historical</td>
             <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td>2024-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -4967,7 +4984,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>r1i1p1f2</td>
             <td>ssp119</td>
             <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td>2024-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -4978,8 +4995,8 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td>ssp126</td>
-            <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td><span class="running">running</span></td>
+            <td>2024-03</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -4991,7 +5008,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>r1i1p1f2</td>
             <td>ssp245</td>
             <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td>2024-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -5002,8 +5019,8 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>CNRM-ESM2-1</td>
             <td>r1i1p1f2</td>
             <td>ssp370</td>
-            <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td><span class="running">running</span></td>
+            <td>2024-03</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -5015,7 +5032,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>r1i1p1f2</td>
             <td>ssp585</td>
             <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td>2024-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -5027,7 +5044,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>r1i1p1f1</td>
             <td>historical</td>
             <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td>2024-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -5039,7 +5056,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>r1i1p1f1</td>
             <td>ssp119</td>
             <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td>2024-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -5050,8 +5067,8 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td><span class="running">running</span></td>
+            <td>2024-03</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -5063,7 +5080,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>r1i1p1f1</td>
             <td>ssp245</td>
             <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td>2024-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -5074,8 +5091,8 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>EC-Earth3-Veg</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td><span class="running">running</span></td>
+            <td>2024-03</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -5087,7 +5104,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>r1i1p1f1</td>
             <td>ssp585</td>
             <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td>2024-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -5099,7 +5116,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>r1i1p1f1</td>
             <td>historical</td>
             <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td>2024-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -5111,7 +5128,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>r1i1p1f1</td>
             <td>ssp119</td>
             <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td>2024-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -5122,8 +5139,8 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MIROC6</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td><span class="running">running</span></td>
+            <td>2024-03</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -5135,7 +5152,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>r1i1p1f1</td>
             <td>ssp245</td>
             <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td>2024-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -5146,8 +5163,8 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MIROC6</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td><span class="running">running</span></td>
+            <td>2024-03</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -5159,7 +5176,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>r1i1p1f1</td>
             <td>ssp585</td>
             <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td>2024-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -5171,7 +5188,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>r1i1p1f1</td>
             <td>historical</td>
             <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td>2024-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -5183,7 +5200,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>r1i1p1f1</td>
             <td>ssp119</td>
             <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td>2024-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -5194,8 +5211,8 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td><span class="running">running</span></td>
+            <td>2024-03</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -5207,7 +5224,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>r1i1p1f1</td>
             <td>ssp245</td>
             <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td>2024-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -5218,8 +5235,8 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td><span class="running">running</span></td>
+            <td>2024-03</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -5231,7 +5248,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>r1i1p1f1</td>
             <td>ssp585</td>
             <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td>2024-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -5243,7 +5260,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>r1i1p1f1</td>
             <td>historical</td>
             <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td>2024-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -5255,7 +5272,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>r1i1p1f1</td>
             <td>ssp119</td>
             <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td>2024-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -5266,8 +5283,8 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>ssp126</td>
-            <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td><span class="running">running</span></td>
+            <td>2024-03</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -5279,7 +5296,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>r1i1p1f1</td>
             <td>ssp245</td>
             <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td>2024-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -5290,8 +5307,8 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>ssp370</td>
-            <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td><span class="running">running</span></td>
+            <td>2024-03</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
@@ -5303,7 +5320,7 @@ To contribute/update simulations visit <a href="https://github.com/WCRP-CORDEX/s
             <td>r1i1p1f1</td>
             <td>ssp585</td>
             <td><span class="planned">planned</span></td>
-            <td>2024-06</td>
+            <td>2024-12</td>
             <td><span class="tag">ESD</span> <span class="tag">ManySSP</span></td>
         </tr>
         <tr>
