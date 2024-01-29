@@ -52,7 +52,13 @@ EUR-12:
     title: Coupled simulations
 
   EURintvar:
-    title: Internal variability
+    title: GCM internal variability
+
+  RCMintvar:
+    title: RCM internal variability
+    description: >
+      This experiment explores RCM internal variability by perturbing the initial
+      conditions or other slight changes (e.g. HPC machine sensitivity)
 
   ManyGCM:
     title: Many-GCM experiment
