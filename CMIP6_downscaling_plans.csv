@@ -1,4 +1,7 @@
 domain,institute,contact,rcm_name,driving_model,ensemble,experiment,status,estimated_completion_date,comments
+AFR-25,TBD,,TBD,ERA5,,no plans,not planned,,Placeholder for potential upcoming simulations
+ANT-25,TBD,,TBD,ERA5,,no plans,not planned,,Placeholder for potential upcoming simulations
+ARC-25,TBD,,TBD,ERA5,,no plans,not planned,,Placeholder for potential upcoming simulations
 AUS-20i,BoM,A. Dowdy,BARRA-R2,ERA5,,evaluation,completed,2023-11,
 AUS-20i,BoM,A. Dowdy,BARPA-R,ERA5,,evaluation,completed,2023-11,
 AUS-20i,BoM,A. Dowdy,BARPA-R,ACCESS-CM2,r4i1p1f1,historical,completed,2023-11,
@@ -450,7 +453,7 @@ MED-12,CLMcom-GUF,M. Hamouda,CCLM5-0-9-NEMOMED12-3-6,EC-Earth3-Veg,r12i1p1f1,ssp
 MED-12,CLMcom-IMS,L. Uzan,ICON-OASIS-NEMO,ERA5,,evaluation,planned,2023-12,
 MED-12,CNRM,S. Somot,RCSM6,CNRM-ESM2-1,r1i1p1f2,historical,completed,2022-12,
 MED-12,CNRM,S. Somot,RCSM6,CNRM-ESM2-1,r1i1p1f2,ssp585,completed,2022-12,
-MED-12,CNRM,S. Somot,RCSM6B,ERA5,,evaluation,running,2023-12,
+MED-12,CNRM,S. Somot,RCSM6B,ERA5,,evaluation,planned,2024-12,1980-2022
 MED-12,CNRM,S. Somot,RCSM6B,CNRM-ESM2-1,r1i1p1f2,historical,running,2023-12,
 MED-12,CNRM,S. Somot,RCSM6B,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2023-12,
 MED-12,CNRM,S. Somot,RCSM6B,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2023-12,
@@ -472,6 +475,7 @@ MED-12,ICTP-OGS,E. Coppola,RegCM-ES,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2023-1
 MED-12,ICTP-OGS,E. Coppola,RegCM-ES,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2023-12,
 MED-12,IPSL,J. Polcher,RegIPSLv2,ERA5,,evaluation,planned,2023-12,
 MED-12,UBEL,V. Djurdjevic,EBUPOM2e,ERA5,,evaluation,planned,2023-12,
+MED-25,LMD,L. Li,LMDZMED_v2,ERA5,,evaluation,completed,2024-01,1979-2021
 NAM-12,Ouranos,D. Paquin / C. McCray,CRCM5,ERA5,,evaluation,completed,2022-12,Two members with perturbed initial conditions
 NAM-12,Ouranos,D. Paquin / C. McCray,CRCM5,CanESM5,r1i1p2f1,historical,completed,2022-01,
 NAM-12,Ouranos,D. Paquin / C. McCray,CRCM5,CanESM5,r1i1p2f1,ssp126,completed,2023-04,
