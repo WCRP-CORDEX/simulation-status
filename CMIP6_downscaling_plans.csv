@@ -1,7 +1,7 @@
 domain,institute,contact,rcm_name,driving_model,ensemble,experiment,status,estimated_completion_date,comments
 AFR-25,TBD,,TBD,ERA5,,no plans,not planned,,Placeholder for potential upcoming simulations
-ANT-25,TBD,,TBD,ERA5,,no plans,not planned,,Placeholder for potential upcoming simulations
-ARC-25,TBD,,TBD,ERA5,,no plans,not planned,,Placeholder for potential upcoming simulations
+ANT-12,BAS,E. Gilbert / A. Orr,MetUM,ERA5,,evaluation,running,2024-04,
+ARC-12,BAS,E. Gilbert / A. Orr,MetUM,ERA5,,evaluation,running,2024-04,
 AUS-20i,BoM,A. Dowdy,BARRA-R2,ERA5,,evaluation,completed,2023-11,
 AUS-20i,BoM,A. Dowdy,BARPA-R,ERA5,,evaluation,completed,2023-11,
 AUS-20i,BoM,A. Dowdy,BARPA-R,ACCESS-CM2,r4i1p1f1,historical,completed,2023-11,
