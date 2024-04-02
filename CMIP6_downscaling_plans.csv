@@ -310,13 +310,13 @@ EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,ICON-CLM,CMCC-CM2-SR5,r
 EUR-12,CLMcom-FZJ,S. Poll,ICON-CLM,CMCC-CM2-SR5,r1i1p1f1,ssp245,planned,2025-12,#ManyGCM #ManySSP Scenario split TBD among CMCC and FZJ
 EUR-12,CLMcom-WEGC,H. Truhetz,ICON-CLM,CMCC-CM2-SR5,r1i1p1f1,ssp370,planned,2025-12,#ManyGCM #ManySSP
 EUR-12,CLMcom-FZJ,S. Poll,ICON-CLM,CMCC-CM2-SR5,r1i1p1f1,ssp585,planned,2025-12,#ManyGCM #ManySSP Scenario split TBD among CMCC and FZJ
-EUR-12,CNRM-MF,P. Nabat / S. Somot,ALADIN64E1,ERA5,,evaluation,completed,2023-11,#EURcoupled #EURbalanced
-EUR-12,CNRM-MF,P. Nabat / S. Somot,ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,historical,running,2024-12,#EURcoupled #EURbalanced #ManySSP #EURintvar Started in 1850
-EUR-12,CNRM-MF,P. Nabat / S. Somot,ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2024-12,#EURcoupled #EURbalanced #ManySSP #EURintvar
-EUR-12,CNRM-MF,P. Nabat / S. Somot,ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp245,planned,2024-12,#EURcoupled #ManySSP
-EUR-12,CNRM-MF,P. Nabat / S. Somot,ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2024-12,#EURcoupled #EURbalanced #ManySSP #EURintvar
-EUR-12,CNRM-MF,P. Nabat / S. Somot,ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp585,planned,2024-12,#EURcoupled #ManySSP
-EUR-12,CNRM-MF,C. Dubois / S. Somot,ALADIN64E1,CNRM-ESM2-1,r14i1p1f2,historical,planned,2024-12,#EURintvar
+EUR-12,CNRM-MF,P. Nabat / S. Somot,ALADIN64E1,ERA5,,evaluation,completed,2024-03,#EURcoupled #EURbalanced
+EUR-12,CNRM-MF,P. Nabat / S. Somot,ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,historical,completed,2024-03,#EURcoupled #EURbalanced #ManySSP #EURintvar Started in 1850
+EUR-12,CNRM-MF,P. Nabat / S. Somot,ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp126,running,2024-12,#EURcoupled #EURbalanced #ManySSP #EURintvar
+EUR-12,CNRM-MF,P. Nabat / S. Somot,ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp245,running,2024-12,#EURcoupled #ManySSP
+EUR-12,CNRM-MF,P. Nabat / S. Somot,ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp370,running,2024-12,#EURcoupled #EURbalanced #ManySSP #EURintvar
+EUR-12,CNRM-MF,P. Nabat / S. Somot,ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp585,running,2024-12,#EURcoupled #ManySSP
+EUR-12,CNRM-MF,C. Dubois / S. Somot,ALADIN64E1,CNRM-ESM2-1,r14i1p1f2,historical,running,2024-12,#EURintvar
 EUR-12,CNRM-MF,C. Dubois / S. Somot,ALADIN64E1,CNRM-ESM2-1,r14i1p1f2,ssp126,planned,2024-12,#EURintvar
 EUR-12,CNRM-MF,C. Dubois / S. Somot,ALADIN64E1,CNRM-ESM2-1,r14i1p1f2,ssp370,planned,2024-12,#EURintvar
 EUR-12,CNRM-MF,C. Dubois / S. Somot,ALADIN64E1,CNRM-ESM2-1,r15i1p1f2,historical,running,2024-12,#EURintvar
