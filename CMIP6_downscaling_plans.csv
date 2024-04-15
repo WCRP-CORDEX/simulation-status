@@ -463,7 +463,7 @@ MED-12,CLMcom-GUF,M. Hamouda,CCLM5-0-9-NEMOMED12-3-6,EC-Earth3-Veg,r12i1p1f1,ssp
 MED-12,CLMcom-IMS,L. Uzan,ICON-OASIS-NEMO,ERA5,,evaluation,planned,2023-12,
 MED-12,CNRM,S. Somot,RCSM6,CNRM-ESM2-1,r1i1p1f2,historical,completed,2022-12,
 MED-12,CNRM,S. Somot,RCSM6,CNRM-ESM2-1,r1i1p1f2,ssp585,completed,2022-12,
-MED-12,CNRM,S. Somot,RCSM6B,ERA5,,evaluation,planned,2024-12,1980-2022
+MED-12,CNRM,S. Somot,RCSM6B,ERA5,,evaluation,running,2024-12,1980-2022
 MED-12,CNRM,S. Somot,RCSM6B,CNRM-ESM2-1,r1i1p1f2,historical,running,2023-12,
 MED-12,CNRM,S. Somot,RCSM6B,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2023-12,
 MED-12,CNRM,S. Somot,RCSM6B,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2023-12,
@@ -475,10 +475,10 @@ MED-12,ENEA,G. Sannino,ENEA-REG,ERA5,,evaluation,planned,2023-12,period 1970-202
 MED-12,ENEA,G. Sannino,ENEA-REG,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2023-05,
 MED-12,ENEA,G. Sannino,ENEA-REG,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2023-05,
 MED-12,ENEA,G. Sannino,ENEA-REG,MPI-ESM1-2-HR,r1i1p1f1,ssp245,completed,2023-05,
-MED-12,ENEA,G. Sannino,ENEA-REG,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2023-12,
+MED-12,ENEA,G. Sannino,ENEA-REG,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2024-12,Start by end of summer 2024
 MED-12,ENEA,G. Sannino,ENEA-REG,MPI-ESM1-2-HR,r1i1p1f1,ssp585,completed,2023-05,
-MED-12,ENEA,G. Sannino,ENEA-REG,EC-Earth3,r1i1p1f1,historical,planned,2023-12,
-MED-12,ENEA,G. Sannino,ENEA-REG,EC-Earth3,r1i1p1f1,ssp370,planned,2023-12,
+MED-12,ENEA,G. Sannino,ENEA-REG,EC-Earth3,r1i1p1f1,historical,planned,2024-12,Start by end of summer 2024
+MED-12,ENEA,G. Sannino,ENEA-REG,EC-Earth3,r1i1p1f1,ssp370,planned,2024-12,
 MED-12,ICTP-OGS,E. Coppola,RegCM-ES,ERA5,,evaluation,planned,2023-12,
 MED-12,ICTP-OGS,E. Coppola,RegCM-ES,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2023-12,
 MED-12,ICTP-OGS,E. Coppola,RegCM-ES,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2023-12,
