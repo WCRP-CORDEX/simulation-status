@@ -1,6 +1,11 @@
 domain,institute,contact,rcm_name,driving_model,ensemble,experiment,status,estimated_completion_date,comments
 AFR-25,TBD,,TBD,ERA5,,no plans,not planned,,Placeholder for potential upcoming simulations
 ANT-12,BAS,E. Gilbert / A. Orr,MetUM,ERA5,,evaluation,running,2024-04,
+ANT-12,DMI,R. Mottram / A. Torres,HCLIM43-ALADIN,ERA5,,evaluation,running,2024-04,
+ANT-12,DMI,R. Mottram / A. Torres,HCLIM43-ALADIN,MPI-ESM1-2-LR,r1i1p1f1,historical,running,2024-08,
+ANT-12,DMI,R. Mottram / A. Torres,HCLIM43-ALADIN,MPI-ESM1-2-LR,r1i1p1f1,ssp370,planned,2024-08,
+ANT-12,DMI,R. Mottram / A. Torres,HCLIM43-ALADIN,CESM2,r1i1p1f1,historical,planned,2024-08,
+ANT-12,DMI,R. Mottram / A. Torres,HCLIM43-ALADIN,CESM2,r1i1p1f1,ssp370,planned,2024-08,
 ARC-12,BAS,E. Gilbert / A. Orr,MetUM,ERA5,,evaluation,running,2024-04,
 ARC-12,AWI,J. Landwehrs / A. Rinke,ICON,ERA5,,evaluation,running,2024-04,
 ARC-12,AWI,J. Landwehrs / A. Rinke,ICON,CNRM-ESM2-1,r1i1p1f2,historical,running,2024-08,
