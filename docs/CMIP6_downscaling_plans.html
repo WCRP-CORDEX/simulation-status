@@ -8,10 +8,12 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
 <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/plug-ins/2.0.5/features/deepLink/dataTables.deepLink.min.js"></script>
 <script type="text/javascript">
 $(document).ready( function () {
-    $('#table_id').DataTable({
-    });
+    $('#table_id').DataTable( $.fn.dataTable.ext.deepLink( [
+      'search.search'
+    ]));
 } );
 </script>
 <title>CORDEX CMIP6 downscaling plans</title>
@@ -49,7 +51,7 @@ span.published {color: #3399FF; font-weight: bold}
       <a href="./CORDEX_CMIP6_status_by_experiment.html">experiment</a>
     </div>
     <div style="display:table-cell;text-align:right;width:50%;">
-      (Version: 2024-04-22 16:18)
+      (Version: 2024-04-23 08:35)
     </div>
   </div>
 </div>
