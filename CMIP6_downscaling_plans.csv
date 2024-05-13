@@ -459,10 +459,10 @@ EUR-12,UCAN,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,NorESM2-MM,r1i1p1f1,ssp12
 EUR-12,UCAN,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,NorESM2-MM,r1i1p1f1,ssp245,planned,2024-12,#ESD #ManySSP
 EUR-12,UCAN,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,NorESM2-MM,r1i1p1f1,ssp370,running,2024-03,#ESD #ManySSP
 EUR-12,UCAN,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,NorESM2-MM,r1i1p1f1,ssp585,planned,2024-12,#ESD #ManySSP
-EUR-12,CLMcom-GUF,M. Hamouda,CCLM5-0-9-NEMOMED12-3-6,ERA5,,evaluation,planned,2023-12,This sim. contributes to both EUR- and MED-CORDEX
+EUR-12,CLMcom-GUF,M. Hamouda,CCLM5-0-9-NEMOMED12-3-6,ERA5,,evaluation,completed,2024-05,This sim. contributes to both EUR- and MED-CORDEX
 EUR-12,CLMcom-GUF,M. Hamouda,CCLM5-0-9-NEMOMED12-3-6,EC-Earth3-Veg,r12i1p1f1,historical,completed,2022-05,#EURcoupled This sim. contributes to both EUR- and MED-CORDEX
 EUR-12,CLMcom-GUF,M. Hamouda,CCLM5-0-9-NEMOMED12-3-6,EC-Earth3-Veg,r12i1p1f1,ssp585,completed,2022-05,#EURcoupled This sim. contributes to both EUR- and MED-CORDEX
-MED-12,CLMcom-GUF,M. Hamouda,CCLM5-0-9-NEMOMED12-3-6,ERA5,,evaluation,planned,2023-12,This sim. contributes to both EUR- and MED-CORDEX
+MED-12,CLMcom-GUF,M. Hamouda,CCLM5-0-9-NEMOMED12-3-6,ERA5,,evaluation,completed,2024-05,This sim. contributes to both EUR- and MED-CORDEX
 MED-12,CLMcom-GUF,M. Hamouda,CCLM5-0-9-NEMOMED12-3-6,EC-Earth3-Veg,r12i1p1f1,historical,completed,2022-05,This sim. contributes to both EUR- and MED-CORDEX
 MED-12,CLMcom-GUF,M. Hamouda,CCLM5-0-9-NEMOMED12-3-6,EC-Earth3-Veg,r12i1p1f1,ssp585,completed,2022-05,This sim. contributes to both EUR- and MED-CORDEX
 MED-12,CLMcom-IMS,L. Uzan,ICON-OASIS-NEMO,ERA5,,evaluation,planned,2023-12,
