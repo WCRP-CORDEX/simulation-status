@@ -227,8 +227,9 @@ EUR-12,EURO-CORDEX,,. Comunity selected GCMs,NorESM2-MM,r1i1p1f1,selected,select
 EUR-12,AUTH,E. Katragkou / V. Pavlidis,WRF451Q,ERA5,,evaluation,running,2024-06,#RCMintvar
 EUR-12,AUTH,E. Katragkou / V. Pavlidis,WRF451Q,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2024-12,#EURbalanced #ManySSP
 EUR-12,AUTH,E. Katragkou / V. Pavlidis,WRF451Q,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2024-12,#EURbalanced #ManySSP
-EUR-12,BCCR,S. Sobolowski / O. Gokturk,WRF451Q,NorESM2-MM,r1i1p1f1,historical,running,2024-04,#EURbalanced
-EUR-12,BCCR,S. Sobolowski / O. Gokturk,WRF451Q,NorESM2-MM,r1i1p1f1,ssp370,planned,2024-06,#EURbalanced
+EUR-12,BCCR-UCAN,S. Sobolowski / O. Gokturk / J. Fernandez / J. Milovac,WRF451Q,NorESM2-MM,r1i1p1f1,historical,running,2024-07,#EURbalanced
+EUR-12,BCCR-UCAN,S. Sobolowski / O. Gokturk / J. Fernandez / J. Milovac,WRF451Q,NorESM2-MM,r1i1p1f1,ssp126,running,2024-08,#EURbalanced
+EUR-12,BCCR-UCAN,S. Sobolowski / O. Gokturk / J. Fernandez / J. Milovac,WRF451Q,NorESM2-MM,r1i1p1f1,ssp370,planned,2024-10,#EURbalanced
 EUR-12,CESAM,D. Carvalho,WRF451Q,ERA5,,evaluation,planned,2023-12,#RCMintvar
 EUR-12,CESAM,D. Carvalho,WRF451Q,MPI-ESM1-2-HR,r1i1p1f1,ssp585,planned,2023-12,#ManySSP
 EUR-12,CLMcom-BTU,K. Keuler,ICON-CLM-NUKLEUS,ERA5,,evaluation,completed,2022-02,#NUKLEUS
@@ -421,7 +422,6 @@ EUR-12,RMI-UGent,P. Termonia,ALARO-0,ERA5,,evaluation,planned,,
 EUR-12,RMI-UGent,P. Termonia,ALARO-0,CNRM-ESM2-1,r1i1p1f2,historical,planned,,
 EUR-12,RMI-UGent,P. Termonia,ALARO-0,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,,scenario TBD
 EUR-12,RMI-UGent,P. Termonia,ALARO-0,CNRM-ESM2-1,r1i1p1f2,ssp585,planned,,scenario TBD
-EUR-12,UCAN,J. Fernandez / J. Milovac,WRF451Q,NorESM2-MM,r1i1p1f1,ssp126,running,2024-06,#EURbalanced
 EUR-12,UCAN,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,ERA5,,evaluation,completed,2023-12,#ESD
 EUR-12,UCAN,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,CMCC-CM2-SR5,r1i1p1f1,historical,running,2024-03,#ESD #ManySSP
 EUR-12,UCAN,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,CMCC-CM2-SR5,r1i1p1f1,ssp119,planned,2024-12,#ESD #ManySSP
@@ -560,9 +560,9 @@ MENA-25,DGM-UIZ,K. El Rhaz / M. Rachid,WRF,TBD,TBD,ssp126,planned,2023-12,
 MENA-25,DGM-UIZ,K. El Rhaz / M. Rachid,WRF,TBD,TBD,ssp245,planned,2023-12,
 MENA-25,DGM-UIZ,K. El Rhaz / M. Rachid,WRF,TBD,TBD,ssp370,planned,2023-12,
 MENA-25,DGM-UIZ,K. El Rhaz / M. Rachid,WRF,TBD,TBD,ssp585,planned,2023-12,
-SAM-25,CIMA,L. Fita,RegIPSL,ERA5,,evaluation,completed,2022-01,20-km resolution
-SAM-25,CIMA,L. Fita,RegIPSL,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2023-12,
-SAM-25,CIMA,L. Fita,RegIPSL,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2023-12,
+SAM-25,UBA-CIMA-IFAECI,L. Fita,RegIPSL,ERA5,,evaluation,completed,2022-01,20-km resolution
+SAM-25,UBA-CIMA-IFAECI,L. Fita,RegIPSL,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2023-12,
+SAM-25,UBA-CIMA-IFAECI,L. Fita,RegIPSL,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2023-12,
 SEA-12,MOHC,G.Redmond,HadREM3-GA7-05,ERA5,,evaluation,running,2024-03,
 SEA-12,MOHC,G.Redmond,HadREM3-GA7-05,EC-EARTH3-Veg,r1i1p1f1,historical,running,2024-04,
 SEA-12,MOHC,G.Redmond,HadREM3-GA7-05,NorESM2-MM,r1i1p1f1,historical,running,2024-04,
