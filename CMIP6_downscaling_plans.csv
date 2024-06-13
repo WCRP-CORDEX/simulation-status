@@ -475,6 +475,8 @@ MED-12,CNRM,S. Somot,RCSM6B,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2023-12,
 MED-12,CNRM,S. Somot,RCSM6B,TBD,TBD,historical,planned,2024-12,
 MED-12,CNRM,S. Somot,RCSM6B,TBD,TBD,ssp126,planned,2024-12,
 MED-12,CNRM,S. Somot,RCSM6B,TBD,TBD,ssp370,planned,2024-12,
+MED-12,CMCC,S. Gualdi / P. Lionello / L. Cavicchia,MedESM,ERA5,,evaluation,planned,2024-12,
+MED-12,CMCC,S. Gualdi / P. Lionello / L. Cavicchia,MedESM,TBD,TBD,historical,planned,2024-12,
 MED-12,ENEA,G. Sannino,ENEA-REG,ERA5,,evaluation,completed,2022-12,period 1980-2014
 MED-12,ENEA,G. Sannino,ENEA-REG,ERA5,,evaluation,planned,2023-12,period 1970-2020
 MED-12,ENEA,G. Sannino,ENEA-REG,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2023-05,
@@ -484,13 +486,17 @@ MED-12,ENEA,G. Sannino,ENEA-REG,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2024-12,St
 MED-12,ENEA,G. Sannino,ENEA-REG,MPI-ESM1-2-HR,r1i1p1f1,ssp585,completed,2023-05,
 MED-12,ENEA,G. Sannino,ENEA-REG,EC-Earth3,r1i1p1f1,historical,planned,2024-12,Start by end of summer 2024
 MED-12,ENEA,G. Sannino,ENEA-REG,EC-Earth3,r1i1p1f1,ssp370,planned,2024-12,
-MED-12,ICTP-OGS,E. Coppola,RegCM-ES,ERA5,,evaluation,planned,2023-12,
+MED-12,ICTP-OGS,E. Coppola,RegCM-ES,ERA5,,evaluation,running,2024-12,
 MED-12,ICTP-OGS,E. Coppola,RegCM-ES,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2023-12,
 MED-12,ICTP-OGS,E. Coppola,RegCM-ES,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2023-12,
 MED-12,ICTP-OGS,E. Coppola,RegCM-ES,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2023-12,
+MED-12,IMS,P. Khain / L. Uzan / E. Vadislavski,ICON-OASIS-NEMO,ERA5,,evaluation,planned,2024-12,
+MED-12,IMS,P. Khain / L. Uzan / E. Vadislavski,ICON-OASIS-NEMO,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2024-12,
+MED-12,IMS,P. Khain / L. Uzan / E. Vadislavski,ICON-OASIS-NEMO,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2024-12,
 MED-12,IPSL,J. Polcher,RegIPSLv2,ERA5,,evaluation,planned,2023-12,
 MED-12,UBEL,V. Djurdjevic,EBUPOM2e,ERA5,,evaluation,planned,2023-12,
 MED-25,LMD,L. Li,LMDZMED_v2,ERA5,,evaluation,completed,2024-01,1979-2021
+MED-25,LMD,L. Li,LMDZMED_v2,TBD,TBD,historical,planned,2024-12,
 NAM-12,Ouranos,D. Paquin / C. McCray,CRCM5-SN,ERA5,,evaluation,completed,2022-12,Two members with perturbed initial conditions
 NAM-12,Ouranos,D. Paquin / C. McCray,CRCM5-SN,CanESM5,r1i1p2f1,historical,completed,2022-01,
 NAM-12,Ouranos,D. Paquin / C. McCray,CRCM5-SN,CanESM5,r1i1p2f1,ssp126,completed,2023-04,
