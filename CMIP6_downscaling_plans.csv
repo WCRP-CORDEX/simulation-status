@@ -219,13 +219,13 @@ EUR-12,EURO-CORDEX,,. Comunity selected GCMs,EC-Earth3-Veg,r1i1p1f1,selected,sel
 EUR-12,EURO-CORDEX,,. Comunity selected GCMs,MIROC6,r1i1p1f1,selected,selected,,Model selected in EURO-CORDEX GA 2022
 EUR-12,EURO-CORDEX,,. Comunity selected GCMs,MPI-ESM1-2-HR,r1i1p1f1,selected,selected,,Model selected in EURO-CORDEX GA 2022
 EUR-12,EURO-CORDEX,,. Comunity selected GCMs,NorESM2-MM,r1i1p1f1,selected,selected,,Model selected in EURO-CORDEX GA 2022
-EUR-12,AUTH,E. Katragkou / V. Pavlidis,WRF451Q,ERA5,,evaluation,running,2024-06,#RCMintvar
+EUR-12,AUTH,E. Katragkou / V. Pavlidis,WRF451Q,ERA5,,evaluation,running,2024-11,#RCMintvar
 EUR-12,AUTH,E. Katragkou / V. Pavlidis,WRF451Q,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2024-12,#EURbalanced #ManySSP
 EUR-12,AUTH,E. Katragkou / V. Pavlidis,WRF451Q,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2024-12,#EURbalanced #ManySSP
 EUR-12,BCCR-UCAN,S. Sobolowski / O. Gokturk / J. Fernandez / J. Milovac,WRF451Q,NorESM2-MM,r1i1p1f1,historical,running,2024-07,#EURbalanced
 EUR-12,BCCR-UCAN,S. Sobolowski / O. Gokturk / J. Fernandez / J. Milovac,WRF451Q,NorESM2-MM,r1i1p1f1,ssp126,running,2024-08,#EURbalanced
 EUR-12,BCCR-UCAN,S. Sobolowski / O. Gokturk / J. Fernandez / J. Milovac,WRF451Q,NorESM2-MM,r1i1p1f1,ssp370,planned,2024-10,#EURbalanced
-EUR-12,CESAM,D. Carvalho,WRF451Q,ERA5,,evaluation,planned,2023-12,#RCMintvar
+EUR-12,CESAM,D. Carvalho,WRF451Q,ERA5,,evaluation,running,2025-06,#RCMintvar
 EUR-12,CESAM,D. Carvalho,WRF451Q,MPI-ESM1-2-HR,r1i1p1f1,ssp585,planned,2023-12,#ManySSP
 EUR-12,CLMcom-BTU,K. Keuler,ICON-CLM-NUKLEUS,ERA5,,evaluation,completed,2022-02,#NUKLEUS
 EUR-12,CLMcom-BTU,K. Keuler,ICON-CLM-NUKLEUS,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2022-12,#NUKLEUS
@@ -244,7 +244,7 @@ EUR-12,CLMcom-FZJ,K. Goergen,COSMO5-01-CLM3-5-0-ParFlow3-12-0,MPI-ESM1-2-HR,r1i1
 EUR-12,CLMcom-FZJ,K. Goergen,COSMO5-01-CLM3-5-0-ParFlow3-12-0,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2024-06,#EURcoupled
 EUR-12,CLMcom-FZJ,K. Goergen,COSMO5-01-CLM3-5-0-ParFlow3-12-0,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2024-06,#EURcoupled
 EUR-12,CLMcom-FZJ,K. Goergen,COSMO-CLM,MIROC6,r1i1p1f1,ssp126,planned,2023-12,#EURbalanced
-EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,ERA5,,evaluation,running,2024-12,#EURcoupled ORAS5 BC in the ocean
+EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,ERA5,,evaluation,running,2024-09,#EURcoupled ORAS5 BC in the ocean
 EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2024-12,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2024-12,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2024-12,#EURcoupled
@@ -332,7 +332,7 @@ EUR-12,CNRM-MF,P. Nabat / S. Somot,CNRM-ALADIN64E1,NorESM2-MM,r1i1p1f1,ssp370,pl
 EUR-12,CUNI,M. Belda,RegCM5,CNRM-ESM2-1,r1i1p1f2,historical,planned,2023-12,#EURbalanced
 EUR-12,CUNI,M. Belda,RegCM5,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2023-12,#EURbalanced
 EUR-12,CUNI,M. Belda,RegCM5,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2023-12,#EURbalanced
-EUR-12,GERICS,K. Sieck / C. Teichmann,REMO,ERA5,,evaluation,running,2022-12,#EURbalanced #NUKLEUS
+EUR-12,GERICS,K. Sieck / C. Teichmann,REMO,ERA5,,evaluation,completed,2024-08,#EURbalanced #NUKLEUS
 EUR-12,GERICS,K. Sieck / C. Teichmann,REMO,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2023-12,#EURbalanced #NUKLEUS #EURcoupled
 EUR-12,GERICS,K. Sieck / C. Teichmann,REMO,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2023-12,#EURbalanced #EURcoupled
 EUR-12,GERICS,K. Sieck / C. Teichmann,REMO,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2023-12,#EURbalanced #NUKLEUS
@@ -342,6 +342,7 @@ EUR-12,GERICS,K. Sieck / C. Teichmann,REMO,EC-Earth3-Veg,r1i1p1f1,ssp370,planned
 EUR-12,GERICS,K. Sieck / C. Teichmann,REMO,MIROC6,r1i1p1f1,historical,planned,2022-12,#EURbalanced #NUKLEUS
 EUR-12,GERICS,K. Sieck / C. Teichmann,REMO,MIROC6,r1i1p1f1,ssp126,planned,2022-12,#EURbalanced
 EUR-12,GERICS,K. Sieck / C. Teichmann,REMO,MIROC6,r1i1p1f1,ssp370,planned,2022-12,#EURbalanced #NUKLEUS
+EUR-12,GERICS,D. Rechid / C. Asmus,REMO-iMOVE,ERA5,,evaluation,running,2024-11,#EURcoupled #LUCAS Two simulations with static and annually-changing land use
 EUR-12,GERICS,D. Rechid / C. Asmus,REMO-iMOVE,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2024-12,#EURcoupled #LUCAS
 EUR-12,GERICS,D. Rechid / C. Asmus,REMO-iMOVE,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2024-12,#EURcoupled #LUCAS
 EUR-12,HCLIMcom-DMI,O. B. Christensen,HCLIM43-ALADIN,IPSL-CM6A-LR,r1i1p1f1,historical,completed,2023-12,#ManyGCM
@@ -392,13 +393,13 @@ EUR-12,ICTP,E. Coppola,RegCM5-0,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2024-12,#E
 EUR-12,ICTP,E. Coppola,RegCM5-0,NorESM2-MM,r1i1p1f1,historical,planned,2024-12,#EURbalanced
 EUR-12,ICTP,E. Coppola,RegCM5-0,NorESM2-MM,r1i1p1f1,ssp126,planned,2024-12,#EURbalanced
 EUR-12,ICTP,E. Coppola,RegCM5-0,NorESM2-MM,r1i1p1f1,ssp370,planned,2024-12,#EURbalanced
-EUR-12,IDL,P. Soares / R. M. Cardoso,WRF451Q,ERA5,,evaluation,running,2024-04,#EURbalanced #RCMintvar
+EUR-12,IDL,P. Soares / R. M. Cardoso,WRF451Q,ERA5,,evaluation,completed,2024-08,#EURbalanced #RCMintvar
 EUR-12,IDL,P. Soares / R. M. Cardoso,WRF451Q,MPI-ESM1-2-HR,r1i1p1f1,ssp245,planned,2025-08,#ManySSP Split of scenarios TBD among AUTH CESAM and IDL
 EUR-12,IDL,P. Soares / R. M. Cardoso,WRF451Q,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2024-12,#EURbalanced #ManySSP Split of scenarios TBD among AUTH CESAM and IDL
 EUR-12,IMWM,M. Figurski / A. Jaczewski,WRF451Q,CMCC-CM2-SR5,r1i1p1f1,historical,running,2024-12,#EURbalanced
 EUR-12,IMWM,M. Figurski / A. Jaczewski,WRF451Q,CMCC-CM2-SR5,r1i1p1f1,ssp126,planned,2024-12,#EURbalanced
 EUR-12,IMWM,M. Figurski / A. Jaczewski,WRF451Q,CMCC-CM2-SR5,r1i1p1f1,ssp370,planned,2024-12,#EURbalanced
-EUR-12,KNMI,E. van Meijgaard,RACMO23E,ERA5,,evaluation,planned,2024-02,#EURbalanced
+EUR-12,KNMI,E. van Meijgaard,RACMO23E,ERA5,,evaluation,completed,2024-08,#EURbalanced
 EUR-12,KNMI,E. van Meijgaard,RACMO23E,CNRM-ESM2-1,r1i1p1f2,historical,running,2024-01,#EURbalanced
 EUR-12,KNMI,E. van Meijgaard,RACMO23E,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2024-03,#EURbalanced
 EUR-12,KNMI,E. van Meijgaard,RACMO23E,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2024-03,#EURbalanced
