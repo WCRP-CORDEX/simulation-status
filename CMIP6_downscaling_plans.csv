@@ -1,4 +1,4 @@
-domain,institute,contact,rcm_name,driving_model,ensemble,experiment,status,estimated_completion_date,comments
+***TEST***domain,institute,contact,rcm_name,driving_model,ensemble,experiment,status,estimated_completion_date,comments
 AFR-25,TBD,,TBD,ERA5,,no plans,not planned,,Placeholder for potential upcoming simulations
 ANT-12,BAS,E. Gilbert / A. Orr,MetUM,ERA5,,evaluation,running,2024-04,
 ANT-12,DMI,R. Mottram / A. Torres,HCLIM43-ALADIN,ERA5,,evaluation,running,2024-04,
