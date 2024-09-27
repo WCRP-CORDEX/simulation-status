@@ -227,18 +227,24 @@ EUR-12,BCCR-UCAN,S. Sobolowski / O. Gokturk / J. Fernandez / J. Milovac,WRF451Q,
 EUR-12,BCCR-UCAN,S. Sobolowski / O. Gokturk / J. Fernandez / J. Milovac,WRF451Q,NorESM2-MM,r1i1p1f1,ssp370,planned,2024-10,#EURbalanced
 EUR-12,CESAM,D. Carvalho,WRF451Q,ERA5,,evaluation,running,2025-06,#RCMintvar
 EUR-12,CESAM,D. Carvalho,WRF451Q,MPI-ESM1-2-HR,r1i1p1f1,ssp585,planned,2023-12,#ManySSP
-EUR-12,CLMcom-BTU,K. Keuler,ICON-CLM-NUKLEUS,ERA5,,evaluation,completed,2022-02,#NUKLEUS
-EUR-12,CLMcom-BTU,K. Keuler,ICON-CLM-NUKLEUS,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2022-12,#NUKLEUS
-EUR-12,CLMcom-BTU,K. Keuler,ICON-CLM-NUKLEUS,MPI-ESM1-2-HR,r1i1p1f1,ssp370,completed,2022-12,#NUKLEUS
-EUR-12,CLMcom-BTU,K. Keuler,ICON-CLM-NUKLEUS,EC-Earth3-Veg,r1i1p1f1,historical,completed,2022-12,#NUKLEUS
-EUR-12,CLMcom-BTU,K. Keuler,ICON-CLM-NUKLEUS,EC-Earth3-Veg,r1i1p1f1,ssp370,completed,2022-12,#NUKLEUS
-EUR-12,CLMcom-BTU,K. Keuler,ICON-CLM-NUKLEUS,MIROC6,r1i1p1f1,historical,running,2023-12,#NUKLEUS
-EUR-12,CLMcom-BTU,K. Keuler,ICON-CLM-NUKLEUS,MIROC6,r1i1p1f1,ssp370,planned,2023-12,#NUKLEUS
-EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,COSMO-CLM,CMCC-CM2-SR5,r1i1p1f1,historical,planned,2024-12,#EURbalanced #ManyGCM
-EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,COSMO-CLM,CMCC-CM2-SR5,r1i1p1f1,ssp126,planned,2024-12,#EURbalanced #ManyGCM
-EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,COSMO-CLM,CMCC-CM2-SR5,r1i1p1f1,ssp370,planned,2024-12,#EURbalanced #ManyGCM
-EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2023-12,#ManyGCM
-EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2023-12,#ManyGCM
+EUR-12,CLMcom-Hereon,B. Geyer,COSMO-CLM,ERA5,,evaluation,planned,2024-12, #ManyGCM
+EUR-12,CLMcom-LIST,M. Sulis,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2025-03,#ManyGCM
+EUR-12,CLMcom-LIST,M. Sulis,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2025-03,#ManyGCM
+EUR-12,CLMcom-LIST,M. Sulis,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2025-03,#ManyGCM
+EUR-12,CLMcom-KIT,H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,historical,planned,2025-03,#ManyGCM #Nukleus
+EUR-12,CLMcom-KIT,H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2025-03,#ManyGCM #Nukleus
+EUR-12,CLMcom-KIT,H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2025-03,#ManyGCM #Nukleus
+EUR-12,CLMcom-KIT,H. Feldmann,COSMO-CLM,MIROC6,r1i1p1f1,historical,planned,2025-03,#ManyGCM #Nukleus
+EUR-12,CLMcom-FZJ,K. Görgen,COSMO-CLM,MIROC6,r1i1p1f1,ssp126,planned,2025-03,#ManyGCM 
+EUR-12,CLMcom-KIT,H. Feldmann,COSMO-CLM,MIROC6,r1i1p1f1,ssp370,planned,2025-03,#ManyGCM #Nukleus
+EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,COSMO-CLM,CMCC-CM2-SR5,r1i1p1f1,historical,planned,2024-12, #ManyGCM
+EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,COSMO-CLM,CMCC-CM2-SR5,r1i1p1f1,ssp126,planned,2024-12, #ManyGCM
+EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,COSMO-CLM,CMCC-CM2-SR5,r1i1p1f1,ssp370,planned,2024-12, #ManyGCM
+EUR-12,CLMcom-IMWM,A. Jaczewski,COSMO-CLM,NorESM2-MM,r1i1p1f1,historical,planned,2025-03,#ManyGCM
+EUR-12,CLMcom-IMWM,A. Jaczewski,COSMO-CLM,NorESM2-MM,r1i1p1f1,ssp126,planned,2025-03,#ManyGCM
+EUR-12,CLMcom-IMWM,A. Jaczewski,COSMO-CLM,NorESM2-MM,r1i1p1f1,ssp370,planned,2025-03,#ManyGCM
+EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,COSMO-CLM-URB,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2023-12,#ManyGCM
+EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,COSMO-CLM-URB,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2023-12,#ManyGCM
 EUR-12,CLMcom-FZJ,K. Goergen,COSMO5-01-CLM3-5-0-ParFlow3-12-0,ERA5,,evaluation,completed,2023-12,#EURcoupled COSMO-CLM + Community Land Model + ParFlow hydrological model. There are currently 2 runs: 3D subsurface hydrodynmics and one with 3D subsurface hydrodynamics and human water use; a run with 1D subsurface hydrodynamics might be added
 EUR-12,CLMcom-FZJ,K. Goergen,COSMO5-01-CLM3-5-0-ParFlow3-12-0,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2024-06,#EURcoupled
 EUR-12,CLMcom-FZJ,K. Goergen,COSMO5-01-CLM3-5-0-ParFlow3-12-0,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2024-06,#EURcoupled
@@ -254,6 +260,37 @@ EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,EC-Earth3-Veg,r1i1p1f1,ssp
 EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,MIROC6,r1i1p1f1,historical,planned,2025-12,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,MIROC6,r1i1p1f1,ssp126,planned,2025-12,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,MIROC6,r1i1p1f1,ssp370,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-Hereon,B. Geyer,ICON-CLM,ERA5,,evaluation,finished,2024-09,#EURbalanced #ManyGCM
+EUR-12,CLMcom-DWD,C. Steger,ICON-CLM,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2025-03,#EURbalanced #ManyGCM #ManySSP
+EUR-12,CLMcom-DWD,C. Steger,ICON-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2025-03,#EURbalanced #ManyGCM #ManySSP
+EUR-12,CLMcom-DWD,C. Steger,ICON-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp245,planned,2025-03,#ManyGCM #ManySSP
+EUR-12,CLMcom-DWD,C. Steger,ICON-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2025-03,#EURbalanced #ManyGCM #ManySSP
+EUR-12,CLMcom-DWD,C. Steger,ICON-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp585,planned,2025-03,#ManyGCM #ManySSP
+EUR-12,CLMcom-Hereon,B. Geyer,ICON-CLM,EC-Earth3-Veg,r1i1p1f1,historical,planned,2025-03,#ManyGCM #ManySSP
+EUR-12,CLMcom-Hereon,B. Geyer,ICON-CLM,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2025-03,#ManyGCM #ManySSP
+EUR-12,CLMcom-Hereon,B. Geyer,ICON-CLM,EC-Earth3-Veg,r1i1p1f1,ssp245,planned,2025-03,#ManyGCM #ManySSP
+EUR-12,CLMcom-Hereon,B. Geyer,ICON-CLM,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2025-03,#ManyGCM #ManySSP
+EUR-12,CLMcom-Hereon,B. Geyer,ICON-CLM,EC-Earth3-Veg,r1i1p1f1,ssp585,planned,2025-03,#ManyGCM #ManySSP
+EUR-12,CLMcom-KIT,H. Feldmann,ICON-CLM,MIROC6,r1i1p1f1,historical,planned,2025-03,#EURbalanced #ManyGCM #ManySSP
+EUR-12,CLMcom-KIT,H. Feldmann,ICON-CLM,MIROC6,r1i1p1f1,ssp126,planned,2025-03,#EURbalanced #ManyGCM #ManySSP
+EUR-12,CLMcom-KIT,H. Feldmann,ICON-CLM,MIROC6,r1i1p1f1,ssp245,planned,2025-03, #ManyGCM #ManySSP
+EUR-12,CLMcom-KIT,H. Feldmann,ICON-CLM,MIROC6,r1i1p1f1,ssp370,planned,2025-03,#EURbalanced #ManyGCM #ManySSP
+EUR-12,CLMcom-KIT,H. Feldmann,ICON-CLM,MIROC6,r1i1p1f1,ssp585,planned,2025-03,#ManyGCM #ManySSP
+EUR-12,CLMcom-WEGC,H. Truhetz,ICON-CLM,CMCC-CM2-SR5,r1i1p1f1,historical,planned,2025-03,#ManyGCM #ManySSP
+EUR-12,CLMcom-FZJ,S. Poll,ICON-CLM,CMCC-CM2-SR5,r1i1p1f1,ssp126,planned,2025-03,#ManyGCM #ManySSP Scenario split TBD among CMCC and FZJ
+EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,ICON-CLM,CMCC-CM2-SR5,r1i1p1f1,ssp245,planned,2025-03,#ManyGCM #ManySSP Scenario split TBD among CMCC and FZJ
+EUR-12,CLMcom-WEGC,H. Truhetz,ICON-CLM,CMCC-CM2-SR5,r1i1p1f1,ssp370,planned,2025-03,#ManyGCM #ManySSP
+EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,ICON-CLM,CMCC-CM2-SR5,r1i1p1f1,ssp585,planned,2025-03,#ManyGCM #ManySSP Scenario split TBD among CMCC and FZJ
+EUR-12,CLMcom-BTU,A. Will,ICON-CLM,CNRM-ESM2-1,r1i1p1f2,historical,planned,2025-03,#ManyGCM #ManySSP
+EUR-12,CLMcom-BTU,A. Will,ICON-CLM,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2025-03,#ManyGCM #ManySSP
+EUR-12,CLMcom-BTU,A. Will,ICON-CLM,CNRM-ESM2-1,r1i1p1f2,ssp245,planned,2025-03,#ManyGCM #ManySSP
+EUR-12,CLMcom-BTU,A. Will,ICON-CLM,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2025-03,#ManyGCM #ManySSP
+EUR-12,CLMcom-BTU,A. Will,ICON-CLM,CNRM-ESM2-1,r1i1p1f2,ssp585,planned,2025-03,#ManyGCM #ManySSP
+EUR-12,CLMcom-IMWM,A. Jaczweski,ICON-CLM,NorESM2-MM,r1i1p1f1,historical,planned,2025-03,#ManyGCM #ManySSP
+EUR-12,CLMcom-IMWM,A. Jaczweski,ICON-CLM,NorESM2-MM,r1i1p1f1,ssp126,planned,2025-03,#ManyGCM #ManySSP
+EUR-12,CLMcom-C2SM,M.Jähn,ICON-CLM,NorESM2-MM,r1i1p1f1,ssp245,planned,2025-03,#ManyGCM #ManySSP
+EUR-12,CLMcom-IMWM,A. Jaczweski,ICON-CLM,NorESM2-MM,r1i1p1f1,ssp370,planned,2025-03,#ManyGCM #ManySSP
+EUR-12,CLMcom-???,???,ICON-CLM,NorESM2-MM,r1i1p1f1,ssp585,planned,2025-03,#ManyGCM #ManySSP
 EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,ERA5,,evaluation,planned,2025-12,#EURcoupled ORAS5 BC in the ocean
 EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2025-12,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2025-12,#EURcoupled
@@ -264,53 +301,6 @@ EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,EC-Earth3-Veg,r1i1p1f1,s
 EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,MIROC6,r1i1p1f1,historical,planned,2025-12,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,MIROC6,r1i1p1f1,ssp126,planned,2025-12,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,MIROC6,r1i1p1f1,ssp370,planned,2025-12,#EURcoupled
-EUR-12,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,ERA5,,evaluation,completed,2022-06,#EURbalanced #EURcoupled #NUKLEUS #ManyGCM
-EUR-12,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,historical,completed,2022-10,#EURcoupled #NUKLEUS #ManyGCM
-EUR-12,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp370,completed,2022-10,#EURcoupled #NUKLEUS #ManyGCM
-EUR-12,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MIROC6,r1i1p1f1,historical,completed,2022-10,#EURbalanced #NUKLEUS #ManyGCM
-EUR-12,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MIROC6,r1i1p1f1,ssp370,completed,2022-10,#EURbalanced #NUKLEUS #ManyGCM
-EUR-12,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2022-12,#EURbalanced #EURcoupled #NUKLEUS #ManyGCM
-EUR-12,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,running,2023-04,#EURbalanced #EURcoupled #NUKLEUS #ManyGCM
-EUR-12,CLMcom-IMWM,A. Jaczewski,COSMO-CLM,NorESM2-MM,r1i1p1f1,historical,planned,2024-12,#ManyGCM
-EUR-12,CLMcom-IMWM,A. Jaczewski,COSMO-CLM,NorESM2-MM,r1i1p1f1,ssp126,planned,2024-12,#ManyGCM
-EUR-12,CLMcom-IMWM,A. Jaczewski,COSMO-CLM,NorESM2-MM,r1i1p1f1,ssp370,planned,2024-12,#ManyGCM
-EUR-12,CLMcom-IMWM,A. Jaczewski,ICON-CLM,NorESM2-MM,r1i1p1f1,historical,planned,2025-12,#ManyGCM
-EUR-12,CLMcom-IMWM,A. Jaczewski,ICON-CLM,NorESM2-MM,r1i1p1f1,ssp126,planned,2025-12,#ManyGCM
-EUR-12,CLMcom-IMWM,A. Jaczewski,ICON-CLM,NorESM2-MM,r1i1p1f1,ssp370,planned,2025-12,#ManyGCM
-EUR-12,CLMcom-LIST,M. Sulis,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,,#ManyGCM to be confirmed
-EUR-12,CLMcom-LIST,M. Sulis,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp585,planned,,#ManyGCM to be confirmed
-EUR-12,CLMcom-LIST,M. Sulis,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2024-12,#EURbalanced #ManyGCM
-EUR-12,CLMcom-LIST,M. Sulis,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp585,planned,2024-12,#ManyGCM
-EUR-12,CLMcom-UDAG,C. Steger / B. Geyer,ICON-CLM,ERA5,,evaluation,planned,2024-12,#EURbalanced #ManyGCM
-EUR-12,CLMcom-UDAG,C. Steger,ICON-CLM,CESM2,r1i1p1f1,historical,planned,2025-12,#ManyGCM #ManySSP to be confirmed
-EUR-12,CLMcom-UDAG,C. Steger,ICON-CLM,CESM2,r1i1p1f1,ssp126,planned,2025-12,#ManyGCM #ManySSP to be confirmed
-EUR-12,CLMcom-UDAG,C. Steger,ICON-CLM,CESM2,r1i1p1f1,ssp370,planned,2025-12,#ManyGCM #ManySSP to be confirmed
-EUR-12,CLMcom-UDAG,C. Steger,ICON-CLM,CESM2,r1i1p1f1,ssp585,planned,2025-12,#ManyGCM #ManySSP to be confirmed
-EUR-12,CLMcom-UDAG,C. Steger,ICON-CLM,CNRM-ESM2-1,r1i1p1f2,historical,planned,2025-12,#EURbalanced #ManyGCM #ManySSP
-EUR-12,CLMcom-UDAG,C. Steger,ICON-CLM,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2025-12,#EURbalanced #ManyGCM #ManySSP
-EUR-12,CLMcom-UDAG,C. Steger,ICON-CLM,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2025-12,#EURbalanced #ManyGCM #ManySSP
-EUR-12,CLMcom-UDAG,C. Steger,ICON-CLM,CNRM-ESM2-1,r1i1p1f2,ssp585,planned,2025-12,#ManyGCM #ManySSP
-EUR-12,CLMcom-UDAG,C. Steger,ICON-CLM,EC-Earth3-Veg,r1i1p1f1,historical,planned,2025-12,#EURbalanced #ManyGCM #ManySSP
-EUR-12,CLMcom-UDAG,C. Steger,ICON-CLM,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2025-12,#EURbalanced #ManyGCM #ManySSP
-EUR-12,CLMcom-UDAG,C. Steger,ICON-CLM,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2025-12,#EURbalanced #ManyGCM #ManySSP
-EUR-12,CLMcom-UDAG,C. Steger,ICON-CLM,EC-Earth3-Veg,r1i1p1f1,ssp585,planned,2025-12,#ManyGCM #ManySSP
-EUR-12,CLMcom-UDAG,C. Steger,ICON-CLM,MIROC6,r1i1p1f1,historical,planned,2025-12,#EURbalanced #ManyGCM #ManySSP
-EUR-12,CLMcom-UDAG,C. Steger,ICON-CLM,MIROC6,r1i1p1f1,ssp126,planned,2025-12,#EURbalanced #ManyGCM #ManySSP
-EUR-12,CLMcom-UDAG,C. Steger,ICON-CLM,MIROC6,r1i1p1f1,ssp370,planned,2025-12,#EURbalanced #ManyGCM #ManySSP
-EUR-12,CLMcom-UDAG,C. Steger,ICON-CLM,MIROC6,r1i1p1f1,ssp585,planned,2025-12,#ManyGCM #ManySSP
-EUR-12,CLMcom-UDAG,C. Steger,ICON-CLM,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2025-12,#EURbalanced #ManyGCM #ManySSP
-EUR-12,CLMcom-UDAG,C. Steger,ICON-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2025-12,#EURbalanced #ManyGCM #ManySSP
-EUR-12,CLMcom-UDAG,C. Steger,ICON-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2025-12,#EURbalanced #ManyGCM #ManySSP
-EUR-12,CLMcom-UDAG,C. Steger,ICON-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp585,planned,2025-12,#ManyGCM #ManySSP
-EUR-12,CLMcom-UDAG,C. Steger,ICON-CLM,UKESM1-0-LL,r1i1p1f1,historical,planned,2025-12,#ManyGCM #ManySSP
-EUR-12,CLMcom-UDAG,C. Steger,ICON-CLM,UKESM1-0-LL,r1i1p1f1,ssp126,planned,2025-12,#ManyGCM #ManySSP
-EUR-12,CLMcom-UDAG,C. Steger,ICON-CLM,UKESM1-0-LL,r1i1p1f1,ssp370,planned,2025-12,#ManyGCM #ManySSP
-EUR-12,CLMcom-UDAG,C. Steger,ICON-CLM,UKESM1-0-LL,r1i1p1f1,ssp585,planned,2025-12,#ManyGCM #ManySSP
-EUR-12,CLMcom-WEGC,H. Truhetz,ICON-CLM,CMCC-CM2-SR5,r1i1p1f1,historical,planned,2025-12,#ManyGCM #ManySSP
-EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,ICON-CLM,CMCC-CM2-SR5,r1i1p1f1,ssp126,planned,2025-12,#ManyGCM #ManySSP Scenario split TBD among CMCC and FZJ
-EUR-12,CLMcom-FZJ,S. Poll,ICON-CLM,CMCC-CM2-SR5,r1i1p1f1,ssp245,planned,2025-12,#ManyGCM #ManySSP Scenario split TBD among CMCC and FZJ
-EUR-12,CLMcom-WEGC,H. Truhetz,ICON-CLM,CMCC-CM2-SR5,r1i1p1f1,ssp370,planned,2025-12,#ManyGCM #ManySSP
-EUR-12,CLMcom-FZJ,S. Poll,ICON-CLM,CMCC-CM2-SR5,r1i1p1f1,ssp585,planned,2025-12,#ManyGCM #ManySSP Scenario split TBD among CMCC and FZJ
 EUR-12,CNRM-MF,P. Nabat / S. Somot,CNRM-ALADIN64E1,ERA5,,evaluation,completed,2024-03,#EURcoupled #EURbalanced
 EUR-12,CNRM-MF,P. Nabat / S. Somot,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,historical,completed,2024-03,#EURcoupled #EURbalanced #ManySSP #EURintvar Started in 1850
 EUR-12,CNRM-MF,P. Nabat / S. Somot,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp126,completed,2024-09,#EURcoupled #EURbalanced #ManySSP #EURintvar
