@@ -300,6 +300,13 @@ EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,EC-Earth3-Veg,r1i1p1f1,s
 EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,MIROC6,r1i1p1f1,historical,planned,2025-12,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,MIROC6,r1i1p1f1,ssp126,planned,2025-12,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,MIROC6,r1i1p1f1,ssp370,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-DWD / BSH,V. Maurer,ROAM-NBS,ERA5,,evaluation,planned,2024-12,#EURcoupled ORAS5 BC in the ocean
+EUR-12,CLMcom-DWD / BSH,V. Maurer,ROAM-NBS,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2025-03,#EURcoupled
+EUR-12,CLMcom-DWD / BSH,V. Maurer,ROAM-NBS,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2025-06,#EURcoupled
+EUR-12,CLMcom-DWD / BSH,V. Maurer,ROAM-NBS,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2025-06,#EURcoupled
+EUR-12,CLMcom-DWD / BSH,V. Maurer,ROAM-NBS,EC-Earth3-Veg,r1i1p1f1,historical,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-DWD / BSH,V. Maurer,ROAM-NBS,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-DWD / BSH,V. Maurer,ROAM-NBS,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2025-12,#EURcoupled
 EUR-12,CNRM-MF,P. Nabat / S. Somot,CNRM-ALADIN64E1,ERA5,,evaluation,completed,2024-03,#EURcoupled #EURbalanced
 EUR-12,CNRM-MF,P. Nabat / S. Somot,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,historical,completed,2024-03,#EURcoupled #EURbalanced #ManySSP #EURintvar Started in 1850
 EUR-12,CNRM-MF,P. Nabat / S. Somot,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp126,completed,2024-09,#EURcoupled #EURbalanced #ManySSP #EURintvar
