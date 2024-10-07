@@ -72,6 +72,13 @@ EUR-12:
       This experiment explores scenario uncertainty by downscaling a large
       set of SSPs beyond the recommended SSP3-7.0 and SSP1-2.6.
       
+  UDAG:
+    title: UDAG project
+    description: >
+      UDAG (Updating the Data basis for Adaptation to climate change in Germany)
+      is a joint german project funded by the BMBF.
+    url: https://www.fona.de/de/neue-regionale-klimaprojektionen-fuer-deutschland-start-des-projekts-udag
+
   NUKLEUS:
     title: NUKLEUS project
     description: >
