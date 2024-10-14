@@ -259,16 +259,16 @@ EUR-12,CLMcom-FZJ,K. Goergen,TSMP1-140-E,MPI-ESM1-2-HR,r1i1p1f1,historical,plann
 EUR-12,CLMcom-FZJ,K. Goergen,TSMP1-140-E,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2025-09,#EURcoupled
 EUR-12,CLMcom-FZJ,K. Goergen,TSMP1-140-E,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2025-09,#EURcoupled
 EUR-12,CLMcom-FZJ,K. Goergen,COSMO-CLM,MIROC6,r1i1p1f1,ssp126,planned,2025-03,#ManyGCM
-EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,ERA5,,evaluation,running,2024-09,#EURcoupled ORAS5 BC in the ocean
-EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2024-12,#EURcoupled
-EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2024-12,#EURcoupled
-EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2024-12,#EURcoupled
-EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,EC-Earth3-Veg,r1i1p1f1,historical,running,2024-12,#EURcoupled
-EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2024-12,#EURcoupled
-EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2024-12,#EURcoupled
-EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,MIROC6,r1i1p1f1,historical,planned,2025-12,#EURcoupled
-EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,MIROC6,r1i1p1f1,ssp126,planned,2025-12,#EURcoupled
-EUR-12,CLMcom-Hereon,H. Hagemann,COSMO6-NEMO3.6+HD5.2,MIROC6,r1i1p1f1,ssp370,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI1-1,ERA5,,evaluation,running,2024-09,#EURcoupled ORAS5 BC in the ocean
+EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI1-1,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2024-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2024-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2024-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI1-1,EC-Earth3-Veg,r1i1p1f1,historical,running,2024-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI1-1,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2024-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI1-1,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2024-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI1-1,MIROC6,r1i1p1f1,historical,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI1-1,MIROC6,r1i1p1f1,ssp126,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI1-1,MIROC6,r1i1p1f1,ssp370,planned,2025-12,#EURcoupled
 EUR-12,CLMcom-Hereon,B. Geyer,ICON-CLM-202407-1-1,ERA5,,evaluation,completed,2024-09,#EURbalanced #ManyGCM #UDAG
 EUR-12,CLMcom-DWD,C. Steger,ICON-CLM-202407-1-1,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2025-03,#EURbalanced #ManyGCM #ManySSP #UDAG
 EUR-12,CLMcom-DWD,C. Steger,ICON-CLM-202407-1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2025-03,#EURbalanced #ManyGCM #ManySSP #UDAG
@@ -300,16 +300,16 @@ EUR-12,CLMcom-IMWM,A. Jaczweski,ICON-CLM-202407-1-1,NorESM2-MM,r1i1p1f1,ssp126,p
 EUR-12,CLMcom-C2SM,M. Jaehn,ICON-CLM-202407-1-1,NorESM2-MM,r1i1p1f1,ssp245,planned,2025-03,#ManyGCM #ManySSP
 EUR-12,CLMcom-IMWM,A. Jaczweski,ICON-CLM-202407-1-1,NorESM2-MM,r1i1p1f1,ssp370,planned,2025-03,#ManyGCM #ManySSP
 EUR-12,CLMcom-???,???,ICON-CLM-202407-1-1,NorESM2-MM,r1i1p1f1,ssp585,planned,2025-03,#ManyGCM #ManySSP
-EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,ERA5,,evaluation,planned,2025-12,#EURcoupled ORAS5 BC in the ocean
-EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2025-12,#EURcoupled
-EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2025-12,#EURcoupled
-EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2025-12,#EURcoupled
-EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,EC-Earth3-Veg,r1i1p1f1,historical,planned,2025-12,#EURcoupled
-EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2025-12,#EURcoupled
-EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2025-12,#EURcoupled
-EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,MIROC6,r1i1p1f1,historical,planned,2025-12,#EURcoupled
-EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,MIROC6,r1i1p1f1,ssp126,planned,2025-12,#EURcoupled
-EUR-12,CLMcom-Hereon,H. Hagemann,ICON-CLM-NEMO3.6+HD5.2,MIROC6,r1i1p1f1,ssp370,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI2-1,ERA5,,evaluation,planned,2025-12,#EURcoupled ORAS5 BC in the ocean
+EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI2-1,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI2-1,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI2-1,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI2-1,EC-Earth3-Veg,r1i1p1f1,historical,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI2-1,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI2-1,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI2-1,MIROC6,r1i1p1f1,historical,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI2-1,MIROC6,r1i1p1f1,ssp126,planned,2025-12,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI2-1,MIROC6,r1i1p1f1,ssp370,planned,2025-12,#EURcoupled
 EUR-12,DWD-BSH,V. Maurer,ROAM-NBS,ERA5,,evaluation,planned,2024-12,#EURcoupled ORAS5 BC in the ocean
 EUR-12,DWD-BSH,V. Maurer,ROAM-NBS,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2025-03,#EURcoupled
 EUR-12,DWD-BSH,V. Maurer,ROAM-NBS,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2025-06,#EURcoupled
