@@ -98,13 +98,13 @@ EUR-12:
   CCLMcom:
     title: CLM community (COSMO-CLM)
     condition:
-      - rcm_name.str.startswith('COSMO') | rcm_name.str.startswith('TSMP') 
+      - rcm_name.str.startswith('COSMO') | rcm_name.str.startswith('TSMP') | rcm_name.str.match('GCOAST-.*1-.')
     collapse_institutions: False
 
   ICLMcom:
     title: CLM community (ICON-CLM)
     condition:
-      - rcm_name.str.startswith('ICON-CLM') | rcm_name.str.startswith('ROAM-NBS')
+      - rcm_name.str.startswith('ICON-CLM') | rcm_name.str.startswith('ROAM-NBS') | rcm_name.str.match('GCOAST-.*2-.')
     collapse_institutions: False
 
   eWRFcom:
