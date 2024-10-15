@@ -18,17 +18,16 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        shell: bash -l {0}
+        shell: bash -el {0}
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
       
-    - name: Setup mamba
-      uses: conda-incubator/setup-miniconda@v2
+    - name: Setup conda
+      uses: conda-incubator/setup-miniconda@v3
       with:
         environment-file: environment.yml
-        miniforge-version: latest
 
     - name: Update tables
       run: |
