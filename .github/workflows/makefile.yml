@@ -29,7 +29,6 @@ jobs:
       with:
         environment-file: environment.yml
         miniforge-version: latest
-        miniforge-variant: Mambaforge
 
     - name: Update tables
       run: |
