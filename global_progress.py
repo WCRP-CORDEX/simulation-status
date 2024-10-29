@@ -4,9 +4,9 @@ import sys
 from icecream import ic
 
 experiment = sys.argv[1]
-status = ['completed', 'running', 'planned']
-colors = ['#000000', '#009900', '#FF9999']
-url = "https://raw.githubusercontent.com/WCRP-CORDEX/simulation-status/main/CMIP6_downscaling_plans.csv"
+status = ['published']#, 'completed', 'running', 'planned']
+colors = ['#3399FF']#, '#000000', '#009900', '#FF9999']
+url = "https://raw.githubusercontent.com/WCRP-CORDEX/simulation-status/main/docs/CORDEX_CMIP5_status.csv"
 
 def get_ymax(exp):
   if exp.startswith('ssp'):
@@ -20,6 +20,8 @@ def get_ymax(exp):
 
 df = pd.read_csv(url)
 df[['domain', 'resolution']] = df['domain'].str.split('-', expand = True)
+df['comments'] = df['resolution'] # Just to make the comments column exist
+df = df.query('resolution.str.endswith("44") | resolution.str.endswith("22") | resolution.str.endswith("11")') # avoid double-counting DOM-XXi sims
 filtered_df = df[~df['experiment'].isna() & df['experiment'].str.startswith(experiment) & ~df['comments'].str.match('#ESD', na = False)].query('status in @status')
 status_counts = filtered_df.groupby(['domain', 'status']).size().unstack(fill_value=0)
 status_counts = status_counts[status]
@@ -34,5 +36,5 @@ plt.ylabel('Total number of simulations')
 plt.title(f'Simulations by CORDEX domain ({experiment.upper()})')
 plt.legend(title='Status', loc='upper right')
 plt.tight_layout()
-plt.savefig(f'docs/CORDEX_CMIP6_global_progress__{experiment.upper()}.png', bbox_inches='tight')
+plt.savefig(f'docs/CORDEX_CMIP5_global_progress__{experiment.upper()}.png', bbox_inches='tight')
 
