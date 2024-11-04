@@ -26,8 +26,8 @@ facets = (
 #
 #   Load search results
 #
-#conn = SearchConnection('http://esgf-data.dkrz.de/esg-search', distrib=True)
-conn = SearchConnection('https://esgf-node.ipsl.upmc.fr/esg-search', distrib=True)
+conn = SearchConnection('http://esgf-data.dkrz.de/esg-search', distrib=True)
+#conn = SearchConnection('https://esgf-node.ipsl.upmc.fr/esg-search', distrib=True)
 logging.getLogger('pyesgf.search.connection').setLevel(loglevel)
 dflist = []
 for proj in ['cordex-fpsconv','CORDEX-FPSCONV']:
@@ -58,6 +58,7 @@ data.drop_duplicates(inplace = True)
 matrix = data.pivot_table(index='model', columns=['frequency', 'variable'], aggfunc='size', fill_value=0)
 matrix = matrix.replace(0, np.nan)
 # Plot as heatmap (make sure to show all ticks and labels)
+plt.figure(figsize=(30,20))
 ax = sns.heatmap(matrix, cmap='YlGnBu_r', annot=False, cbar=False, linewidths=1, linecolor='lightgray')
 ax.set_xticks(0.5+np.arange(len(matrix.columns)))
 xticklabels = [f'{v} ({f})' for f,v in matrix.columns]
@@ -124,6 +125,7 @@ d1 = dict(selector=".level0", props=[('min-width', '100px')])
 for domain in domains:
   f.write(f'''<h2 id="{domain}">{domain}<a href="#top">^</a></h2>''')
   dom_df = df[df.domain == domain]
+  dom_df = dom_df.drop(columns=['frequency', 'variable']).drop_duplicates()
   if dom_df.empty:
     continue
   dom_df = dom_df.assign(htmlstatus=pd.Series('<span class="' + dom_df.status + '">' + dom_df.experiment + '</span>', index=dom_df.index))
@@ -148,10 +150,13 @@ for domain in domains:
     ).agg(lambda x: ', '.join(x.dropna()))
     inst.name = ('','Institutes')
     dom_df_matrix = pd.concat([dom_df_matrix, inst.to_frame().T])
-    dom_df_matrix = dom_df_matrix.T.set_index([('','Institutes'),dom_df_matrix.columns]).T
+    inst_index = dom_df_matrix.loc[inst.name]
+    dom_df_matrix = dom_df_matrix.drop(inst.name)
+    dom_df_matrix.columns = pd.MultiIndex.from_tuples([(inst_index[col].values[0], col) for col in dom_df_matrix.columns])
     dom_df_matrix.columns.names = ['Institution(s)','RCM']
   # Drop evaluation runs and r0 members (coming from static variables)
   #dom_df_matrix.drop('ECMWF-ERAINT', level=0, axis=0, inplace=True, errors='ignore')
+  dom_df_matrix.drop('r0i0p0', level=1, axis=0, inplace=True, errors='ignore')
   f.write(f'''<p style="font-size: smaller;"> Colour legend:
       <span class="planned">planned</span>
       <span class="running">running</span>
@@ -165,9 +170,11 @@ for domain in domains:
         'selector': 'th',
         'props': [('font-size', '8pt'),('border-style','solid'),('border-width','1px')]
       }])
-     .render()
+     .to_html()
      .replace('nan','')
      .replace('historical','hist')
   )
 f.write('</body></html>')
 f.close()
+
+
