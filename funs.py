@@ -78,8 +78,17 @@ def taggify(text, field):
     rval = ' '.join([addtag(x, field) for x in text.split(' ')])
   return(rval)
 
-def csv2datatable(csvfile, htmlout, title='', intro='', rename_fields = {}):
+def csv2datatable(csvfile, htmlout, title='', intro='', rename_fields = {}, column_as_link="", column_as_link_source=""):
   plans = pd.read_csv(csvfile, na_filter=False)
+  if column_as_link:
+    if not column_as_link_source:
+      column_as_link_source = column_as_link
+  plans[column_as_link] = (
+    '<a href="' + plans[column_as_link_source] + '">' + plans[column_as_link] + "</a>"
+  )
+  if column_as_link != column_as_link_source:
+    plans.drop(columns=column_as_link_source, inplace=True)
+
   field_names = dict(zip(plans.columns,plans.columns))
   field_names.update(rename_fields)
   fp = open(htmlout,'w')
