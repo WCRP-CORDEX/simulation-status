@@ -53,6 +53,8 @@ df.sort_values(['domain', 'institution', 'model', 'model_version', 'driving_mode
 #  Plot variable availability as heatmap
 #
 data = pd.read_csv('docs/CORDEX_FPSCONV_ESGF_all_variables.csv', usecols=['variable', 'frequency', 'model'])
+# Avoid showing different subdaily frequencies
+data['frequency'] = data['frequency'].replace('.hr', 'xhr', regex = True)
 data.drop_duplicates(inplace = True)
 # matrix with models as rows and variables as columns
 matrix = data.pivot_table(index='model', columns=['frequency', 'variable'], aggfunc='size', fill_value=0)
@@ -62,6 +64,11 @@ plt.figure(figsize=(30,20))
 ax = sns.heatmap(matrix, cmap='YlGnBu_r', annot=False, cbar=False, linewidths=1, linecolor='lightgray')
 ax.set_xticks(0.5+np.arange(len(matrix.columns)))
 xticklabels = [f'{v} ({f})' for f,v in matrix.columns]
+xticklabels = (pd.Series(xticklabels)
+  .replace(r'(.*) \(fx\)', r'\1 (fx)   ', regex=True)
+  .replace(r'(.*) \(xhr\)', r'\1 (xhr)  ', regex=True)
+).to_list()
+print(xticklabels)
 ax.set_xticklabels(xticklabels)
 ax.set_xlabel("variable (freq.)")
 ax.set_yticks(0.5+np.arange(len(matrix.index)))
@@ -84,6 +91,7 @@ csv2datatable(
 <p> CORDEX-FPSCONV simulations providing some data on ESGF as of <b>{datetime.datetime.now().strftime("%Y-%m-%d %H:%M")}</b>. The full list as CSV can be obtained from <a href="https://github.com/WCRP-CORDEX/simulation-status/raw/main/docs/CORDEX_FPSCONV_ESGF_all_variables.csv">here</a>.
 </p>
 <img src="CORDEX_FPSCONV_varlist.png"/>
+<p> The graphical summary above provides just an overview of the existing data. The variables shown could be available only for a particular experiment (e.g. only for evaluation and not for the scenarios). All subdaily output (1hr, 3hr and 6hr) has been collapsed into a single entry marked as 'xhr'. Use the search box below to find the actual variables and frecuencies available for a given experiment. E.g. try to enter "hr rcp ta500".
 '''
 )
 
