@@ -16,7 +16,7 @@ csv2datatable(
       <a href="./CORDEX_CMIP6_status_by_experiment.html">experiment</a>
     </div>
     <div style="display:table-cell;text-align:right;width:50%;">
-      (Version: {datetime.datetime.now().strftime("%Y-%m-%d %H:%M")})
+      (Version: {datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M")} UTC)
     </div>
   </div>
 </div>

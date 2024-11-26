@@ -49,7 +49,7 @@ def html_header(title = 'CORDEX-CMIP6 downscaling plans'):
       <a href="./CORDEX_CMIP6_status_by_experiment.html">experiment</a>
     </div>
     <div style="display:table-cell;text-align:right;width:50%;">
-      (Version: {datetime.datetime.now().strftime("%Y-%m-%d %H:%M")})
+      (Version: {datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M")} UTC)
     </div>
   </div>
 </div>
@@ -83,9 +83,9 @@ def csv2datatable(csvfile, htmlout, title='', intro='', rename_fields = {}, colu
   if column_as_link:
     if not column_as_link_source:
       column_as_link_source = column_as_link
-  plans[column_as_link] = (
-    '<a href="' + plans[column_as_link_source] + '">' + plans[column_as_link] + "</a>"
-  )
+    plans[column_as_link] = (
+      '<a href="' + plans[column_as_link_source] + '">' + plans[column_as_link] + "</a>"
+    )
   if column_as_link != column_as_link_source:
     plans.drop(columns=column_as_link_source, inplace=True)
 
