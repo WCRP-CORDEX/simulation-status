@@ -317,7 +317,7 @@ EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI2-1,EC-Earth3-Veg,r1i1p1f1,ssp370,pl
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI2-1,MIROC6,r1i1p1f1,historical,planned,2025-12,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI2-1,MIROC6,r1i1p1f1,ssp126,planned,2025-12,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI2-1,MIROC6,r1i1p1f1,ssp370,planned,2025-12,#EURcoupled
-EUR-12,DWD-BSH,V. Maurer,ROAM-NBS,ERA5,,evaluation,planned,2024-12,#EURcoupled ORAS5 BC in the ocean
+EUR-12,DWD-BSH,V. Maurer,ROAM-NBS,ERA5,,evaluation,completed,2024-11,#EURcoupled ORAS5 BC in the ocean
 EUR-12,DWD-BSH,V. Maurer,ROAM-NBS,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2025-03,#EURcoupled
 EUR-12,DWD-BSH,V. Maurer,ROAM-NBS,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2025-06,#EURcoupled
 EUR-12,DWD-BSH,V. Maurer,ROAM-NBS,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2025-06,#EURcoupled
