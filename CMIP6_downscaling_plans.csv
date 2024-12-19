@@ -255,8 +255,10 @@ EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,COSMO-CLM,CMCC-CM2-SR5,
 EUR-12,CLMcom-IMWM,A. Jaczewski,COSMO-CLM,NorESM2-MM,r1i1p1f1,historical,planned,2025-03,#ManyGCM
 EUR-12,CLMcom-IMWM,A. Jaczewski,COSMO-CLM,NorESM2-MM,r1i1p1f1,ssp126,planned,2025-03,#ManyGCM
 EUR-12,CLMcom-IMWM,A. Jaczewski,COSMO-CLM,NorESM2-MM,r1i1p1f1,ssp370,planned,2025-03,#ManyGCM
-EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,COSMO-CLM-URB,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2023-12,#ManyGCM
-EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,COSMO-CLM-URB,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2023-12,#ManyGCM
+EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,CCLM6-0-1-URB,ERA5,,evaluation,completed,2024-10,#EURcoupled
+EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,CCLM6-0-1-URB,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2023-12,#EURcoupled
+EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,CCLM6-0-1-URB,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2023-12,#EURcoupled
+EUR-12,CLMcom-KUL,I. Vanderkelen,CCLM6-0-1-URB-ESG,ERA5,,evaluation,completed,2024-12,#EURcoupled
 EUR-12,CLMcom-FZJ,K. Goergen,TSMP1-140-E,ERA5,,evaluation,running,2024-12,#EURcoupled
 EUR-12,CLMcom-FZJ,K. Goergen,TSMP1-140-E,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2025-03,#EURcoupled
 EUR-12,CLMcom-FZJ,K. Goergen,TSMP1-140-E,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2025-09,#EURcoupled
