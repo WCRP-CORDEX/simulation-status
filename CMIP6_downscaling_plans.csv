@@ -206,11 +206,11 @@ EAS-25,KNU,E.-C. Chang / U.-Y. Byun,GRIMs3-2,UKESM1-0-LL,r15i1p1f2,ssp126,comple
 EAS-25,KNU,E.-C. Chang / U.-Y. Byun,GRIMs3-2,UKESM1-0-LL,r15i1p1f2,ssp245,planned,2022-12,
 EAS-25,KNU,E.-C. Chang / U.-Y. Byun,GRIMs3-2,UKESM1-0-LL,r15i1p1f2,ssp370,planned,2022-12,
 EAS-25,KNU,E.-C. Chang / U.-Y. Byun,GRIMs3-2,UKESM1-0-LL,r15i1p1f2,ssp585,completed,,
-EAS-25,NIMS,Y.-H. Byun / J.-U. Kim,HadGEM3-RA,UKESM1-0-LL,r15i1p1f2,historical,completed,,HadGEM3-RA (UM v8.1) see http://cordex-ea.climate.go.kr/cordex/models.do
-EAS-25,NIMS,Y.-H. Byun / J.-U. Kim,HadGEM3-RA,UKESM1-0-LL,r15i1p1f2,ssp126,completed,2022-12,
-EAS-25,NIMS,Y.-H. Byun / J.-U. Kim,HadGEM3-RA,UKESM1-0-LL,r15i1p1f2,ssp245,planned,2022-12,
-EAS-25,NIMS,Y.-H. Byun / J.-U. Kim,HadGEM3-RA,UKESM1-0-LL,r15i1p1f2,ssp370,planned,2022-12,
-EAS-25,NIMS,Y.-H. Byun / J.-U. Kim,HadGEM3-RA,UKESM1-0-LL,r15i1p1f2,ssp585,completed,,
+EAS-25,NIMS-KMA,Y.-H. Byun / J.-U. Kim,HadGEM3-RA,UKESM1-0-LL,r15i1p1f2,historical,completed,,HadGEM3-RA (UM v8.1) see http://cordex-ea.climate.go.kr/cordex/models.do
+EAS-25,NIMS-KMA,Y.-H. Byun / J.-U. Kim,HadGEM3-RA,UKESM1-0-LL,r15i1p1f2,ssp126,completed,2022-12,
+EAS-25,NIMS-KMA,Y.-H. Byun / J.-U. Kim,HadGEM3-RA,UKESM1-0-LL,r15i1p1f2,ssp245,completed,2024-12,
+EAS-25,NIMS-KMA,Y.-H. Byun / J.-U. Kim,HadGEM3-RA,UKESM1-0-LL,r15i1p1f2,ssp370,completed,2024-12,
+EAS-25,NIMS-KMA,Y.-H. Byun / J.-U. Kim,HadGEM3-RA,UKESM1-0-LL,r15i1p1f2,ssp585,completed,2022-12,
 EAS-25,PNU,J.-B. Ahn / G.-Y. Seo,WRF400,UKESM1-0-LL,r15i1p1f2,historical,completed,,see http://cordex-ea.climate.go.kr/cordex/models.do
 EAS-25,PNU,J.-B. Ahn / G.-Y. Seo,WRF400,UKESM1-0-LL,r15i1p1f2,ssp126,completed,2022-12,
 EAS-25,PNU,J.-B. Ahn / G.-Y. Seo,WRF400,UKESM1-0-LL,r15i1p1f2,ssp245,planned,2022-12,
