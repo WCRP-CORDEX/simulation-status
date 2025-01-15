@@ -415,14 +415,15 @@ EUR-12,IMWM,M. Figurski / A. Jaczewski,WRF451Q,CMCC-CM2-SR5,r1i1p1f1,historical,
 EUR-12,IMWM,M. Figurski / A. Jaczewski,WRF451Q,CMCC-CM2-SR5,r1i1p1f1,ssp126,planned,2024-12,#EURbalanced
 EUR-12,IMWM,M. Figurski / A. Jaczewski,WRF451Q,CMCC-CM2-SR5,r1i1p1f1,ssp370,planned,2024-12,#EURbalanced
 EUR-12,KNMI,E. van Meijgaard,RACMO23E,ERA5,,evaluation,completed,2024-08,#EURbalanced
-EUR-12,KNMI,E. van Meijgaard,RACMO23E,CNRM-ESM2-1,r1i1p1f2,historical,running,2024-01,#EURbalanced
-EUR-12,KNMI,E. van Meijgaard,RACMO23E,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2024-03,#EURbalanced
-EUR-12,KNMI,E. van Meijgaard,RACMO23E,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2024-03,#EURbalanced
+EUR-12,KNMI,E. van Meijgaard,RACMO23E,CNRM-ESM2-1,r1i1p1f2,historical,completed,2024-01,#EURbalanced
+EUR-12,KNMI,E. van Meijgaard,RACMO23E,CNRM-ESM2-1,r1i1p1f2,ssp126,completed,2024-03,#EURbalanced
+EUR-12,KNMI,E. van Meijgaard,RACMO23E,CNRM-ESM2-1,r1i1p1f2,ssp370,completed,2024-03,#EURbalanced
 EUR-12,KNMI,E. van Meijgaard,RACMO23E,EC-Earth3-Veg,r1i1p1f1,historical,completed,2023-12,#EURbalanced #ManySSP
+EUR-12,KNMI,E. van Meijgaard,RACMO23E,EC-Earth3-Veg,r1i1p1f1,ssp119,completed,2024-06,#ManySSP
 EUR-12,KNMI,E. van Meijgaard,RACMO23E,EC-Earth3-Veg,r1i1p1f1,ssp126,completed,2023-12,#EURbalanced #ManySSP
-EUR-12,KNMI,E. van Meijgaard,RACMO23E,EC-Earth3-Veg,r1i1p1f1,ssp245,planned,2024-06,#ManySSP
+EUR-12,KNMI,E. van Meijgaard,RACMO23E,EC-Earth3-Veg,r1i1p1f1,ssp245,completed,2024-06,#ManySSP
 EUR-12,KNMI,E. van Meijgaard,RACMO23E,EC-Earth3-Veg,r1i1p1f1,ssp370,completed,2023-12,#EURbalanced #ManySSP
-EUR-12,KNMI,E. van Meijgaard,RACMO23E,EC-Earth3-Veg,r1i1p1f1,ssp585,planned,2024-06,#ManySSP
+EUR-12,KNMI,E. van Meijgaard,RACMO23E,EC-Earth3-Veg,r1i1p1f1,ssp585,completed,2024-06,#ManySSP
 EUR-12,KNMI,E. van Meijgaard,RACMO23E,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2023-12,
 EUR-12,KNMI,E. van Meijgaard,RACMO23E,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2023-12,
 EUR-12,KNMI,E. van Meijgaard,RACMO23E,MPI-ESM1-2-HR,r1i1p1f1,ssp370,completed,2023-12,
