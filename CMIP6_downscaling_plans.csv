@@ -535,6 +535,7 @@ NAM-12,Ouranos,D. Paquin / C. McCray,CRCM5-SN,NorESM2-MM,r1i1p1f2,historical,com
 NAM-12,Ouranos,D. Paquin / C. McCray,CRCM5-SN,NorESM2-MM,r1i1p1f2,ssp126,planned,2024-12,
 NAM-12,Ouranos,D. Paquin / C. McCray,CRCM5-SN,NorESM2-MM,r1i1p1f2,ssp245,running,2024-12,
 NAM-12,Ouranos,D. Paquin / C. McCray,CRCM5-SN,NorESM2-MM,r1i1p1f2,ssp370,running,2024-12,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,ERA5,,evaluation,planned,2025-06,
 NAM-25,CCCma,J. Scinocca,CanRCM5,ERA5,,evaluation,planned,2024-06,
 NAM-25,CCCma,J. Scinocca,CanRCM5,CanESM5,r1i1p2f1,historical,planned,2024-06,
 NAM-25,CCCma,J. Scinocca,CanRCM5,CanESM5,r2i1p2f1,historical,planned,2024-06,
