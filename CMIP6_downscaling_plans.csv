@@ -244,7 +244,7 @@ EUR-12,CLMcom-Hereon,B. Geyer,COSMO-CLM,ERA5,,evaluation,planned,2024-12,#ManyGC
 EUR-12,CLMcom-LIST,M. Sulis,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2025-03,#ManyGCM #EURcoupled
 EUR-12,CLMcom-LIST,M. Sulis,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2025-03,#ManyGCM #EURcoupled
 EUR-12,CLMcom-LIST,M. Sulis,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2025-03,#ManyGCM #EURcoupled
-EUR-12,CLMcom-KIT,H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,historical,planned,2025-03,#ManyGCM #Nukleus #EURcoupled
+EUR-12,CLMcom-KIT,H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,historical,planned,2025-03,#ManyGCM #Nukleus
 EUR-12,CLMcom-KIT,H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2025-03,#ManyGCM #Nukleus
 EUR-12,CLMcom-KIT,H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2025-03,#ManyGCM #Nukleus
 EUR-12,CLMcom-KIT,H. Feldmann,COSMO-CLM,MIROC6,r1i1p1f1,historical,planned,2025-03,#ManyGCM #Nukleus
