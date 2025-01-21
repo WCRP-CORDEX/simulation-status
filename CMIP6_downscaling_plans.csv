@@ -77,7 +77,7 @@ AUS-20i,CSIRO,M. Thatcher,CCAM-2203,NorESM2-MM,r1i1p1f1,ssp126,completed,2022-06
 AUS-20i,CSIRO,M. Thatcher,CCAM-2203,NorESM2-MM,r1i1p1f1,ssp370,completed,2022-06,
 AUS-20i,IRD-MF,H. H. Le / M. Gevaudan,CNRM-ALADIN64P1,ERA5,,evaluation,completed,2024-09,
 AUS-20i,IRD-MF,H. H. Le / M. Gevaudan,CNRM-ALADIN64P1,CNRM-ESM2-1,r1i1p1f2,historical,completed,2024-09,
-AUS-20i,IRD-MF,H. H. Le / M. Gevaudan,CNRM-ALADIN64P1,CNRM-ESM2-1,r1i1p1f2,ssp370,running,2025-01,
+AUS-20i,IRD-MF,H. H. Le / M. Gevaudan,CNRM-ALADIN64P1,CNRM-ESM2-1,r1i1p1f2,ssp370,completed,2025-01,
 AUS-20i,NSW-DPE,G. di Virgilio,WRF412C1,ERA5,,evaluation,running,2024-03,
 AUS-20i,NSW-DPE,G. di Virgilio,WRF412C1,ACCESS-ESM1-5,r6i1p1f1,historical,completed,2023-11,
 AUS-20i,NSW-DPE,G. di Virgilio,WRF412C1,ACCESS-ESM1-5,r6i1p1f1,ssp126,completed,2023-11,
@@ -240,21 +240,21 @@ EUR-12,BCCR-UCAN,S. Sobolowski / O. Gokturk / J. Fernandez / J. Milovac,WRF451Q,
 EUR-12,BCCR-UCAN,S. Sobolowski / O. Gokturk / J. Fernandez / J. Milovac,WRF451Q,NorESM2-MM,r1i1p1f1,ssp370,planned,2024-10,#EURbalanced
 EUR-12,CESAM,D. Carvalho,WRF451Q,ERA5,,evaluation,running,2025-06,#RCMintvar
 EUR-12,CESAM,D. Carvalho,WRF451Q,MPI-ESM1-2-HR,r1i1p1f1,ssp585,planned,2023-12,#ManySSP
-EUR-12,CLMcom-Hereon,B. Geyer,COSMO-CLM,ERA5,,evaluation,planned,2024-12,#ManyGCM #EURcoupled
-EUR-12,CLMcom-LIST,M. Sulis,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2025-03,#ManyGCM #EURcoupled
-EUR-12,CLMcom-LIST,M. Sulis,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2025-03,#ManyGCM #EURcoupled
-EUR-12,CLMcom-LIST,M. Sulis,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2025-03,#ManyGCM #EURcoupled
-EUR-12,CLMcom-KIT,H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,historical,planned,2025-03,#ManyGCM #Nukleus
-EUR-12,CLMcom-KIT,H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2025-03,#ManyGCM #Nukleus
-EUR-12,CLMcom-KIT,H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2025-03,#ManyGCM #Nukleus
-EUR-12,CLMcom-KIT,H. Feldmann,COSMO-CLM,MIROC6,r1i1p1f1,historical,planned,2025-03,#ManyGCM #Nukleus
-EUR-12,CLMcom-KIT,H. Feldmann,COSMO-CLM,MIROC6,r1i1p1f1,ssp370,planned,2025-03,#ManyGCM #Nukleus
-EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,COSMO-CLM,CMCC-CM2-SR5,r1i1p1f1,historical,completed,2024-12, #ManyGCM
-EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,COSMO-CLM,CMCC-CM2-SR5,r1i1p1f1,ssp126,completed,2024-12, #ManyGCM
-EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,COSMO-CLM,CMCC-CM2-SR5,r1i1p1f1,ssp370,completed,2024-12, #ManyGCM
-EUR-12,CLMcom-IMWM,A. Jaczewski,COSMO-CLM,NorESM2-MM,r1i1p1f1,historical,planned,2025-03,#ManyGCM
-EUR-12,CLMcom-IMWM,A. Jaczewski,COSMO-CLM,NorESM2-MM,r1i1p1f1,ssp126,planned,2025-03,#ManyGCM
-EUR-12,CLMcom-IMWM,A. Jaczewski,COSMO-CLM,NorESM2-MM,r1i1p1f1,ssp370,planned,2025-03,#ManyGCM
+EUR-12,CLMcom-Hereon,B. Geyer,CCLM6-0-1,ERA5,,evaluation,planned,2024-12,#ManyGCM #EURcoupled
+EUR-12,CLMcom-LIST,M. Sulis,CCLM6-0-1,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2025-03,#ManyGCM #EURcoupled
+EUR-12,CLMcom-LIST,M. Sulis,CCLM6-0-1,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2025-03,#ManyGCM #EURcoupled
+EUR-12,CLMcom-LIST,M. Sulis,CCLM6-0-1,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2025-03,#ManyGCM #EURcoupled
+EUR-12,CLMcom-KIT,H. Feldmann,CCLM6-0-1,EC-Earth3-Veg,r1i1p1f1,historical,planned,2025-03,#ManyGCM #Nukleus
+EUR-12,CLMcom-KIT,H. Feldmann,CCLM6-0-1,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2025-03,#ManyGCM #Nukleus
+EUR-12,CLMcom-KIT,H. Feldmann,CCLM6-0-1,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2025-03,#ManyGCM #Nukleus
+EUR-12,CLMcom-KIT,H. Feldmann,CCLM6-0-1,MIROC6,r1i1p1f1,historical,planned,2025-03,#ManyGCM #Nukleus
+EUR-12,CLMcom-KIT,H. Feldmann,CCLM6-0-1,MIROC6,r1i1p1f1,ssp370,planned,2025-03,#ManyGCM #Nukleus
+EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,CCLM6-0-1,CMCC-CM2-SR5,r1i1p1f1,historical,completed,2024-12, #ManyGCM
+EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,CCLM6-0-1,CMCC-CM2-SR5,r1i1p1f1,ssp126,completed,2024-12, #ManyGCM
+EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,CCLM6-0-1,CMCC-CM2-SR5,r1i1p1f1,ssp370,completed,2024-12, #ManyGCM
+EUR-12,CLMcom-IMWM,A. Jaczewski,CCLM6-0-1,NorESM2-MM,r1i1p1f1,historical,planned,2025-03,#ManyGCM
+EUR-12,CLMcom-IMWM,A. Jaczewski,CCLM6-0-1,NorESM2-MM,r1i1p1f1,ssp126,planned,2025-03,#ManyGCM
+EUR-12,CLMcom-IMWM,A. Jaczewski,CCLM6-0-1,NorESM2-MM,r1i1p1f1,ssp370,planned,2025-03,#ManyGCM
 EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,CCLM6-0-1-URB,ERA5,,evaluation,completed,2024-10,#EURcoupled
 EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,CCLM6-0-1-URB,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2023-12,#EURcoupled
 EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,CCLM6-0-1-URB,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2023-12,#EURcoupled
@@ -263,7 +263,7 @@ EUR-12,CLMcom-FZJ,K. Goergen,TSMP1-140-E,ERA5,,evaluation,running,2024-12,#EURco
 EUR-12,CLMcom-FZJ,K. Goergen,TSMP1-140-E,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2025-03,#EURcoupled
 EUR-12,CLMcom-FZJ,K. Goergen,TSMP1-140-E,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2025-09,#EURcoupled
 EUR-12,CLMcom-FZJ,K. Goergen,TSMP1-140-E,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2025-09,#EURcoupled
-EUR-12,CLMcom-FZJ,K. Goergen,COSMO-CLM,MIROC6,r1i1p1f1,ssp126,planned,2025-03,#ManyGCM
+EUR-12,CLMcom-FZJ,K. Goergen,CCLM6-0-1,MIROC6,r1i1p1f1,ssp126,planned,2025-03,#ManyGCM
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI1-1,ERA5,,evaluation,completed,2024-10,#EURcoupled ORAS5 BC in the ocean
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI1-1,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2024-10,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2024-12,#EURcoupled

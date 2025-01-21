@@ -98,7 +98,7 @@ EUR-12:
   CCLMcom:
     title: CLM community (COSMO-CLM)
     condition:
-      - rcm_name.str.startswith('COSMO') | rcm_name.str.startswith('TSMP') | rcm_name.str.match('GCOAST-.*1-.')
+      - rcm_name.str.startswith('COSMO') | rcm_name.str.startswith('CCLM') | rcm_name.str.startswith('TSMP') | rcm_name.str.match('GCOAST-.*1-.')
     collapse_institutions: False
 
   ICLMcom:
@@ -122,7 +122,7 @@ EUR-12:
   REGCM:
     title: RegCM community
     condition:
-      - rcm_name == 'RegCM'
+      - rcm_name.str.startswith('RegCM')
     collapse_institutions: False
 
   ESD:
