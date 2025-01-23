@@ -279,7 +279,7 @@ EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOIB1-1,MPI-ESM1-2-HR,r1i1p1f1,historic
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOIB1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2024-12,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOIB1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp370,running,2024-12,#EURcoupled
 EUR-12,CLMcom-Hereon,B. Geyer,ICON-CLM-202407-1-1,ERA5,,evaluation,completed,2024-09,#EURbalanced #ManyGCM #UDAG #EURcoupled
-EUR-12,CLMcom-DWD,C. Steger,ICON-CLM-202407-1-1,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2025-03,#EURbalanced #ManyGCM #ManySSP #UDAG #EURcoupled
+EUR-12,CLMcom-DWD,C. Steger,ICON-CLM-202407-1-1,MPI-ESM1-2-HR,r1i1p1f1,historical,finished,2025-03,#EURbalanced #ManyGCM #ManySSP #UDAG #EURcoupled
 EUR-12,CLMcom-DWD,C. Steger,ICON-CLM-202407-1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2025-03,#EURbalanced #ManyGCM #ManySSP #UDAG #EURcoupled
 EUR-12,CLMcom-DWD,C. Steger,ICON-CLM-202407-1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp245,planned,2025-03,#ManyGCM #ManySSP #UDAG
 EUR-12,CLMcom-DWD,C. Steger,ICON-CLM-202407-1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2025-03,#EURbalanced #ManyGCM #ManySSP #UDAG #EURcoupled
@@ -583,7 +583,7 @@ NAM-25,CCCma,J. Scinocca,CanRCM5,TBD2,TBD3,TBD,planned,2024-09,two other SSPs TB
 NAM-25,CCCma,J. Scinocca,CanRCM5,TBD2,TBD4,TBD,planned,2024-09,two other SSPs TBD
 NAM-25,CCCma,J. Scinocca,CanRCM5,TBD2,TBD5,TBD,planned,2024-09,two other SSPs TBD
 MENA-25,DGM-UIZ,K. El Rhaz / M. Rachid,WRF,ERA5,,evaluation,completed,2022-01,
-MENA-25,DGM-UIZ,K. El Rhaz / M. Rachid,WRF,TBD,TBD,historical,planned,2023-12,paused due to resources limitations
+MENA-25,DGM-UIZ,K. El Rhaz / M. Rachid,WRF,TBD,TBD,historical,planned,2023-12,
 MENA-25,DGM-UIZ,K. El Rhaz / M. Rachid,WRF,TBD,TBD,ssp126,planned,2023-12,
 MENA-25,DGM-UIZ,K. El Rhaz / M. Rachid,WRF,TBD,TBD,ssp245,planned,2023-12,
 MENA-25,DGM-UIZ,K. El Rhaz / M. Rachid,WRF,TBD,TBD,ssp370,planned,2023-12,
