@@ -430,10 +430,10 @@ EUR-12,KNMI,E. van Meijgaard,RACMO23E,MPI-ESM1-2-HR,r1i1p1f1,ssp370,completed,20
 EUR-12,KNMI,E. van Meijgaard,RACMO23E,NorESM2-MM,r1i1p1f1,historical,completed,2023-12,#EURbalanced
 EUR-12,KNMI,E. van Meijgaard,RACMO23E,NorESM2-MM,r1i1p1f1,ssp126,completed,2024-01,#EURbalanced
 EUR-12,KNMI,E. van Meijgaard,RACMO23E,NorESM2-MM,r1i1p1f1,ssp370,completed,2024-01,#EURbalanced
-EUR-12,RMIB-UGent,P. Termonia,ALARO1-SFX,ERA5,,evaluation,running,2024-01,
-EUR-12,RMIB-UGent,P. Termonia,ALARO1-SFX,CNRM-ESM2-1,r1i1p1f2,historical,planned,,
-EUR-12,RMIB-UGent,P. Termonia,ALARO1-SFX,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,,scenario TBD
-EUR-12,RMIB-UGent,P. Termonia,ALARO1-SFX,CNRM-ESM2-1,r1i1p1f2,ssp585,planned,,scenario TBD
+EUR-12,RMIB-UGent,P. Termonia,ALARO1-SFX,ERA5,,evaluation,running,2025-02,#EURbalanced
+EUR-12,RMIB-UGent,P. Termonia,ALARO1-SFX,CNRM-ESM2-1,r1i1p1f2,historical,planned,2025-06,#EURbalanced
+EUR-12,RMIB-UGent,P. Termonia,ALARO1-SFX,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2025-06,#EURbalanced
+EUR-12,RMIB-UGent,P. Termonia,ALARO1-SFX,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2025-06,#EURbalanced
 EUR-12,UCAN,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,ERA5,,evaluation,completed,2023-12,#ESD
 EUR-12,UCAN,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,CMCC-CM2-SR5,r1i1p1f1,historical,running,2024-03,#ESD #ManySSP
 EUR-12,UCAN,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,CMCC-CM2-SR5,r1i1p1f1,ssp119,planned,2024-12,#ESD #ManySSP
