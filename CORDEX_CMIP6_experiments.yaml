@@ -1,3 +1,17 @@
+All:
+
+  CORDEX-CORE:
+    title: CORDEX-CORE
+    description: >
+      CORDEX-CORE cross-domain balanced ensemble. THIS IS NOT AGREED. JUST A MOCK-UP FOR THE MOMENT
+    condition:
+      - ~domain.str.startswith('MED')
+      - ~domain.str.startswith('ARC')
+      - ~domain.str.startswith('ANT')
+      - ~domain.str.startswith('MENA')
+      - ~comments.str.match('#ESD')
+      - experiment.str.startswith('hist') | experiment.str.startswith('ssp126') | experiment.str.startswith('ssp370') 
+
 CAM-12:
 
   ESD:
