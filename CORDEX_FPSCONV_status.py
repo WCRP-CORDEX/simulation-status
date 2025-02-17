@@ -23,14 +23,18 @@ facets = (
   'model', 'model_version', 'frequency', 'variable', 'version'
 )
 
+def version_range_string(vstring):
+  vint = int(vstring[1:])
+  return('minVersionDate=%d&maxVersionDate=%d' % (vint, vint))
+
 #
 #   Load search results
 #
-#conn = SearchConnection('http://esgf-data.dkrz.de/esg-search', distrib=True)
-conn = SearchConnection('https://esgf-node.ipsl.upmc.fr/esg-search', distrib=True)
+conn = SearchConnection('http://esgf-data.dkrz.de/esg-search', distrib=True)
+#conn = SearchConnection('https://esgf-node.ipsl.upmc.fr/esg-search', distrib=True)
 logging.getLogger('pyesgf.search.connection').setLevel(loglevel)
 dflist = []
-for proj in ['cordex-fpsconv','CORDEX-FPSCONV']:
+for proj in ['CORDEX-FPSCONV']:
   logger.info(f'Retrieving {proj} variables ...')
   ctx = conn.new_context(project = proj)
   dids = [result.dataset_id for result in ctx.search(batch_size=1000, ignore_facet_check=True)]
@@ -38,14 +42,23 @@ for proj in ['cordex-fpsconv','CORDEX-FPSCONV']:
   dataset_ids = [datanode_part.sub('', did).split('.') for did in dids]
   dflist.append(pd.DataFrame(dataset_ids))
 df = pd.concat(dflist)
-
 df.columns = facets
+
+# Add ESGF search URL
+search_urls = []
+for idx, row in df.iterrows():
+  row_dict = row.to_dict()
+  search_urls.append(
+    'https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&'
+#      + version_range_string(row_dict['version']) + '&'
+      + 'activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22{experiment}%22%2C%22driving_model%22%3A%22{driving_model}%22%2C%22institute%22%3A%22{institution}%22%2C%22domain%22%3A%22{domain}%22%2C%22ensemble%22%3A%22{ensemble}%22%2C%22rcm_name%22%3A%22{model}%22%2C%22rcm_version%22%3A%22{model_version}%22%2C%22time_frequency%22%3A%22{frequency}%22%2C%22variable%22%3A%22{variable}%22%7D'.format_map(row_dict)
+  )
+df['search_url'] = search_urls
+
 df.to_csv('docs/CORDEX_FPSCONV_ESGF_all_variables.csv', index = False)
+
 # Drop unnecessary columns
-df.drop(
-  ['project', 'activity', 'version'],
-  axis = 'columns', inplace = True
-)
+df.drop(columns = ['project', 'activity', 'version'], inplace = True)
 df.drop_duplicates(inplace = True)
 df.sort_values(['domain', 'institution', 'model', 'model_version', 'driving_model', 'ensemble', 'experiment'], inplace = True)
 
@@ -53,14 +66,21 @@ df.sort_values(['domain', 'institution', 'model', 'model_version', 'driving_mode
 #  Plot variable availability as heatmap
 #
 data = pd.read_csv('docs/CORDEX_FPSCONV_ESGF_all_variables.csv', usecols=['variable', 'frequency', 'model'])
+# Avoid showing different subdaily frequencies
+data['frequency'] = data['frequency'].replace('.hr', 'xhr', regex = True)
 data.drop_duplicates(inplace = True)
 # matrix with models as rows and variables as columns
 matrix = data.pivot_table(index='model', columns=['frequency', 'variable'], aggfunc='size', fill_value=0)
 matrix = matrix.replace(0, np.nan)
 # Plot as heatmap (make sure to show all ticks and labels)
+plt.figure(figsize=(30,20))
 ax = sns.heatmap(matrix, cmap='YlGnBu_r', annot=False, cbar=False, linewidths=1, linecolor='lightgray')
 ax.set_xticks(0.5+np.arange(len(matrix.columns)))
 xticklabels = [f'{v} ({f})' for f,v in matrix.columns]
+xticklabels = (pd.Series(xticklabels)
+  .replace(r'(.*) \(fx\)', r'\1 (fx)   ', regex=True)
+  .replace(r'(.*) \(xhr\)', r'\1 (xhr)  ', regex=True)
+).to_list()
 ax.set_xticklabels(xticklabels)
 ax.set_xlabel("variable (freq.)")
 ax.set_yticks(0.5+np.arange(len(matrix.index)))
@@ -78,10 +98,13 @@ df.to_csv('docs/CORDEX_FPSCONV_status.csv', index = False)
 csv2datatable(
   'docs/CORDEX_FPSCONV_status.csv',
   'docs/CORDEX_FPSCONV_varlist.html',
+  column_as_link = 'variable',
+  column_as_link_source = 'search_url',
   title = 'CORDEX-FPSCONV on ESGF',
   intro = f'''
 <p> CORDEX-FPSCONV simulations providing some data on ESGF as of <b>{datetime.datetime.now().strftime("%Y-%m-%d %H:%M")}</b>. The full list as CSV can be obtained from <a href="https://github.com/WCRP-CORDEX/simulation-status/raw/main/docs/CORDEX_FPSCONV_ESGF_all_variables.csv">here</a>.
-</p>
+<p> The graphical summary below provides just an overview of the existing data. The variables shown could be available only for a particular experiment (e.g. only for evaluation and not for the scenarios). All subdaily output (1hr, 3hr and 6hr) has been collapsed into a single entry marked as 'xhr'. Use the search box below to find the actual variables and frecuencies available for a given experiment. E.g. try to enter "hr rcp ta500". Variables names in the interactive data table below link to the ESGF, where you can download the corresponding data files.
+<p>
 <img src="CORDEX_FPSCONV_varlist.png"/>
 '''
 )
@@ -124,6 +147,7 @@ d1 = dict(selector=".level0", props=[('min-width', '100px')])
 for domain in domains:
   f.write(f'''<h2 id="{domain}">{domain}<a href="#top">^</a></h2>''')
   dom_df = df[df.domain == domain]
+  dom_df = dom_df.drop(columns=['frequency', 'variable', 'search_url']).drop_duplicates()
   if dom_df.empty:
     continue
   dom_df = dom_df.assign(htmlstatus=pd.Series('<span class="' + dom_df.status + '">' + dom_df.experiment + '</span>', index=dom_df.index))
@@ -148,10 +172,13 @@ for domain in domains:
     ).agg(lambda x: ', '.join(x.dropna()))
     inst.name = ('','Institutes')
     dom_df_matrix = pd.concat([dom_df_matrix, inst.to_frame().T])
-    dom_df_matrix = dom_df_matrix.T.set_index([('','Institutes'),dom_df_matrix.columns]).T
+    inst_index = dom_df_matrix.loc[inst.name]
+    dom_df_matrix = dom_df_matrix.drop(inst.name)
+    dom_df_matrix.columns = pd.MultiIndex.from_tuples([(inst_index[col].values[0], col) for col in dom_df_matrix.columns])
     dom_df_matrix.columns.names = ['Institution(s)','RCM']
   # Drop evaluation runs and r0 members (coming from static variables)
   #dom_df_matrix.drop('ECMWF-ERAINT', level=0, axis=0, inplace=True, errors='ignore')
+  dom_df_matrix.drop('r0i0p0', level=1, axis=0, inplace=True, errors='ignore')
   f.write(f'''<p style="font-size: smaller;"> Colour legend:
       <span class="planned">planned</span>
       <span class="running">running</span>
@@ -165,9 +192,11 @@ for domain in domains:
         'selector': 'th',
         'props': [('font-size', '8pt'),('border-style','solid'),('border-width','1px')]
       }])
-     .render()
+     .to_html()
      .replace('nan','')
      .replace('historical','hist')
   )
 f.write('</body></html>')
 f.close()
+
+

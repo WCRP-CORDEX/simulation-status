@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="author" content="J. Fernandez" />
+<meta name="keywords" content="HTML, CSS, JavaScript" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/plug-ins/2.0.5/features/deepLink/dataTables.deepLink.min.js"></script>
+<script type="text/javascript">
+$(document).ready( function () {
+    $('#table_id').DataTable( $.fn.dataTable.ext.deepLink( [
+      'search.search'
+    ]));
+} );
+</script>
+<title>CORDEX-FPSCONV on ESGF</title>
+<style>
+span.tag {
+  background-color: #c5def5;
+  padding: 0 10px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22px !important;
+  border: 1px solid transparent;
+  border-radius: 2em;
+}
+a {color: DodgerBlue}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:active { text-decoration: underline;}
+
+span.planned {color: #F54d4d; font-weight: bold}
+span.running {color: #009900; font-weight: bold}
+span.completed {color: black; font-weight: bold}
+span.published {color: #3399FF; font-weight: bold}
+
+</style>
+</head>
+<body>
+<h1>CORDEX-FPSCONV on ESGF</h1>
+<p> CORDEX-FPSCONV simulations providing some data on ESGF as of <b>2024-11-21 18:57 UTC</b>. The full list of variables can be obtained from <a href="https://wcrp-cordex.github.io/simulation-status/CORDEX_FPSCONV_varlist.html">here</a>.
+
+<table id="table_id" class="display">
+    <thead>
+        <tr>
+              <th>domain</th>
+              <th>model</th>
+              <th>experiment</th>
+              <th>driving_model</th>
+              <th>ensemble</th>
+              <th>model_version</th>
+              <th>institution</th>
+              <th>status</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ALP-3</td>
+            <td>AROME41t1</td>
+            <td>evaluation</td>
+            <td>ECMWF-ERAINT</td>
+            <td>r1i1p1</td>
+            <td>fpsconv-x2yn2-v1</td>
+            <td>CNRM</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22evaluation%22%2C%22driving_model%22%3A%22ECMWF-ERAINT%22%2C%22institute%22%3A%22CNRM%22%2C%22domain%22%3A%22ALP-3%22%2C%22ensemble%22%3A%22r1i1p1%22%2C%22rcm_name%22%3A%22AROME41t1%22%2C%22rcm_version%22%3A%22fpsconv-x2yn2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>ALP-3</td>
+            <td>AROME41t1</td>
+            <td>historical</td>
+            <td>CNRM-CERFACS-CNRM-CM5</td>
+            <td>r1i1p1</td>
+            <td>fpsconv-x2yn2-v1</td>
+            <td>CNRM</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22historical%22%2C%22driving_model%22%3A%22CNRM-CERFACS-CNRM-CM5%22%2C%22institute%22%3A%22CNRM%22%2C%22domain%22%3A%22ALP-3%22%2C%22ensemble%22%3A%22r1i1p1%22%2C%22rcm_name%22%3A%22AROME41t1%22%2C%22rcm_version%22%3A%22fpsconv-x2yn2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>ALP-3</td>
+            <td>AROME41t1</td>
+            <td>rcp85</td>
+            <td>CNRM-CERFACS-CNRM-CM5</td>
+            <td>r1i1p1</td>
+            <td>fpsconv-x2yn2-v1</td>
+            <td>CNRM</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22rcp85%22%2C%22driving_model%22%3A%22CNRM-CERFACS-CNRM-CM5%22%2C%22institute%22%3A%22CNRM%22%2C%22domain%22%3A%22ALP-3%22%2C%22ensemble%22%3A%22r1i1p1%22%2C%22rcm_name%22%3A%22AROME41t1%22%2C%22rcm_version%22%3A%22fpsconv-x2yn2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>ALP-3</td>
+            <td>CCLM5-0-15</td>
+            <td>historical</td>
+            <td>MOHC-HadGEM2-ES</td>
+            <td>r1i1p1</td>
+            <td>fpsconv-x2yn2-v1</td>
+            <td>CLMcom-DWD</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22historical%22%2C%22driving_model%22%3A%22MOHC-HadGEM2-ES%22%2C%22institute%22%3A%22CLMcom-DWD%22%2C%22domain%22%3A%22ALP-3%22%2C%22ensemble%22%3A%22r1i1p1%22%2C%22rcm_name%22%3A%22CCLM5-0-15%22%2C%22rcm_version%22%3A%22fpsconv-x2yn2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>ALP-3</td>
+            <td>CCLM5-0-15</td>
+            <td>rcp85</td>
+            <td>MOHC-HadGEM2-ES</td>
+            <td>r1i1p1</td>
+            <td>fpsconv-x2yn2-v1</td>
+            <td>CLMcom-DWD</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22rcp85%22%2C%22driving_model%22%3A%22MOHC-HadGEM2-ES%22%2C%22institute%22%3A%22CLMcom-DWD%22%2C%22domain%22%3A%22ALP-3%22%2C%22ensemble%22%3A%22r1i1p1%22%2C%22rcm_name%22%3A%22CCLM5-0-15%22%2C%22rcm_version%22%3A%22fpsconv-x2yn2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>ALP-3</td>
+            <td>CCLM5-0-9</td>
+            <td>evaluation</td>
+            <td>ECMWF-ERAINT</td>
+            <td>r1i1p1</td>
+            <td>fpsconv-x2yn2-v1</td>
+            <td>CLMcom-CMCC</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22evaluation%22%2C%22driving_model%22%3A%22ECMWF-ERAINT%22%2C%22institute%22%3A%22CLMcom-CMCC%22%2C%22domain%22%3A%22ALP-3%22%2C%22ensemble%22%3A%22r1i1p1%22%2C%22rcm_name%22%3A%22CCLM5-0-9%22%2C%22rcm_version%22%3A%22fpsconv-x2yn2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>ALP-3</td>
+            <td>CCLM5-0-9</td>
+            <td>historical</td>
+            <td>ICHEC-EC-EARTH</td>
+            <td>r12i1p1</td>
+            <td>fpsconv-x2yn2-v1</td>
+            <td>CLMcom-CMCC</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22historical%22%2C%22driving_model%22%3A%22ICHEC-EC-EARTH%22%2C%22institute%22%3A%22CLMcom-CMCC%22%2C%22domain%22%3A%22ALP-3%22%2C%22ensemble%22%3A%22r12i1p1%22%2C%22rcm_name%22%3A%22CCLM5-0-9%22%2C%22rcm_version%22%3A%22fpsconv-x2yn2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>ALP-3</td>
+            <td>CCLM5-0-9</td>
+            <td>rcp85</td>
+            <td>ICHEC-EC-EARTH</td>
+            <td>r12i1p1</td>
+            <td>fpsconv-x2yn2-v1</td>
+            <td>CLMcom-CMCC</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22rcp85%22%2C%22driving_model%22%3A%22ICHEC-EC-EARTH%22%2C%22institute%22%3A%22CLMcom-CMCC%22%2C%22domain%22%3A%22ALP-3%22%2C%22ensemble%22%3A%22r12i1p1%22%2C%22rcm_name%22%3A%22CCLM5-0-9%22%2C%22rcm_version%22%3A%22fpsconv-x2yn2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>ALP-3</td>
+            <td>COSMO-crCLIM</td>
+            <td>evaluation</td>
+            <td>ECMWF-ERAINT</td>
+            <td>r1i1p1</td>
+            <td>fpsconv-x2yn2-v1</td>
+            <td>CLMcom-ETH</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22evaluation%22%2C%22driving_model%22%3A%22ECMWF-ERAINT%22%2C%22institute%22%3A%22CLMcom-ETH%22%2C%22domain%22%3A%22ALP-3%22%2C%22ensemble%22%3A%22r1i1p1%22%2C%22rcm_name%22%3A%22COSMO-crCLIM%22%2C%22rcm_version%22%3A%22fpsconv-x2yn2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>ALP-3</td>
+            <td>COSMO-crCLIM</td>
+            <td>historical</td>
+            <td>MPI-M-MPI-ESM-LR</td>
+            <td>r1i1p1</td>
+            <td>fpsconv-x2yn2-v1</td>
+            <td>CLMcom-ETH</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22historical%22%2C%22driving_model%22%3A%22MPI-M-MPI-ESM-LR%22%2C%22institute%22%3A%22CLMcom-ETH%22%2C%22domain%22%3A%22ALP-3%22%2C%22ensemble%22%3A%22r1i1p1%22%2C%22rcm_name%22%3A%22COSMO-crCLIM%22%2C%22rcm_version%22%3A%22fpsconv-x2yn2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>ALP-3</td>
+            <td>COSMO-crCLIM</td>
+            <td>PGW-MPI-rcp85</td>
+            <td>ECMWF-ERAINT</td>
+            <td>r1i1p1</td>
+            <td>fpsconv-x2yn2-v1</td>
+            <td>CLMcom-ETH</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22PGW-MPI-rcp85%22%2C%22driving_model%22%3A%22ECMWF-ERAINT%22%2C%22institute%22%3A%22CLMcom-ETH%22%2C%22domain%22%3A%22ALP-3%22%2C%22ensemble%22%3A%22r1i1p1%22%2C%22rcm_name%22%3A%22COSMO-crCLIM%22%2C%22rcm_version%22%3A%22fpsconv-x2yn2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>ALP-3</td>
+            <td>COSMO-crCLIM</td>
+            <td>rcp85</td>
+            <td>MPI-M-MPI-ESM-LR</td>
+            <td>r1i1p1</td>
+            <td>fpsconv-x2yn2-v1</td>
+            <td>CLMcom-ETH</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22rcp85%22%2C%22driving_model%22%3A%22MPI-M-MPI-ESM-LR%22%2C%22institute%22%3A%22CLMcom-ETH%22%2C%22domain%22%3A%22ALP-3%22%2C%22ensemble%22%3A%22r1i1p1%22%2C%22rcm_name%22%3A%22COSMO-crCLIM%22%2C%22rcm_version%22%3A%22fpsconv-x2yn2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>ALP-3</td>
+            <td>HCLIM38-AROME</td>
+            <td>evaluation</td>
+            <td>ECMWF-ERAINT</td>
+            <td>r1i1p1</td>
+            <td>fpsconv-x2yn2-v1</td>
+            <td>HCLIMcom</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22evaluation%22%2C%22driving_model%22%3A%22ECMWF-ERAINT%22%2C%22institute%22%3A%22HCLIMcom%22%2C%22domain%22%3A%22ALP-3%22%2C%22ensemble%22%3A%22r1i1p1%22%2C%22rcm_name%22%3A%22HCLIM38-AROME%22%2C%22rcm_version%22%3A%22fpsconv-x2yn2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>ALP-3</td>
+            <td>HCLIM38-AROME</td>
+            <td>historical</td>
+            <td>ICHEC-EC-EARTH</td>
+            <td>r12i1p1</td>
+            <td>fpsconv-x2yn2-v1</td>
+            <td>HCLIMcom</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22historical%22%2C%22driving_model%22%3A%22ICHEC-EC-EARTH%22%2C%22institute%22%3A%22HCLIMcom%22%2C%22domain%22%3A%22ALP-3%22%2C%22ensemble%22%3A%22r12i1p1%22%2C%22rcm_name%22%3A%22HCLIM38-AROME%22%2C%22rcm_version%22%3A%22fpsconv-x2yn2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>ALP-3</td>
+            <td>HCLIM38-AROME</td>
+            <td>rcp85</td>
+            <td>ICHEC-EC-EARTH</td>
+            <td>r12i1p1</td>
+            <td>fpsconv-x2yn2-v1</td>
+            <td>HCLIMcom</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22rcp85%22%2C%22driving_model%22%3A%22ICHEC-EC-EARTH%22%2C%22institute%22%3A%22HCLIMcom%22%2C%22domain%22%3A%22ALP-3%22%2C%22ensemble%22%3A%22r12i1p1%22%2C%22rcm_name%22%3A%22HCLIM38-AROME%22%2C%22rcm_version%22%3A%22fpsconv-x2yn2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>ALP-3</td>
+            <td>RegCM4-7</td>
+            <td>evaluation</td>
+            <td>ECMWF-ERAINT</td>
+            <td>r1i1p1</td>
+            <td>fpsconv-x2yn2-v1</td>
+            <td>ICTP</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22evaluation%22%2C%22driving_model%22%3A%22ECMWF-ERAINT%22%2C%22institute%22%3A%22ICTP%22%2C%22domain%22%3A%22ALP-3%22%2C%22ensemble%22%3A%22r1i1p1%22%2C%22rcm_name%22%3A%22RegCM4-7%22%2C%22rcm_version%22%3A%22fpsconv-x2yn2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>ALP-3</td>
+            <td>RegCM4-7</td>
+            <td>historical</td>
+            <td>MOHC-HadGEM2-ES</td>
+            <td>r1i1p1</td>
+            <td>fpsconv-x2yn2-v1</td>
+            <td>ICTP</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22historical%22%2C%22driving_model%22%3A%22MOHC-HadGEM2-ES%22%2C%22institute%22%3A%22ICTP%22%2C%22domain%22%3A%22ALP-3%22%2C%22ensemble%22%3A%22r1i1p1%22%2C%22rcm_name%22%3A%22RegCM4-7%22%2C%22rcm_version%22%3A%22fpsconv-x2yn2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>ALP-3</td>
+            <td>RegCM4-7</td>
+            <td>rcp85</td>
+            <td>MOHC-HadGEM2-ES</td>
+            <td>r1i1p1</td>
+            <td>fpsconv-x2yn2-v1</td>
+            <td>ICTP</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22rcp85%22%2C%22driving_model%22%3A%22MOHC-HadGEM2-ES%22%2C%22institute%22%3A%22ICTP%22%2C%22domain%22%3A%22ALP-3%22%2C%22ensemble%22%3A%22r1i1p1%22%2C%22rcm_name%22%3A%22RegCM4-7%22%2C%22rcm_version%22%3A%22fpsconv-x2yn2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>ALP-3</td>
+            <td>WRF381BB</td>
+            <td>evaluation</td>
+            <td>ECMWF-ERAINT</td>
+            <td>r1i1p1</td>
+            <td>fpsconv-x1n2-v1</td>
+            <td>FZJ</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22evaluation%22%2C%22driving_model%22%3A%22ECMWF-ERAINT%22%2C%22institute%22%3A%22FZJ%22%2C%22domain%22%3A%22ALP-3%22%2C%22ensemble%22%3A%22r1i1p1%22%2C%22rcm_name%22%3A%22WRF381BB%22%2C%22rcm_version%22%3A%22fpsconv-x1n2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>ALP-3</td>
+            <td>WRF381BG</td>
+            <td>evaluation</td>
+            <td>ECMWF-ERAINT</td>
+            <td>r1i1p1</td>
+            <td>fpsconv-x1n2-v1</td>
+            <td>AUTH-MC</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22evaluation%22%2C%22driving_model%22%3A%22ECMWF-ERAINT%22%2C%22institute%22%3A%22AUTH-MC%22%2C%22domain%22%3A%22ALP-3%22%2C%22ensemble%22%3A%22r1i1p1%22%2C%22rcm_name%22%3A%22WRF381BG%22%2C%22rcm_version%22%3A%22fpsconv-x1n2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>ALP-3</td>
+            <td>WRF381BI</td>
+            <td>evaluation</td>
+            <td>ECMWF-ERAINT</td>
+            <td>r1i1p1</td>
+            <td>fpsconv-x1n2-v1</td>
+            <td>UCAN</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22evaluation%22%2C%22driving_model%22%3A%22ECMWF-ERAINT%22%2C%22institute%22%3A%22UCAN%22%2C%22domain%22%3A%22ALP-3%22%2C%22ensemble%22%3A%22r1i1p1%22%2C%22rcm_name%22%3A%22WRF381BI%22%2C%22rcm_version%22%3A%22fpsconv-x1n2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>ALP-3</td>
+            <td>WRF381CA</td>
+            <td>historical</td>
+            <td>SMHI-EC-EARTH</td>
+            <td>r12i1p1</td>
+            <td>fpsconv-x1n2-v1</td>
+            <td>FZJ-IDL</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22historical%22%2C%22driving_model%22%3A%22SMHI-EC-EARTH%22%2C%22institute%22%3A%22FZJ-IDL%22%2C%22domain%22%3A%22ALP-3%22%2C%22ensemble%22%3A%22r12i1p1%22%2C%22rcm_name%22%3A%22WRF381CA%22%2C%22rcm_version%22%3A%22fpsconv-x1n2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>ALP-3</td>
+            <td>WRF381DA</td>
+            <td>evaluation</td>
+            <td>ECMWF-ERAINT</td>
+            <td>r1i1p1</td>
+            <td>fpsconv-x1n2-v1</td>
+            <td>BCCR</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22evaluation%22%2C%22driving_model%22%3A%22ECMWF-ERAINT%22%2C%22institute%22%3A%22BCCR%22%2C%22domain%22%3A%22ALP-3%22%2C%22ensemble%22%3A%22r1i1p1%22%2C%22rcm_name%22%3A%22WRF381DA%22%2C%22rcm_version%22%3A%22fpsconv-x1n2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>ALP-3</td>
+            <td>WRF381DA</td>
+            <td>historical</td>
+            <td>NCC-NorESM1-ME</td>
+            <td>r1i1p1</td>
+            <td>fpsconv-x1n2-v1</td>
+            <td>BCCR</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22historical%22%2C%22driving_model%22%3A%22NCC-NorESM1-ME%22%2C%22institute%22%3A%22BCCR%22%2C%22domain%22%3A%22ALP-3%22%2C%22ensemble%22%3A%22r1i1p1%22%2C%22rcm_name%22%3A%22WRF381DA%22%2C%22rcm_version%22%3A%22fpsconv-x1n2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>ALP-3</td>
+            <td>WRF381DA</td>
+            <td>historical</td>
+            <td>SMHI-EC-EARTH</td>
+            <td>r12i1p1</td>
+            <td>fpsconv-x1n2-v1</td>
+            <td>FZJ-IDL</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22historical%22%2C%22driving_model%22%3A%22SMHI-EC-EARTH%22%2C%22institute%22%3A%22FZJ-IDL%22%2C%22domain%22%3A%22ALP-3%22%2C%22ensemble%22%3A%22r12i1p1%22%2C%22rcm_name%22%3A%22WRF381DA%22%2C%22rcm_version%22%3A%22fpsconv-x1n2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>CAN-1</td>
+            <td>COSMO-crCLIM</td>
+            <td>evaluation</td>
+            <td>ECMWF-ERAINT</td>
+            <td>r1i1p1</td>
+            <td>fpsconv-x2yn2-v1</td>
+            <td>CLMcom-ETH</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22evaluation%22%2C%22driving_model%22%3A%22ECMWF-ERAINT%22%2C%22institute%22%3A%22CLMcom-ETH%22%2C%22domain%22%3A%22CAN-1%22%2C%22ensemble%22%3A%22r1i1p1%22%2C%22rcm_name%22%3A%22COSMO-crCLIM%22%2C%22rcm_version%22%3A%22fpsconv-x2yn2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>CAN-1</td>
+            <td>COSMO-crCLIM</td>
+            <td>PGW-MPI-rcp85</td>
+            <td>ECMWF-ERAINT</td>
+            <td>r1i1p1</td>
+            <td>fpsconv-x2yn2-v1</td>
+            <td>CLMcom-ETH</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22PGW-MPI-rcp85%22%2C%22driving_model%22%3A%22ECMWF-ERAINT%22%2C%22institute%22%3A%22CLMcom-ETH%22%2C%22domain%22%3A%22CAN-1%22%2C%22ensemble%22%3A%22r1i1p1%22%2C%22rcm_name%22%3A%22COSMO-crCLIM%22%2C%22rcm_version%22%3A%22fpsconv-x2yn2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>REU-3</td>
+            <td>COSMO-crCLIM</td>
+            <td>evaluation</td>
+            <td>ECMWF-ERAINT</td>
+            <td>r1i1p1</td>
+            <td>fpsconv-x2yn2-v1</td>
+            <td>CLMcom-ETH</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22evaluation%22%2C%22driving_model%22%3A%22ECMWF-ERAINT%22%2C%22institute%22%3A%22CLMcom-ETH%22%2C%22domain%22%3A%22REU-3%22%2C%22ensemble%22%3A%22r1i1p1%22%2C%22rcm_name%22%3A%22COSMO-crCLIM%22%2C%22rcm_version%22%3A%22fpsconv-x2yn2-v1%22%7D">published</a></td>
+        </tr>
+        <tr>
+            <td>REU-3</td>
+            <td>COSMO-crCLIM</td>
+            <td>PGW-MPI-rcp85</td>
+            <td>ECMWF-ERAINT</td>
+            <td>r1i1p1</td>
+            <td>fpsconv-x2yn2-v1</td>
+            <td>CLMcom-ETH</td>
+            <td><a href="https://esgf-metagrid.cloud.dkrz.de/search?project=CORDEX&activeFacets=%7B%22project%22%3A%22CORDEX-FPSCONV%22%2C%22experiment%22%3A%22PGW-MPI-rcp85%22%2C%22driving_model%22%3A%22ECMWF-ERAINT%22%2C%22institute%22%3A%22CLMcom-ETH%22%2C%22domain%22%3A%22REU-3%22%2C%22ensemble%22%3A%22r1i1p1%22%2C%22rcm_name%22%3A%22COSMO-crCLIM%22%2C%22rcm_version%22%3A%22fpsconv-x2yn2-v1%22%7D">published</a></td>
+        </tr>
+
+    </tbody>
+</table>
+</body>
+</html>

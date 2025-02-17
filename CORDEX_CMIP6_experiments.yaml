@@ -15,17 +15,6 @@ EUR-12:
       The EURO-CORDEX balanced matrix experiment comprises simulations filling a
       GCM-RCM-SSP combination matrix with a fractional factorial design.
   
-  EURexpress:
-    title: EUR-12 balanced "express" stream (ECD by 2024-06)
-    description: >
-      Expected status of the balanced matrix experiment by 2024-06 (according to
-      expected completion date provided).
-    condition:
-      - tag:EURbalanced
-      - experiment != 'evaluation'
-      - estimated_completion_date <= '2024-06'
-      - estimated_completion_date > '2020-01'
-
   EURexpress24:
     title: EUR-12 balanced (ECD by 2024-12)
     description: >
@@ -35,6 +24,17 @@ EUR-12:
       - tag:EURbalanced
       - experiment != 'evaluation'
       - estimated_completion_date <= '2024-12'
+      - estimated_completion_date > '2020-01'
+
+  EURexpress256:
+    title: EUR-12 balanced (ECD by 2025-06)
+    description: >
+      Expected status of the balanced matrix experiment by 2025-06 (according to
+      expected completion date provided).
+    condition:
+      - tag:EURbalanced
+      - experiment != 'evaluation'
+      - estimated_completion_date <= '2025-06'
       - estimated_completion_date > '2020-01'
 
   EURexpress25:
@@ -98,7 +98,7 @@ EUR-12:
   CCLMcom:
     title: CLM community (COSMO-CLM)
     condition:
-      - rcm_name.str.startswith('COSMO') | rcm_name.str.startswith('TSMP') | rcm_name.str.match('GCOAST-.*1-.')
+      - rcm_name.str.startswith('COSMO') | rcm_name.str.startswith('CCLM') | rcm_name.str.startswith('TSMP') | rcm_name.str.match('GCOAST-.*1-.')
     collapse_institutions: False
 
   ICLMcom:
@@ -122,7 +122,7 @@ EUR-12:
   REGCM:
     title: RegCM community
     condition:
-      - rcm_name == 'RegCM'
+      - rcm_name.str.startswith('RegCM')
     collapse_institutions: False
 
   ESD:
