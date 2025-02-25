@@ -67,7 +67,7 @@ csv2datatable(
   'docs/CORDEX_FPSCONV_ESGF_simulations.html',
   column_as_link = 'status',
   column_as_link_source = 'search_url',
-  title = 'CORDEX-FPSCONV on ESGF',
+  title = 'CORDEX-FPSCONV simulations on ESGF',
   intro = f'''
 <p> CORDEX-FPSCONV simulations providing some data on ESGF as of <b>{datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")}</b>. The full list of variables can be obtained from <a href="https://wcrp-cordex.github.io/simulation-status/CORDEX_FPSCONV_varlist.html">here</a>.
 '''
