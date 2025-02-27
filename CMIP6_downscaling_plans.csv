@@ -1,4 +1,14 @@
 domain,institute,contact,rcm_name,driving_model,ensemble,experiment,status,estimated_completion_date,comments
+ANT-12,ULiège,X. Fettweis/D. Maure,MARv3.13,ERA5,,evaluation,completed,2024-12,
+ANT-12,ULiège,X. Fettweis/D. Maure,MARv3.13,CESM2,r11i1p1f1,historical,completed,2024-12,
+ANT-12,ULiège,X. Fettweis/D. Maure,MARv3.13,CESM2,r11i1p1f1,ssp370,completed,2024-12,
+ANT-12,ULiège,X. Fettweis/D. Maure,MARv3.13,MPI-ESM1-2-LR,r1i1p1f1,historical,completed,2024-12,
+ANT-12,ULiège,X. Fettweis/D. Maure,MARv3.13,MPI-ESM1-2-LR,r1i1p1f1,ssp370,completed,2024-12,
+ARC-12,ULiège,X. Fettweis/C. Lambin,MARv3.13,ERA5,,evaluation,completed,2024-12,
+ARC-12,ULiège,X. Fettweis/C. Lambin,MARv3.13,CNRM-ESM2-1,r1i1p1f2,historical,completed,2024-12,
+ARC-12,ULiège,X. Fettweis/C. Lambin,MARv3.13,CNRM-ESM2-1,r1i1p1f2,ssp370,completed,2024-12,
+ARC-12,ULiège,X. Fettweis/C. Lambin,MARv3.13,NorESM2-MM,r1i1p1f1,historical,completed,2024-12,
+ARC-12,ULiège,X. Fettweis/C. Lambin,MARv3.13,NorESM2-MM,r1i1p1f1,ssp370,completed,2024-12,
 AFR-25,TBD,,TBD,ERA5,,no plans,not planned,,Placeholder for potential upcoming simulations
 ANT-12,BAS,E. Gilbert / A. Orr,MetUM,ERA5,,evaluation,running,2024-04,
 ANT-12,DMI,R. Mottram / A. Torres,HCLIM43-ALADIN,ERA5,,evaluation,running,2024-04,
