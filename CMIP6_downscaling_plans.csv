@@ -203,9 +203,9 @@ CAM-12,UCR,H. Hidalgo,ESD-BCSD/delta,UKESM1-0-LL,r1i1p1f2,historical,completed,2
 CAM-12,UCR,H. Hidalgo,ESD-BCSD/delta,UKESM1-0-LL,r1i1p1f2,ssp126,completed,2022-12,#ESD
 CAM-12,UCR,H. Hidalgo,ESD-BCSD/delta,UKESM1-0-LL,r1i1p1f2,ssp245,completed,2022-12,#ESD
 CAM-12,UCR,H. Hidalgo,ESD-BCSD/delta,UKESM1-0-LL,r1i1p1f2,ssp585,completed,2022-12,#ESD
-CAM-25,CNRM,S. Somot,CNRM-ALADIN64C1,ERA5,,evaluation,planned,2025-12,
-CAM-25,CNRM,S. Somot,CNRM-ALADIN64C1,NorESM2-MM,r1i1p1f1,historical,planned,2025-12,
-CAM-25,CNRM,S. Somot,CNRM-ALADIN64C1,NorESM2-MM,r1i1p1f1,ssp585,planned,2025-12,
+CAM-25,CNRM,M. Gevaudan / S. Somot,CNRM-ALADIN64C1,ERA5,,evaluation,planned,2025-12,
+CAM-25,CNRM,M. Gevaudan / S. Somot,CNRM-ALADIN64C1,NorESM2-MM,r1i1p1f1,historical,planned,2025-12,
+CAM-25,CNRM,M. Gevaudan / S. Somot,CNRM-ALADIN64C1,NorESM2-MM,r1i1p1f1,ssp585,planned,2025-12,
 CAS-12,CLMcom-PIK,B. Fallah,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,historical,planned,,
 CAS-12,CLMcom-PIK,B. Fallah,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,,
 CAS-12,CLMcom-PIK,B. Fallah,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,,
