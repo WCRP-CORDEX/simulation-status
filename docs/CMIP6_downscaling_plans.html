@@ -35,8 +35,17 @@ a:active { text-decoration: underline;}
 
 span.planned {color: #F54d4d; font-weight: bold}
 span.running {color: #009900; font-weight: bold}
-span.completed {color: black; font-weight: bold}
+span.completed {color: #17202a; font-weight: bold}
 span.published {color: #3399FF; font-weight: bold}
+
+span.reginst {color: black; font-weight: bold}
+span.unreginst {color: grey; font-style: italic; font-weight: bold}
+span.unregistered {color: grey; font-style: italic; font-weight: bold}
+span.ARCM {color: black; font-weight: bold}
+span.AORCM {color: #2980b9; font-weight: bold}
+span.AGCM {color: black; font-weight: bold}
+span.AOGCM {color: #2980b9; font-weight: bold}
+span.ESD {color: #ca6f1e; font-weight: bold}
 
 </style>
 </head>
@@ -51,7 +60,7 @@ span.published {color: #3399FF; font-weight: bold}
       <a href="./CORDEX_CMIP6_status_by_experiment.html">experiment</a>
     </div>
     <div style="display:table-cell;text-align:right;width:50%;">
-      (Version: 2025-03-11 09:28 UTC)
+      (Version: 2025-03-11 18:27 UTC)
     </div>
   </div>
 </div>
@@ -5988,13 +5997,37 @@ To contribute/update simulations open and issue or pull request at <a href="http
         <tr>
             <td>MED-12</td>
             <td>CLMcom-IMS</td>
-            <td>L. Uzan</td>
+            <td>P. Khain / L. Uzan / E. Vadislavski</td>
             <td>ICON-OASIS-NEMO</td>
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
             <td><span class="planned">planned</span></td>
-            <td>2023-12</td>
+            <td>2024-12</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>MED-12</td>
+            <td>CLMcom-IMS</td>
+            <td>P. Khain / L. Uzan / E. Vadislavski</td>
+            <td>ICON-OASIS-NEMO</td>
+            <td>MPI-ESM1-2-HR</td>
+            <td>r1i1p1f1</td>
+            <td>historical</td>
+            <td><span class="planned">planned</span></td>
+            <td>2024-12</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>MED-12</td>
+            <td>CLMcom-IMS</td>
+            <td>P. Khain / L. Uzan / E. Vadislavski</td>
+            <td>ICON-OASIS-NEMO</td>
+            <td>MPI-ESM1-2-HR</td>
+            <td>r1i1p1f1</td>
+            <td>ssp370</td>
+            <td><span class="planned">planned</span></td>
+            <td>2024-12</td>
             <td></td>
         </tr>
         <tr>
@@ -6138,20 +6171,8 @@ To contribute/update simulations open and issue or pull request at <a href="http
             <td></td>
             <td>evaluation</td>
             <td><span class="completed">completed</span></td>
-            <td>2022-12</td>
-            <td>period 1980-2014</td>
-        </tr>
-        <tr>
-            <td>MED-12</td>
-            <td>ENEA</td>
-            <td>G. Sannino</td>
-            <td>ENEA-REG</td>
-            <td>ERA5</td>
-            <td></td>
-            <td>evaluation</td>
-            <td><span class="planned">planned</span></td>
             <td>2023-12</td>
-            <td>period 1970-2020</td>
+            <td></td>
         </tr>
         <tr>
             <td>MED-12</td>
@@ -6193,10 +6214,22 @@ To contribute/update simulations open and issue or pull request at <a href="http
             <td>MED-12</td>
             <td>ENEA</td>
             <td>G. Sannino</td>
+            <td>ENEA-REG</td>
+            <td>MPI-ESM1-2-HR</td>
+            <td>r1i1p1f1</td>
+            <td>ssp585</td>
+            <td><span class="completed">completed</span></td>
+            <td>2023-05</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>MED-12</td>
+            <td>ENEA</td>
+            <td>G. Sannino</td>
             <td>ENEA-REGb</td>
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
-            <td>ssp370</td>
+            <td>historical</td>
             <td><span class="running">running</span></td>
             <td>2025-12</td>
             <td></td>
@@ -6205,12 +6238,12 @@ To contribute/update simulations open and issue or pull request at <a href="http
             <td>MED-12</td>
             <td>ENEA</td>
             <td>G. Sannino</td>
-            <td>ENEA-REG</td>
+            <td>ENEA-REGb</td>
             <td>MPI-ESM1-2-HR</td>
             <td>r1i1p1f1</td>
-            <td>ssp585</td>
-            <td><span class="completed">completed</span></td>
-            <td>2023-05</td>
+            <td>ssp370</td>
+            <td><span class="running">running</span></td>
+            <td>2025-12</td>
             <td></td>
         </tr>
         <tr>
@@ -6283,42 +6316,6 @@ To contribute/update simulations open and issue or pull request at <a href="http
             <td>ssp370</td>
             <td><span class="planned">planned</span></td>
             <td>2023-12</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>MED-12</td>
-            <td>IMS</td>
-            <td>P. Khain / L. Uzan / E. Vadislavski</td>
-            <td>ICON-OASIS-NEMO</td>
-            <td>ERA5</td>
-            <td></td>
-            <td>evaluation</td>
-            <td><span class="planned">planned</span></td>
-            <td>2024-12</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>MED-12</td>
-            <td>IMS</td>
-            <td>P. Khain / L. Uzan / E. Vadislavski</td>
-            <td>ICON-OASIS-NEMO</td>
-            <td>MPI-ESM1-2-HR</td>
-            <td>r1i1p1f1</td>
-            <td>historical</td>
-            <td><span class="planned">planned</span></td>
-            <td>2024-12</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>MED-12</td>
-            <td>IMS</td>
-            <td>P. Khain / L. Uzan / E. Vadislavski</td>
-            <td>ICON-OASIS-NEMO</td>
-            <td>MPI-ESM1-2-HR</td>
-            <td>r1i1p1f1</td>
-            <td>ssp370</td>
-            <td><span class="planned">planned</span></td>
-            <td>2024-12</td>
             <td></td>
         </tr>
         <tr>
@@ -6395,7 +6392,7 @@ To contribute/update simulations open and issue or pull request at <a href="http
         </tr>
         <tr>
             <td>NAM-12</td>
-            <td>Ouranos</td>
+            <td>OURANOS</td>
             <td>D. Paquin / C. McCray</td>
             <td>CRCM5-SN</td>
             <td>ERA5</td>
@@ -6407,7 +6404,7 @@ To contribute/update simulations open and issue or pull request at <a href="http
         </tr>
         <tr>
             <td>NAM-12</td>
-            <td>Ouranos</td>
+            <td>OURANOS</td>
             <td>D. Paquin / C. McCray</td>
             <td>CRCM5-SN</td>
             <td>CanESM5</td>
@@ -6419,7 +6416,7 @@ To contribute/update simulations open and issue or pull request at <a href="http
         </tr>
         <tr>
             <td>NAM-12</td>
-            <td>Ouranos</td>
+            <td>OURANOS</td>
             <td>D. Paquin / C. McCray</td>
             <td>CRCM5-SN</td>
             <td>CanESM5</td>
@@ -6431,7 +6428,7 @@ To contribute/update simulations open and issue or pull request at <a href="http
         </tr>
         <tr>
             <td>NAM-12</td>
-            <td>Ouranos</td>
+            <td>OURANOS</td>
             <td>D. Paquin / C. McCray</td>
             <td>CRCM5-SN</td>
             <td>CanESM5</td>
@@ -6443,7 +6440,7 @@ To contribute/update simulations open and issue or pull request at <a href="http
         </tr>
         <tr>
             <td>NAM-12</td>
-            <td>Ouranos</td>
+            <td>OURANOS</td>
             <td>D. Paquin / C. McCray</td>
             <td>CRCM5-SN</td>
             <td>CanESM5</td>
@@ -6455,7 +6452,7 @@ To contribute/update simulations open and issue or pull request at <a href="http
         </tr>
         <tr>
             <td>NAM-12</td>
-            <td>Ouranos</td>
+            <td>OURANOS</td>
             <td>D. Paquin / C. McCray</td>
             <td>CRCM5-SN</td>
             <td>CanESM5</td>
@@ -6467,7 +6464,7 @@ To contribute/update simulations open and issue or pull request at <a href="http
         </tr>
         <tr>
             <td>NAM-12</td>
-            <td>Ouranos</td>
+            <td>OURANOS</td>
             <td>D. Paquin / C. McCray</td>
             <td>CRCM5-SN</td>
             <td>MPI-ESM1-2-LR</td>
@@ -6479,7 +6476,7 @@ To contribute/update simulations open and issue or pull request at <a href="http
         </tr>
         <tr>
             <td>NAM-12</td>
-            <td>Ouranos</td>
+            <td>OURANOS</td>
             <td>D. Paquin / C. McCray</td>
             <td>CRCM5-SN</td>
             <td>MPI-ESM1-2-LR</td>
@@ -6491,7 +6488,7 @@ To contribute/update simulations open and issue or pull request at <a href="http
         </tr>
         <tr>
             <td>NAM-12</td>
-            <td>Ouranos</td>
+            <td>OURANOS</td>
             <td>D. Paquin / C. McCray</td>
             <td>CRCM5-SN</td>
             <td>MPI-ESM1-2-LR</td>
@@ -6503,7 +6500,7 @@ To contribute/update simulations open and issue or pull request at <a href="http
         </tr>
         <tr>
             <td>NAM-12</td>
-            <td>Ouranos</td>
+            <td>OURANOS</td>
             <td>D. Paquin / C. McCray</td>
             <td>CRCM5-SN</td>
             <td>MPI-ESM1-2-LR</td>
@@ -6515,7 +6512,7 @@ To contribute/update simulations open and issue or pull request at <a href="http
         </tr>
         <tr>
             <td>NAM-12</td>
-            <td>Ouranos</td>
+            <td>OURANOS</td>
             <td>D. Paquin / C. McCray</td>
             <td>CRCM5-SN</td>
             <td>MPI-ESM1-2-LR</td>
@@ -6527,7 +6524,7 @@ To contribute/update simulations open and issue or pull request at <a href="http
         </tr>
         <tr>
             <td>NAM-12</td>
-            <td>Ouranos</td>
+            <td>OURANOS</td>
             <td>D. Paquin / C. McCray</td>
             <td>CRCM5-SN</td>
             <td>MPI-ESM1-2-LR</td>
@@ -6539,7 +6536,7 @@ To contribute/update simulations open and issue or pull request at <a href="http
         </tr>
         <tr>
             <td>NAM-12</td>
-            <td>Ouranos</td>
+            <td>OURANOS</td>
             <td>D. Paquin / C. McCray</td>
             <td>CRCM5-SN</td>
             <td>MPI-ESM1-2-LR</td>
@@ -6551,7 +6548,7 @@ To contribute/update simulations open and issue or pull request at <a href="http
         </tr>
         <tr>
             <td>NAM-12</td>
-            <td>Ouranos</td>
+            <td>OURANOS</td>
             <td>D. Paquin / C. McCray</td>
             <td>CRCM5-SN</td>
             <td>MPI-ESM1-2-LR</td>
@@ -6563,7 +6560,7 @@ To contribute/update simulations open and issue or pull request at <a href="http
         </tr>
         <tr>
             <td>NAM-12</td>
-            <td>Ouranos</td>
+            <td>OURANOS</td>
             <td>D. Paquin / C. McCray</td>
             <td>CRCM5-SN</td>
             <td>MPI-ESM1-2-LR</td>
@@ -6575,7 +6572,7 @@ To contribute/update simulations open and issue or pull request at <a href="http
         </tr>
         <tr>
             <td>NAM-12</td>
-            <td>Ouranos</td>
+            <td>OURANOS</td>
             <td>D. Paquin / C. McCray</td>
             <td>CRCM5-SN</td>
             <td>MPI-ESM1-2-LR</td>
@@ -6587,7 +6584,7 @@ To contribute/update simulations open and issue or pull request at <a href="http
         </tr>
         <tr>
             <td>NAM-12</td>
-            <td>Ouranos</td>
+            <td>OURANOS</td>
             <td>D. Paquin / C. McCray</td>
             <td>CRCM5-SN</td>
             <td>MPI-ESM1-2-LR</td>
@@ -6599,7 +6596,7 @@ To contribute/update simulations open and issue or pull request at <a href="http
         </tr>
         <tr>
             <td>NAM-12</td>
-            <td>Ouranos</td>
+            <td>OURANOS</td>
             <td>D. Paquin / C. McCray</td>
             <td>CRCM5-SN</td>
             <td>MPI-ESM1-2-LR</td>
@@ -6611,7 +6608,7 @@ To contribute/update simulations open and issue or pull request at <a href="http
         </tr>
         <tr>
             <td>NAM-12</td>
-            <td>Ouranos</td>
+            <td>OURANOS</td>
             <td>D. Paquin / C. McCray</td>
             <td>CRCM5-SN</td>
             <td>CNRM-ESM2-1</td>
@@ -6623,7 +6620,7 @@ To contribute/update simulations open and issue or pull request at <a href="http
         </tr>
         <tr>
             <td>NAM-12</td>
-            <td>Ouranos</td>
+            <td>OURANOS</td>
             <td>D. Paquin / C. McCray</td>
             <td>CRCM5-SN</td>
             <td>CNRM-ESM2-1</td>
@@ -6635,7 +6632,7 @@ To contribute/update simulations open and issue or pull request at <a href="http
         </tr>
         <tr>
             <td>NAM-12</td>
-            <td>Ouranos</td>
+            <td>OURANOS</td>
             <td>D. Paquin / C. McCray</td>
             <td>CRCM5-SN</td>
             <td>CNRM-ESM2-1</td>
@@ -6647,7 +6644,7 @@ To contribute/update simulations open and issue or pull request at <a href="http
         </tr>
         <tr>
             <td>NAM-12</td>
-            <td>Ouranos</td>
+            <td>OURANOS</td>
             <td>D. Paquin / C. McCray</td>
             <td>CRCM5-SN</td>
             <td>CNRM-ESM2-1</td>
@@ -6659,7 +6656,7 @@ To contribute/update simulations open and issue or pull request at <a href="http
         </tr>
         <tr>
             <td>NAM-12</td>
-            <td>Ouranos</td>
+            <td>OURANOS</td>
             <td>D. Paquin / C. McCray</td>
             <td>CRCM5-SN</td>
             <td>NorESM2-MM</td>
@@ -6671,7 +6668,7 @@ To contribute/update simulations open and issue or pull request at <a href="http
         </tr>
         <tr>
             <td>NAM-12</td>
-            <td>Ouranos</td>
+            <td>OURANOS</td>
             <td>D. Paquin / C. McCray</td>
             <td>CRCM5-SN</td>
             <td>NorESM2-MM</td>
@@ -6683,7 +6680,7 @@ To contribute/update simulations open and issue or pull request at <a href="http
         </tr>
         <tr>
             <td>NAM-12</td>
-            <td>Ouranos</td>
+            <td>OURANOS</td>
             <td>D. Paquin / C. McCray</td>
             <td>CRCM5-SN</td>
             <td>NorESM2-MM</td>
@@ -6695,7 +6692,7 @@ To contribute/update simulations open and issue or pull request at <a href="http
         </tr>
         <tr>
             <td>NAM-12</td>
-            <td>Ouranos</td>
+            <td>OURANOS</td>
             <td>D. Paquin / C. McCray</td>
             <td>CRCM5-SN</td>
             <td>NorESM2-MM</td>
