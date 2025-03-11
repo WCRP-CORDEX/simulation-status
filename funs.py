@@ -18,8 +18,15 @@ span.ESD {color: #ca6f1e; font-weight: bold}
 '''
 
 html_style = '''
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <style>
-body { padding-bottom: 600px; }
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 600px;
+}
 tr:hover {background-color:#f5f5f5;}
 th, td {text-align: center; padding: 3px;}
 table {border-collapse: collapse;}''' + span_style + '''
@@ -29,6 +36,10 @@ a:visited { text-decoration: none; }
 a:hover { text-decoration: underline; }
 a:active { text-decoration: underline;}
 ul.twocol { columns: 2; -webkit-columns: 2; -moz-columns: 2; }
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
 </style>
 '''
 
@@ -58,7 +69,11 @@ def html_header(title = 'CORDEX-CMIP6 downscaling plans'):
 <html><head>
 {html_style}
 </head><body>
+<div class="logo">
+<img src="https://cordex.org/wp-content/uploads/2025/02/CORDEX_RGB_logo_baseline_positive-300x133.png" 
+   alt="CORDEX Logo" >
 <h1 id="top">{title}</h1>
+</div>
 <div style="display:table;width:100%;">
   <div style="display:table-row;">
     <div style="display:table-cell;width:50%;">
