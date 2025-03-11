@@ -5,6 +5,7 @@ channels:
 dependencies:
   # Python
   - python ==3.11
+  - icecream
   - natsort
   - pandas <2
   - seaborn
