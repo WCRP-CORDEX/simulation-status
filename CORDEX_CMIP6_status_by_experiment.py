@@ -20,7 +20,7 @@ f.write('</ul>')
 d1 = dict(selector=".level1", props=table_props)
 for domain in domains:
   dom_plans = plans[plans.domain == domain]
-  tags = sorted(list(set(filter(lambda x: x.startswith('#'), dom_plans.comments.str.split(' ').agg(sum)))))
+  tags = sorted(list(set(filter(lambda x: x.startswith('#'), dom_plans.comments.str.split(' ').agg("sum")))))
   dconf = config[domain] if domain in config else dict()
   if not tags:
     continue
@@ -82,7 +82,7 @@ for domain in domains:
           'selector': 'th',
           'props': [('font-size', '8pt'),('border-style','solid'),('border-width','1px')]
         }])
-       .render()
+       .to_html()
        .replace('nan','')
        .replace('historical','hist')
     )
