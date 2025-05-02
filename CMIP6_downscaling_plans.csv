@@ -537,16 +537,16 @@ MED-12,CNRM,S. Somot,CNRM-RCSM6B,NorESM2-MM,r1i1p1f1,ssp126,planned,2025-12,
 MED-12,CNRM,S. Somot,CNRM-RCSM6B,NorESM2-MM,r1i1p1f1,ssp370,planned,2025-12,
 MED-12,CMCC,S. Gualdi / P. Lionello / L. Cavicchia,MedESM,ERA5,,evaluation,planned,2024-12,
 MED-12,CMCC,S. Gualdi / P. Lionello / L. Cavicchia,MedESM,TBD,TBD,historical,planned,2024-12,
-MED-12,ENEA,G. Sannino,ENEA-REG,ERA5,,evaluation,completed,2023-12,
-MED-12,ENEA,G. Sannino,ENEA-REG,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2023-05,
-MED-12,ENEA,G. Sannino,ENEA-REG,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2023-05,
-MED-12,ENEA,G. Sannino,ENEA-REG,MPI-ESM1-2-HR,r1i1p1f1,ssp245,completed,2023-05,
-MED-12,ENEA,G. Sannino,ENEA-REG,MPI-ESM1-2-HR,r1i1p1f1,ssp585,completed,2023-05,
-MED-12,ENEA,G. Sannino,ENEA-REGb,ERA5,,evaluation,running,2025-12,
-MED-12,ENEA,G. Sannino,ENEA-REGb,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2025-12,
-MED-12,ENEA,G. Sannino,ENEA-REGb,MPI-ESM1-2-HR,r1i1p1f1,ssp370,running,2025-12,
-MED-12,ENEA,G. Sannino,ENEA-REGb,EC-Earth3,r1i1p1f1,historical,running,2025-12,
-MED-12,ENEA,G. Sannino,ENEA-REGb,EC-Earth3,r1i1p1f1,ssp370,running,2025-12,
+MED-12,ENEA,G. Sannino,ENEA-REG2,ERA5,,evaluation,completed,2023-12,Not to be published in ESGF but available on request
+MED-12,ENEA,G. Sannino,ENEA-REG2,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2023-05,Not to be published in ESGF but available on request
+MED-12,ENEA,G. Sannino,ENEA-REG2,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2023-05,Not to be published in ESGF but available on request
+MED-12,ENEA,G. Sannino,ENEA-REG2,MPI-ESM1-2-HR,r1i1p1f1,ssp245,completed,2023-05,Not to be published in ESGF but available on request
+MED-12,ENEA,G. Sannino,ENEA-REG2,MPI-ESM1-2-HR,r1i1p1f1,ssp585,completed,2023-05,Not to be published in ESGF but available on request
+MED-12,ENEA,G. Sannino,ENEA-REG3,ERA5,,evaluation,running,2025-12,
+MED-12,ENEA,G. Sannino,ENEA-REG3,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2025-12,
+MED-12,ENEA,G. Sannino,ENEA-REG3,MPI-ESM1-2-HR,r1i1p1f1,ssp370,running,2025-12,
+MED-12,ENEA,G. Sannino,ENEA-REG3,EC-Earth3,r1i1p1f1,historical,running,2025-12,
+MED-12,ENEA,G. Sannino,ENEA-REG3,EC-Earth3,r1i1p1f1,ssp370,running,2025-12,
 MED-12,ICTP,E. Coppola,RegCM-ES1-1,ERA5,,evaluation,running,2025-09,
 MED-12,ICTP,E. Coppola,RegCM-ES1-1,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,,
 MED-12,ICTP,E. Coppola,RegCM-ES1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,,
