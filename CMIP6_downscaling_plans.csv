@@ -283,8 +283,8 @@ EUR-12,AUTH,E. Katragkou / V. Pavlidis,WRF451Q,MPI-ESM1-2-HR,r1i1p1f1,ssp126,run
 EUR-12,BCCR-UCAN,S. Sobolowski / O. Gokturk / J. Fernandez / J. Milovac,WRF451Q,NorESM2-MM,r1i1p1f1,historical,completed,2025-01,#EURbalanced
 EUR-12,BCCR-UCAN,S. Sobolowski / O. Gokturk / J. Fernandez / J. Milovac,WRF451Q,NorESM2-MM,r1i1p1f1,ssp126,running,2025-06,#EURbalanced
 EUR-12,BCCR-UCAN,S. Sobolowski / O. Gokturk / J. Fernandez / J. Milovac,WRF451Q,NorESM2-MM,r1i1p1f1,ssp370,running,2025-03,#EURbalanced
-EUR-12,CESAM,D. Carvalho,WRF451Q,ERA5,,evaluation,running,2025-06,#RCMintvar
-EUR-12,CESAM,D. Carvalho,WRF451Q,MPI-ESM1-2-HR,r1i1p1f1,ssp585,planned,2023-12,#ManySSP
+EUR-12,CESAM-UA,D. Carvalho,WRF451Q,ERA5,,evaluation,running,2025-06,#RCMintvar
+EUR-12,CESAM-UA,D. Carvalho,WRF451Q,MPI-ESM1-2-HR,r1i1p1f1,ssp585,planned,2023-12,#ManySSP
 EUR-12,CLMcom-Hereon,B. Geyer,CCLM6-0-1,ERA5,,evaluation,completed,2024-12,#ManyGCM #EURcoupled
 EUR-12,CLMcom-LIST,M. Sulis,CCLM6-0-1,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2025-03,#ManyGCM #EURcoupled
 EUR-12,CLMcom-LIST,M. Sulis,CCLM6-0-1,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2025-03,#ManyGCM #EURcoupled
