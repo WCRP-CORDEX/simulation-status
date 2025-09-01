@@ -51,7 +51,7 @@ for domain in domains:
           'selector': 'th',
           'props': [('font-size', '8pt'),('border-style','solid'),('border-width','1px')]
         }])
-       .render()
+       .to_html()
        .replace('nan','')
        .replace('historical','hist')
     )

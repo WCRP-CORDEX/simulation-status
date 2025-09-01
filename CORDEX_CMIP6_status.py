@@ -1,9 +1,27 @@
 import pandas as pd
+import requests
 from funs import html_header, html_footer, html_legend, table_props
+from icecream import ic
 
 collapse_institutions = True
 
 plans = pd.read_csv('CMIP6_downscaling_plans.csv', na_filter=False)
+
+# Cross with registration info
+url_source_id = "https://raw.githubusercontent.com/WCRP-CORDEX/cordex-cmip6-cv/refs/heads/main/CORDEX-CMIP6_source_id.json"
+response = requests.get(url_source_id)
+response.raise_for_status()
+source_ids = response.json()["source_id"]
+source_type_map = {key: value["source_type"] for key, value in source_ids.items()}
+plans["registered"] = plans["rcm_name"].apply(lambda x: x in source_type_map)
+plans["source_type"] = plans["rcm_name"].apply(lambda x: source_type_map.get(x, "") if x in source_type_map else "unregistered")
+
+url_institution_id = "https://raw.githubusercontent.com/WCRP-CORDEX/cordex-cmip6-cv/refs/heads/main/CORDEX-CMIP6_institution_id.json"
+response = requests.get(url_institution_id)
+response.raise_for_status()
+institution_ids = response.json()["institution_id"]
+plans["inst_registered"] = plans["institute"].apply(lambda x: "reginst" if x in institution_ids else "unreginst")
+
 domains = sorted(list(set(plans.domain)))
 
 f = open(f'docs/CORDEX_CMIP6_status.html','w')
@@ -14,6 +32,8 @@ d1 = dict(selector=".level1", props=table_props)
 for domain in domains:
   dom_plans = plans[plans.domain == domain]
   dom_plans = dom_plans.assign(htmlstatus=pd.Series('<span sort="' + dom_plans.experiment +'" class="' + dom_plans.status + '">' + dom_plans.experiment + '</span>', index=dom_plans.index))
+  dom_plans = dom_plans.assign(rcm_name=pd.Series('<span sort="' + dom_plans.rcm_name +'" class="' + dom_plans.source_type + '">' + dom_plans.rcm_name + '</span>', index=dom_plans.index))
+  dom_plans = dom_plans.assign(institute=pd.Series('<span sort="' + dom_plans.institute +'" class="' + dom_plans.inst_registered + '">' + dom_plans.institute + '</span>', index=dom_plans.index))
   dom_plans = dom_plans.assign(model_id=pd.Series(dom_plans.institute + '-' + dom_plans.rcm_name, index=dom_plans.index))
   column_id = 'rcm_name' if collapse_institutions else 'model_id'
   dom_plans_matrix = dom_plans.pivot_table(
@@ -44,7 +64,7 @@ for domain in domains:
         'selector': 'th',
         'props': [('font-size', '8pt'),('border-style','solid'),('border-width','1px')]
       }])
-     .render()
+     .to_html()
      .replace('nan','')
      .replace('historical','hist')
  )

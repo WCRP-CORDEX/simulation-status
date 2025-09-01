@@ -1,7 +1,6 @@
 import pandas as pd
 import yaml
 from funs import html_header, html_footer, html_legend, table_props
-from icecream import ic
 
 collapse_institutions = True
 

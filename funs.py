@@ -4,13 +4,29 @@ import pandas as pd
 span_style = '''
 span.planned {color: #F54d4d; font-weight: bold}
 span.running {color: #009900; font-weight: bold}
-span.completed {color: black; font-weight: bold}
+span.completed {color: #17202a; font-weight: bold}
 span.published {color: #3399FF; font-weight: bold}
+
+span.reginst {color: black; font-weight: bold}
+span.unreginst {color: grey; font-style: italic; font-weight: bold}
+span.unregistered {color: grey; font-style: italic; font-weight: bold}
+span.ARCM {color: black; font-weight: bold}
+span.AORCM {color: #2980b9; font-weight: bold}
+span.AGCM {color: black; font-weight: bold}
+span.AOGCM {color: #2980b9; font-weight: bold}
+span.ESD {color: #ca6f1e; font-weight: bold}
 '''
 
 html_style = '''
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <style>
-body { padding-bottom: 600px; }
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 600px;
+}
 tr:hover {background-color:#f5f5f5;}
 th, td {text-align: center; padding: 3px;}
 table {border-collapse: collapse;}''' + span_style + '''
@@ -20,15 +36,29 @@ a:visited { text-decoration: none; }
 a:hover { text-decoration: underline; }
 a:active { text-decoration: underline;}
 ul.twocol { columns: 2; -webkit-columns: 2; -moz-columns: 2; }
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
 </style>
 '''
 
 html_legend = '''
-      <p style="font-size: smaller;"> Colour legend:
+      <p style="font-size: smaller;"> Colour legend for status:
+        (
         <span class="planned">planned</span>
         <span class="running">running</span>
         <span class="completed">completed</span>
         <span class="published">published</span>
+        )
+        //
+        source_type:
+        (
+        <span class="unregistered">unregistered</span>
+        <span class="ARCM">ARCM</span>
+        <span class="AORCM">AORCM</span>
+        <span class="ESD">ESD</span>
+        )
       </p>
 '''
 
@@ -39,7 +69,11 @@ def html_header(title = 'CORDEX-CMIP6 downscaling plans'):
 <html><head>
 {html_style}
 </head><body>
+<div class="logo">
+<img src="https://cordex.org/wp-content/uploads/2025/02/CORDEX_RGB_logo_baseline_positive-300x133.png" 
+   alt="CORDEX Logo" >
 <h1 id="top">{title}</h1>
+</div>
 <div style="display:table;width:100%;">
   <div style="display:table-row;">
     <div style="display:table-cell;width:50%;">
