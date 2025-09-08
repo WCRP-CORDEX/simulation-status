@@ -693,27 +693,27 @@ SEA-25,MET-Malaysia,M. F. Ammar,WRF,CNRM-ESM2-1,r1i1p1f2,historical,planned,2022
 SEA-25,MET-Malaysia,M. F. Ammar,WRF,CNRM-ESM2-1,r1i1p1f2,ssp119,planned,2023-12,
 SEA-25,MET-Malaysia,M. F. Ammar,WRF,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2022-12,
 SEA-25,MET-Malaysia,M. F. Ammar,WRF,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2022-12,
-SEA-25,MET-Malaysia,M. F. Ammar,WRF,CNRM-ESM2-1,r1i1p1f2,,planned,2023-12,Considering ssp245 and/or ssp585
+SEA-25,MET-Malaysia,M. F. Ammar,WRF,CNRM-ESM2-1,r1i1p1f2,TBD,planned,2023-12,Considering ssp245 and/or ssp585
 SEA-25,MET-Malaysia,M. F. Ammar,WRF,EC-Earth3-Veg,r1i1p1f1,historical,planned,2022-12,#CORDEX-CORE
 SEA-25,MET-Malaysia,M. F. Ammar,WRF,EC-Earth3-Veg,r1i1p1f1,ssp119,planned,2023-12,
 SEA-25,MET-Malaysia,M. F. Ammar,WRF,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2022-12,
 SEA-25,MET-Malaysia,M. F. Ammar,WRF,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2022-12,#CORDEX-CORE
-SEA-25,MET-Malaysia,M. F. Ammar,WRF,EC-Earth3-Veg,r1i1p1f1,,planned,2023-12,Considering ssp245 and/or ssp585
+SEA-25,MET-Malaysia,M. F. Ammar,WRF,EC-Earth3-Veg,r1i1p1f1,TBD,planned,2023-12,Considering ssp245 and/or ssp585
 SEA-25,MET-Malaysia,M. F. Ammar,WRF,HadGEM3-GC31-MM,r1i1p1f3,historical,planned,2022-12,
 SEA-25,MET-Malaysia,M. F. Ammar,WRF,HadGEM3-GC31-MM,r1i1p1f3,ssp119,planned,2023-12,
 SEA-25,MET-Malaysia,M. F. Ammar,WRF,HadGEM3-GC31-MM,r1i1p1f3,ssp126,planned,2022-12,
 SEA-25,MET-Malaysia,M. F. Ammar,WRF,HadGEM3-GC31-MM,r1i1p1f3,ssp370,planned,2022-12,
-SEA-25,MET-Malaysia,M. F. Ammar,WRF,HadGEM3-GC31-MM,r1i1p1f3,,planned,2023-12,Considering ssp245 and/or ssp585
+SEA-25,MET-Malaysia,M. F. Ammar,WRF,HadGEM3-GC31-MM,r1i1p1f3,TBD,planned,2023-12,Considering ssp245 and/or ssp585
 SEA-25,MET-Malaysia,M. F. Ammar,WRF,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-12,#CORDEX-CORE
 SEA-25,MET-Malaysia,M. F. Ammar,WRF,MPI-ESM1-2-HR,r1i1p1f1,ssp119,planned,2023-12,
 SEA-25,MET-Malaysia,M. F. Ammar,WRF,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2022-12,
 SEA-25,MET-Malaysia,M. F. Ammar,WRF,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-12,#CORDEX-CORE
-SEA-25,MET-Malaysia,M. F. Ammar,WRF,MPI-ESM1-2-HR,r1i1p1f1,,planned,2023-12,Considering ssp245 and/or ssp585
+SEA-25,MET-Malaysia,M. F. Ammar,WRF,MPI-ESM1-2-HR,r1i1p1f1,TBD,planned,2023-12,Considering ssp245 and/or ssp585
 SEA-25,MET-Malaysia,M. F. Ammar,WRF,NorESM2-MM,r2i1p1f1,historical,planned,2022-12,#CORDEX-CORE
 SEA-25,MET-Malaysia,M. F. Ammar,WRF,NorESM2-MM,r2i1p1f1,ssp119,planned,2023-12,
 SEA-25,MET-Malaysia,M. F. Ammar,WRF,NorESM2-MM,r2i1p1f1,ssp126,planned,2022-12,
 SEA-25,MET-Malaysia,M. F. Ammar,WRF,NorESM2-MM,r2i1p1f1,ssp370,planned,2022-12,#CORDEX-CORE
-SEA-25,MET-Malaysia,M. F. Ammar,WRF,NorESM2-MM,r2i1p1f1,,planned,2023-12,Considering ssp245 and/or ssp585
+SEA-25,MET-Malaysia,M. F. Ammar,WRF,NorESM2-MM,r2i1p1f1,TBD,planned,2023-12,Considering ssp245 and/or ssp585
 SEA-25,UMT,J. X. Chung,RegCM4-NH,ERA5,,evaluation,completed,2025-01,
 SEA-25,UMT,J. X. Chung,RegCM4-NH,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2025-01,
 SEA-25,UKM-UMT,J. X. Chung,RegCM4-NH,MPI-ESM1-2-HR,r1i1p1f1,ssp370,completed,2025-01,
