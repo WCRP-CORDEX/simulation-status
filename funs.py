@@ -136,19 +136,6 @@ def csv2datatable(csvfile, htmlout, title='', intro='', rename_fields = {}, colu
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
 <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/plug-ins/2.0.5/features/deepLink/dataTables.deepLink.min.js"></script>
-<script type="text/javascript">
-$(document).ready( function() {
-    var deepLinkConfig = $.fn.dataTable.ext.deepLink([
-        'search.search',
-        'page.len',
-        'order'
-    ]);
-    deepLinkConfig.pageLength = 100;
-    deepLinkConfig.lengthMenu = [10, 25, 50, 100, 250, 500];
-    $('#table_id').DataTable(deepLinkConfig);
-} );
-</script>
 
 ''')
   if title:
@@ -197,6 +184,71 @@ a:active {{ text-decoration: underline;}}
   fp.write('''
     </tbody>
 </table>
+    <script>
+        // URL parameter helpers - using older browser-compatible methods
+        function getParam(name) {
+            var urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name) || '';
+        }
+        
+        function setParam(name, value) {
+            var url = new URL(window.location);
+            if (value && value !== '') {
+                url.searchParams.set(name, value);
+            } else {
+                url.searchParams.delete(name);
+            }
+            window.history.replaceState({}, '', url);
+        }
+
+        $(document).ready(function() {
+            // Get initial values from URL
+            var initialSearch = getParam('search');
+            var initialLength = parseInt(getParam('length')) || 20;
+            var initialOrder = getParam('order');
+            
+            var initialOrderArray = [[0, 'asc']]; // default
+            if (initialOrder) {
+                try {
+                    initialOrderArray = JSON.parse(initialOrder);
+                } catch (e) {
+                    console.log('Could not parse order parameter');
+                }
+            }
+            
+            // Initialize DataTable with URL parameters
+            var table = $('#table_id').DataTable({
+                pageLength: initialLength,
+                lengthMenu: [20, 50, 100, 200, 500],
+                order: initialOrderArray,
+                searching: true
+            });
+            
+            // Set initial search if provided
+            if (initialSearch) {
+                table.search(initialSearch).draw();
+            }
+            
+            // Update URL when search changes
+            table.on('search.dt', function() {
+                var searchValue = table.search();
+                setParam('search', searchValue);
+            });
+            
+            // Update URL when page length changes  
+            table.on('length.dt', function(e, settings, len) {
+                setParam('length', len == 20 ? '' : len);
+            });
+            
+            // Update URL when column order changes
+            table.on('order.dt', function() {
+                var currentOrder = table.order();
+                setParam('order', JSON.stringify(currentOrder));
+            });
+            
+            console.log('DataTable initialized with URL management');
+        });
+    </script>
 </body>
 </html>''')
   fp.close()
