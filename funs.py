@@ -138,12 +138,18 @@ def csv2datatable(csvfile, htmlout, title='', intro='', rename_fields = {}, colu
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/plug-ins/2.0.5/features/deepLink/dataTables.deepLink.min.js"></script>
 <script type="text/javascript">
-$(document).ready( function () {
-    $('#table_id').DataTable( $.fn.dataTable.ext.deepLink( [
-      'search.search'
-    ]));
+$(document).ready( function() {
+    var deepLinkConfig = $.fn.dataTable.ext.deepLink([
+        'search.search',
+        'page.len',
+        'order'
+    ]);
+    deepLinkConfig.pageLength = 100;
+    deepLinkConfig.lengthMenu = [10, 25, 50, 100, 250, 500];
+    $('#table_id').DataTable(deepLinkConfig);
 } );
 </script>
+
 ''')
   if title:
     fp.write(f'<title>{title}</title>')
