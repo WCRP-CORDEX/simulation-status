@@ -10,12 +10,18 @@
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/plug-ins/2.0.5/features/deepLink/dataTables.deepLink.min.js"></script>
 <script type="text/javascript">
-$(document).ready( function () {
-    $('#table_id').DataTable( $.fn.dataTable.ext.deepLink( [
-      'search.search'
-    ]));
+$(document).ready( function() {
+    var deepLinkConfig = $.fn.dataTable.ext.deepLink([
+        'search.search',
+        'page.len',
+        'order'
+    ]);
+    deepLinkConfig.pageLength = 100;
+    deepLinkConfig.lengthMenu = [10, 25, 50, 100, 250, 500];
+    $('#table_id').DataTable(deepLinkConfig);
 } );
 </script>
+
 <title>CORDEX CMIP6 downscaling plans</title>
 <style>
 span.tag {
@@ -60,7 +66,7 @@ span.ESD {color: #ca6f1e; font-weight: bold}
       <a href="./CORDEX_CMIP6_status_by_experiment.html">experiment</a>
     </div>
     <div style="display:table-cell;text-align:right;width:50%;">
-      (Version: 2025-09-02 18:43 UTC)
+      (Version: 2025-09-08 11:01 UTC)
     </div>
   </div>
 </div>
@@ -2846,9 +2852,9 @@ To contribute/update simulations open and issue or pull request at <a href="http
             <td>ERA5</td>
             <td></td>
             <td>evaluation</td>
-            <td><span class="planned">planned</span></td>
+            <td><span class="running">running</span></td>
             <td>2025-12</td>
-            <td></td>
+            <td>1960-2023 period</td>
         </tr>
         <tr>
             <td>CAM-25</td>
@@ -2858,9 +2864,9 @@ To contribute/update simulations open and issue or pull request at <a href="http
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>historical</td>
-            <td><span class="planned">planned</span></td>
-            <td>2025-12</td>
-            <td></td>
+            <td><span class="completed">completed</span></td>
+            <td>2025-09</td>
+            <td>1960-2014 period</td>
         </tr>
         <tr>
             <td>CAM-25</td>
@@ -2870,8 +2876,8 @@ To contribute/update simulations open and issue or pull request at <a href="http
             <td>NorESM2-MM</td>
             <td>r1i1p1f1</td>
             <td>ssp585</td>
-            <td><span class="planned">planned</span></td>
-            <td>2025-12</td>
+            <td><span class="completed">completed</span></td>
+            <td>2025-09</td>
             <td></td>
         </tr>
         <tr>
