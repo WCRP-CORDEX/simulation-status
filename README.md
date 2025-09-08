@@ -7,3 +7,7 @@ How to contribute
 -----------------
 You can add or update your simulations by opening an [issue](https://github.com/WCRP-CORDEX/simulation-status/issues/new) or PR in this repository
 
+Current global status
+---------------------
+<img src="docs/CORDEX_CMIP6_global_progress__SSP.svg" width="600"/>
+<img src="docs/ecd_series.svg" width="630"/>
