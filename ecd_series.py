@@ -4,6 +4,7 @@ from datetime import datetime
 
 def plot_simulation_progress(domain, bar_width=15, future_date = pd.Timestamp('2025-12-31')):
     url = "https://raw.githubusercontent.com/WCRP-CORDEX/simulation-status/refs/heads/main/CMIP6_downscaling_plans.csv"
+    #url = "CMIP6_downscaling_plans.csv"
     data = pd.read_csv(url)
     if domain != 'all':
         #domain_data = data.query("domain == @domain and comments.str.contains('#EURbalanced')").copy()
