@@ -378,18 +378,18 @@ EUR-12,CNRM-MF,P. Nabat / S. Somot,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp245,c
 EUR-12,CNRM-MF,P. Nabat / S. Somot,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp370,completed,2024-09,#EURcoupled #EURbalanced #ManySSP #EURintvar
 EUR-12,CNRM-MF,P. Nabat / S. Somot,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp585,completed,2024-09,#EURcoupled #ManySSP
 EUR-12,CNRM-MF,C. Dubois / S. Somot,CNRM-ALADIN64E1,CNRM-ESM2-1,r14i1p1f2,historical,completed,2025-01,#EURintvar
-EUR-12,CNRM-MF,C. Dubois / S. Somot,CNRM-ALADIN64E1,CNRM-ESM2-1,r14i1p1f2,ssp126,running,2025-12,#EURintvar
-EUR-12,CNRM-MF,C. Dubois / S. Somot,CNRM-ALADIN64E1,CNRM-ESM2-1,r14i1p1f2,ssp370,running,2025-12,#EURintvar
+EUR-12,CNRM-MF,C. Dubois / S. Somot,CNRM-ALADIN64E1,CNRM-ESM2-1,r14i1p1f2,ssp126,completed,2025-09,#EURintvar
+EUR-12,CNRM-MF,C. Dubois / S. Somot,CNRM-ALADIN64E1,CNRM-ESM2-1,r14i1p1f2,ssp370,completed,2025-09,#EURintvar
 EUR-12,CNRM-MF,C. Dubois / S. Somot,CNRM-ALADIN64E1,CNRM-ESM2-1,r15i1p1f2,historical,completed,2025-01,#EURintvar
-EUR-12,CNRM-MF,C. Dubois / S. Somot,CNRM-ALADIN64E1,CNRM-ESM2-1,r15i1p1f2,ssp126,running,2025-12,#EURintvar
-EUR-12,CNRM-MF,C. Dubois / S. Somot,CNRM-ALADIN64E1,CNRM-ESM2-1,r15i1p1f2,ssp370,running,2025-12,#EURintvar
+EUR-12,CNRM-MF,C. Dubois / S. Somot,CNRM-ALADIN64E1,CNRM-ESM2-1,r15i1p1f2,ssp126,completed,2025-09,#EURintvar
+EUR-12,CNRM-MF,C. Dubois / S. Somot,CNRM-ALADIN64E1,CNRM-ESM2-1,r15i1p1f2,ssp370,completed,2025-09,#EURintvar
 EUR-12,CNRM-MF,P. Nabat / S. Somot,CNRM-ALADIN64E1,CMCC-CM2-SR5,r1i1p1f1,historical,completed,2025-06,#EURcoupled #EURbalanced
 EUR-12,CNRM-MF,P. Nabat / S. Somot,CNRM-ALADIN64E1,CMCC-CM2-SR5,r1i1p1f1,ssp126,running,2025-10,#EURcoupled #EURbalanced
 EUR-12,CNRM-MF,P. Nabat / S. Somot,CNRM-ALADIN64E1,CMCC-CM2-SR5,r1i1p1f1,ssp370,running,2025-10,#EURcoupled #EURbalanced
 EUR-12,CNRM-MF,P. Nabat / S. Somot,CNRM-ALADIN64E1,NorESM2-MM,r1i1p1f1,historical,completed,2025-06,#EURcoupled #EURbalanced
-EUR-12,CNRM-MF,P. Nabat / S. Somot,CNRM-ALADIN64E1,NorESM2-MM,r1i1p1f1,ssp126,running,2025-10,#EURcoupled #EURbalanced
-EUR-12,CNRM-MF,P. Nabat / S. Somot,CNRM-ALADIN64E1,NorESM2-MM,r1i1p1f1,ssp370,running,2025-10,#EURcoupled #EURbalanced
-EUR-12,CNRM-MF,P. Nabat / S. Somot,CNRM-ALADIN64E1,NorESM2-MM,r1i1p1f1,ssp585,running,2025-10,#EURcoupled
+EUR-12,CNRM-MF,P. Nabat / S. Somot,CNRM-ALADIN64E1,NorESM2-MM,r1i1p1f1,ssp126,completed,2025-09,#EURcoupled #EURbalanced
+EUR-12,CNRM-MF,P. Nabat / S. Somot,CNRM-ALADIN64E1,NorESM2-MM,r1i1p1f1,ssp370,completed,2025-09,#EURcoupled #EURbalanced
+EUR-12,CNRM-MF,P. Nabat / S. Somot,CNRM-ALADIN64E1,NorESM2-MM,r1i1p1f1,ssp585,completed,2025-09,#EURcoupled
 EUR-12,CUNI,M. Belda,RegCM5-0,CNRM-ESM2-1,r1i1p1f2,historical,planned,2026-06,#EURbalanced
 EUR-12,CUNI,M. Belda,RegCM5-0,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2026-06,#EURbalanced
 EUR-12,CUNI,M. Belda,RegCM5-0,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2026-06,#EURbalanced
