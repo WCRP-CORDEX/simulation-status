@@ -1,4 +1,4 @@
-domain,institute,contact,rcm_name,driving_model,ensemble,experiment,status,estimated_completion_date,comments
+domain_id,institution_id,contact,source_id,driving_source_id,driving_variant_label,driving_experiment_id,status,estimated_completion_date,comments
 AFR-12,ICTP,E. Coppola,RegCM5-0,ERA5,,evaluation,running,2025-12,#CORDEX-CORE
 AFR-12,ICTP,E. Coppola,RegCM5-0,TBD,TBD,historical,planned,2025-12,#CORDEX-CORE
 AFR-12,ICTP,E. Coppola,RegCM5-0,TBD,TBD,ssp370,planned,2025-12,#CORDEX-CORE

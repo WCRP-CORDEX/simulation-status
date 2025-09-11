@@ -77,7 +77,8 @@ def html_header(title = 'CORDEX-CMIP6 downscaling plans'):
 <div style="display:table;width:100%;">
   <div style="display:table-row;">
     <div style="display:table-cell;width:50%;">
-      <a href="https://wcrp-cordex.github.io/simulation-status">Back to main</a> or see tables by 
+      <a href="https://wcrp-cordex.github.io/simulation-status">Back to main</a>, see
+      <a href="./CMIP6_downscaling_plans.html">full list</a>, or see tables by 
       <a href="./CORDEX_CMIP6_status.html">domain</a>,
       <a href="./CORDEX_CMIP6_status_by_scenario.html">scenario</a> or
       <a href="./CORDEX_CMIP6_status_by_experiment.html">experiment</a>
@@ -133,6 +134,7 @@ def csv2datatable(csvfile, htmlout, title='', intro='', rename_fields = {}, colu
 <meta name="keywords" content="HTML, CSS, JavaScript" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
 <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
@@ -142,6 +144,13 @@ def csv2datatable(csvfile, htmlout, title='', intro='', rename_fields = {}, colu
     fp.write(f'<title>{title}</title>')
   fp.write(f'''
 <style>
+body {{
+  font-family: "Montserrat", sans-serif;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 600px;
+}}
 span.tag {{
   background-color: #c5def5;
   padding: 0 10px;
@@ -157,12 +166,22 @@ a:visited {{ text-decoration: none; }}
 a:hover {{ text-decoration: underline; }}
 a:active {{ text-decoration: underline;}}
 {span_style}
+.logo {{
+  text-align: center;
+  margin-bottom: 20px;
+}}
 </style>
 </head>
 <body>
 ''')
   if title:
-    fp.write(f'<h1>{title}</h1>')
+    fp.write(f'''
+<div class="logo">
+<img src="https://cordex.org/wp-content/uploads/2025/02/CORDEX_RGB_logo_baseline_positive-300x133.png" 
+   alt="CORDEX Logo" >
+<h1 id="top">{title}</h1>
+</div>
+''')
   if intro:
     fp.write(f'{intro}')
   fp.write('''

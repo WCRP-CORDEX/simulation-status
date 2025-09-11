@@ -29,7 +29,7 @@ EUR-12:
       expected completion date provided).
     condition:
       - tag:EURbalanced
-      - experiment != 'evaluation'
+      - driving_experiment_id != 'evaluation'
       - estimated_completion_date <= '2024-12'
       - estimated_completion_date > '2020-01'
 
@@ -40,7 +40,7 @@ EUR-12:
       expected completion date provided).
     condition:
       - tag:EURbalanced
-      - experiment != 'evaluation'
+      - driving_experiment_id != 'evaluation'
       - estimated_completion_date <= '2025-06'
       - estimated_completion_date > '2020-01'
 
@@ -51,7 +51,7 @@ EUR-12:
       expected completion date provided).
     condition:
       - tag:EURbalanced
-      - experiment != 'evaluation'
+      - driving_experiment_id != 'evaluation'
       - estimated_completion_date <= '2025-12'
       - estimated_completion_date > '2020-01'
 
@@ -105,31 +105,31 @@ EUR-12:
   CCLMcom:
     title: CLM community (COSMO-CLM)
     condition:
-      - rcm_name.str.startswith('COSMO') | rcm_name.str.startswith('CCLM') | rcm_name.str.startswith('TSMP') | rcm_name.str.match('GCOAST-.*1-.')
+      - source_id.str.startswith('COSMO') | source_id.str.startswith('CCLM') | source_id.str.startswith('TSMP') | source_id.str.match('GCOAST-.*1-.')
     collapse_institutions: False
 
   ICLMcom:
     title: CLM community (ICON-CLM)
     condition:
-      - rcm_name.str.startswith('ICON-CLM') | rcm_name.str.startswith('ROAM-NBS') | rcm_name.str.match('GCOAST-.*2-.')
+      - source_id.str.startswith('ICON-CLM') | source_id.str.startswith('ROAM-NBS') | source_id.str.match('GCOAST-.*2-.')
     collapse_institutions: False
 
   eWRFcom:
     title: EURO-CORDEX WRF community
     condition:
-      - rcm_name.str.startswith('WRF')
+      - source_id.str.startswith('WRF')
     collapse_institutions: False
 
   HCLIMcom:
     title: HCLIM community
     condition:
-      - rcm_name == 'HCLIM43-ALADIN'
+      - source_id == 'HCLIM43-ALADIN'
     collapse_institutions: False
 
   REGCM:
     title: RegCM community
     condition:
-      - rcm_name.str.startswith('RegCM')
+      - source_id.str.startswith('RegCM')
     collapse_institutions: False
 
   ESD:

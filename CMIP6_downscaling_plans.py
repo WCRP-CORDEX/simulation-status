@@ -10,7 +10,8 @@ csv2datatable(
 <div style="display:table;width:100%;">
   <div style="display:table-row;">
     <div style="display:table-cell;width:50%;">
-      <a href="https://wcrp-cordex.github.io/simulation-status">Back to main</a> or see tables by 
+      <a href="https://wcrp-cordex.github.io/simulation-status">Back to main</a>, see
+      <a href="./CMIP6_downscaling_plans.html">full list</a>, or see tables by 
       <a href="./CORDEX_CMIP6_status.html">domain</a>,
       <a href="./CORDEX_CMIP6_status_by_scenario.html">scenario</a> or
       <a href="./CORDEX_CMIP6_status_by_experiment.html">experiment</a>
@@ -29,5 +30,9 @@ The table contents can be downloaded as a CSV file <a href="https://github.com/W
 To contribute/update simulations open and issue or pull request at <a href="https://github.com/WCRP-CORDEX/simulation-status">https://github.com/WCRP-CORDEX/simulation-status</a>.
 </p>
 ''',
-  rename_fields = {'estimated_completion_date': 'ECD'}
+  rename_fields = {
+    'estimated_completion_date': 'ECD',
+    'driving_variant_label': 'variant',
+    'driving_experiment_id': 'experiment'
+  }
 )

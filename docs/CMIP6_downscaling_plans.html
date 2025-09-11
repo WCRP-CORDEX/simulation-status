@@ -5,12 +5,20 @@
 <meta name="keywords" content="HTML, CSS, JavaScript" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
 <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
 
 <title>CORDEX CMIP6 downscaling plans</title>
 <style>
+body {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 600px;
+}
 span.tag {
   background-color: #c5def5;
   padding: 0 10px;
@@ -40,20 +48,31 @@ span.AGCM {color: black; font-weight: bold}
 span.AOGCM {color: #2980b9; font-weight: bold}
 span.ESD {color: #ca6f1e; font-weight: bold}
 
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
 </style>
 </head>
 <body>
-<h1>CORDEX CMIP6 downscaling plans</h1>
+
+<div class="logo">
+<img src="https://cordex.org/wp-content/uploads/2025/02/CORDEX_RGB_logo_baseline_positive-300x133.png" 
+   alt="CORDEX Logo" >
+<h1 id="top">CORDEX CMIP6 downscaling plans</h1>
+</div>
+
 <div style="display:table;width:100%;">
   <div style="display:table-row;">
     <div style="display:table-cell;width:50%;">
-      <a href="https://wcrp-cordex.github.io/simulation-status">Back to main</a> or see tables by 
+      <a href="https://wcrp-cordex.github.io/simulation-status">Back to main</a>, see
+      <a href="./CMIP6_downscaling_plans.html">full list</a>, or see tables by 
       <a href="./CORDEX_CMIP6_status.html">domain</a>,
       <a href="./CORDEX_CMIP6_status_by_scenario.html">scenario</a> or
       <a href="./CORDEX_CMIP6_status_by_experiment.html">experiment</a>
     </div>
     <div style="display:table-cell;text-align:right;width:50%;">
-      (Version: 2025-09-10 18:34 UTC)
+      (Version: 2025-09-11 10:28 UTC)
     </div>
   </div>
 </div>
@@ -69,12 +88,12 @@ To contribute/update simulations open and issue or pull request at <a href="http
 <table id="table_id" class="display">
     <thead>
         <tr>
-              <th>domain</th>
-              <th>institute</th>
+              <th>domain_id</th>
+              <th>institution_id</th>
               <th>contact</th>
-              <th>rcm_name</th>
-              <th>driving_model</th>
-              <th>ensemble</th>
+              <th>source_id</th>
+              <th>driving_source_id</th>
+              <th>variant</th>
               <th>experiment</th>
               <th>status</th>
               <th>ECD</th>
