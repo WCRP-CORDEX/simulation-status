@@ -323,8 +323,8 @@ EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOIB1-1,ERA5,,evaluation,running,2024-1
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOIB1-1,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2024-12,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOIB1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2024-12,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOIB1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp370,running,2024-12,#EURcoupled
-EUR-12,CLMcom-Hereon,B. Geyer,ICON-CLM-202407-1-1,ERA5,,evaluation,completed,2024-09,#EURbalanced #ManyGCM #UDAG #EURcoupled
-EUR-12,CLMcom-C2SM,M. Jaehn,ICON-CLM-202407-1-1,ERA5,,evaluation,completed,2025-07,#EURbalanced #ManyGCM #EURcoupled
+EUR-12,CLMcom-Hereon,B. Geyer,ICON-CLM-202407-1-1,ERA5,,evaluation,completed,2024-09,#EURbalanced #ManyGCM #UDAG #EURcoupled #RCMintvar Realization r2
+EUR-12,CLMcom-C2SM,M. Jaehn,ICON-CLM-202407-1-1,ERA5,,evaluation,completed,2025-07,#RCMintvar Realization r2
 EUR-12,CLMcom-DWD,C. Steger,ICON-CLM-202407-1-1,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2025-01,#EURbalanced #ManyGCM #ManySSP #UDAG #EURcoupled
 EUR-12,CLMcom-DWD,C. Steger,ICON-CLM-202407-1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2025-05,#EURbalanced #ManyGCM #ManySSP #UDAG #EURcoupled
 EUR-12,CLMcom-DWD,C. Steger,ICON-CLM-202407-1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp245,completed,2025-08,#ManyGCM #ManySSP #UDAG
