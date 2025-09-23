@@ -31,13 +31,13 @@ def get_ymax(exp):
     return(None)
 
 df = pd.read_csv(url)
-df[['domain', 'resolution']] = df['domain'].str.split('-', expand=True)
+df[['domain', 'resolution']] = df['domain_id'].str.split('-', expand=True)
 if mip_era == 'CMIP5':
   df['comments'] = ''  # Just to make the comments column exist
   df = df[df['resolution'].notna()].query('~resolution.str.endswith("i")')  # avoid double-counting DOM-XXi sims
 filtered_df = df[
-    ~df['experiment'].isna()
-   & df['experiment'].str.startswith(experiment)
+    ~df['driving_experiment_id'].isna()
+   & df['driving_experiment_id'].str.startswith(experiment)
   & ~df['comments'].str.match('#ESD', na=False)
 ].query('status in @status')
 
