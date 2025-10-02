@@ -448,9 +448,9 @@ EUR-12,ICTP,E. Coppola,RegCM5-0,NorESM2-MM,r1i1p1f1,ssp370,completed,2025-02,#EU
 EUR-12,IDL-FCUL,P. Soares / R. M. Cardoso,WRF451Q,ERA5,,evaluation,completed,2024-08,#EURbalanced #RCMintvar Realization r1
 EUR-12,IDL-FCUL,P. Soares / R. M. Cardoso,WRF451Q,MPI-ESM1-2-HR,r1i1p1f1,ssp245,planned,2025-08,#ManySSP
 EUR-12,IDL-FCUL,P. Soares / R. M. Cardoso,WRF451Q,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2024-12,#EURbalanced #ManySSP #CORDEX-CORE
-EUR-12,IMWM,M. Figurski / A. Jaczewski,WRF451Q,CMCC-CM2-SR5,r1i1p1f1,historical,running,2024-12,#EURbalanced
-EUR-12,IMWM,M. Figurski / A. Jaczewski,WRF451Q,CMCC-CM2-SR5,r1i1p1f1,ssp126,planned,2024-12,#EURbalanced
-EUR-12,IMWM,M. Figurski / A. Jaczewski,WRF451Q,CMCC-CM2-SR5,r1i1p1f1,ssp370,planned,2024-12,#EURbalanced
+EUR-12,IMWM,M. Figurski / A. Jaczewski,WRF451Q,CMCC-CM2-SR5,r1i1p1f1,historical,completed,2025-09,#EURbalanced
+EUR-12,IMWM,M. Figurski / A. Jaczewski,WRF451Q,CMCC-CM2-SR5,r1i1p1f1,ssp126,running,2025-12,#EURbalanced
+EUR-12,IMWM,M. Figurski / A. Jaczewski,WRF451Q,CMCC-CM2-SR5,r1i1p1f1,ssp370,planned,2026-01,#EURbalanced
 EUR-12,KNMI,E. van Meijgaard,RACMO23E,ERA5,,evaluation,completed,2024-08,#EURbalanced
 EUR-12,KNMI,E. van Meijgaard,RACMO23E,CNRM-ESM2-1,r1i1p1f2,historical,completed,2024-01,#EURbalanced
 EUR-12,KNMI,E. van Meijgaard,RACMO23E,CNRM-ESM2-1,r1i1p1f2,ssp126,completed,2024-03,#EURbalanced
@@ -660,9 +660,9 @@ SAM-12,ICTP,E. Coppola,RegCM5-0,TBD2,TBD,historical,planned,2025-09,#CORDEX-CORE
 SAM-12,ICTP,E. Coppola,RegCM5-0,TBD2,TBD,ssp370,planned,2025-09,#CORDEX-CORE
 SAM-12,ICTP,E. Coppola,RegCM5-0,TBD3,TBD,historical,planned,2025-09,#CORDEX-CORE
 SAM-12,ICTP,E. Coppola,RegCM5-0,TBD3,TBD,ssp370,planned,2025-09,#CORDEX-CORE
-SAM-25,UBA-CIMA-IFAECI,L. Fita,RegIPSL,ERA5,,evaluation,completed,2022-01,20-km resolution
-SAM-25,UBA-CIMA-IFAECI,L. Fita,RegIPSL,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2023-12,
-SAM-25,UBA-CIMA-IFAECI,L. Fita,RegIPSL,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2023-12,
+SAM-25,UBA-CIMA-IFAECI,L. Fita,RegIPSL,ERA5,,evaluation,planned,2026-12,
+SAM-25,UBA-CIMA-IFAECI,L. Fita,RegIPSL,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2026-12,
+SAM-25,UBA-CIMA-IFAECI,L. Fita,RegIPSL,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2026-12,
 SEA-12,MOHC,G. Redmond,HadREM3-GA7-05,ERA5,,evaluation,planned,2025-12,
 SEA-12,MOHC,G. Redmond,HadREM3-GA7-05,EC-EARTH3-Veg,r1i1p1f1,historical,completed,2025-01,
 SEA-12,MOHC,G. Redmond,HadREM3-GA7-05,EC-EARTH3-Veg,r1i1p1f1,ssp370,completed,2025-01,
