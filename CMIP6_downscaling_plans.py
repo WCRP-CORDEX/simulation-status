@@ -27,7 +27,7 @@ The table can be sorted by the different columns.
 The search field can be used to filter the table.
 Several terms can be entered (e.g. "evaluation completed" or "mpi ssp585") to show the rows matching all terms.
 The table contents can be downloaded as a CSV file <a href="https://github.com/WCRP-CORDEX/simulation-status/raw/main/CMIP6_downscaling_plans.csv">here</a>.
-To contribute/update simulations open and issue or pull request at <a href="https://github.com/WCRP-CORDEX/simulation-status">https://github.com/WCRP-CORDEX/simulation-status</a>.
+To contribute/update simulations open an issue or pull request at <a href="https://github.com/WCRP-CORDEX/simulation-status">https://github.com/WCRP-CORDEX/simulation-status</a>.
 </p>
 ''',
   rename_fields = {
