@@ -327,6 +327,7 @@ EUR-12,CLMcom-Hereon,B. Geyer,ICON-CLM-202407-1-1,ERA5,,evaluation,completed,202
 EUR-12,CLMcom-ETH,M. Jaehn,ICON-CLM-202407-1-1,ERA5,,evaluation,completed,2025-07,#RCMintvar Realization r2
 EUR-12,CLMcom-DWD,C. Steger,ICON-CLM-202407-1-1,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2025-01,#EURbalanced #ManyGCM #ManySSP #UDAG #EURcoupled
 EUR-12,CLMcom-DWD,C. Steger,ICON-CLM-202407-1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2025-05,#EURbalanced #ManyGCM #ManySSP #UDAG #EURcoupled
+EUR-12,CLMcom-DWD,C. Steger,ICON-CLM-202407-1-2,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2025-08,#UDAG
 EUR-12,CLMcom-DWD,C. Steger,ICON-CLM-202407-1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp245,completed,2025-08,#ManyGCM #ManySSP #UDAG
 EUR-12,CLMcom-DWD,C. Steger,ICON-CLM-202407-1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp370,completed,2025-05,#EURbalanced #ManyGCM #ManySSP #UDAG #EURcoupled
 EUR-12,CLMcom-DWD,C. Steger,ICON-CLM-202407-1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp585,completed,2025-08,#ManyGCM #ManySSP #UDAG
