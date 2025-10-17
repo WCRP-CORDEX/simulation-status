@@ -231,14 +231,14 @@ CAM-12,ORNL,TBD,RegCM5-0,TBD3,TBD,ssp370,planned,,#CORDEX-CORE
 CAM-25,CNRM,M. Gevaudan / S. Somot,CNRM-ALADIN64C1,ERA5,,evaluation,running,2025-12,1960-2023 period
 CAM-25,CNRM,M. Gevaudan / S. Somot,CNRM-ALADIN64C1,NorESM2-MM,r1i1p1f1,historical,completed,2025-09,1960-2014 period
 CAM-25,CNRM,M. Gevaudan / S. Somot,CNRM-ALADIN64C1,NorESM2-MM,r1i1p1f1,ssp585,completed,2025-09,
-CAS-12,CLMcom-PIK,B. Fallah,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,historical,planned,,
-CAS-12,CLMcom-PIK,B. Fallah,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,,
-CAS-12,CLMcom-PIK,B. Fallah,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,,
-CAS-12,CLMcom-PIK,B. Fallah,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp585,planned,,
-CAS-12,CLMcom-PIK,B. Fallah,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,,
-CAS-12,CLMcom-PIK,B. Fallah,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,,
-CAS-12,CLMcom-PIK,B. Fallah,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,,
-CAS-12,CLMcom-PIK,B. Fallah,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp585,planned,,
+CAS-12,CLMcom-PIK,B. Fallah / I. Didovets,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,historical,completed,2025-01,
+CAS-12,CLMcom-PIK,B. Fallah / I. Didovets,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp126,completed,2025-01,
+CAS-12,CLMcom-PIK,B. Fallah / I. Didovets,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp370,completed,2025-01,
+CAS-12,CLMcom-PIK,B. Fallah / I. Didovets,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp585,completed,2025-01,
+CAS-12,CLMcom-PIK,B. Fallah / I. Didovets,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2025-01,
+CAS-12,CLMcom-PIK,B. Fallah / I. Didovets,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2025-01,
+CAS-12,CLMcom-PIK,B. Fallah / I. Didovets,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,completed,2025-01,
+CAS-12,CLMcom-PIK,B. Fallah / I. Didovets,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp585,completed,2025-01,
 EAS-12,ICTP,E. Coppola,RegCM5-0,ERA5,,evaluation,planned,2025-12,#CORDEX-CORE
 EAS-12,ICTP,E. Coppola,RegCM5-0,TBD,TBD,historical,planned,2025-12,#CORDEX-CORE
 EAS-12,ICTP,E. Coppola,RegCM5-0,TBD,TBD,ssp370,planned,2025-12,#CORDEX-CORE
