@@ -410,6 +410,7 @@ EUR-12,GERICS,D. Rechid / C. Pop,REMO2020-2-2-iMOVE,ERA5,,evaluation,completed,2
 EUR-12,GERICS,D. Rechid / C. Pop,REMO2020-2-2-iMOVE-LUC,ERA5,,evaluation,completed,2025-05,#EURcoupled #LUCAS simulation with annually-changing land use
 EUR-12,GERICS,D. Rechid / C. Pop,REMO2020-2-2-iMOVE,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2025-07,#EURcoupled #LUCAS
 EUR-12,GERICS,D. Rechid / C. Pop,REMO2020-2-2-iMOVE,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2025-09,#EURcoupled #LUCAS
+EUR-12,GERICS,J.P. Pietikäinen,REMO2020-2-2-TEB,ERA5,,evaluation,completed,2025-11,#EURbalanced
 EUR-12,HCLIMcom-DMI,O. B. Christensen,HCLIM43-ALADIN,IPSL-CM6A-LR,r1i1p1f1,historical,completed,2023-12,#ManyGCM
 EUR-12,HCLIMcom-DMI,O. B. Christensen,HCLIM43-ALADIN,IPSL-CM6A-LR,r1i1p1f1,ssp126,completed,2024-12,#ManyGCM
 EUR-12,HCLIMcom-DMI,O. B. Christensen,HCLIM43-ALADIN,IPSL-CM6A-LR,r1i1p1f1,ssp370,completed,2024-12,#ManyGCM
