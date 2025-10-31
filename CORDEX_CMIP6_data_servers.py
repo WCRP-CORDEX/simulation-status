@@ -13,16 +13,9 @@ import yaml
 
 from funs import csv2datatable
 
-# Read YAML file
 yaml_file = 'CORDEX_CMIP6_data_servers.yaml'
 with open(yaml_file, 'r') as f:
-    data = yaml.safe_load(f)
-
-# Convert to DataFrame
-servers = data.get('servers', [])
-if not servers:
-    print(f"Warning: No servers found in {yaml_file}")
-    servers = []
+    servers = yaml.safe_load(f).get('servers', [])
 
 df = pd.DataFrame(servers)
 
@@ -47,11 +40,9 @@ try:
   </div>
 </div>
 <p style="text-align: justify;">
-This page collects information about servers hosting CORDEX-CMIP6 data, 
-including those not (yet) on ESGF. This is an interim solution while ESGF-NG 
-publication becomes a reality. To add a new server or update existing information, 
-please open an issue or pull request at 
-<a href="https://github.com/WCRP-CORDEX/simulation-status">the GitHub repository</a>.
+This page collects information about servers hosting CORDEX-CMIP6 data not on ESGF.
+This is an interim solution while ESGF-NG publication is technically possible.
+To add a new server or update existing information, please open an issue or pull request at <a href="https://github.com/WCRP-CORDEX/simulation-status">the GitHub repository</a>.
 </p>
 '''
 
