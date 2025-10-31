@@ -15,3 +15,9 @@ servers:
     url: https://thredds.nci.org.au/thredds/catalog/catalogs/ig45/catalog.html
     availability: THREDDS
     comment: Australian CORDEX-CMIP6 data via THREDDS Data Server
+  # Add more servers below following the same format
+  # - domain: YOUR_DOMAIN
+  #   institution: YOUR_INSTITUTION
+  #   url: YOUR_URL
+  #   availability: YOUR_AVAILABILITY_TYPE
+  #   comment: YOUR_COMMENT
