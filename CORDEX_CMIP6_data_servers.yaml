@@ -3,21 +3,15 @@
 # even if they are not (yet) on ESGF.
 #
 # To add a new server, create an entry with the following fields:
-#   - domain: The CORDEX domain (e.g., AUS-15, EUR-11, etc.)
+#   - domain: CORDEX domain_id (e.g., AFR-12, etc.)
 #   - institution: Institution hosting the data
 #   - url: URL to access the data
 #   - availability: Description of data availability (e.g., "THREDDS", "Download", "OPeNDAP")
 #   - comment: Additional information about the server or data
 
 servers:
-  - domain: AUS-15
+  - domain: AUS-20i
     institution: NCI Australia
     url: https://thredds.nci.org.au/thredds/catalog/catalogs/ig45/catalog.html
     availability: THREDDS
-    comment: Australian CORDEX-CMIP6 data via THREDDS Data Server
-  # Add more servers below following the same format
-  # - domain: YOUR_DOMAIN
-  #   institution: YOUR_INSTITUTION
-  #   url: YOUR_URL
-  #   availability: YOUR_AVAILABILITY_TYPE
-  #   comment: YOUR_COMMENT
+    comment: Australasia CORDEX-CMIP6 data via THREDDS Data Server
