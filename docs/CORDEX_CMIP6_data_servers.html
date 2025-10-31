@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="author" content="J. Fernandez" />
+<meta name="keywords" content="HTML, CSS, JavaScript" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+<title>CORDEX-CMIP6 Data Servers</title>
+<style>
+body {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 600px;
+}
+span.tag {
+  background-color: #c5def5;
+  padding: 0 10px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22px !important;
+  border: 1px solid transparent;
+  border-radius: 2em;
+}
+a {color: DodgerBlue}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:active { text-decoration: underline;}
+
+span.planned {color: #F54d4d; font-weight: bold}
+span.running {color: #009900; font-weight: bold}
+span.completed {color: #17202a; font-weight: bold}
+span.published {color: #3399FF; font-weight: bold}
+
+span.reginst {color: black; font-weight: bold}
+span.unreginst {color: grey; font-style: italic; font-weight: bold}
+span.unregistered {color: grey; font-style: italic; font-weight: bold}
+span.ARCM {color: black; font-weight: bold}
+span.AORCM {color: #2980b9; font-weight: bold}
+span.AGCM {color: black; font-weight: bold}
+span.AOGCM {color: #2980b9; font-weight: bold}
+span.ESD {color: #ca6f1e; font-weight: bold}
+
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="logo">
+<img src="https://cordex.org/wp-content/uploads/2025/02/CORDEX_RGB_logo_baseline_positive-300x133.png" 
+   alt="CORDEX Logo" >
+<h1 id="top">CORDEX-CMIP6 Data Servers</h1>
+</div>
+
+<div style="display:table;width:100%;">
+  <div style="display:table-row;">
+    <div style="display:table-cell;width:50%;">
+      <a href="https://wcrp-cordex.github.io/simulation-status">Back to main</a>
+    </div>
+    <div style="display:table-cell;text-align:right;width:50%;">
+      Source: <a href="https://github.com/WCRP-CORDEX/simulation-status/blob/main/CORDEX_CMIP6_data_servers.yaml">CORDEX_CMIP6_data_servers.yaml</a>
+    </div>
+  </div>
+</div>
+<p style="text-align: justify;">
+This page collects information about servers hosting CORDEX-CMIP6 data, 
+including those not (yet) on ESGF. This is an interim solution while ESGF-NG 
+publication becomes a reality. To add a new server or update existing information, 
+please open an issue or pull request at 
+<a href="https://github.com/WCRP-CORDEX/simulation-status">the GitHub repository</a>.
+</p>
+
+<table id="table_id" class="display">
+    <thead>
+        <tr>
+              <th>Domain</th>
+              <th>Institution</th>
+              <th>URL</th>
+              <th>Availability</th>
+              <th>Comment</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>AUS-15</td>
+            <td>NCI Australia</td>
+            <td><a href="https://thredds.nci.org.au/thredds/catalog/catalogs/ig45/catalog.html">https://thredds.nci.org.au/thredds/catalog/catalogs/ig45/catalog.html</a></td>
+            <td>THREDDS</td>
+            <td>Australian CORDEX-CMIP6 data via THREDDS Data Server</td>
+        </tr>
+
+    </tbody>
+</table>
+    <script>
+        // URL parameter helpers - using older browser-compatible methods
+        function getParam(name) {
+            var urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name) || '';
+        }
+        
+        function setParam(name, value) {
+            var url = new URL(window.location);
+            if (value && value !== '') {
+                url.searchParams.set(name, value);
+            } else {
+                url.searchParams.delete(name);
+            }
+            window.history.replaceState({}, '', url);
+        }
+
+        $(document).ready(function() {
+            // Get initial values from URL
+            var initialSearch = getParam('search');
+            var initialLength = parseInt(getParam('length')) || 20;
+            var initialOrder = getParam('order');
+            
+            var initialOrderArray = [[0, 'asc']]; // default
+            if (initialOrder) {
+                try {
+                    initialOrderArray = JSON.parse(initialOrder);
+                } catch (e) {
+                    console.log('Could not parse order parameter');
+                }
+            }
+            
+            // Initialize DataTable with URL parameters
+            var table = $('#table_id').DataTable({
+                pageLength: initialLength,
+                lengthMenu: [20, 50, 100, 200, 500],
+                order: initialOrderArray,
+                searching: true
+            });
+            
+            // Set initial search if provided
+            if (initialSearch) {
+                table.search(initialSearch).draw();
+            }
+            
+            // Update URL when search changes
+            table.on('search.dt', function() {
+                var searchValue = table.search();
+                setParam('search', searchValue);
+            });
+            
+            // Update URL when page length changes  
+            table.on('length.dt', function(e, settings, len) {
+                setParam('length', len == 20 ? '' : len);
+            });
+            
+            // Update URL when column order changes
+            table.on('order.dt', function() {
+                var currentOrder = table.order();
+                setParam('order', JSON.stringify(currentOrder));
+            });
+            
+            console.log('DataTable initialized with URL management');
+        });
+    </script>
+</body>
+</html>
