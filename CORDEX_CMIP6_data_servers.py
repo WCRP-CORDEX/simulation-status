@@ -5,10 +5,13 @@ This script reads the YAML file and creates an interactive HTML table
 using DataTables for filtering and sorting.
 """
 
-import yaml
-import pandas as pd
-from funs import csv2datatable
 import os
+import tempfile
+
+import pandas as pd
+import yaml
+
+from funs import csv2datatable
 
 # Read YAML file
 yaml_file = 'CORDEX_CMIP6_data_servers.yaml'
@@ -23,14 +26,16 @@ if not servers:
 
 df = pd.DataFrame(servers)
 
-# Create temporary CSV for processing
-csv_file = '/tmp/CORDEX_CMIP6_data_servers.csv'
-df.to_csv(csv_file, index=False)
+# Create temporary CSV for processing and ensure cleanup
+with tempfile.NamedTemporaryFile(mode='w', suffix='.csv', delete=False) as tmp_file:
+    csv_file = tmp_file.name
+    df.to_csv(csv_file, index=False)
 
-# Generate HTML output
-htmlout = 'docs/CORDEX_CMIP6_data_servers.html'
-title = 'CORDEX-CMIP6 Data Servers'
-intro = '''
+try:
+    # Generate HTML output
+    htmlout = 'docs/CORDEX_CMIP6_data_servers.html'
+    title = 'CORDEX-CMIP6 Data Servers'
+    intro = '''
 <div style="display:table;width:100%;">
   <div style="display:table-row;">
     <div style="display:table-cell;width:50%;">
@@ -50,24 +55,25 @@ please open an issue or pull request at
 </p>
 '''
 
-rename_fields = {
-    'domain': 'Domain',
-    'institution': 'Institution',
-    'url': 'URL',
-    'availability': 'Availability',
-    'comment': 'Comment'
-}
+    rename_fields = {
+        'domain': 'Domain',
+        'institution': 'Institution',
+        'url': 'URL',
+        'availability': 'Availability',
+        'comment': 'Comment'
+    }
 
-csv2datatable(
-    csv_file, 
-    htmlout, 
-    title=title, 
-    intro=intro, 
-    rename_fields=rename_fields,
-    column_as_link='url'
-)
+    csv2datatable(
+        csv_file, 
+        htmlout, 
+        title=title, 
+        intro=intro, 
+        rename_fields=rename_fields,
+        column_as_link='url'
+    )
 
-# Clean up temporary CSV
-os.remove(csv_file)
-
-print(f"Generated {htmlout} from {yaml_file}")
+    print(f"Generated {htmlout} from {yaml_file}")
+finally:
+    # Clean up temporary CSV
+    if os.path.exists(csv_file):
+        os.remove(csv_file)
