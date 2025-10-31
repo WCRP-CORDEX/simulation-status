@@ -1,0 +1,17 @@
+# CORDEX-CMIP6 Data Servers
+# This file collects information about servers hosting CORDEX-CMIP6 data
+# even if they are not (yet) on ESGF.
+#
+# To add a new server, create an entry with the following fields:
+#   - domain: The CORDEX domain (e.g., AUS-15, EUR-11, etc.)
+#   - institution: Institution hosting the data
+#   - url: URL to access the data
+#   - availability: Description of data availability (e.g., "THREDDS", "Download", "OPeNDAP")
+#   - comment: Additional information about the server or data
+
+servers:
+  - domain: AUS-15
+    institution: NCI Australia
+    url: https://thredds.nci.org.au/thredds/catalog/catalogs/ig45/catalog.html
+    availability: THREDDS
+    comment: Australian CORDEX-CMIP6 data via THREDDS Data Server

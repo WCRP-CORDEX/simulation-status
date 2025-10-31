@@ -6,6 +6,7 @@ update:
 	python CORDEX_CMIP6_status.py
 	python CORDEX_CMIP6_status_by_scenario.py
 	python CORDEX_CMIP6_status_by_experiment.py
+	python CORDEX_CMIP6_data_servers.py
 
 update-esgf:
 	python CORDEX_CMIP5_status_by_scenario.py
