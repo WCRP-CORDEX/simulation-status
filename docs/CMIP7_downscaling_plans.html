@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="author" content="J. Fernandez" />
+<meta name="keywords" content="HTML, CSS, JavaScript" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+<title>CORDEX CMIP7 downscaling plans</title>
+<style>
+body {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 600px;
+}
+span.tag {
+  background-color: #c5def5;
+  padding: 0 10px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22px !important;
+  border: 1px solid transparent;
+  border-radius: 2em;
+}
+a {color: DodgerBlue}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:active { text-decoration: underline;}
+
+span.planned {color: #F54d4d; font-weight: bold}
+span.running {color: #009900; font-weight: bold}
+span.completed {color: #17202a; font-weight: bold}
+span.published {color: #3399FF; font-weight: bold}
+
+span.reginst {color: black; font-weight: bold}
+span.unreginst {color: grey; font-style: italic; font-weight: bold}
+span.unregistered {color: grey; font-style: italic; font-weight: bold}
+span.ARCM {color: black; font-weight: bold}
+span.AORCM {color: #2980b9; font-weight: bold}
+span.AGCM {color: black; font-weight: bold}
+span.AOGCM {color: #2980b9; font-weight: bold}
+span.ESD {color: #ca6f1e; font-weight: bold}
+
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="logo">
+<img src="https://cordex.org/wp-content/uploads/2025/02/CORDEX_RGB_logo_baseline_positive-300x133.png" 
+   alt="CORDEX Logo" >
+<h1 id="top">CORDEX CMIP7 downscaling plans</h1>
+</div>
+
+<div style="display:table;width:100%;">
+  <div style="display:table-row;">
+    <div style="display:table-cell;width:50%;">
+      <a href="https://wcrp-cordex.github.io/simulation-status">Back to main</a>, see
+      <a href="./CMIP7_downscaling_plans.html">full list</a>, or see tables by 
+      <a href="./CORDEX_CMIP7_status.html">domain</a>,
+      <a href="./CORDEX_CMIP7_status_by_scenario.html">scenario</a> or
+      <a href="./CORDEX_CMIP7_status_by_experiment.html">experiment</a>
+    </div>
+    <div style="display:table-cell;text-align:right;width:50%;">
+      (Version: 2025-10-31 18:28 UTC)
+    </div>
+  </div>
+</div>
+<p>
+This is an interactive table view of each of the CORDEX-CMIP7 simulations.
+The table can be sorted by the different columns.
+The search field can be used to filter the table.
+Several terms can be entered (e.g. "evaluation completed" or "mpi ssp585") to show the rows matching all terms.
+The table contents can be downloaded as a CSV file <a href="https://github.com/WCRP-CORDEX/simulation-status/raw/main/CMIP7_downscaling_plans.csv">here</a>.
+To contribute/update simulations open an issue or pull request at <a href="https://github.com/WCRP-CORDEX/simulation-status">https://github.com/WCRP-CORDEX/simulation-status</a>.
+</p>
+
+<table id="table_id" class="display">
+    <thead>
+        <tr>
+              <th>domain_id</th>
+              <th>institution_id</th>
+              <th>contact</th>
+              <th>source_id</th>
+              <th>driving_source_id</th>
+              <th>variant</th>
+              <th>experiment</th>
+              <th>status</th>
+              <th>ECD</th>
+              <th>comments</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>EUR-12</td>
+            <td>UCAN</td>
+            <td>J. Fernandez</td>
+            <td>WRF</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>historical</td>
+            <td><span class="planned">planned</span></td>
+            <td>2026-12</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>EUR-12</td>
+            <td>UCAN</td>
+            <td>J. Fernandez</td>
+            <td>WRF</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>vlho</td>
+            <td><span class="planned">planned</span></td>
+            <td>2027-03</td>
+            <td></td>
+        </tr>
+
+    </tbody>
+</table>
+    <script>
+        // URL parameter helpers - using older browser-compatible methods
+        function getParam(name) {
+            var urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name) || '';
+        }
+        
+        function setParam(name, value) {
+            var url = new URL(window.location);
+            if (value && value !== '') {
+                url.searchParams.set(name, value);
+            } else {
+                url.searchParams.delete(name);
+            }
+            window.history.replaceState({}, '', url);
+        }
+
+        $(document).ready(function() {
+            // Get initial values from URL
+            var initialSearch = getParam('search');
+            var initialLength = parseInt(getParam('length')) || 20;
+            var initialOrder = getParam('order');
+            
+            var initialOrderArray = [[0, 'asc']]; // default
+            if (initialOrder) {
+                try {
+                    initialOrderArray = JSON.parse(initialOrder);
+                } catch (e) {
+                    console.log('Could not parse order parameter');
+                }
+            }
+            
+            // Initialize DataTable with URL parameters
+            var table = $('#table_id').DataTable({
+                pageLength: initialLength,
+                lengthMenu: [20, 50, 100, 200, 500],
+                order: initialOrderArray,
+                searching: true
+            });
+            
+            // Set initial search if provided
+            if (initialSearch) {
+                table.search(initialSearch).draw();
+            }
+            
+            // Update URL when search changes
+            table.on('search.dt', function() {
+                var searchValue = table.search();
+                setParam('search', searchValue);
+            });
+            
+            // Update URL when page length changes  
+            table.on('length.dt', function(e, settings, len) {
+                setParam('length', len == 20 ? '' : len);
+            });
+            
+            // Update URL when column order changes
+            table.on('order.dt', function() {
+                var currentOrder = table.order();
+                setParam('order', JSON.stringify(currentOrder));
+            });
+            
+            console.log('DataTable initialized with URL management');
+        });
+    </script>
+</body>
+</html>

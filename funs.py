@@ -1,5 +1,6 @@
 import datetime
 import pandas as pd
+import requests
 
 span_style = '''
 span.planned {color: #F54d4d; font-weight: bold}
@@ -271,3 +272,133 @@ a:active {{ text-decoration: underline;}}
 </body>
 </html>''')
   fp.close()
+
+
+def add_registration_info(plans_df, cmip_era='CMIP6'):
+  """
+  Add registration information from CORDEX CV repositories.
+  
+  Parameters:
+  -----------
+  plans_df : pandas.DataFrame
+      DataFrame with simulation plans containing 'source_id' and 'institution_id' columns
+  cmip_era : str
+      Either 'CMIP6' or 'CMIP7' to determine which CV repo to use
+      
+  Returns:
+  --------
+  pandas.DataFrame
+      Modified DataFrame with added columns: 'registered', 'source_type', 'inst_registered'
+  """
+  base_url = f"https://raw.githubusercontent.com/WCRP-CORDEX/cordex-{cmip_era.lower()}-cv/refs/heads/main/CORDEX-{cmip_era}"
+  
+  # Fetch source_id registration info
+  url_source_id = f"{base_url}_source_id.json"
+  try:
+    response = requests.get(url_source_id)
+    response.raise_for_status()
+    source_ids = response.json()["source_id"]
+    source_type_map = {key: value["source_type"] for key, value in source_ids.items()}
+    plans_df["registered"] = plans_df["source_id"].apply(lambda x: x in source_type_map)
+    plans_df["source_type"] = plans_df["source_id"].apply(
+      lambda x: source_type_map.get(x, "") if x in source_type_map else "unregistered"
+    )
+  except (requests.exceptions.HTTPError, requests.exceptions.RequestException) as e:
+    # CV repo doesn't exist yet or is unavailable - mark all as unregistered
+    print(f"Warning: Could not fetch source_id CV from {url_source_id}: {e}")
+    plans_df["registered"] = False
+    plans_df["source_type"] = "unregistered"
+  
+  # Fetch institution_id registration info
+  url_institution_id = f"{base_url}_institution_id.json"
+  try:
+    response = requests.get(url_institution_id)
+    response.raise_for_status()
+    institution_ids = response.json()["institution_id"]
+    plans_df["inst_registered"] = plans_df["institution_id"].apply(
+      lambda x: "reginst" if x in institution_ids else "unreginst"
+    )
+  except (requests.exceptions.HTTPError, requests.exceptions.RequestException) as e:
+    # CV repo doesn't exist yet or is unavailable - mark all as unregistered
+    print(f"Warning: Could not fetch institution_id CV from {url_institution_id}: {e}")
+    plans_df["inst_registered"] = "unreginst"
+  
+  return plans_df
+
+
+def generate_domain_table(dom_plans, collapse_institutions=True):
+  """
+  Generate a pivot table matrix for a specific domain with HTML styling.
+  
+  Parameters:
+  -----------
+  dom_plans : pandas.DataFrame
+      DataFrame containing simulation plans for a specific domain
+  collapse_institutions : bool
+      Whether to collapse institutions in the table display
+      
+  Returns:
+  --------
+  pandas.DataFrame
+      Styled pivot table ready for HTML export
+  """
+  # Add HTML status column
+  dom_plans = dom_plans.assign(
+    htmlstatus=pd.Series(
+      '<span sort="' + dom_plans.driving_experiment_id + '" class="' + 
+      dom_plans.status + '">' + dom_plans.driving_experiment_id + '</span>', 
+      index=dom_plans.index
+    )
+  )
+  
+  # Add HTML-styled source_id and institution_id
+  dom_plans = dom_plans.assign(
+    source_id=pd.Series(
+      '<span sort="' + dom_plans.source_id + '" class="' + 
+      dom_plans.source_type + '">' + dom_plans.source_id + '</span>', 
+      index=dom_plans.index
+    )
+  )
+  dom_plans = dom_plans.assign(
+    institution_id=pd.Series(
+      '<span sort="' + dom_plans.institution_id + '" class="' + 
+      dom_plans.inst_registered + '">' + dom_plans.institution_id + '</span>', 
+      index=dom_plans.index
+    )
+  )
+  dom_plans = dom_plans.assign(
+    model_id=pd.Series(
+      dom_plans.institution_id + '-' + dom_plans.source_id, 
+      index=dom_plans.index
+    )
+  )
+  
+  # Create pivot table
+  column_id = 'source_id' if collapse_institutions else 'model_id'
+  dom_plans_matrix = dom_plans.pivot_table(
+    index=('driving_source_id', 'driving_variant_label'),
+    columns=column_id,
+    values='htmlstatus',
+    aggfunc=lambda x: ' '.join(sorted(x.dropna()))
+  )
+  
+  # Bring ERA5 to the top
+  dom_plans_matrix = pd.concat([
+    dom_plans_matrix.query("driving_source_id == 'ERA5'"),
+    dom_plans_matrix.drop(('ERA5', ''), axis=0, errors='ignore')
+  ], axis=0)
+  
+  # Add institution row if collapsing
+  if collapse_institutions:
+    inst = dom_plans.drop_duplicates(subset=['institution_id', 'source_id']).pivot_table(
+      index=('driving_source_id', 'driving_variant_label'),
+      columns='source_id',
+      values='institution_id',
+      aggfunc=lambda x: ', '.join(x.dropna())
+    ).agg(lambda x: ', '.join(x.dropna()))
+    inst.name = ('', 'Institutes')
+    dom_plans_matrix = pd.concat([dom_plans_matrix, inst.to_frame().T])
+    dom_plans_matrix = dom_plans_matrix.T.set_index([('', 'Institutes'), dom_plans_matrix.columns]).T
+    dom_plans_matrix.columns.names = ['Institution(s)', 'RCM']
+  
+  return dom_plans_matrix

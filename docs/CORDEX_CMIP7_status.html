@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html><head>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 600px;
+}
+tr:hover {background-color:#f5f5f5;}
+th, td {text-align: center; padding: 3px;}
+table {border-collapse: collapse;}
+span.planned {color: #F54d4d; font-weight: bold}
+span.running {color: #009900; font-weight: bold}
+span.completed {color: #17202a; font-weight: bold}
+span.published {color: #3399FF; font-weight: bold}
+
+span.reginst {color: black; font-weight: bold}
+span.unreginst {color: grey; font-style: italic; font-weight: bold}
+span.unregistered {color: grey; font-style: italic; font-weight: bold}
+span.ARCM {color: black; font-weight: bold}
+span.AORCM {color: #2980b9; font-weight: bold}
+span.AGCM {color: black; font-weight: bold}
+span.AOGCM {color: #2980b9; font-weight: bold}
+span.ESD {color: #ca6f1e; font-weight: bold}
+
+a {color: DodgerBlue}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:active { text-decoration: underline;}
+ul.twocol { columns: 2; -webkit-columns: 2; -moz-columns: 2; }
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+</style>
+
+</head><body>
+<div class="logo">
+<img src="https://cordex.org/wp-content/uploads/2025/02/CORDEX_RGB_logo_baseline_positive-300x133.png" 
+   alt="CORDEX Logo" >
+<h1 id="top">CORDEX-CMIP7 downscaling plans summary tables</h1>
+</div>
+<div style="display:table;width:100%;">
+  <div style="display:table-row;">
+    <div style="display:table-cell;width:50%;">
+      <a href="https://wcrp-cordex.github.io/simulation-status">Back to main</a>, see
+      <a href="./CMIP6_downscaling_plans.html">full list</a>, or see tables by 
+      <a href="./CORDEX_CMIP6_status.html">domain</a>,
+      <a href="./CORDEX_CMIP6_status_by_scenario.html">scenario</a> or
+      <a href="./CORDEX_CMIP6_status_by_experiment.html">experiment</a>
+    </div>
+    <div style="display:table-cell;text-align:right;width:50%;">
+      (Version: 2025-10-31 18:28 UTC)
+    </div>
+  </div>
+</div>
+<p style="text-align: justify;">
+Simulation status according to CORDEX-CMIP6 downscaling plans reported by the groups and collected in <a href="https://github.com/WCRP-CORDEX/simulation-status/blob/main/CMIP6_downscaling_plans.csv">CMIP6_downscaling_plans.csv</a>. 
+To contribute/update simulations open an issue or pull request at <a href="https://github.com/WCRP-CORDEX/simulation-status">https://github.com/WCRP-CORDEX/simulation-status</a>.
+<p style="text-align:left"> Domains: |<a href="#EUR-12">EUR-12</a> | <h2 id="EUR-12">EUR-12<a href="#top">^</a></h2>
+
+      <p style="font-size: smaller;"> Colour legend for status:
+        (
+        <span class="planned">planned</span>
+        <span class="running">running</span>
+        <span class="completed">completed</span>
+        <span class="published">published</span>
+        )
+        //
+        source_type:
+        (
+        <span class="unregistered">unregistered</span>
+        <span class="ARCM">ARCM</span>
+        <span class="AORCM">AORCM</span>
+        <span class="ESD">ESD</span>
+        )
+      </p>
+<style type="text/css">
+#T_abc2a .level1 {
+  width: 100px;
+}
+#T_abc2a th {
+  font-size: 8pt;
+  border-style: solid;
+  border-width: 1px;
+}
+#T_abc2a_row0_col0 {
+  font-size: 8pt;
+  border: 1px lightgrey solid !important;
+}
+</style>
+<table id="T_abc2a">
+  <thead>
+    <tr>
+      <th class="blank" >&nbsp;</th>
+      <th class="index_name level0" >Institution(s)</th>
+      <th id="T_abc2a_level0_col0" class="col_heading level0 col0" ><span sort="UCAN" class="unreginst">UCAN</span></th>
+    </tr>
+    <tr>
+      <th class="blank" >&nbsp;</th>
+      <th class="index_name level1" >RCM</th>
+      <th id="T_abc2a_level1_col0" class="col_heading level1 col0" ><span sort="WRF" class="unregistered">WRF</span></th>
+    </tr>
+    <tr>
+      <th class="index_name level0" >driving_source_id</th>
+      <th class="index_name level1" >driving_variant_label</th>
+      <th class="blank col0" >&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="T_abc2a_level0_row0" class="row_heading level0 row0" >TBD</th>
+      <th id="T_abc2a_level1_row0" class="row_heading level1 row0" >TBD</th>
+      <td id="T_abc2a_row0_col0" class="data row0 col0" ><span sort="hist" class="planned">hist</span> <span sort="vlho" class="planned">vlho</span></td>
+    </tr>
+  </tbody>
+</table>
+</body></html>

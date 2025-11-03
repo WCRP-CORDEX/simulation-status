@@ -1,0 +1,43 @@
+name: Update CMIP7
+
+on:
+  workflow_dispatch:
+
+  push:
+    branches: [ main ]
+    paths:
+      - CMIP7_downscaling_plans.csv
+  pull_request:
+    branches: [ main ]
+    paths:
+      - CMIP7_downscaling_plans.csv
+
+jobs:
+  update-tables:
+
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -el {0}
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup conda
+      uses: conda-incubator/setup-miniconda@v3
+      with:
+        environment-file: environment.yml
+
+    - name: Update CMIP7 tables
+      run: |
+        which -a python
+        conda activate test
+        make update-cmip7
+       
+    - name: Commit
+      run: |
+        git config --global user.name 'GitHub Actions'
+        git config --global user.email 'actions@github.com'
+        git commit -am "[Actions] Update CMIP7"
+        git push
