@@ -65,7 +65,7 @@ html_legend = '''
 
 table_props = [('width', '100px')]
 
-def html_header(title = 'CORDEX-CMIP6 downscaling plans'):
+def html_header(title = 'CORDEX-CMIP6 downscaling plans', mip_era='CMIP6'):
   return(f'''<!DOCTYPE html>
 <html><head>
 {html_style}
@@ -79,10 +79,10 @@ def html_header(title = 'CORDEX-CMIP6 downscaling plans'):
   <div style="display:table-row;">
     <div style="display:table-cell;width:50%;">
       <a href="https://wcrp-cordex.github.io/simulation-status">Back to main</a>, see
-      <a href="./CMIP6_downscaling_plans.html">full list</a>, or see tables by 
-      <a href="./CORDEX_CMIP6_status.html">domain</a>,
-      <a href="./CORDEX_CMIP6_status_by_scenario.html">scenario</a> or
-      <a href="./CORDEX_CMIP6_status_by_experiment.html">experiment</a>
+      <a href="./{mip_era}_downscaling_plans.html">full list</a>, or see tables by 
+      <a href="./CORDEX_{mip_era}_status.html">domain</a>,
+      <a href="./CORDEX_{mip_era}_status_by_scenario.html">scenario</a> or
+      <a href="./CORDEX_{mip_era}_status_by_experiment.html">experiment</a>
     </div>
     <div style="display:table-cell;text-align:right;width:50%;">
       (Version: {datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M")} UTC)
@@ -90,7 +90,7 @@ def html_header(title = 'CORDEX-CMIP6 downscaling plans'):
   </div>
 </div>
 <p style="text-align: justify;">
-Simulation status according to CORDEX-CMIP6 downscaling plans reported by the groups and collected in <a href="https://github.com/WCRP-CORDEX/simulation-status/blob/main/CMIP6_downscaling_plans.csv">CMIP6_downscaling_plans.csv</a>. 
+Simulation status according to CORDEX-{mip_era} downscaling plans reported by the groups and collected in <a href="https://github.com/WCRP-CORDEX/simulation-status/blob/main/{mip_era}_downscaling_plans.csv">{mip_era}_downscaling_plans.csv</a>. 
 To contribute/update simulations open an issue or pull request at <a href="https://github.com/WCRP-CORDEX/simulation-status">https://github.com/WCRP-CORDEX/simulation-status</a>.
 '''
   )

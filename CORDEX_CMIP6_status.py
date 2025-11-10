@@ -9,7 +9,7 @@ plans = add_registration_info(plans, cmip_era='CMIP6')
 domain_ids = sorted(list(set(plans.domain_id)))
 
 f = open(f'docs/CORDEX_CMIP6_status.html','w')
-f.write(html_header('CORDEX-CMIP6 downscaling plans summary tables'))
+f.write(html_header('CORDEX-CMIP6 downscaling plans summary tables', mip_era='CMIP6'))
 f.write('<p style="text-align:left"> Domains: |')
 [f.write(f'<a href="#{dom}">{dom}</a> | ') for dom in domain_ids]
 d1 = dict(selector=".level1", props=table_props)

@@ -13,7 +13,7 @@ with open('CORDEX_CMIP6_experiments.yaml') as fp:
 domain_ids = config.keys()
 
 f = open(f'docs/CORDEX_CMIP6_status_by_experiment.html','w')
-f.write(html_header('CORDEX-CMIP6 experiment summary tables'))
+f.write(html_header('CORDEX-CMIP6 experiment summary tables', mip_era='CMIP6'))
 f.write('<ul>')
 [f.write(f'<li><a href="#{i}">{i}</a></li>') for i in domain_ids]
 f.write('</ul>')

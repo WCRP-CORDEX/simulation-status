@@ -16,7 +16,7 @@ collapse_institutions = True
 domain_ids = sorted(list(set(df.domain_id)))
 
 f = open(f'docs/CORDEX_CMIP6_status_by_scenario.html','w')
-f.write(html_header('CORDEX-CMIP6 downscaling plans summary tables (split by SSP)'))
+f.write(html_header('CORDEX-CMIP6 downscaling plans summary tables (split by SSP)', mip_era='CMIP6'))
 f.write('<p style="text-align:left"> Domains: | ')
 [f.write(f'<a href="#{dom}">{dom}</a> | ') for dom in domain_ids]
 d1 = dict(selector=".level0", props=table_props)
