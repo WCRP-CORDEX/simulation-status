@@ -16,6 +16,12 @@ servers:
     availability: THREDDS
     comment: Australasia UQ-DES data
 
+  - domain: AUS-5i
+    institution: NCI Australia
+    url: https://thredds.nci.org.au/thredds/catalog/catalogs/kj66/catalog.html
+    availability: THREDDS
+    comment: CORDEX-CMIP6-based regridded (~5km) and calibrated data for Australia
+
   - domain: NAM-12
     institution: Ouranos
     url: https://pavics.ouranos.ca/twitcher/ows/proxy/thredds/catalog/datasets/simulations/RCM-CMIP6/CORDEX/NAM-12/catalog.html
