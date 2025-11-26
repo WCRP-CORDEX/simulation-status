@@ -16,6 +16,24 @@ servers:
     availability: THREDDS
     comment: Australasia UQ-DES data
 
+  - domain: AUS-20i
+    institution: NCI Australia
+    url: https://thredds.nci.org.au/thredds/catalog/py18/BARPA/CORDEX-CMIP6/DD/AUS-20i/BOM/catalog.html
+    availability: THREDDS
+    comment: Australasia BARPA data
+
+  - domain: AUS-18
+    institution: NCI Australia
+    url: https://thredds.nci.org.au/thredds/catalog/catalogs/zz63/NARCliM2-0/output-CMIP6/DD/AUS-18/NSW-Government/NSW-Government.html
+    availability: THREDDS
+    comment: Australasia NARCliM2.0 WRF data
+
+  - domain: AUS-10i
+    institution: NCI Australia
+    url: https://thredds.nci.org.au/thredds/catalog/catalogs/hq89/catalog.html
+    availability: THREDDS
+    comment: Australasia CCAM data
+
   - domain: AUS-5i
     institution: NCI Australia
     url: https://thredds.nci.org.au/thredds/catalog/catalogs/kj66/catalog.html
