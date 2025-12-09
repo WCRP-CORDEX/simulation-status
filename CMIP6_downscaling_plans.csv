@@ -396,7 +396,7 @@ EUR-12,CUNI,M. Belda,RegCM5-0,CNRM-ESM2-1,r1i1p1f2,historical,planned,2026-06,#E
 EUR-12,CUNI,M. Belda,RegCM5-0,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2026-06,#EURbalanced
 EUR-12,CUNI,M. Belda,RegCM5-0,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2026-06,#EURbalanced
 EUR-12,GERICS,K. Sieck / C. Teichmann,REMO2020-2-2,ERA5,,evaluation,completed,2024-08,#EURbalanced #NUKLEUS #EURcoupled #CORDEX-CORE
-EUR-12,GERICS,K. Sieck / C. Teichmann,REMO2020-2-2-MR2,ERA5,,evaluation,completed,2024-08,#EURbalanced #NUKLEUS #EURcoupled
+EUR-12,GERICS,K. Sieck / C. Teichmann,REMO2020-2-2-MR2,ERA5,,evaluation,completed,2024-08,#NUKLEUS #EURcoupled
 EUR-12,GERICS,K. Sieck / C. Teichmann,REMO2020-2-2,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2025-05,#EURbalanced #NUKLEUS #EURcoupled #CORDEX-CORE
 EUR-12,GERICS,K. Sieck / C. Teichmann,REMO2020-2-2,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2025-10,#EURbalanced #EURcoupled
 EUR-12,GERICS,K. Sieck / C. Teichmann,REMO2020-2-2,MPI-ESM1-2-HR,r1i1p1f1,ssp370,completed,2025-07,#EURbalanced #NUKLEUS #CORDEX-CORE
@@ -414,7 +414,7 @@ EUR-12,GERICS,D. Rechid / C. Pop,REMO2020-2-2-iMOVE,MPI-ESM1-2-HR,r1i1p1f1,ssp12
 EUR-12,GERICS,D. Rechid / C. Pop,REMO2020-2-2-iMOVE-LUC,MPI-ESM1-2-HR,r1i1p1f1,ssp126,running,2025-09,#EURcoupled #LUCAS
 EUR-12,GERICS,D. Rechid / C. Pop,REMO2020-2-2-iMOVE,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2025-07,#EURcoupled #LUCAS
 EUR-12,GERICS,D. Rechid / C. Pop,REMO2020-2-2-iMOVE,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2025-09,#EURcoupled #LUCAS
-EUR-12,GERICS,J.P. Pietikäinen,REMO2020-2-2-TEB,ERA5,,evaluation,completed,2025-11,#EURbalanced
+EUR-12,GERICS,J.P. Pietikäinen,REMO2020-2-2-TEB,ERA5,,evaluation,completed,2025-11,
 EUR-12,HCLIMcom-DMI,O. B. Christensen,HCLIM43-ALADIN,IPSL-CM6A-LR,r1i1p1f1,historical,completed,2023-12,#ManyGCM
 EUR-12,HCLIMcom-DMI,O. B. Christensen,HCLIM43-ALADIN,IPSL-CM6A-LR,r1i1p1f1,ssp126,completed,2024-12,#ManyGCM
 EUR-12,HCLIMcom-DMI,O. B. Christensen,HCLIM43-ALADIN,IPSL-CM6A-LR,r1i1p1f1,ssp370,completed,2024-12,#ManyGCM
