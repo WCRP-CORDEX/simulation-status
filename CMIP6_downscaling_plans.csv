@@ -281,14 +281,14 @@ EUR-12,AUTH,E. Katragkou / V. Pavlidis,WRF451Q,ERA5,,evaluation,running,2026-02,
 EUR-12,AUTH,E. Katragkou / V. Pavlidis,WRF451Q,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2026-06,#EURbalanced #ManySSP #CORDEX-CORE
 EUR-12,AUTH,E. Katragkou / V. Pavlidis,WRF451Q,MPI-ESM1-2-HR,r1i1p1f1,ssp126,running,2026-10,#EURbalanced #ManySSP
 EUR-12,BCCR-UCAN,S. Sobolowski / O. Gokturk / J. Fernandez / J. Milovac,WRF451Q,NorESM2-MM,r1i1p1f1,historical,completed,2025-01,#EURbalanced #CORDEX-CORE
-EUR-12,BCCR-UCAN,S. Sobolowski / O. Gokturk / J. Fernandez / J. Milovac,WRF451Q,NorESM2-MM,r1i1p1f1,ssp126,running,2025-12,#EURbalanced
-EUR-12,BCCR-UCAN,S. Sobolowski / O. Gokturk / J. Fernandez / J. Milovac,WRF451Q,NorESM2-MM,r1i1p1f1,ssp370,running,2025-12,#EURbalanced #CORDEX-CORE
+EUR-12,BCCR-UCAN,S. Sobolowski / O. Gokturk / J. Fernandez / J. Milovac,WRF451Q,NorESM2-MM,r1i1p1f1,ssp126,completed,2025-12,#EURbalanced
+EUR-12,BCCR-UCAN,S. Sobolowski / O. Gokturk / J. Fernandez / J. Milovac,WRF451Q,NorESM2-MM,r1i1p1f1,ssp370,completed,2025-12,#EURbalanced #CORDEX-CORE
 EUR-12,CESAM-UA,D. Carvalho,WRF451Q,ERA5,,evaluation,completed,2025-06,#RCMintvar Realization r2
 EUR-12,CESAM-UA,D. Carvalho,WRF451Q,MPI-ESM1-2-HR,r1i1p1f1,ssp585,planned,2023-12,#ManySSP
 EUR-12,CLMcom-Hereon,B. Geyer,CCLM6-0-1,ERA5,,evaluation,completed,2024-12,#ManyGCM #EURcoupled
-EUR-12,CLMcom-LIST,M. Sulis,CCLM6-0-1,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2025-03,#ManyGCM #EURcoupled
-EUR-12,CLMcom-LIST,M. Sulis,CCLM6-0-1,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2025-03,#ManyGCM #EURcoupled
-EUR-12,CLMcom-LIST,M. Sulis,CCLM6-0-1,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2025-03,#ManyGCM #EURcoupled
+EUR-12,CLMcom-LIST,M. Sulis,CCLM6-0-1,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2025-12,#ManyGCM #EURcoupled
+EUR-12,CLMcom-LIST,M. Sulis,CCLM6-0-1,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2025-12,#ManyGCM #EURcoupled
+EUR-12,CLMcom-LIST,M. Sulis,CCLM6-0-1,MPI-ESM1-2-HR,r1i1p1f1,ssp370,completed,2025-12,#ManyGCM #EURcoupled
 EUR-12,CLMcom-KIT,H. Feldmann,CCLM6-0-1,EC-Earth3-Veg,r1i1p1f1,historical,completed,2025-01,#ManyGCM #Nukleus
 EUR-12,CLMcom-KIT,H. Feldmann,CCLM6-0-1,EC-Earth3-Veg,r1i1p1f1,ssp126,completed,2025-03,#ManyGCM #Nukleus
 EUR-12,CLMcom-KIT,H. Feldmann,CCLM6-0-1,EC-Earth3-Veg,r1i1p1f1,ssp370,completed,2025-03,#ManyGCM #Nukleus
