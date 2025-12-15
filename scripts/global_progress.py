@@ -22,7 +22,7 @@ status = colors.keys()
 
 def get_ymax(exp):
   if exp.startswith('ssp'):
-    return(150)
+    return(125)
   elif exp.startswith('hist'):
     return(60)
   elif exp.startswith('eval'):
