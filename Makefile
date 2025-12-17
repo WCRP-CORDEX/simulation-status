@@ -20,3 +20,8 @@ global-progress:
 	python scripts/global_progress.py eval CMIP6
 	python scripts/global_progress.py hist CMIP6
 	python scripts/global_progress.py ssp CMIP6
+	python scripts/global_progress_map.py ssp CMIP6
+	python scripts/global_progress_map.py ssp126 CMIP6
+	python scripts/global_progress_map.py ssp370 CMIP6
+	python scripts/global_progress_map.py ssp370 CMIP6 core
+	

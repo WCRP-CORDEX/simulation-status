@@ -14,4 +14,5 @@ To add a CORDEX-CMIP6 data server, edit [CORDEX_CMIP6_data_servers.yaml](./CORDE
 Current global status
 ---------------------
 <img src="docs/CORDEX_CMIP6_global_progress__SSP.svg" width="600"/>
+<img src="docs/CORDEX_CMIP6_global_progress_map__SSP.svg" width="600">
 <img src="docs/ecd_series.svg" width="630"/>
