@@ -6,9 +6,10 @@ import sys
 import glob
 from icecream import ic
 
-experiment = 'ssp'# sys.argv[1]
-mip_era = 'CMIP6' # sys.argv[2]
-core_only = False
+experiment = sys.argv[1]
+mip_era = sys.argv[2]
+# Set domain_set to 'all' or 'core' to enable CORE-only filtering
+domain_set = sys.argv[3] if len(sys.argv) > 3 else 'all'
 
 if mip_era == 'CMIP5':
     url = "https://raw.githubusercontent.com/WCRP-CORDEX/simulation-status/main/docs/CORDEX_CMIP5_status.csv"
@@ -18,7 +19,7 @@ else:
 cordex_domains = ['SAM', 'CAM', 'NAM', 'EUR', 'MED', 'MENA', 'AFR', 'WAS', 'CAS', 'EAS', 'SEA', 'AUS', 'ANT', 'ARC']
 # Domains to skip (non CORE)
 skip_domains_core = ['ANT', 'ARC', 'MED', 'MNA', 'MENA', 'CAS']
-skip_domains = skip_domains_core if core_only else []
+skip_domains = skip_domains_core if domain_set == 'core' else []
 cordex_domains = [d for d in cordex_domains if d not in skip_domains]
 cordex_color = "#6E6E6E"  
 colors = {
@@ -31,8 +32,8 @@ status = colors.keys()
 
 # Font size for map annotations and legend
 FONT_SIZE = 14
-line_height = 4.5  # Degrees latitude spacing between lines
-col_width = 8    # Degrees longitude spacing between columns
+LINE_HEIGHT_AXES = 0.03
+COL_WIDTH_AXES = 0.02
 
 def plot_cordex_boundaries(ax):
     """Plot CORDEX domain boundaries on the map"""
@@ -59,7 +60,7 @@ conditions = [
     , ~df['comments'].str.contains('#ESD', na=False)
 ]
 
-if core_only:
+if domain_set == 'core':
     conditions.append(~df['domain'].isin(skip_domains))
     conditions.append(df['comments'].str.contains('#CORDEX-CORE', na=False))
 
@@ -85,53 +86,28 @@ ic(status_counts_by_domain)
 print("\n=== Total by domain ===")
 ic(status_counts_by_domain.sum(axis=1))
 
-# Compute domain centers from border files (automatic)
-domain_centers_auto = []
-for border_file in glob.glob('CORDEX_domain_borders/CORDEX_*_border.dat'):
-    dom = border_file.replace('CORDEX_domain_borders/CORDEX_', '')
-    dom = dom.replace('-44_border.dat', '')
-    if dom in skip_domains:  # Skip domains in skip list
-        continue
-    dborder = pd.read_csv(border_file, sep=' ', header=None)
-    dclon, dclat = dborder.median().values
-    domain_centers_auto.append(dict(domain=dom, lon=dclon, lat=dclat))
-domain_centers_auto = pd.DataFrame(domain_centers_auto)
-domain_centers_auto = domain_centers_auto.set_index('domain')
-
-# Manual domain centers (you can adjust these coordinates)
+# Manually defined domain centers (axes fractions [0,1])
 manual_centers = {
-    'SAM': {'lon': -40.569137, 'lat': -45},
-    'CAM': {'lon': -97.705204, 'lat': 6.068755},
-    'NAM': {'lon': -96.992134, 'lat': 45},
-    'EUR': {'lon': 9.999146, 'lat': 64.574274},
-    'AFR': {'lon': 17.820000, 'lat': -41},
-    'WAS': {'lon': 80.996487, 'lat': -5.074282},
-    'EAS': {'lon': 164.340718, 'lat': 45.838358},
-    'SEA': {'lon': 138.080002, 'lat': 20.580000},
-    'AUS': {'lon': 120.152981, 'lat': -41},
-}
-manual_centers = {
-    'SAM': {'lon': -50.569137, 'lat': -25},
-    'CAM': {'lon': -65.705204, 'lat': 10.068755},
-    'NAM': {'lon': -96.992134, 'lat': 45},
-    'EUR': {'lon': 15.999146, 'lat': 50.574274},
-    'AFR': {'lon': 25.820000, 'lat': -2},
-    'WAS': {'lon': 80.996487, 'lat': 14.074282},
-    'EAS': {'lon': 125.340718, 'lat': 35.838358},
-    'SEA': {'lon': 130.080002, 'lat': 7.580000},
-    'AUS': {'lon': 150.152981, 'lat': -25},
-    'ANT': {'lon': -10.0, 'lat': -75.0},
-    'ARC': {'lon': 0.0, 'lat': 75.0},
-    'MED': {'lon': 25.0, 'lat': 40.0},
-    'MENA': {'lon': 30.0, 'lat': 20.0},
-    'CAS': {'lon': 80.0, 'lat': 50.0}
+    'SAM': {'x': 0.35, 'y': 0.30},
+    'CAM': {'x': 0.33, 'y': 0.55},
+    'NAM': {'x': 0.28, 'y': 0.77},
+    'EUR': {'x': 0.55, 'y': 0.885},
+    'AFR': {'x': 0.58, 'y': 0.40},
+    'WAS': {'x': 0.73, 'y': 0.60},
+    'EAS': {'x': 0.83, 'y': 0.75},
+    'SEA': {'x': 0.85, 'y': 0.50},
+    'AUS': {'x': 0.92, 'y': 0.35},
+    'ANT': {'x': 0.55, 'y': 0.04},
+    'ARC': {'x': 0.55, 'y': 0.965},
+    'MED': {'x': 0.56, 'y': 0.72},
+    'MENA': {'x': 0.60, 'y': 0.55},
+    'CAS': {'x': 0.73, 'y': 0.85}
 }
 
-domain_centers = pd.DataFrame(manual_centers).T.loc[cordex_domains, :]
+domain_centers = pd.DataFrame(manual_centers).T
+domain_centers = domain_centers.loc[cordex_domains, ['x', 'y']]
 
-print("\n=== Domain centers (automatic) ===")
-ic(domain_centers_auto)
-print("\n=== Domain centers (manual - you can edit these) ===")
+print("\n=== Domain centers (axes fractions [0,1]) ===")
 ic(domain_centers)
 
 # Merge counts with domain centers
@@ -149,7 +125,11 @@ ax.set_global()
 plot_cordex_boundaries(ax)
 
 for domain, row in map_data.iterrows():
-    lon, lat = row['lon'], row['lat']
+    # Axes-fraction placement
+    base_x, base_y = float(row['x']), float(row['y'])
+    T = ax.transAxes
+    lh = LINE_HEIGHT_AXES
+    cw = COL_WIDTH_AXES
     domain_ids = status_counts_by_domain_id[status_counts_by_domain_id.index.str.startswith(f'{domain}-')]
     table_data = []
     for domain_id in domain_ids.index:
@@ -163,29 +143,29 @@ for domain, row in map_data.iterrows():
     num_rows = len(table_data)
     
     # Starting position (slightly above center to account for multiple rows)
-    start_lat = lat + (num_rows - 1) * line_height / 2
+    start_y = base_y + (num_rows - 1) * lh / 2
     
     for i, row_data in enumerate(table_data):
         label = row_data[0]
         counts = row_data[1:]
         is_bold = (i == num_rows - 1)  # Last row is bold (domain total)
         
-        current_lat = start_lat - i * line_height
+        current_y = start_y - i * lh
         
         # Draw label (left-aligned)
-        ax.text(lon - col_width * 2, current_lat, f'{label}:',
+        ax.text(base_x - cw * 2, current_y, f'{label}:',
             ha='right', va='center', fontsize=FONT_SIZE,
             fontweight='bold' if is_bold else 'normal',
-            transform=ccrs.PlateCarree(),
+            transform=T,
             bbox=dict(boxstyle='round,pad=0.2', facecolor='white', alpha=0.8, edgecolor='none'))
     
         # Draw each count in its own column with color
         for j, (stat, count) in enumerate(zip(status, counts)):
-            ax.text(lon - col_width * 1.5 + j * col_width, current_lat, str(count),
+            ax.text(base_x - cw * 1.5 + j * cw, current_y, str(count),
                 ha='center', va='center', fontsize=FONT_SIZE,
                 fontweight='bold' if is_bold else 'normal',
                 color=colors[stat],
-                transform=ccrs.PlateCarree(),
+                transform=T,
                 bbox=dict(boxstyle='round,pad=0.15', facecolor='white', alpha=0.7, edgecolor='none'))
 
 # Create legend
@@ -194,10 +174,13 @@ legend_elements = [plt.Rectangle((0, 0), 1, 1, fc=colors[s], label=s.capitalize(
 ax.legend(handles=legend_elements, loc='lower left', title='Status', framealpha=0.9,
           prop={'size': 11}, title_fontsize=11)
 
-plt.title(f'CORDEX-{mip_era} simulations by domain ({experiment.upper()})', fontsize=14, fontweight='bold')
+core_tag = ' CORDEX-CORE only' if domain_set == 'core' else ''
+plt.title(f'CORDEX-{mip_era} simulations by domain ({experiment.upper()}){core_tag}', fontsize=14, fontweight='bold')
 plt.tight_layout()
-#plt.savefig(f'docs/CORDEX_{mip_era}_global_progress_map__{experiment.upper()}.png', 
-#            dpi=300, bbox_inches='tight')
-plt.savefig(f'docs/CORDEX_{mip_era}_global_progress_map__{experiment.upper()}.svg', 
+
+suffix = '__core' if domain_set == 'core' else ''
+# plt.savefig(f'docs/CORDEX_{mip_era}_global_progress_map__{experiment.UPPER()}{suffix}.png',
+#             dpi=300, bbox_inches='tight')
+plt.savefig(f'docs/CORDEX_{mip_era}_global_progress_map__{experiment.upper()}{suffix}.svg',
             bbox_inches='tight')
-print(f"\nMap saved to docs/CORDEX_{mip_era}_global_progress_map__{experiment.upper()}.png/svg")
+print(f"\nMap saved to docs/CORDEX_{mip_era}_global_progress_map__{experiment.upper()}{suffix}.png/svg")
