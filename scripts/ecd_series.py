@@ -85,7 +85,7 @@ def plot_simulation_progress(domain, bar_width=15, future_date = pd.Timestamp('2
     plt.tight_layout()
     plt.savefig('docs/ecd_series.svg')
     # Show the plot
-    plt.show()
+    #plt.show()
 
 # Example usage:
 #plot_simulation_progress(domain="MED-12", bar_width=25)
