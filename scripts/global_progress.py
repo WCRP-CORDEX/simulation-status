@@ -9,7 +9,7 @@ if mip_era == 'CMIP5':
   url = "https://raw.githubusercontent.com/WCRP-CORDEX/simulation-status/main/docs/CORDEX_CMIP5_status.csv"
 else:
   url = 'https://raw.githubusercontent.com/WCRP-CORDEX/simulation-status/main/CMIP6_downscaling_plans.csv'
-  #url = 'CMIP6_downscaling_plans.csv'
+  url = 'CMIP6_downscaling_plans.csv'
 
 cordex_domains = ['SAM', 'CAM', 'NAM', 'EUR', 'MED', 'MENA', 'AFR', 'WAS', 'CAS', 'EAS', 'SEA', 'AUS', 'ANT', 'ARC']
 colors = {

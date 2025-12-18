@@ -15,7 +15,7 @@ if mip_era == 'CMIP5':
     url = "https://raw.githubusercontent.com/WCRP-CORDEX/simulation-status/main/docs/CORDEX_CMIP5_status.csv"
 else:
     url = 'https://raw.githubusercontent.com/WCRP-CORDEX/simulation-status/main/CMIP6_downscaling_plans.csv'
-    #url = 'CMIP6_downscaling_plans.csv'
+    url = 'CMIP6_downscaling_plans.csv'
 
 cordex_domains = ['SAM', 'CAM', 'NAM', 'EUR', 'MED', 'MENA', 'AFR', 'WAS', 'CAS', 'EAS', 'SEA', 'AUS', 'ANT', 'ARC']
 # Domains to skip (non CORE)
@@ -108,15 +108,9 @@ manual_centers = {
 domain_centers = pd.DataFrame(manual_centers).T
 domain_centers = domain_centers.loc[cordex_domains, ['x', 'y']]
 
-print("\n=== Domain centers (axes fractions [0,1]) ===")
-ic(domain_centers)
-
 # Merge counts with domain centers
 status_counts_by_domain['total'] = status_counts_by_domain.sum(axis=1)
 map_data = status_counts_by_domain.join(domain_centers, how='inner')
-
-print("\n=== Map data ===")
-ic(map_data)
 
 # Map
 fig = plt.figure(figsize=(16, 10))
@@ -175,8 +169,8 @@ legend_elements = [plt.Rectangle((0, 0), 1, 1, fc=colors[s], label=s.capitalize(
 ax.legend(handles=legend_elements, loc='lower left', title='Status', framealpha=0.9,
           prop={'size': 11}, title_fontsize=11)
 
-core_tag = ' CORDEX-CORE only' if domain_set == 'core' else ''
-plt.title(f'CORDEX-{mip_era} simulations by domain ({experiment.upper()}){core_tag}', fontsize=14, fontweight='bold')
+title = f'CORDEX-CORE {mip_era} simulations ({experiment.upper()})' if domain_set == 'core' else f'CORDEX-{mip_era} simulations by domain ({experiment.upper()})'
+plt.title(title, fontsize=14, fontweight='bold')
 plt.tight_layout()
 
 suffix = '__core' if domain_set == 'core' else ''
