@@ -304,11 +304,11 @@ EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,CCLM6-0-1-URB,ERA5,,eva
 EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,CCLM6-0-1-URB,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2023-12,#EURcoupled
 EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,CCLM6-0-1-URB,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2023-12,#EURcoupled
 EUR-12,CLMcom-KUL,I. Vanderkelen,CCLM6-0-1-URB-ESG,ERA5,,evaluation,completed,2024-12,#EURcoupled
-EUR-12,CLMcom-FZJ,K. Goergen,TSMP1-140-E,ERA5,,evaluation,running,2025-04,#EURcoupled
-EUR-12,CLMcom-FZJ,K. Goergen,TSMP1-140-E,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2025-03,#EURcoupled
-EUR-12,CLMcom-FZJ,K. Goergen,TSMP1-140-E,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2025-09,#EURcoupled
-EUR-12,CLMcom-FZJ,K. Goergen,TSMP1-140-E,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2025-09,#EURcoupled
-EUR-12,CLMcom-FZJ,K. Goergen,CCLM6-0-1,MIROC6,r1i1p1f1,ssp126,planned,2025-03,#ManyGCM
+EUR-12,CLMcom-FZJ,K. Goergen,TSMP1-140-E,ERA5,,evaluation,completed,2025-04,#EURcoupled
+EUR-12,CLMcom-FZJ,K. Goergen,TSMP1-140-E,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2025-03,#EURcoupled
+EUR-12,CLMcom-FZJ,K. Goergen,TSMP1-140-E,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2025-09,#EURcoupled
+EUR-12,CLMcom-FZJ,K. Goergen,TSMP1-140-E,MPI-ESM1-2-HR,r1i1p1f1,ssp370,completed,2025-09,#EURcoupled
+EUR-12,CLMcom-FZJ,K. Goergen,CCLM6-0-1,MIROC6,r1i1p1f1,ssp126,planned,2026-03,#ManyGCM
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI1-1,ERA5,,evaluation,completed,2024-08,#EURcoupled ORAS5 BC in the ocean
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI1-1,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2024-07,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp370,completed,2024-12,#EURcoupled
@@ -334,11 +334,11 @@ EUR-12,CLMcom-KIT,H. Feldmann,ICON-CLM-202407-1-1,MIROC6,r1i1p1f1,ssp126,complet
 EUR-12,CLMcom-KIT,H. Feldmann,ICON-CLM-202407-1-1,MIROC6,r1i1p1f1,ssp245,running,2025-12, #ManyGCM #ManySSP #UDAG
 EUR-12,CLMcom-KIT,H. Feldmann,ICON-CLM-202407-1-1,MIROC6,r1i1p1f1,ssp370,completed,2025-08,#EURbalanced #ManyGCM #ManySSP #UDAG
 EUR-12,CLMcom-KIT,H. Feldmann,ICON-CLM-202407-1-1,MIROC6,r1i1p1f1,ssp585,running,2025-12,#ManyGCM #ManySSP #UDAG
-EUR-12,CLMcom-WEGC,H. Truhetz,ICON-CLM-202407-1-1,CMCC-CM2-SR5,r1i1p1f1,historical,running,2025-12,#EURbalanced #ManyGCM #ManySSP
-EUR-12,CLMcom-FZJ,S. Poll,ICON-CLM-202407-1-1,CMCC-CM2-SR5,r1i1p1f1,ssp126,planned,2025-12,#EURbalanced #ManyGCM #ManySSP Scenario split TBD among CMCC and FZJ
-EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,ICON-CLM-202407-1-1,CMCC-CM2-SR5,r1i1p1f1,ssp245,planned,2025-12,#ManyGCM #ManySSP Scenario split TBD among CMCC and FZJ
-EUR-12,CLMcom-WEGC,H. Truhetz,ICON-CLM-202407-1-1,CMCC-CM2-SR5,r1i1p1f1,ssp370,planned,2025-12,#EURbalanced #ManyGCM #ManySSP
-EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,ICON-CLM-202407-1-1,CMCC-CM2-SR5,r1i1p1f1,ssp585,planned,2025-12,#ManyGCM #ManySSP Scenario split TBD among CMCC and FZJ
+EUR-12,CLMcom-WEGC,H. Truhetz,ICON-CLM-202407-1-1,CMCC-CM2-SR5,r1i1p1f1,historical,running,2026-01,#EURbalanced #ManyGCM #ManySSP
+EUR-12,CLMcom-FZJ,S. Poll,ICON-CLM-202407-1-1,CMCC-CM2-SR5,r1i1p1f1,ssp126,planned,2026-03,#EURbalanced #ManyGCM #ManySSP Scenario split TBD among CMCC and FZJ
+EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,ICON-CLM-202407-1-1,CMCC-CM2-SR5,r1i1p1f1,ssp245,planned,2026-03,#ManyGCM #ManySSP Scenario split TBD among CMCC and FZJ
+EUR-12,CLMcom-WEGC,H. Truhetz,ICON-CLM-202407-1-1,CMCC-CM2-SR5,r1i1p1f1,ssp370,planned,2026-03,#EURbalanced #ManyGCM #ManySSP
+EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,ICON-CLM-202407-1-1,CMCC-CM2-SR5,r1i1p1f1,ssp585,planned,2026-03,#ManyGCM #ManySSP Scenario split TBD among CMCC and FZJ
 EUR-12,CLMcom-BTU,A. Will,ICON-CLM-202407-1-1,CNRM-ESM2-1,r1i1p1f2,historical,completed,2025-05,#ManyGCM #ManySSP #UDAG
 EUR-12,CLMcom-BTU,A. Will,ICON-CLM-202407-1-1,CNRM-ESM2-1,r1i1p1f2,ssp126,completed,2025-08,#ManyGCM #ManySSP #UDAG
 EUR-12,CLMcom-BTU,A. Will,ICON-CLM-202407-1-1,CNRM-ESM2-1,r1i1p1f2,ssp245,running,2025-12,#ManyGCM #ManySSP #UDAG
