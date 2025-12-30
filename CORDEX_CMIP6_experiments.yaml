@@ -21,38 +21,16 @@ EUR-12:
     description: >
       The EURO-CORDEX balanced matrix experiment comprises simulations filling a
       GCM-RCM-SSP combination matrix with a fractional factorial design.
-  
-  EURexpress24:
-    title: EUR-12 balanced (ECD by 2024-12)
-    description: >
-      Expected status of the balanced matrix experiment by 2024-12 (according to
-      expected completion date provided).
-    condition:
-      - tag:EURbalanced
-      - driving_experiment_id != 'evaluation'
-      - estimated_completion_date <= '2024-12'
-      - estimated_completion_date > '2020-01'
 
-  EURexpress256:
-    title: EUR-12 balanced (ECD by 2025-06)
+  EURexpress266:
+    title: EUR-12 balanced (ECD by 2026-06)
     description: >
-      Expected status of the balanced matrix experiment by 2025-06 (according to
+      Expected status of the balanced matrix experiment by 2026-06 (according to
       expected completion date provided).
     condition:
       - tag:EURbalanced
       - driving_experiment_id != 'evaluation'
-      - estimated_completion_date <= '2025-06'
-      - estimated_completion_date > '2020-01'
-
-  EURexpress25:
-    title: EUR-12 balanced (ECD by 2025-12)
-    description: >
-      Expected status of the balanced matrix experiment by 2025-12 (according to
-      expected completion date provided).
-    condition:
-      - tag:EURbalanced
-      - driving_experiment_id != 'evaluation'
-      - estimated_completion_date <= '2025-12'
+      - estimated_completion_date <= '2026-06'
       - estimated_completion_date > '2020-01'
 
   EURcoupled:
@@ -113,6 +91,13 @@ EUR-12:
     condition:
       - source_id.str.startswith('ICON-CLM') | source_id.str.startswith('ROAM-NBS') | source_id.str.match('GCOAST-.*2-.')
     collapse_institutions: False
+
+  REMO:
+    title: REMO simulations
+    description: >
+      Ensemble of REMO simulations under different configurations.
+    condition:
+      - source_id.str.startswith('REMO')
 
   eWRFcom:
     title: EURO-CORDEX WRF community

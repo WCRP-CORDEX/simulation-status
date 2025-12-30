@@ -16,6 +16,7 @@ update-esgf:
 	python CORDEX_CMIP5_status_by_scenario.py
 
 global-progress:
+	python scripts/summary_table.py
 	python scripts/ecd_series.py
 	python scripts/global_progress.py eval CMIP6
 	python scripts/global_progress.py hist CMIP6

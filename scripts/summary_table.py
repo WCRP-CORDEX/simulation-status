@@ -185,7 +185,6 @@ def main() -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(html)
     print(f"Output written to: {output_path}")
-    print(html)
 
 
 if __name__ == "__main__":
