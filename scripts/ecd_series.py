@@ -2,16 +2,18 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import datetime
 
-def plot_simulation_progress(domain, bar_width=15, future_date = pd.Timestamp('2025-12-31')):
+def plot_simulation_progress(domain, bar_width=15):
     url = "https://raw.githubusercontent.com/WCRP-CORDEX/simulation-status/refs/heads/main/CMIP6_downscaling_plans.csv"
     url = "CMIP6_downscaling_plans.csv"
     data = pd.read_csv(url)
     if domain != 'all':
         #domain_data = data.query("domain == @domain and comments.str.contains('#EURbalanced')").copy()
         domain_data = data.query("domain == @domain").copy()
-        domain_data = domain_data.query("~comments.str.contains('#ESD', na = False)")
     else:
         domain_data = data.copy()
+    domain_data = domain_data.query("~comments.str.contains('#ESD', na = False)")
+    valid_status = ['planned', 'running', 'completed']
+    domain_data = domain_data.query("status in @valid_status")
 
     domain_data['estimated_completion_date'] = pd.to_datetime(
         domain_data['estimated_completion_date'], errors='coerce'
@@ -28,11 +30,20 @@ def plot_simulation_progress(domain, bar_width=15, future_date = pd.Timestamp('2
         print(f"Warning: {len(past_incomplete_simulations)} uncomplete simulations have dates in the past:")
         print(past_incomplete_simulations)
 
+    # Handle simulations with past estimated completion dates
+    future_date = now + pd.DateOffset(months=6)
+    last_date = domain_data['estimated_completion_date'].max()
     domain_data.loc[
-        (domain_data['status'] != 'completed') & 
+        (domain_data['status'] == 'running') & 
         (domain_data['estimated_completion_date'] < now),
         'estimated_completion_date'
     ] = future_date
+
+    domain_data.loc[
+        (domain_data['status'] == 'planned') & 
+        (domain_data['estimated_completion_date'] < now),
+        'estimated_completion_date'
+    ] = last_date 
 
     domain_data = domain_data.sort_values(by='estimated_completion_date')
     domain_data['cumulative_count'] = range(1, len(domain_data) + 1)
@@ -65,7 +76,6 @@ def plot_simulation_progress(domain, bar_width=15, future_date = pd.Timestamp('2
     bottom = 0
     for height, color, label in zip(heights, colors, labels):
         ax1.bar(
-            #x=datetime.now(), 
             x=now, 
             height=height, 
             width=bar_width, 
