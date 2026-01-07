@@ -384,13 +384,13 @@ EUR-12,CUNI,M. Belda,RegCM5-0,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2026-06,#EURba
 EUR-12,GERICS,K. Sieck / C. Teichmann,REMO2020-2-2,ERA5,,evaluation,completed,2024-08,#EURbalanced #NUKLEUS #EURcoupled #CORDEX-CORE
 EUR-12,GERICS,K. Sieck / C. Teichmann,REMO2020-2-2-MR2,ERA5,,evaluation,completed,2024-08,#NUKLEUS #EURcoupled
 EUR-12,GERICS,K. Sieck / C. Teichmann,REMO2020-2-2,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2025-05,#EURbalanced #NUKLEUS #EURcoupled #CORDEX-CORE
-EUR-12,GERICS,K. Sieck / C. Teichmann,REMO2020-2-2,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2025-10,#EURbalanced #EURcoupled
+EUR-12,GERICS,K. Sieck / C. Teichmann,REMO2020-2-2,MPI-ESM1-2-HR,r1i1p1f1,ssp126,running,2026-03,#EURbalanced #EURcoupled
 EUR-12,GERICS,K. Sieck / C. Teichmann,REMO2020-2-2,MPI-ESM1-2-HR,r1i1p1f1,ssp370,completed,2025-07,#EURbalanced #NUKLEUS #CORDEX-CORE
 EUR-12,GERICS,K. Sieck / C. Teichmann,REMO2020-2-2,EC-Earth3-Veg,r1i1p1f1,historical,completed,2025-05,#EURbalanced #NUKLEUS #CORDEX-CORE
-EUR-12,GERICS,K. Sieck / C. Teichmann,REMO2020-2-2,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2025-10,#EURbalanced
+EUR-12,GERICS,K. Sieck / C. Teichmann,REMO2020-2-2,EC-Earth3-Veg,r1i1p1f1,ssp126,running,2026-03,#EURbalanced
 EUR-12,GERICS,K. Sieck / C. Teichmann,REMO2020-2-2,EC-Earth3-Veg,r1i1p1f1,ssp370,completed,2025-07,#EURbalanced #NUKLEUS #CORDEX-CORE
 EUR-12,GERICS,K. Sieck / C. Teichmann,REMO2020-2-2,MIROC6,r1i1p1f1,historical,completed,2025-05,#EURbalanced #NUKLEUS
-EUR-12,GERICS,K. Sieck / C. Teichmann,REMO2020-2-2,MIROC6,r1i1p1f1,ssp126,planned,2025-10,#EURbalanced
+EUR-12,GERICS,K. Sieck / C. Teichmann,REMO2020-2-2,MIROC6,r1i1p1f1,ssp126,running,2026-03,#EURbalanced
 EUR-12,GERICS,K. Sieck / C. Teichmann,REMO2020-2-2,MIROC6,r1i1p1f1,ssp370,completed,2025-07,#EURbalanced #NUKLEUS
 EUR-12,GERICS,D. Rechid / C. Pop,REMO2020-2-2-iMOVE,ERA5,,evaluation,completed,2025-05,#EURcoupled #LUCAS simulation with static land use
 EUR-12,GERICS,D. Rechid / C. Pop,REMO2020-2-2-iMOVE-LUC,ERA5,,evaluation,completed,2025-05,#EURcoupled #LUCAS simulation with annually-changing land use
