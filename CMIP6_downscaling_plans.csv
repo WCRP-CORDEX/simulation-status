@@ -316,8 +316,8 @@ EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOIB1-1,ERA5,,evaluation,completed,2025
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOIB1-1,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2026-07,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOIB1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2026-12,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOIB1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2026-12,#EURcoupled
-EUR-12,CLMcom-Hereon,B. Geyer,ICON-CLM-202407-1-1,ERA5,,evaluation,completed,2024-09,#EURbalanced #ManyGCM #UDAG #EURcoupled #RCMintvar Realization r1
-EUR-12,CLMcom-ETH,M. Jaehn,ICON-CLM-202407-1-1,ERA5,,evaluation,completed,2025-07,#RCMintvar Realization r2
+EUR-12,CLMcom-Hereon,B. Geyer,ICON-CLM-202407-1-1,ERA5,,evaluation,completed,2024-09,#EURbalanced #ManyGCM #UDAG #EURcoupled
+EUR-12,CLMcom-ETH,M. Jaehn,ICON-CLM-202407-1-3,ERA5,,evaluation,completed,2025-07,
 EUR-12,CLMcom-DWD,C. Steger,ICON-CLM-202407-1-1,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2025-01,#EURbalanced #ManyGCM #ManySSP #UDAG #EURcoupled
 EUR-12,CLMcom-DWD,C. Steger,ICON-CLM-202407-1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2025-05,#EURbalanced #ManyGCM #ManySSP #UDAG #EURcoupled
 EUR-12,CLMcom-DWD,C. Steger,ICON-CLM-202407-1-2,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2025-08,#UDAG
@@ -344,11 +344,11 @@ EUR-12,CLMcom-BTU,A. Will,ICON-CLM-202407-1-1,CNRM-ESM2-1,r1i1p1f2,ssp126,comple
 EUR-12,CLMcom-BTU,A. Will,ICON-CLM-202407-1-1,CNRM-ESM2-1,r1i1p1f2,ssp245,running,2025-12,#ManyGCM #ManySSP #UDAG
 EUR-12,CLMcom-BTU,A. Will,ICON-CLM-202407-1-1,CNRM-ESM2-1,r1i1p1f2,ssp370,completed,2025-08,#ManyGCM #ManySSP #UDAG
 EUR-12,CLMcom-BTU,A. Will,ICON-CLM-202407-1-1,CNRM-ESM2-1,r1i1p1f2,ssp585,running,2025-12,#ManyGCM #ManySSP #UDAG
-EUR-12,CLMcom-ETH,M. Jaehn,ICON-CLM-202407-1-1,NorESM2-MM,r1i1p1f1,historical,completed,2025-09,#ManyGCM #ManySSP
-EUR-12,CLMcom-IMWM,A. Jaczewski,ICON-CLM-202407-1-1,NorESM2-MM,r1i1p1f1,ssp126,planned,2025-06,#ManyGCM #ManySSP
-EUR-12,CLMcom-ETH,M. Jaehn,ICON-CLM-202407-1-1,NorESM2-MM,r1i1p1f1,ssp245,completed,2025-12,#ManyGCM #ManySSP
-EUR-12,CLMcom-IMWM,A. Jaczewski,ICON-CLM-202407-1-1,NorESM2-MM,r1i1p1f1,ssp370,planned,2025-06,#ManyGCM #ManySSP
-EUR-12,CLMcom-???,???,ICON-CLM-202407-1-1,NorESM2-MM,r1i1p1f1,ssp585,planned,2025-03,#ManyGCM #ManySSP
+EUR-12,CLMcom-ETH,M. Jaehn,ICON-CLM-202407-1-3,NorESM2-MM,r1i1p1f1,historical,completed,2025-09,#ManyGCM #ManySSP
+EUR-12,CLMcom-IMWM,A. Jaczewski,ICON-CLM-202407-1-3,NorESM2-MM,r1i1p1f1,ssp126,planned,2025-06,#ManyGCM #ManySSP
+EUR-12,CLMcom-ETH,M. Jaehn,ICON-CLM-202407-1-3,NorESM2-MM,r1i1p1f1,ssp245,completed,2025-12,#ManyGCM #ManySSP
+EUR-12,CLMcom-IMWM,A. Jaczewski,ICON-CLM-202407-1-3,NorESM2-MM,r1i1p1f1,ssp370,planned,2025-06,#ManyGCM #ManySSP
+EUR-12,CLMcom-???,???,ICON-CLM-202407-1-3,NorESM2-MM,r1i1p1f1,ssp585,planned,2025-03,#ManyGCM #ManySSP
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI2-1,ERA5,,evaluation,planned,2026-12,#EURcoupled ORAS5 BC in the ocean
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI2-1,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2026-12,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI2-1,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2027-07,#EURcoupled
@@ -665,9 +665,9 @@ SAM-12,UCAN,J. Fernandez,WRF461U,NorESM2-MM,r1i1p1f1,ssp370,planned,2026-08,#COR
 SAM-25,UBA-CIMA-IFAECI,L. Fita,RegIPSL,ERA5,,evaluation,planned,2026-12,
 SAM-25,UBA-CIMA-IFAECI,L. Fita,RegIPSL,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2026-12,
 SAM-25,UBA-CIMA-IFAECI,L. Fita,RegIPSL,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2026-12,
-SEA-12,MOHC,G. Redmond,HadREM3-GA7-05,ERA5,,evaluation,planned,2025-12,
-SEA-12,MOHC,G. Redmond,HadREM3-GA7-05,EC-EARTH3-Veg,r1i1p1f1,historical,completed,2025-01,
-SEA-12,MOHC,G. Redmond,HadREM3-GA7-05,EC-EARTH3-Veg,r1i1p1f1,ssp370,completed,2025-01,
+SEA-12,MOHC,G. Redmond,HadREM3-GA7-05,ERA5,,evaluation,completed,2025-12,
+SEA-12,MOHC,G. Redmond,HadREM3-GA7-05,EC-Earth3-Veg,r1i1p1f1,historical,completed,2025-01,
+SEA-12,MOHC,G. Redmond,HadREM3-GA7-05,EC-Earth3-Veg,r1i1p1f1,ssp370,completed,2025-01,
 SEA-12,MOHC,G. Redmond,HadREM3-GA7-05,NorESM2-MM,r1i1p1f1,historical,completed,2025-01,
 SEA-12,MOHC,G. Redmond,HadREM3-GA7-05,NorESM2-MM,r1i1p1f1,ssp370,completed,2025-01,
 SEA-12,MOHC,G. Redmond,HadREM3-GA7-05,UKESM1-0-LL,r1i1p1f2,historical,completed,2025-01,
@@ -704,12 +704,19 @@ SEA-25,MET-Malaysia,M. F. Ammar,WRF,NorESM2-MM,r2i1p1f1,ssp370,running,2026-09,#
 SEA-25,UMT,J. X. Chung,RegCM4-NH,ERA5,,evaluation,completed,2025-01,
 SEA-25,UMT,J. X. Chung,RegCM4-NH,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2025-01,
 SEA-25,UKM-UMT,J. X. Chung,RegCM4-NH,MPI-ESM1-2-HR,r1i1p1f1,ssp370,completed,2025-01,
+SEA-25,UKM-UMT,J. X. Chung,RegCM4-NH,MPI-ESM1-2-HR,r1i1p1f1,ssp245,planned,2026-01,
+SEA-25,MO,J. Dado,RegCM4-NH,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2026-01,
 SEA-25,UMT,J. X. Chung,RegCM4-NH,EC-Earth3-Veg,r1i1p1f1,historical,completed,2025-01,
 SEA-25,UKM-UMT,J. X. Chung,RegCM4-NH,EC-Earth3-Veg,r1i1p1f1,ssp370,completed,2025-01,
+SEA-25,HKO,W.P. Tse,RegCM4-NH,EC-Earth3-Veg,r1i1p1f1,ssp245,completed,2026-01,
+SEA-25,HKO,W.P. Tse,RegCM4-NH,EC-Earth3-Veg,r1i1p1f1,ssp126,running,2026-02,
+SEA-25,HKO,W.P. Tse,RegCM4-NH,EC-Earth3-Veg,r1i1p1f1,ssp585,running,2026-02,
+SEA-25,RU-CORE,S. Jerasorn,RegCM5,EC-Earth3-Veg,r1i1p1f1,historical,completed,2025-01,
 SEA-25,RU-CORE,S. Jerasorn,RegCM5,EC-Earth3-Veg,r1i1p1f1,ssp245,completed,2025-01,
 SEA-25,RU-CORE,S. Jerasorn,RegCM5,EC-Earth3-Veg,r1i1p1f1,ssp585,completed,2025-01,
 SEA-25,UMT,J. X. Chung,RegCM4-NH,CanESM5,r1i1p2f1,historical,completed,2025-01,
 SEA-25,UMT,J. X. Chung,RegCM4-NH,CanESM5,r1i1p2f1,ssp370,completed,2025-01,
+SEA-25,MO,J. Dado,RegCM4-NH,CanESM5,r1i1p2f1,ssp126,planned,2026-01,
 SEA-25,USTH-HUS-IMHEN,T. Ngo-Duc,RegCM4-NH,CNRM-ESM2-1,r1i1p1f2,historical,completed,2025-01,
 SEA-25,USTH-HUS-IMHEN,T. Ngo-Duc,RegCM4-NH,CNRM-ESM2-1,r1i1p1f2,ssp119,completed,2025-01,
 SEA-25,USTH-HUS-IMHEN,T. Ngo-Duc,RegCM4-NH,CNRM-ESM2-1,r1i1p1f2,ssp126,completed,2025-01,
@@ -721,11 +728,12 @@ SEA-25,USTH-HUS-IMHEN,T. Ngo-Duc,RegCM4-NH,NorESM2-MM,r2i1p1f1,ssp126,completed,
 SEA-25,USTH-HUS-IMHEN,T. Ngo-Duc,RegCM4-NH,NorESM2-MM,r2i1p1f1,ssp245,completed,2025-01,
 SEA-25,USTH-HUS-IMHEN,T. Ngo-Duc,RegCM4-NH,NorESM2-MM,r2i1p1f1,ssp370,completed,2025-01,
 SEA-25,USTH-HUS-IMHEN,T. Ngo-Duc,RegCM4-NH,NorESM2-MM,r2i1p1f1,ssp585,completed,2025-01,
-SEA-25,USTH-HUS-IMHEN,T. Ngo-Duc,RegCM4-NH,NorESM2-MM,r2i1p1f1,ssp585,completed,2025-01,
 SEA-25,USTH,T. Ngo-Duc,RegCM4-NH,CESM2,r11i1p1f1,historical,completed,2025-01,
 SEA-25,MO,J. Dado,RegCM4-NH,CESM2,r11i1p1f1,ssp126,completed,2025-01,
 SEA-25,MO,J. Dado,RegCM4-NH,CESM2,r11i1p1f1,ssp370,completed,2025-01,
-SEA-25,MO,J. Dado,RegCM4-NH,HadGEM3-GC31-MM,r1i1p1f3,historical,running,2025-06,
+SEA-25,HKO,W.P. Tse,RegCM4-NH,CESM2,r11i1p1f1,ssp245,completed,2026-01,
+SEA-25,HKO,W.P. Tse,RegCM4-NH,CESM2,r11i1p1f1,ssp585,running,2026-02,
+SEA-25,USTH,T. Ngo-Duc,RegCM4-NH,HadGEM3-GC31-MM,r1i1p1f3,historical,completed,2025-06,
 SEA-25,RU-CORE,S. Jerasorn,RegCM5-exp16,CMCC-ESM2,r1i1p1f1,historical,completed,2025-01,
 SEA-25,RU-CORE,S. Jerasorn,RegCM5-exp16,CMCC-ESM2,r1i1p1f1,ssp245,completed,2025-01,
 SEA-25,RU-CORE,S. Jerasorn,RegCM5-exp16,CMCC-ESM2,r1i1p1f1,ssp585,completed,2025-01,
@@ -740,17 +748,20 @@ SEA-25,USTH,T. Ngo-Duc,RegCM4-NH-exp16,CNRM-ESM2-1,r1i1p1f2,ssp126,completed,202
 SEA-25,USTH,T. Ngo-Duc,RegCM4-NH-exp16,CNRM-ESM2-1,r1i1p1f2,ssp245,completed,2025-01,
 SEA-25,USTH,T. Ngo-Duc,RegCM4-NH-exp16,CNRM-ESM2-1,r1i1p1f2,ssp370,completed,2025-01,
 SEA-25,BMKG,D. Permana,RegCM4-NH-exp16,MIROC-ES2L,r1i1p1f2,historical,completed,2025-01,
+SEA-25,BMKG,D. Permana,RegCM4-NH-exp16,MIROC-ES2L,r1i1p1f2,ssp126,completed,2026-01,
 SEA-25,BMKG,D. Permana,RegCM4-NH-exp16,MIROC-ES2L,r1i1p1f2,ssp245,completed,2025-01,
 SEA-25,BMKG,D. Permana,RegCM4-NH-exp16,MIROC-ES2L,r1i1p1f2,ssp370,completed,2025-01,
 SEA-25,BMKG,D. Permana,RegCM4-NH-exp16,MIROC-ES2L,r1i1p1f2,ssp585,completed,2025-01,
-SEA-25,HKO,W.P. Tse,RegCM4-NH-exp16,EC-Earth3-Veg,r1i1p1f1,historical,planned,2025-06,
+SEA-25,HKO,W.P. Tse,RegCM4-NH-exp16,EC-Earth3-Veg,r1i1p1f1,historical,completed,2025-06,
 SEA-25,HKO,W.P. Tse,RegCM4-NH-exp16,EC-Earth3-Veg,r1i1p1f1,ssp126,completed,2025-01,
 SEA-25,HKO,W.P. Tse,RegCM4-NH-exp16,EC-Earth3-Veg,r1i1p1f1,ssp370,completed,2025-01,
+SEA-25,HKO,W.P. Tse,RegCM4-NH-exp16,EC-Earth3-Veg,r1i1p1f1,ssp245,completed,2026-01,
+SEA-25,HKO,W.P. Tse,RegCM4-NH-exp16,EC-Earth3-Veg,r1i1p1f1,ssp585,completed,2026-01,
 SEA-25,HKO,W.P. Tse,RegCM4-NH-exp16,NorESM2-MM,r2i1p1f1,historical,completed,2025-01,
-SEA-25,HKO,W.P. Tse,RegCM4-NH-exp16,NorESM2-MM,r2i1p1f1,ssp126,running,2025-03,
-SEA-25,HKO,W.P. Tse,RegCM4-NH-exp16,NorESM2-MM,r2i1p1f1,ssp245,running,2025-03,
-SEA-25,HKO,W.P. Tse,RegCM4-NH-exp16,NorESM2-MM,r2i1p1f1,ssp370,running,2025-03,
-SEA-25,HKO,W.P. Tse,RegCM4-NH-exp16,NorESM2-MM,r2i1p1f1,ssp585,running,2025-03,
+SEA-25,HKO,W.P. Tse,RegCM4-NH-exp16,NorESM2-MM,r2i1p1f1,ssp126,completed,2025-06,
+SEA-25,HKO,W.P. Tse,RegCM4-NH-exp16,NorESM2-MM,r2i1p1f1,ssp245,completed,2025-06,
+SEA-25,HKO,W.P. Tse,RegCM4-NH-exp16,NorESM2-MM,r2i1p1f1,ssp370,completed,2025-06,
+SEA-25,HKO,W.P. Tse,RegCM4-NH-exp16,NorESM2-MM,r2i1p1f1,ssp585,completed,2025-06,
 SEA-25,CCRC,P.-L. Nguyen,CCAM-exp2021,ERA5,,evaluation,completed,2025-01,
 SEA-25,CCRC,P.-L. Nguyen,CCAM-exp2021,EC-Earth3-Veg,r1i1p1f1,historical,completed,2025-01,
 SEA-25,CCRC,P.-L. Nguyen,CCAM-exp2021,EC-Earth3-Veg,r1i1p1f1,ssp126,completed,2025-01,
@@ -758,16 +769,16 @@ SEA-25,CCRC,P.-L. Nguyen,CCAM-exp2021,EC-Earth3-Veg,r1i1p1f1,ssp370,completed,20
 SEA-25,CCRC,P.-L. Nguyen,CCAM-exp2021,ACCESS-CM2,r1i1p1f1,historical,completed,2025-01,
 SEA-25,CCRC,P.-L. Nguyen,CCAM-exp2021,ACCESS-CM2,r1i1p1f1,ssp126,completed,2025-01,
 SEA-25,CCRC,P.-L. Nguyen,CCAM-exp2021,ACCESS-CM2,r1i1p1f1,ssp370,completed,2025-01,
-SEA-25,CCRC,P.-L. Nguyen,CCAM-exp2017,ERA5,,evaluation,planned,2025-06,
+SEA-25,CCRC,P.-L. Nguyen,CCAM-exp2017,ERA5,,evaluation,completed,2026-01,
 SEA-25,CCRC,P.-L. Nguyen,CCAM-exp2017,EC-Earth3-Veg,r1i1p1f1,historical,completed,2025-01,
-SEA-25,CCRC,P.-L. Nguyen,CCAM-exp2017,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2025-06,
-SEA-25,CCRC,P.-L. Nguyen,CCAM-exp2017,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2025-06,
+SEA-25,CCRC,P.-L. Nguyen,CCAM-exp2017,EC-Earth3-Veg,r1i1p1f1,ssp126,completed,2026-01,
+SEA-25,CCRC,P.-L. Nguyen,CCAM-exp2017,EC-Earth3-Veg,r1i1p1f1,ssp370,completed,2026-01,
 SEA-25,CCRC,P.-L. Nguyen,CCAM-exp2017,ACCESS-CM2,r1i1p1f1,historical,completed,2025-01,
-SEA-25,CCRC,P.-L. Nguyen,CCAM-exp2017,ACCESS-CM2,r1i1p1f1,ssp126,planned,2025-06,
-SEA-25,CCRC,P.-L. Nguyen,CCAM-exp2017,ACCESS-CM2,r1i1p1f1,ssp370,running,2025-02,
-SEA-25,CSIRO,J. McGregor,CCAM,ACCESS-CM2,r2i1p1f1,historical,planned,2025-06,
+SEA-25,CCRC,P.-L. Nguyen,CCAM-exp2017,ACCESS-CM2,r1i1p1f1,ssp126,completed,2026-01,
+SEA-25,CCRC,P.-L. Nguyen,CCAM-exp2017,ACCESS-CM2,r1i1p1f1,ssp370,completed,2026-01,
+SEA-25,CSIRO,J. McGregor,CCAM,ACCESS-CM2,r2i1p1f1,historical,completed,2026-01,
 SEA-25,CSIRO,J. McGregor,CCAM,ACCESS-CM2,r2i1p1f1,ssp370,completed,2025-01,
-SEA-25,CSIRO,J. McGregor,CCAM,GFDL-CM4,r1i1p1f1,historical,planned,2025-06,
+SEA-25,CSIRO,J. McGregor,CCAM,GFDL-CM4,r1i1p1f1,historical,completed,2026-01,
 SEA-25,CSIRO,J. McGregor,CCAM,GFDL-CM4,r1i1p1f1,ssp370,completed,2025-01,
 WAS-25,BCCR,S. Sobolowski / O. Gokturk,WRF461U,ERA5,,evaluation,planned,2026-06,#CORDEX-CORE
 WAS-25,BCCR,S. Sobolowski / O. Gokturk,WRF461U,NorESM2-MM,r1i1p1f1,historical,planned,2026-09,#CORDEX-CORE
