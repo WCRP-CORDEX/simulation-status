@@ -460,10 +460,13 @@ EUR-12,KNMI,E. van Meijgaard,RACMO23E,NorESM2-MM,r1i1p1f1,historical,completed,2
 EUR-12,KNMI,E. van Meijgaard,RACMO23E,NorESM2-MM,r1i1p1f1,ssp126,completed,2024-01,#EURbalanced
 EUR-12,KNMI,E. van Meijgaard,RACMO23E,NorESM2-MM,r1i1p1f1,ssp370,completed,2024-01,#EURbalanced
 EUR-12,MOHC,E. Buonomo,HadREM3-GA7-05,ERA5,,evaluation,running,2025-02,
-EUR-12,RMIB-UGent,P. Termonia,ALARO1-SFX,ERA5,,evaluation,running,2025-02,
-EUR-12,RMIB-UGent,P. Termonia,ALARO1-SFX,CNRM-ESM2-1,r1i1p1f2,historical,planned,2025-06,
-EUR-12,RMIB-UGent,P. Termonia,ALARO1-SFX,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2025-06,
-EUR-12,RMIB-UGent,P. Termonia,ALARO1-SFX,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2025-06,
+EUR-12,RMIB-UGent,K. Vandelanotte,ALARO1-SFX,ERA5,,evaluation,completed,2025-06,
+EUR-12,RMIB-UGent,K. Vandelanotte,ALARO1-SFX,CNRM-ESM2-1,r1i1p1f2,historical,completed,2026-01,
+EUR-12,RMIB-UGent,K. Vandelanotte,ALARO1-SFX,CNRM-ESM2-1,r1i1p1f2,ssp245,running,2026-07,
+EUR-12,RMIB-UGent,K. Vandelanotte,ALARO1-SFX,CNRM-ESM2-1,r1i1p1f2,ssp585,running,2026-07,
+EUR-12,RMIB-UGent,K. Vandelanotte,ALARO1-SFX,EC-Earth3-Veg,r1i1p1f1,historical,running,2026-03,
+EUR-12,RMIB-UGent,K. Vandelanotte,ALARO1-SFX,EC-Earth3-Veg,r1i1p1f1,ssp245,running,2026-07,
+EUR-12,RMIB-UGent,K. Vandelanotte,ALARO1-SFX,EC-Earth3-Veg,r1i1p1f1,ssp585,running,2026-07,
 EUR-12,UCAN,J. Fernandez / J. Milovac,WRF461U,ERA5,,evaluation,planned,2026-06,#CORDEX-CORE
 EUR-12,CYI,G. Zittis,WRF461U,EC-Earth3-Veg,r1i1p1f1,historical,planned,2026-09,#CORDEX-CORE
 EUR-12,CYI,G. Zittis,WRF461U,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2026-09,#CORDEX-CORE
