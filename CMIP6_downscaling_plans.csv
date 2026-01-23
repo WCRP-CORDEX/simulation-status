@@ -326,26 +326,26 @@ EUR-12,CLMcom-DWD,C. Steger,ICON-CLM-202407-1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp370,co
 EUR-12,CLMcom-DWD,C. Steger,ICON-CLM-202407-1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp585,completed,2025-08,#ManyGCM #ManySSP #UDAG
 EUR-12,CLMcom-Hereon,B. Geyer,ICON-CLM-202407-1-1,EC-Earth3-Veg,r1i1p1f1,historical,completed,2025-05,#EURbalanced #ManyGCM #ManySSP #UDAG
 EUR-12,CLMcom-Hereon,B. Geyer,ICON-CLM-202407-1-1,EC-Earth3-Veg,r1i1p1f1,ssp126,completed,2025-08,#EURbalanced #ManyGCM #ManySSP #UDAG
-EUR-12,CLMcom-Hereon,B. Geyer,ICON-CLM-202407-1-1,EC-Earth3-Veg,r1i1p1f1,ssp245,running,2025-12,#ManyGCM #ManySSP #UDAG
+EUR-12,CLMcom-Hereon,B. Geyer,ICON-CLM-202407-1-1,EC-Earth3-Veg,r1i1p1f1,ssp245,completed,2025-12,#ManyGCM #ManySSP #UDAG
 EUR-12,CLMcom-Hereon,B. Geyer,ICON-CLM-202407-1-1,EC-Earth3-Veg,r1i1p1f1,ssp370,completed,2025-08,#EURbalanced #ManyGCM #ManySSP #UDAG
-EUR-12,CLMcom-Hereon,B. Geyer,ICON-CLM-202407-1-1,EC-Earth3-Veg,r1i1p1f1,ssp585,running,2025-12,#ManyGCM #ManySSP #UDAG
+EUR-12,CLMcom-Hereon,B. Geyer,ICON-CLM-202407-1-1,EC-Earth3-Veg,r1i1p1f1,ssp585,completed,2025-12,#ManyGCM #ManySSP #UDAG
 EUR-12,CLMcom-KIT,H. Feldmann,ICON-CLM-202407-1-1,MIROC6,r1i1p1f1,historical,completed,2025-05,#EURbalanced #ManyGCM #ManySSP #UDAG
 EUR-12,CLMcom-KIT,H. Feldmann,ICON-CLM-202407-1-1,MIROC6,r1i1p1f1,ssp126,completed,2025-08,#EURbalanced #ManyGCM #ManySSP #UDAG
-EUR-12,CLMcom-KIT,H. Feldmann,ICON-CLM-202407-1-1,MIROC6,r1i1p1f1,ssp245,running,2025-12, #ManyGCM #ManySSP #UDAG
+EUR-12,CLMcom-KIT,H. Feldmann,ICON-CLM-202407-1-1,MIROC6,r1i1p1f1,ssp245,completed,2025-12, #ManyGCM #ManySSP #UDAG
 EUR-12,CLMcom-KIT,H. Feldmann,ICON-CLM-202407-1-1,MIROC6,r1i1p1f1,ssp370,completed,2025-08,#EURbalanced #ManyGCM #ManySSP #UDAG
-EUR-12,CLMcom-KIT,H. Feldmann,ICON-CLM-202407-1-1,MIROC6,r1i1p1f1,ssp585,running,2025-12,#ManyGCM #ManySSP #UDAG
-EUR-12,CLMcom-WEGC,H. Truhetz,ICON-CLM-202407-1-1,CMCC-CM2-SR5,r1i1p1f1,historical,running,2026-01,#EURbalanced #ManyGCM #ManySSP
+EUR-12,CLMcom-KIT,H. Feldmann,ICON-CLM-202407-1-1,MIROC6,r1i1p1f1,ssp585,completed,2025-12,#ManyGCM #ManySSP #UDAG
+EUR-12,CLMcom-WEGC,H. Truhetz,ICON-CLM-202407-1-1,CMCC-CM2-SR5,r1i1p1f1,historical,completed,2026-01,#EURbalanced #ManyGCM #ManySSP
 EUR-12,CLMcom-FZJ,S. Poll,ICON-CLM-202407-1-1,CMCC-CM2-SR5,r1i1p1f1,ssp126,planned,2026-03,#EURbalanced #ManyGCM #ManySSP Scenario split TBD among CMCC and FZJ
 EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,ICON-CLM-202407-1-1,CMCC-CM2-SR5,r1i1p1f1,ssp245,planned,2026-03,#ManyGCM #ManySSP Scenario split TBD among CMCC and FZJ
 EUR-12,CLMcom-WEGC,H. Truhetz,ICON-CLM-202407-1-1,CMCC-CM2-SR5,r1i1p1f1,ssp370,planned,2026-03,#EURbalanced #ManyGCM #ManySSP
 EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,ICON-CLM-202407-1-1,CMCC-CM2-SR5,r1i1p1f1,ssp585,planned,2026-03,#ManyGCM #ManySSP Scenario split TBD among CMCC and FZJ
 EUR-12,CLMcom-BTU,A. Will,ICON-CLM-202407-1-1,CNRM-ESM2-1,r1i1p1f2,historical,completed,2025-05,#ManyGCM #ManySSP #UDAG
 EUR-12,CLMcom-BTU,A. Will,ICON-CLM-202407-1-1,CNRM-ESM2-1,r1i1p1f2,ssp126,completed,2025-08,#ManyGCM #ManySSP #UDAG
-EUR-12,CLMcom-BTU,A. Will,ICON-CLM-202407-1-1,CNRM-ESM2-1,r1i1p1f2,ssp245,running,2025-12,#ManyGCM #ManySSP #UDAG
+EUR-12,CLMcom-BTU,A. Will,ICON-CLM-202407-1-1,CNRM-ESM2-1,r1i1p1f2,ssp245,completed,2025-12,#ManyGCM #ManySSP #UDAG
 EUR-12,CLMcom-BTU,A. Will,ICON-CLM-202407-1-1,CNRM-ESM2-1,r1i1p1f2,ssp370,completed,2025-08,#ManyGCM #ManySSP #UDAG
-EUR-12,CLMcom-BTU,A. Will,ICON-CLM-202407-1-1,CNRM-ESM2-1,r1i1p1f2,ssp585,running,2025-12,#ManyGCM #ManySSP #UDAG
+EUR-12,CLMcom-BTU,A. Will,ICON-CLM-202407-1-1,CNRM-ESM2-1,r1i1p1f2,ssp585,completed,2025-12,#ManyGCM #ManySSP #UDAG
 EUR-12,CLMcom-ETH,M. Jaehn,ICON-CLM-202407-1-3,NorESM2-MM,r1i1p1f1,historical,completed,2025-09,#ManyGCM #ManySSP
-EUR-12,CLMcom-IMWM,A. Jaczewski,ICON-CLM-202407-1-3,NorESM2-MM,r1i1p1f1,ssp126,planned,2025-06,#ManyGCM #ManySSP
+EUR-12,CLMcom-IMWM,A. Jaczewski,ICON-CLM-202407-1-3,NorESM2-MM,r1i1p1f1,ssp126,running,2025-06,#ManyGCM #ManySSP
 EUR-12,CLMcom-ETH,M. Jaehn,ICON-CLM-202407-1-3,NorESM2-MM,r1i1p1f1,ssp245,completed,2025-12,#ManyGCM #ManySSP
 EUR-12,CLMcom-IMWM,A. Jaczewski,ICON-CLM-202407-1-3,NorESM2-MM,r1i1p1f1,ssp370,planned,2025-06,#ManyGCM #ManySSP
 EUR-12,CLMcom-???,???,ICON-CLM-202407-1-3,NorESM2-MM,r1i1p1f1,ssp585,planned,2025-03,#ManyGCM #ManySSP
