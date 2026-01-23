@@ -1,0 +1,5 @@
+# Ignore Python virtual environment
+venv/
+oryx-build-commands.txt
+__pycache__/
+*.pyc

@@ -1,0 +1,47 @@
+# CORDEX-CMIP6 Data Servers
+# This file collects information about servers hosting CORDEX-CMIP6 data
+# even if they are not (yet) on ESGF.
+#
+# To add a new server, create an entry with the following fields:
+#   - domain: CORDEX domain_id (e.g., AFR-12, etc.)
+#   - institution: Institution hosting the data
+#   - url: URL to access the data
+#   - availability: Description of data availability (e.g., "THREDDS", "Download", "OPeNDAP")
+#   - comment: Additional information about the server or data
+
+servers:
+  - domain: AUS-20i
+    institution: NCI Australia
+    url: https://thredds.nci.org.au/thredds/catalog/catalogs/ig45/catalog.html
+    availability: THREDDS
+    comment: Australasia UQ-DES data
+
+  - domain: AUS-20i
+    institution: NCI Australia
+    url: https://thredds.nci.org.au/thredds/catalog/py18/BARPA/CORDEX-CMIP6/DD/AUS-20i/BOM/catalog.html
+    availability: THREDDS
+    comment: Australasia BARPA data
+
+  - domain: AUS-18
+    institution: NCI Australia
+    url: https://thredds.nci.org.au/thredds/catalog/catalogs/zz63/NARCliM2-0/output-CMIP6/DD/AUS-18/NSW-Government/NSW-Government.html
+    availability: THREDDS
+    comment: Australasia NARCliM2.0 WRF data
+
+  - domain: AUS-10i
+    institution: NCI Australia
+    url: https://thredds.nci.org.au/thredds/catalog/catalogs/hq89/catalog.html
+    availability: THREDDS
+    comment: Australasia CCAM data
+
+  - domain: AUS-5i
+    institution: NCI Australia
+    url: https://thredds.nci.org.au/thredds/catalog/catalogs/kj66/catalog.html
+    availability: THREDDS
+    comment: CORDEX-CMIP6-based regridded (~5km) and calibrated data for Australia
+
+  - domain: NAM-12
+    institution: Ouranos
+    url: https://pavics.ouranos.ca/twitcher/ows/proxy/thredds/catalog/datasets/simulations/RCM-CMIP6/CORDEX/NAM-12/catalog.html
+    availability: THREDDS
+    comment: North American Ouranos data

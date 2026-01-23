@@ -4,12 +4,12 @@ from funs import add_registration_info, generate_domain_table
 
 collapse_institutions = True
 
-plans = pd.read_csv('CMIP6_downscaling_plans.csv', na_filter=False)
-plans = add_registration_info(plans, cmip_era='CMIP6')
+plans = pd.read_csv('CMIP7_downscaling_plans.csv', na_filter=False)
+plans = add_registration_info(plans, cmip_era='CMIP7')
 domain_ids = sorted(list(set(plans.domain_id)))
 
-f = open(f'docs/CORDEX_CMIP6_status.html','w')
-f.write(html_header('CORDEX-CMIP6 downscaling plans summary tables', mip_era='CMIP6'))
+f = open(f'docs/CORDEX_CMIP7_status.html','w')
+f.write(html_header('CORDEX-CMIP7 downscaling plans summary tables', mip_era='CMIP7'))
 f.write('<p style="text-align:left"> Domains: |')
 [f.write(f'<a href="#{dom}">{dom}</a> | ') for dom in domain_ids]
 d1 = dict(selector=".level1", props=table_props)

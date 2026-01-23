@@ -1,4 +1,4 @@
-name: Update
+name: Update CMIP7
 
 on:
   workflow_dispatch:
@@ -6,13 +6,11 @@ on:
   push:
     branches: [ main ]
     paths:
-      - CMIP6_downscaling_plans.csv
-      - CORDEX_CMIP6_data_servers.yaml
+      - CMIP7_downscaling_plans.csv
   pull_request:
     branches: [ main ]
     paths:
-      - CMIP6_downscaling_plans.csv
-      - CORDEX_CMIP6_data_servers.yaml
+      - CMIP7_downscaling_plans.csv
 
 jobs:
   update-tables:
@@ -31,15 +29,15 @@ jobs:
       with:
         environment-file: environment.yml
 
-    - name: Update tables
+    - name: Update CMIP7 tables
       run: |
         which -a python
         conda activate test
-        make update
+        make update-cmip7
        
     - name: Commit
       run: |
         git config --global user.name 'GitHub Actions'
         git config --global user.email 'actions@github.com'
-        git commit -am "[Actions] Update"
+        git commit -am "[Actions] Update CMIP7"
         git push
