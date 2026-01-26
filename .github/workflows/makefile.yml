@@ -8,11 +8,6 @@ on:
     paths:
       - CMIP6_downscaling_plans.csv
       - CORDEX_CMIP6_data_servers.yaml
-  pull_request:
-    branches: [ main ]
-    paths:
-      - CMIP6_downscaling_plans.csv
-      - CORDEX_CMIP6_data_servers.yaml
 
 jobs:
   update-tables:
