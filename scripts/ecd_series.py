@@ -7,8 +7,8 @@ def plot_simulation_progress(domain, bar_width=15):
     url = "CMIP6_downscaling_plans.csv"
     data = pd.read_csv(url)
     if domain != 'all':
-        #domain_data = data.query("domain == @domain and comments.str.contains('#EURbalanced')").copy()
-        domain_data = data.query("domain == @domain").copy()
+        #domain_data = data.query("domain_id == @domain and comments.str.contains('#EURbalanced')").copy()
+        domain_data = data.query("domain_id == @domain").copy()
     else:
         domain_data = data.copy()
     domain_data = domain_data.query("~comments.str.contains('#ESD', na = False)")
