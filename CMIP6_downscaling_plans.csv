@@ -429,13 +429,13 @@ EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,MPI-ESM1-2-HR,r1i1p1f1,ssp126,com
 EUR-12,HCLIMcom-SMHI,G. Nikulin,HCLIM43-ALADIN,MPI-ESM1-2-HR,r1i1p1f1,ssp370,completed,2023-12,#ManyGCM
 EUR-12,ICTP,E. Coppola,RegCM5-0,ERA5,,evaluation,completed,2023-12,#EURbalanced #CORDEX-CORE
 EUR-12,ICTP,E. Coppola,RegCM5-0,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2024-09,#EURbalanced #CORDEX-CORE
-EUR-12,CNR-ISAC,R. D'Agostino,RegCM5-0,MPI-ESM1-2-HR,r1i1p1f1,ssp126,running,2026-03,#EURbalanced
+EUR-12,CNR-ISAC,R. D'Agostino,RegCM5-0,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2026-01,#EURbalanced
 EUR-12,ICTP,E. Coppola,RegCM5-0,MPI-ESM1-2-HR,r1i1p1f1,ssp370,completed,2025-02,#EURbalanced #CORDEX-CORE
 EUR-12,ICTP,E. Coppola,RegCM5-0,EC-Earth3-Veg,r1i1p1f1,historical,completed,2024-09,#EURbalanced #CORDEX-CORE
-EUR-12,ICTP,E. Coppola,RegCM5-0,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2024-12,#EURbalanced
+EUR-12,ICTP,E. Coppola,RegCM5-0,EC-Earth3-Veg,r1i1p1f1,ssp126,completed,2026-01,#EURbalanced
 EUR-12,ICTP,E. Coppola,RegCM5-0,EC-Earth3-Veg,r1i1p1f1,ssp370,completed,2025-02,#EURbalanced #CORDEX-CORE
 EUR-12,ICTP,E. Coppola,RegCM5-0,NorESM2-MM,r1i1p1f1,historical,completed,2025-02,#EURbalanced #CORDEX-CORE
-EUR-12,ICTP,E. Coppola,RegCM5-0,NorESM2-MM,r1i1p1f1,ssp126,planned,2024-12,#EURbalanced
+EUR-12,ICTP,E. Coppola,RegCM5-0,NorESM2-MM,r1i1p1f1,ssp126,completed,2026-01,#EURbalanced
 EUR-12,ICTP,E. Coppola,RegCM5-0,NorESM2-MM,r1i1p1f1,ssp370,completed,2025-02,#EURbalanced #CORDEX-CORE
 EUR-12,IDL-FCUL,P. Soares / R. M. Cardoso,WRF451Q,ERA5,,evaluation,completed,2024-08,#EURbalanced #RCMintvar Realization r1
 EUR-12,IDL-FCUL,P. Soares / R. M. Cardoso,WRF451Q,MPI-ESM1-2-HR,r1i1p1f1,ssp245,planned,2025-08,#ManySSP
