@@ -22,6 +22,16 @@ EUR-12:
       The EURO-CORDEX balanced matrix experiment comprises simulations filling a
       GCM-RCM-SSP combination matrix with a fractional factorial design.
 
+  EURexpress261:
+    title: EUR-12 balanced (ECD by 2026-01)
+    description: >
+      Expected status of the balanced matrix experiment by 2026-01 (according to
+      expected completion date provided).
+    condition:
+      - tag:EURbalanced
+      - driving_experiment_id != 'evaluation'
+      - estimated_completion_date <= '2026-01'
+
   EURexpress266:
     title: EUR-12 balanced (ECD by 2026-06)
     description: >
