@@ -285,18 +285,18 @@ EUR-12,BCCR-UCAN,S. Sobolowski / O. Gokturk / J. Fernandez / J. Milovac,WRF451Q,
 EUR-12,BCCR-UCAN,S. Sobolowski / O. Gokturk / J. Fernandez / J. Milovac,WRF451Q,NorESM2-MM,r1i1p1f1,ssp370,completed,2025-12,#EURbalanced #CORDEX-CORE
 EUR-12,CESAM-UA,D. Carvalho,WRF451Q,ERA5,,evaluation,completed,2025-06,#RCMintvar Realization r2
 EUR-12,CESAM-UA,D. Carvalho,WRF451Q,MPI-ESM1-2-HR,r1i1p1f1,ssp585,running,2026-12,#ManySSP
-EUR-12,CLMcom-Hereon,B. Geyer,CCLM6-0-1,ERA5,,evaluation,completed,2024-12,#ManyGCM #EURcoupled
-EUR-12,CLMcom-LIST,M. Sulis,CCLM6-0-1,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2025-12,#ManyGCM #EURcoupled
-EUR-12,CLMcom-LIST,M. Sulis,CCLM6-0-1,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2025-12,#ManyGCM #EURcoupled
-EUR-12,CLMcom-LIST,M. Sulis,CCLM6-0-1,MPI-ESM1-2-HR,r1i1p1f1,ssp370,completed,2025-12,#ManyGCM #EURcoupled
+EUR-12,CLMcom-Hereon,B. Geyer,CCLM6-0-1,ERA5,,evaluation,completed,2024-12,#ManyGCM #EURcoupled #EURbalanced
+EUR-12,CLMcom-LIST,M. Sulis,CCLM6-0-1,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2025-12,#ManyGCM #EURcoupled #EURbalanced
+EUR-12,CLMcom-LIST,M. Sulis,CCLM6-0-1,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2025-12,#ManyGCM #EURcoupled #EURbalanced
+EUR-12,CLMcom-LIST,M. Sulis,CCLM6-0-1,MPI-ESM1-2-HR,r1i1p1f1,ssp370,completed,2025-12,#ManyGCM #EURcoupled #EURbalanced
 EUR-12,CLMcom-KIT,H. Feldmann,CCLM6-0-1,EC-Earth3-Veg,r1i1p1f1,historical,completed,2025-01,#ManyGCM #Nukleus
 EUR-12,CLMcom-KIT,H. Feldmann,CCLM6-0-1,EC-Earth3-Veg,r1i1p1f1,ssp126,completed,2025-03,#ManyGCM #Nukleus
 EUR-12,CLMcom-KIT,H. Feldmann,CCLM6-0-1,EC-Earth3-Veg,r1i1p1f1,ssp370,completed,2025-03,#ManyGCM #Nukleus
-EUR-12,CLMcom-KIT,H. Feldmann,CCLM6-0-1,MIROC6,r1i1p1f1,historical,completed,2025-01,#ManyGCM #Nukleus
-EUR-12,CLMcom-KIT,H. Feldmann,CCLM6-0-1,MIROC6,r1i1p1f1,ssp370,completed,2025-03,#ManyGCM #Nukleus
-EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,CCLM6-0-1,CMCC-CM2-SR5,r1i1p1f1,historical,completed,2024-12, #ManyGCM
-EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,CCLM6-0-1,CMCC-CM2-SR5,r1i1p1f1,ssp126,completed,2024-12, #ManyGCM
-EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,CCLM6-0-1,CMCC-CM2-SR5,r1i1p1f1,ssp370,completed,2024-12, #ManyGCM
+EUR-12,CLMcom-KIT,H. Feldmann,CCLM6-0-1,MIROC6,r1i1p1f1,historical,completed,2025-01,#ManyGCM #Nukleus #EURbalanced
+EUR-12,CLMcom-KIT,H. Feldmann,CCLM6-0-1,MIROC6,r1i1p1f1,ssp370,completed,2025-03,#ManyGCM #Nukleus #EURbalanced
+EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,CCLM6-0-1,CMCC-CM2-SR5,r1i1p1f1,historical,completed,2024-12, #ManyGCM #EURbalanced
+EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,CCLM6-0-1,CMCC-CM2-SR5,r1i1p1f1,ssp126,completed,2024-12, #ManyGCM #EURbalanced
+EUR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,CCLM6-0-1,CMCC-CM2-SR5,r1i1p1f1,ssp370,completed,2024-12, #ManyGCM #EURbalanced
 EUR-12,CLMcom-IMWM,A. Jaczewski,CCLM6-0-1,NorESM2-MM,r1i1p1f1,historical,planned,2025-03,#ManyGCM
 EUR-12,CLMcom-IMWM,A. Jaczewski,CCLM6-0-1,NorESM2-MM,r1i1p1f1,ssp126,planned,2025-03,#ManyGCM
 EUR-12,CLMcom-IMWM,A. Jaczewski,CCLM6-0-1,NorESM2-MM,r1i1p1f1,ssp370,planned,2025-03,#ManyGCM
@@ -308,7 +308,7 @@ EUR-12,CLMcom-FZJ,K. Goergen,TSMP1-140-E,ERA5,,evaluation,completed,2025-04,#EUR
 EUR-12,CLMcom-FZJ,K. Goergen,TSMP1-140-E,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2025-03,#EURcoupled
 EUR-12,CLMcom-FZJ,K. Goergen,TSMP1-140-E,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2025-09,#EURcoupled
 EUR-12,CLMcom-FZJ,K. Goergen,TSMP1-140-E,MPI-ESM1-2-HR,r1i1p1f1,ssp370,completed,2025-09,#EURcoupled
-EUR-12,CLMcom-FZJ,K. Goergen,CCLM6-0-1,MIROC6,r1i1p1f1,ssp126,planned,2026-03,#ManyGCM
+EUR-12,CLMcom-FZJ,K. Goergen,CCLM6-0-1,MIROC6,r1i1p1f1,ssp126,planned,2026-03,#ManyGCM #EURbalanced
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI1-1,ERA5,,evaluation,completed,2024-08,#EURcoupled ORAS5 BC in the ocean
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI1-1,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2024-07,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp370,completed,2024-12,#EURcoupled
