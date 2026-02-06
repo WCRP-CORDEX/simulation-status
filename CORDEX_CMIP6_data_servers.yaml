@@ -1,15 +1,40 @@
 # CORDEX-CMIP6 Data Servers
 # This file collects information about servers hosting CORDEX-CMIP6 data
-# even if they are not (yet) on ESGF.
 #
-# To add a new server, create an entry with the following fields:
+# It has two sections :
+#    - "non-esgf" : A list of "custom" servers hosting data outside of the ESGF ecosystem.
+#    - "esgf" :  A list of ESGF data nodes hosting CORDEX-CMIP6 data with information about the status of publication.
+#
+# To add a new non-esgf server, create an entry with the following fields:
 #   - domain: CORDEX domain_id (e.g., AFR-12, etc.)
-#   - institution: Institution hosting the data
+#   - institution: Institution hosting the data (free text)
 #   - url: URL to access the data
 #   - availability: Description of data availability (e.g., "THREDDS", "Download", "OPeNDAP")
 #   - comment: Additional information about the server or data
+#
+# To add information about hosting on the ESGF, create an entry with the following fields:
+#  - name : Data node name (for example the hosting institution)
+#  - url : URL to the data node, if available.
+#  - index : The name of the ESGF index this node is (will be) publishing to : "west" (LLNI) or "east" (CEDA).
+#  - status : "planned" or "published" (the server is up), status of the node.
+#  - volume : The estimated volume in TiB of data the node will hold.
+#  - comment : Free text to better describe the node.
+#  - accepting_requests : True if this node is accepting request from groups to host their data.
+#  - simulations : A list of search terms that describe which simulations are going to be hosted on this node.
+#              Each element of the list if a mapping from columns of `CMIP6_downscaling_plans.csv` to a list of values.
+#              Allowed columns are : domain_id, institution_id, source_id, driving_source_id, driving_variant_label, driving_experiment_id
+esgf:
+  - name: Ouranos
+    url: null
+    index: west
+    status: planned
+    volume: 650
+    comment: Private data node hosted at Ouranos for simulations produced there.
+    accepting_requests: False
+    simulations:
+      - institution_id: [ OURANOS ]
 
-servers:
+non-esgf:
   - domain: AUS-20i
     institution: NCI Australia
     url: https://thredds.nci.org.au/thredds/catalog/catalogs/ig45/catalog.html

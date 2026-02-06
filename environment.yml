@@ -4,7 +4,7 @@ channels:
   - nodefaults
 dependencies:
   # Python
-  - python ==3.11
+  - python >=3.11,<3.12
   - icecream
   - natsort
   - pandas <2

@@ -10,7 +10,7 @@
 <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
 
-<title>CORDEX-CMIP6 Data Servers</title>
+<title>CORDEX-CMIP6 ESGF Data Nodes</title>
 <style>
 body {
   font-family: "Montserrat", sans-serif;
@@ -59,7 +59,7 @@ span.ESD {color: #ca6f1e; font-weight: bold}
 <div class="logo">
 <img src="https://cordex.org/wp-content/uploads/2025/02/CORDEX_RGB_logo_baseline_positive-300x133.png" 
    alt="CORDEX Logo" >
-<h1 id="top">CORDEX-CMIP6 Data Servers</h1>
+<h1 id="top">CORDEX-CMIP6 ESGF Data Nodes</h1>
 </div>
 
     <div style="display:table;width:100%;">
@@ -73,65 +73,36 @@ span.ESD {color: #ca6f1e; font-weight: bold}
       </div>
     </div>
     <p style="text-align: justify;">
-    This page collects information about servers hosting CORDEX-CMIP6 data not on ESGF.
-    This is an interim solution while ESGF-NG publication is technically possible.
+    This page collects information about servers hosting ESGF-NG data nodes with CORDEX-CMIP6 data.
     To add a new server or update existing information, please open an issue or pull request at <a href="https://github.com/WCRP-CORDEX/simulation-status">the GitHub repository</a>.
-    The planned ESGF data nodes that should host CORDEX-CMIP6 data are listed on the <a href="CORDEX_CMIP6_esgf_nodes.html">ESGF Nodes</a> page.
+    A raw list of simulations without ESGF node plans is available here: <a href="CORDEX_CMIP6_orphan_simulations.csv">CORDEX_CMIP6_orphan_simulations.csv</a>.
+    Some data is already published on servers outside the ESGF ecosystem, as listed on the <a href="CORDEX_CMIP6_data_servers.html">Data Servers</a> page.
     </p>
     
 <table id="table_id" class="display">
     <thead>
         <tr>
-              <th>Domain</th>
-              <th>Institution</th>
+              <th>Name</th>
+              <th>Status</th>
+              <th>Description</th>
+              <th>ESGF Index</th>
+              <th>Accepting hosting requests</th>
+              <th>Estimated storage space [TiB]</th>
+              <th>Count of simulation hosted</th>
               <th>URL</th>
-              <th>Availability</th>
-              <th>Comment</th>
 
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>AUS-20i</td>
-            <td>NCI Australia</td>
-            <td><a href="https://thredds.nci.org.au/thredds/catalog/catalogs/ig45/catalog.html">https://thredds.nci.org.au/thredds/catalog/catalogs/ig45/catalog.html</a></td>
-            <td>THREDDS</td>
-            <td>Australasia UQ-DES data</td>
-        </tr>
-        <tr>
-            <td>AUS-20i</td>
-            <td>NCI Australia</td>
-            <td><a href="https://thredds.nci.org.au/thredds/catalog/py18/BARPA/CORDEX-CMIP6/DD/AUS-20i/BOM/catalog.html">https://thredds.nci.org.au/thredds/catalog/py18/BARPA/CORDEX-CMIP6/DD/AUS-20i/BOM/catalog.html</a></td>
-            <td>THREDDS</td>
-            <td>Australasia BARPA data</td>
-        </tr>
-        <tr>
-            <td>AUS-18</td>
-            <td>NCI Australia</td>
-            <td><a href="https://thredds.nci.org.au/thredds/catalog/catalogs/zz63/NARCliM2-0/output-CMIP6/DD/AUS-18/NSW-Government/NSW-Government.html">https://thredds.nci.org.au/thredds/catalog/catalogs/zz63/NARCliM2-0/output-CMIP6/DD/AUS-18/NSW-Government/NSW-Government.html</a></td>
-            <td>THREDDS</td>
-            <td>Australasia NARCliM2.0 WRF data</td>
-        </tr>
-        <tr>
-            <td>AUS-10i</td>
-            <td>NCI Australia</td>
-            <td><a href="https://thredds.nci.org.au/thredds/catalog/catalogs/hq89/catalog.html">https://thredds.nci.org.au/thredds/catalog/catalogs/hq89/catalog.html</a></td>
-            <td>THREDDS</td>
-            <td>Australasia CCAM data</td>
-        </tr>
-        <tr>
-            <td>AUS-5i</td>
-            <td>NCI Australia</td>
-            <td><a href="https://thredds.nci.org.au/thredds/catalog/catalogs/kj66/catalog.html">https://thredds.nci.org.au/thredds/catalog/catalogs/kj66/catalog.html</a></td>
-            <td>THREDDS</td>
-            <td>CORDEX-CMIP6-based regridded (~5km) and calibrated data for Australia</td>
-        </tr>
-        <tr>
-            <td>NAM-12</td>
             <td>Ouranos</td>
-            <td><a href="https://pavics.ouranos.ca/twitcher/ows/proxy/thredds/catalog/datasets/simulations/RCM-CMIP6/CORDEX/NAM-12/catalog.html">https://pavics.ouranos.ca/twitcher/ows/proxy/thredds/catalog/datasets/simulations/RCM-CMIP6/CORDEX/NAM-12/catalog.html</a></td>
-            <td>THREDDS</td>
-            <td>North American Ouranos data</td>
+            <td><span class="planned">planned</span></td>
+            <td>Private data node hosted at Ouranos for simulations produced there.</td>
+            <td>west</td>
+            <td>&#x274C;</td>
+            <td>650</td>
+            <td>0 (26 planned)</td>
+            <td><a href=""></a></td>
         </tr>
 
     </tbody>
