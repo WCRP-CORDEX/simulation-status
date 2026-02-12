@@ -5,6 +5,15 @@ All:
     description: >
       CORDEX-CORE cross-domain balanced ensemble.
 
+  CORDEX-CORE-nores:
+    title: CORDEX-CORE (hide resolution)
+    description: >
+      CORDEX-CORE cross-domain balanced ensemble with resolution information hidden to focus on model and scenario coverage.
+      See above for the CORDEX-CORE experiment with full resolution information.
+    condition:
+      - tag:CORDEX-CORE
+    collapse_resolutions: True
+
 CAM-12:
 
   ESD:
