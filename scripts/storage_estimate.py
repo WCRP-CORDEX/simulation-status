@@ -6,6 +6,7 @@ precision_factor = 4 # float
 compression_factor = 0.6
 bytes_to_TB = 1.0e-12
 priorities = ['CORE', 'TIER1']#, 'TIER2']
+statuses = ['published', 'completed', 'running', 'planned']
 
 # Number of time records per year
 frequency_factor = {'mon': 12, 'day': 365, '6hr': 365*4, '1hr': 365*24}
@@ -32,19 +33,21 @@ ngridcells['AUS-20i'] = ngridcells['AUS-25'] #!!
 ngridcells['MENA-25'] = ngridcells['MNA-25']
 ngridcells['MED-25'] = ngridcells['MED-12']/4
 ngridcells['SEA-12'] = ngridcells['SEA-25']*4
+ngridcells['AFR-18'] = ngridcells['AFR-25']*2
+ngridcells['WAS-18'] = ngridcells['WAS-25']*2
 
 plans = pd.read_csv(
   'https://raw.githubusercontent.com/WCRP-CORDEX/simulation-status/refs/heads/main/CMIP6_downscaling_plans.csv',
-  usecols=['domain', 'institute', 'experiment', 'status', 'comments']
-)#.query('status != "planned"')
+  usecols=['domain_id', 'institution_id', 'driving_experiment_id', 'status', 'comments']
+).query('status in @statuses')
 
 # Filter out ESD plans as their output will likely contain very
 # limited variables and maximum at daily frequency
 plans = plans[~plans['comments'].str.contains('#ESD', na=False)]
 
 simulation_count = plans.pivot_table(
-  index = 'domain',
-  columns= 'experiment',
+  index = 'domain_id',
+  columns= 'driving_experiment_id',
   aggfunc='size',
   fill_value = 0
 ).drop(columns = ['TBD','no plans','selected'], errors='ignore')
@@ -68,7 +71,7 @@ variable_records_per_yr = (variable_count
 ic(variable_records_per_yr)
 
 # Just the these variable records
-print(f'/!\ Considering just {priorities} vars.)')
+print(f'/!\ Considering {priorities} variables')
 nrecords_factor = variable_records_per_yr[priorities].values.sum()
 
 ngridcell_factor = simulation_count.index.map(lambda x: ngridcells.get(str(x)))
@@ -87,4 +90,5 @@ ic(size_TB)
 
 ic(size_TB.T.sum())
 
+print(f'/!\ Considering status {statuses}')
 print(f'Total CORDEX-CMIP6 estimated size is: {np.nansum(size_TB.values):.0f} TB')
