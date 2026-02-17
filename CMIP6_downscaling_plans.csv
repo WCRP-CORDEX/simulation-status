@@ -695,24 +695,24 @@ SAM-12,ICTP,E. Coppola,RegCM5-0,EC-Earth3-Veg,r1i1p1f1,historical,running,2026-0
 SAM-12,ICTP,E. Coppola,RegCM5-0,EC-Earth3-Veg,r1i1p1f1,ssp370,running,2026-02,#CORDEX-CORE
 SAM-12,ICTP,E. Coppola,RegCM5-0,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2026-02,#CORDEX-CORE
 SAM-12,ICTP,E. Coppola,RegCM5-0,MPI-ESM1-2-HR,r1i1p1f1,ssp370,running,2026-02,#CORDEX-CORE
-SAM-12,ICTP,E. Coppola,RegCM5-0,NorESM2-MM,r1i1p1f1,historical,running,2026-02,#CORDEX-CORE
-SAM-12,ICTP,E. Coppola,RegCM5-0,NorESM2-MM,r1i1p1f1,ssp370,running,2026-02,#CORDEX-CORE
+SAM-12,ICTP,E. Coppola / R. P. da Rocha,RegCM5-0,NorESM2-MM,r1i1p1f1,historical,running,2026-02,#CORDEX-CORE
+SAM-12,ICTP,E. Coppola / R. P. da Rocha,RegCM5-0,NorESM2-MM,r1i1p1f1,ssp370,planned,2026-04,#CORDEX-CORE
 SAM-12,UCAN,J. Milovac / J. Fernandez,WRF461U,ERA5,,evaluation,running,2026-04,#CORDEX-CORE
 SAM-12,UCAN,J. Milovac / J. Fernandez,WRF461U,EC-Earth3-Veg,r1i1p1f1,historical,planned,2026-04,#CORDEX-CORE
 SAM-12,UCAN,J. Milovac / J. Fernandez,WRF461U,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2026-04,#CORDEX-CORE
 SAM-12,UCAN,J. Milovac / J. Fernandez,WRF461U,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2026-04,#CORDEX-CORE
 SAM-12,UCAN,J. Milovac / J. Fernandez,WRF461U,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2026-04,#CORDEX-CORE
-SAM-12,UCAN,J. Milovac / J. Fernandez,WRF461U,NorESM2-MM,r1i1p1f1,historical,planned,2026-08,#CORDEX-CORE
-SAM-12,UCAN,J. Milovac / J. Fernandez,WRF461U,NorESM2-MM,r1i1p1f1,ssp370,planned,2026-08,#CORDEX-CORE
+SAM-12,SENAMHI-PER,G. Jacome,WRF461U,NorESM2-MM,r1i1p1f1,historical,planned,2026-08,#CORDEX-CORE
+SAM-12,SENAMHI-PER,G. Jacome,WRF461U,NorESM2-MM,r1i1p1f1,ssp370,planned,2026-08,#CORDEX-CORE
 SAM-25,UBA-CIMA-IFAECI,L. Fita,RegIPSL,ERA5,,evaluation,planned,2026-12,
 SAM-25,UBA-CIMA-IFAECI,L. Fita,RegIPSL,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2026-12,
 SAM-25,UBA-CIMA-IFAECI,L. Fita,RegIPSL,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2026-12,
 SAM-25,SENAMHI-PER,G. Jacome,WRF451,ERA5,,evaluation,running,2026-06,
 SAM-25,SENAMHI-PER,G. Jacome,WRF451,CNRM-CM6-1,r1i1p1f2,historical,running,2026-07,
-SAM-25,SENAMHI-PER,G. Jacome,WRF451,CNRM-CM6-1,r1i1p1f2,ssp585,running,2026-07,
+SAM-25,SENAMHI-PER,G. Jacome,WRF451,CNRM-CM6-1,r1i1p1f2,ssp585,planned,2026-07,
 SAM-25,SENAMHI-PER,G. Jacome,WRF451,NorESM2-MM,r1i1p1f1,historical,running,2026-07,
-SAM-25,SENAMHI-PER,G. Jacome,WRF451,NorESM2-MM,r1i1p1f1,ssp245,running,2026-07,
-SAM-25,SENAMHI-PER,G. Jacome,WRF451,NorESM2-MM,r1i1p1f1,ssp585,running,2026-07,
+SAM-25,SENAMHI-PER,G. Jacome,WRF451,NorESM2-MM,r1i1p1f1,ssp245,planned,2026-07,
+SAM-25,SENAMHI-PER,G. Jacome,WRF451,NorESM2-MM,r1i1p1f1,ssp585,planned,2026-07,
 SEA-12,MOHC,G. Redmond,HadREM3-GA7-05,ERA5,,evaluation,completed,2025-12,
 SEA-12,MOHC,G. Redmond,HadREM3-GA7-05,EC-Earth3-Veg,r1i1p1f1,historical,completed,2025-01,
 SEA-12,MOHC,G. Redmond,HadREM3-GA7-05,EC-Earth3-Veg,r1i1p1f1,ssp370,completed,2025-01,
