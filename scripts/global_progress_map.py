@@ -29,7 +29,7 @@ colors = {
     'running': '#009900',
     'planned': '#FF9999'
 }
-status = colors.keys()
+status = list(colors.keys())
 
 # Font size for map annotations and legend
 FONT_SIZE = 14
