@@ -1,5 +1,5 @@
 domain_id,institution_id,contact,source_id,driving_source_id,driving_variant_label,driving_experiment_id,status,estimated_completion_date,comments
-AFR-12,ICTP,E. Coppola,RegCM5-0,ERA5,,evaluation,running,2025-12,#CORDEX-CORE
+AFR-12,ICTP,E. Coppola,RegCM5-0,ERA5,,evaluation,completed,2025-12,#CORDEX-CORE
 AFR-12,ICTP,E. Coppola,RegCM5-0,EC-Earth3-Veg,r1i1p1f1,historical,running,2026-06,#CORDEX-CORE
 AFR-12,ICTP,E. Coppola,RegCM5-0,EC-Earth3-Veg,r1i1p1f1,ssp370,running,2026-06,#CORDEX-CORE
 AFR-12,ICTP,E. Coppola,RegCM5-0,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2026-06,#CORDEX-CORE
@@ -7,8 +7,8 @@ AFR-12,ICTP,E. Coppola,RegCM5-0,MPI-ESM1-2-HR,r1i1p1f1,ssp370,running,2026-06,#C
 AFR-12,ICTP,E. Coppola,RegCM5-0,NorESM2-MM,r1i1p1f1,historical,running,2026-06,#CORDEX-CORE
 AFR-12,ICTP,E. Coppola,RegCM5-0,NorESM2-MM,r1i1p1f1,ssp370,running,2026-06,#CORDEX-CORE
 AFR-18,ULL,J.C. Perez / A. Gonzalez,WRF461U,ERA5,,evaluation,planned,2026-05,#CORDEX-CORE
-AFR-18,ULL,J.C. Perez / A. Gonzalez,WRF461U,EC-Earth3-Veg,r1i1p1f1,historical,planned,2026-12,#CORDEX-CORE
-AFR-18,ULL,J.C. Perez / A. Gonzalez,WRF461U,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2026-12,#CORDEX-CORE
+AFR-18,UCAN,J. Milovac / J. Fernandez,WRF461U,EC-Earth3-Veg,r1i1p1f1,historical,planned,2026-12,#CORDEX-CORE
+AFR-18,UCAN,J. Milovac / J. Fernandez,WRF461U,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2026-12,#CORDEX-CORE
 AFR-18,ULL,J.C. Perez / A. Gonzalez,WRF461U,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2026-12,#CORDEX-CORE
 AFR-18,ULL,J.C. Perez / A. Gonzalez,WRF461U,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2026-12,#CORDEX-CORE
 AFR-18,BCCR,O. Gokturk / S. Sobolowski,WRF461U,NorESM2-MM,r1i1p1f1,historical,planned,2026-12,#CORDEX-CORE
@@ -130,10 +130,10 @@ AUS-20i,NSW-DPE,G. di Virgilio,WRF-R3,NorESM2-MM,r1i1p1f1,historical,running,202
 AUS-20i,NSW-DPE,G. di Virgilio,WRF-R3,NorESM2-MM,r1i1p1f1,ssp126,running,2024-03,
 AUS-20i,NSW-DPE,G. di Virgilio,WRF-R3,NorESM2-MM,r1i1p1f1,ssp245,planned,2025-12,
 AUS-20i,NSW-DPE,G. di Virgilio,WRF-R3,NorESM2-MM,r1i1p1f1,ssp370,running,2024-03,#CORDEX-CORE
-AUS-20i,NSW-DPE,G. di Virgilio,WRF412C1,UKESM1-0-LL,r1i1p1f2,historical,completed,2023-11,#CORDEX-CORE
+AUS-20i,NSW-DPE,G. di Virgilio,WRF412C1,UKESM1-0-LL,r1i1p1f2,historical,completed,2023-11,
 AUS-20i,NSW-DPE,G. di Virgilio,WRF412C1,UKESM1-0-LL,r1i1p1f2,ssp126,completed,2023-11,
 AUS-20i,NSW-DPE,G. di Virgilio,WRF412C1,UKESM1-0-LL,r1i1p1f2,ssp245,planned,2025-12,
-AUS-20i,NSW-DPE,G. di Virgilio,WRF412C1,UKESM1-0-LL,r1i1p1f2,ssp370,completed,2023-11,#CORDEX-CORE
+AUS-20i,NSW-DPE,G. di Virgilio,WRF412C1,UKESM1-0-LL,r1i1p1f2,ssp370,completed,2023-11,
 AUS-20i,UQ-DEC,S. Chapman,CCAM-v2105,ERA5,,evaluation,completed,2023-11,
 AUS-20i,UQ-DEC,S. Chapman,CCAM-v2105,ACCESS-ESM1-5,r6i1p1f1,historical,completed,2023-11,
 AUS-20i,UQ-DEC,S. Chapman,CCAM-v2105,ACCESS-ESM1-5,r6i1p1f1,ssp126,completed,2023-11,
@@ -221,7 +221,7 @@ CAM-12,UCR,H. Hidalgo,ESD-BCSD/delta,UKESM1-0-LL,r1i1p1f2,ssp126,planned,2026-12
 CAM-12,UCR,H. Hidalgo,ESD-BCSD/delta,UKESM1-0-LL,r1i1p1f2,ssp245,planned,2026-12,#ESD
 CAM-12,UCR,H. Hidalgo,ESD-BCSD/delta,UKESM1-0-LL,r1i1p1f2,ssp370,planned,2026-12,#ESD
 CAM-12,UCR,H. Hidalgo,ESD-BCSD/delta,UKESM1-0-LL,r1i1p1f2,ssp585,planned,2026-12,#ESD
-CAM-12,ORNL,M. Ashfaq,RegCM5-0,ERA5,,evaluation,planned,2026-06,#CORDEX-CORE
+CAM-12,ORNL,M. Ashfaq,RegCM5-0,ERA5,,evaluation,running,2026-06,#CORDEX-CORE
 CAM-12,ORNL,M. Ashfaq,RegCM5-0,EC-Earth3-Veg,r1i1p1f1,historical,planned,2026-06,#CORDEX-CORE
 CAM-12,ORNL,M. Ashfaq,RegCM5-0,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2026-06,#CORDEX-CORE
 CAM-12,ORNL,M. Ashfaq,RegCM5-0,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2026-06,#CORDEX-CORE
@@ -247,6 +247,9 @@ EAS-12,ICTP,E. Coppola,RegCM5-0,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2026-0
 EAS-12,ICTP,E. Coppola,RegCM5-0,MPI-ESM1-2-HR,r1i1p1f1,ssp370,running,2026-06,#CORDEX-CORE
 EAS-12,ICTP,E. Coppola,RegCM5-0,NorESM2-MM,r1i1p1f1,historical,running,2026-06,#CORDEX-CORE
 EAS-12,ICTP,E. Coppola,RegCM5-0,NorESM2-MM,r1i1p1f1,ssp370,running,2026-06,#CORDEX-CORE
+EAS-12,FDU,J. Yuan,WRF451,ERA5,,evaluation,running,2026-05,#CORDEX-CORE
+EAS-12,FDU,J. Yuan,WRF451,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2026-12,#CORDEX-CORE
+EAS-12,FDU,J. Yuan,WRF451,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2026-12,#CORDEX-CORE
 EAS-25,KNU,E.-C. Chang / U.-Y. Byun,GRIMs3-2,UKESM1-0-LL,r15i1p1f2,historical,completed,2022-12,see http://cordex-ea.climate.go.kr/cordex/models.do
 EAS-25,KNU,E.-C. Chang / U.-Y. Byun,GRIMs3-2,UKESM1-0-LL,r15i1p1f2,ssp126,completed,2022-12,
 EAS-25,KNU,E.-C. Chang / U.-Y. Byun,GRIMs3-2,UKESM1-0-LL,r15i1p1f2,ssp245,planned,2022-12,
@@ -257,10 +260,10 @@ EAS-25,NIMS-KMA,Y.-H. Byun / J.-U. Kim,HadGEM3-RA,UKESM1-0-LL,r15i1p1f2,ssp126,c
 EAS-25,NIMS-KMA,Y.-H. Byun / J.-U. Kim,HadGEM3-RA,UKESM1-0-LL,r15i1p1f2,ssp245,completed,2024-12,
 EAS-25,NIMS-KMA,Y.-H. Byun / J.-U. Kim,HadGEM3-RA,UKESM1-0-LL,r15i1p1f2,ssp370,completed,2024-12,
 EAS-25,NIMS-KMA,Y.-H. Byun / J.-U. Kim,HadGEM3-RA,UKESM1-0-LL,r15i1p1f2,ssp585,completed,2022-12,
-EAS-25,PNU,J.-B. Ahn / G.-Y. Seo,WRF400,UKESM1-0-LL,r15i1p1f2,historical,completed,2022-12,see http://cordex-ea.climate.go.kr/cordex/models.do #CORDEX-CORE
+EAS-25,PNU,J.-B. Ahn / G.-Y. Seo,WRF400,UKESM1-0-LL,r15i1p1f2,historical,completed,2022-12,see http://cordex-ea.climate.go.kr/cordex/models.do
 EAS-25,PNU,J.-B. Ahn / G.-Y. Seo,WRF400,UKESM1-0-LL,r15i1p1f2,ssp126,completed,2022-12,
 EAS-25,PNU,J.-B. Ahn / G.-Y. Seo,WRF400,UKESM1-0-LL,r15i1p1f2,ssp245,planned,2022-12,
-EAS-25,PNU,J.-B. Ahn / G.-Y. Seo,WRF400,UKESM1-0-LL,r15i1p1f2,ssp370,planned,2022-12,#CORDEX-CORE
+EAS-25,PNU,J.-B. Ahn / G.-Y. Seo,WRF400,UKESM1-0-LL,r15i1p1f2,ssp370,planned,2022-12,
 EAS-25,PNU,J.-B. Ahn / G.-Y. Seo,WRF400,UKESM1-0-LL,r15i1p1f2,ssp585,completed,2022-12,
 EAS-25,POSTECH,S.-K. Min / S.-Y. Jo,COSMO-CLM5-0-9,UKESM1-0-LL,r15i1p1f2,historical,completed,2022-12,see http://cordex-ea.climate.go.kr/cordex/models.do
 EAS-25,POSTECH,S.-K. Min / S.-Y. Jo,COSMO-CLM5-0-9,UKESM1-0-LL,r15i1p1f2,ssp126,completed,2022-12,
@@ -314,7 +317,7 @@ EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI1-1,ERA5,,evaluation,completed,2024-
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI1-1,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2024-07,#EURcoupled Not to be published in ESGF but available on request
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp370,completed,2024-12,#EURcoupled Not to be published in ESGF but available on request
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOIB1-1,ERA5,,evaluation,completed,2025-09,#EURcoupled ORAS5 BC in the ocean
-EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOIB1-1,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2026-07,#EURcoupled
+EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOIB1-1,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2026-07,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOIB1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2026-12,#EURcoupled
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOIB1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2026-12,#EURcoupled
 EUR-12,CLMcom-Hereon,B. Geyer,ICON-CLM-202407-1-1,ERA5,,evaluation,completed,2024-09,#EURbalanced #ManyGCM #UDAG #EURcoupled
@@ -557,15 +560,17 @@ MED-25,LMD,L. Li,LMDZMED_v2,TBD,TBD,historical,planned,2024-12,
 NAM-12,CORNELL,X. Zhou / S.C. Pryor,WRF461T-SN,MPI-ESM1-2-LR,r1i1p1f1,historical,running,2025-12,
 NAM-12,CORNELL,X. Zhou / S.C. Pryor,WRF461T-SN,MPI-ESM1-2-LR,r1i1p1f1,ssp585,running,2025-12,
 NAM-12,NCAR,J. Stuivenvolt-Allen,WRF461S-SN,ERA5,,evaluation,completed,2025-11,#CORDEX-CORE
-NAM-12,NCAR,J. Stuivenvolt-Allen,WRF461S-SN,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2026-04,#CORDEX-CORE
+NAM-12,NCAR,J. Stuivenvolt-Allen,WRF461S-SN,EC-Earth3-Veg,r1i1p1f1,historical,running,2026-05,#CORDEX-CORE
+NAM-12,NCAR,J. Stuivenvolt-Allen,WRF461S-SN,EC-Earth3-Veg,r1i1p1f1,ssp370,running,2026-05,#CORDEX-CORE
+NAM-12,NCAR,J. Stuivenvolt-Allen,WRF461S-SN,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2026-02,#CORDEX-CORE
 NAM-12,NCAR,J. Stuivenvolt-Allen,WRF461S-SN,MPI-ESM1-2-HR,r1i1p1f1,ssp245,completed,2025-11,
-NAM-12,NCAR,J. Stuivenvolt-Allen,WRF461S-SN,MPI-ESM1-2-HR,r1i1p1f1,ssp370,running,2026-04,#CORDEX-CORE
+NAM-12,NCAR,J. Stuivenvolt-Allen,WRF461S-SN,MPI-ESM1-2-HR,r1i1p1f1,ssp370,completed,2026-02,#CORDEX-CORE
 NAM-12,NCAR,J. Stuivenvolt-Allen,WRF461S-SN,CESM2,r11i1p1f1,historical,running,2026-04,
 NAM-12,NCAR,J. Stuivenvolt-Allen,WRF461S-SN,CESM2,r11i1p1f1,ssp245,running,2026-04,
 NAM-12,NCAR,J. Stuivenvolt-Allen,WRF461S-SN,CESM2,r11i1p1f1,ssp370,planned,2026-08,
-NAM-12,NCAR,J. Stuivenvolt-Allen,WRF461S-SN,NorESM2-MM,r1i1p1f1,historical,running,2026-04,#CORDEX-CORE
+NAM-12,NCAR,J. Stuivenvolt-Allen,WRF461S-SN,NorESM2-MM,r1i1p1f1,historical,completed,2026-02,#CORDEX-CORE
 NAM-12,NCAR,J. Stuivenvolt-Allen,WRF461S-SN,NorESM2-MM,r1i1p1f1,ssp245,planned,2026-08,
-NAM-12,NCAR,J. Stuivenvolt-Allen,WRF461S-SN,NorESM2-MM,r1i1p1f1,ssp370,planned,2026-08,#CORDEX-CORE
+NAM-12,NCAR,J. Stuivenvolt-Allen,WRF461S-SN,NorESM2-MM,r1i1p1f1,ssp370,completed,2026-02,#CORDEX-CORE
 NAM-12,OURANOS,D. Paquin,CRCM5-SN,ERA5,,evaluation,completed,2022-12,Two members with perturbed initial conditions
 NAM-12,OURANOS,D. Paquin,CRCM5-SN,CanESM5,r1i1p2f1,historical,completed,2022-01,
 NAM-12,OURANOS,D. Paquin,CRCM5-SN,CanESM5,r1i1p2f1,ssp126,completed,2023-04,
@@ -828,14 +833,14 @@ SEA-25,CSIRO,J. McGregor,CCAM,ACCESS-CM2,r2i1p1f1,historical,completed,2026-01,
 SEA-25,CSIRO,J. McGregor,CCAM,ACCESS-CM2,r2i1p1f1,ssp370,completed,2025-01,
 SEA-25,CSIRO,J. McGregor,CCAM,GFDL-CM4,r1i1p1f1,historical,completed,2026-01,
 SEA-25,CSIRO,J. McGregor,CCAM,GFDL-CM4,r1i1p1f1,ssp370,completed,2025-01,
-WAS-18,BCCR,S. Sobolowski / O. Gokturk,WRF461U,ERA5,,evaluation,planned,2026-06,#CORDEX-CORE
+WAS-18,BCCR,S. Sobolowski / O. Gokturk,WRF461U,ERA5,,evaluation,running,2026-06,#CORDEX-CORE
 WAS-18,BCCR,S. Sobolowski / O. Gokturk,WRF461U,NorESM2-MM,r1i1p1f1,historical,planned,2026-09,#CORDEX-CORE
 WAS-18,BCCR,S. Sobolowski / O. Gokturk,WRF461U,NorESM2-MM,r1i1p1f1,ssp370,planned,2026-09,#CORDEX-CORE
 WAS-18,CYI,G. Zittis,WRF461U,EC-Earth3-Veg,r1i1p1f1,historical,planned,2026-09,#CORDEX-CORE
 WAS-18,CYI,G. Zittis,WRF461U,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2026-09,#CORDEX-CORE
 WAS-18,Uni-Hamburg,S. U. Hasson,WRF461U,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2026-12,#CORDEX-CORE
 WAS-18,Uni-Hamburg,S. U. Hasson,WRF461U,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2026-12,#CORDEX-CORE
-WAS-12,ORNL,M. Ashfaq,RegCM5-0,ERA5,,evaluation,planned,2026-06,#CORDEX-CORE
+WAS-12,ORNL,M. Ashfaq,RegCM5-0,ERA5,,evaluation,running,2026-06,#CORDEX-CORE
 WAS-12,ORNL,M. Ashfaq,RegCM5-0,EC-Earth3-Veg,r1i1p1f1,historical,planned,2026-06,#CORDEX-CORE
 WAS-12,ORNL,M. Ashfaq,RegCM5-0,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2026-06,#CORDEX-CORE
 WAS-12,ORNL,M. Ashfaq,RegCM5-0,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2026-06,#CORDEX-CORE
