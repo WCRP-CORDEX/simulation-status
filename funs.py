@@ -11,6 +11,8 @@ span.running {color: #009900; font-weight: bold}
 span.completed {color: #17202a; font-weight: bold}
 span.published {color: #3399FF; font-weight: bold}
 
+span.unmigrated {color: #ca6f1e; font-weight: bold}
+
 span.reginst {color: black; font-weight: bold}
 span.unreginst {color: grey; font-style: italic; font-weight: bold}
 span.unregistered {color: grey; font-style: italic; font-weight: bold}
@@ -107,7 +109,7 @@ def addtag(word, field):
     rval = f'<span class="tag">{word[1:]}</span>'
   elif (field == 'comments') and word.startswith('http'):
     rval = f'<a href="{word}">{word}</a>'
-  elif (field == 'status') and word in ['selected', 'planned', 'running', 'completed', 'published']:
+  elif (field == 'status') and word in ['selected', 'planned', 'running', 'completed', 'unmigrated', 'published']:
     rval = f'<span class="{word}">{word}</span>'
   return(rval)
 
@@ -425,7 +427,7 @@ def assign_node_to_sim(simulations, nodes):
 
     match = []
     for j, terms in enumerate(node['simulations']):
-      this_match = reduce(and_, [sims[k].isin(v) for k, v in terms.items()])
+      this_match = reduce(and_, [sims[k].isin([v] if isinstance(v, str) else v) for k, v in terms.items()])
       if not this_match.any():
         raise ValueError(f'Search term {j} of node {i} does not match any simulation.')
       match.append(this_match)
