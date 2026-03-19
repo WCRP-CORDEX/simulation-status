@@ -11,9 +11,9 @@ def plot_simulation_progress(domain, bar_width=15):
         domain_data = data.query("domain_id == @domain").copy()
     else:
         domain_data = data.copy()
-    domain_data = domain_data.query("~comments.str.contains('#ESD', na = False)")
+    domain_data = domain_data.query("~comments.str.contains('#ESD', na = False)").copy()
     valid_status = ['planned', 'running', 'completed']
-    domain_data = domain_data.query("status in @valid_status")
+    domain_data = domain_data.query("status in @valid_status").copy()
 
     domain_data['estimated_completion_date'] = pd.to_datetime(
         domain_data['estimated_completion_date'], errors='coerce'

@@ -28,11 +28,15 @@ def source_id_to_family(plansdf):
     'HadRM': ['HadGEM3-RA','HadREM3-GA7-05'],
     'REMO': ['REMO2020-2-2-iMOVE','REMO2020-2-2-iMOVE-LUC','REMO2020-2-2'],
     'RegCM': ['RegCM-ES','RegCM4-6','RegCM4-NH','RegCM4-NH-exp16','RegCM5','RegCM5-0','RegCM5-exp16'],
-    'WRF': ['WRF-R3','WRF400','WRF412C1','WRF451Q', 'WRF461S-SN', 'WRF461T-SN','RegIPSL', 'WRF461U']
+    'WRF': ['WRF-R3','WRF400','WRF412C1', 'WRF451','WRF451Q', 'WRF451R', 'WRF461S-SN', 'WRF461T-SN','RegIPSL', 'WRF461U']
   }
   model_to_family = {model: family for family, models in family_mapping.items() for model in models}
   plansdf['source_id'] = plansdf['source_id'].apply(lambda x: model_to_family.get(x, x))
   return(plansdf)
+
+def collapse_domain_resolution(domain_id):
+  """Strip resolution suffix from domain ID"""
+  return domain_id.split('-')[0]
 
 d1 = dict(selector=".level1", props=table_props)
 for domain_id in domain_ids:
@@ -61,8 +65,14 @@ for domain_id in domain_ids:
     if df.empty:
       continue
     collapse_institutions = tconf['collapse_institutions'] if 'collapse_institutions' in tconf else collapse_institutions
+    collapse_resolutions = tconf['collapse_resolutions'] if 'collapse_resolutions' in tconf else False
+    
     df = df.assign(htmlstatus=pd.Series('<span sort="' + df.driving_experiment_id +'" class="' + df.status + '">' + df.driving_experiment_id + '</span>', index=df.index))
     df = df.assign(model_id=pd.Series(df.institution_id + '_' + df.source_id, index=df.index))
+    
+    if collapse_resolutions:
+      df = df.assign(domain_id=df.domain_id.apply(collapse_domain_resolution))
+    
     column_id = 'source_id' if collapse_institutions else 'model_id'
     row_headers = ('driving_source_id', 'driving_variant_label') if domain_id != 'All' else ('domain_id', 'driving_source_id', 'driving_variant_label')
     dom_plans_matrix = df.pivot_table(
