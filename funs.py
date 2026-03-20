@@ -1,12 +1,17 @@
 import datetime
 import pandas as pd
 import requests
+from functools import reduce
+from operator import and_, or_
+
 
 span_style = '''
 span.planned {color: #F54d4d; font-weight: bold}
 span.running {color: #009900; font-weight: bold}
 span.completed {color: #17202a; font-weight: bold}
 span.published {color: #3399FF; font-weight: bold}
+
+span.unmigrated {color: #ca6f1e; font-weight: bold}
 
 span.reginst {color: black; font-weight: bold}
 span.unreginst {color: grey; font-style: italic; font-weight: bold}
@@ -104,7 +109,7 @@ def addtag(word, field):
     rval = f'<span class="tag">{word[1:]}</span>'
   elif (field == 'comments') and word.startswith('http'):
     rval = f'<a href="{word}">{word}</a>'
-  elif (field == 'status') and word in ['selected', 'planned', 'running', 'completed', 'published']:
+  elif (field == 'status') and word in ['selected', 'planned', 'running', 'completed', 'unmigrated', 'published']:
     rval = f'<span class="{word}">{word}</span>'
   return(rval)
 
@@ -112,6 +117,8 @@ def taggify(text, field):
   rval = text
   if field in ['status', 'comments']:
     rval = ' '.join([addtag(x, field) for x in text.split(' ')])
+  elif isinstance(rval, bool):
+    rval = '&#x2705;' if rval else '&#x274C;'
   return(rval)
 
 def csv2datatable(csvfile, htmlout, title='', intro='', rename_fields = {}, column_as_link="", column_as_link_source=""):
@@ -402,3 +409,35 @@ def generate_domain_table(dom_plans, collapse_institutions=True):
     dom_plans_matrix.columns.names = ['Institution(s)', 'RCM']
   
   return dom_plans_matrix
+
+
+def assign_node_to_sim(simulations, nodes):
+  """Using the ESGF nodes list and adds the node_name, node_url and node_index columns.
+  
+  node_index is the index into the list of nodes.
+  """
+  sims = simulations.copy()
+  sims['node_url'] = None
+  sims['node_name'] = None
+  sims['node_index'] = -1
+
+  for i, node in enumerate(nodes):
+    if not node.get('simulations'):
+      continue
+
+    match = []
+    for j, terms in enumerate(node['simulations']):
+      this_match = reduce(and_, [sims[k].isin([v] if isinstance(v, str) else v) for k, v in terms.items()])
+      if not this_match.any():
+        raise ValueError(f'Search term {j} of node {i} does not match any simulation.')
+      match.append(this_match)
+
+    hosted = sims[reduce(or_, match)]
+    if (dups := set(hosted.index).intersection(set(sims[sims.node_index != -1].index))):
+      raise ValueError(f"Node {i} matches {len(dups)} simulations already matched by previous nodes : {sims[list(dups)]}")
+
+    sims.loc[hosted.index, 'node_url'] = node['url']
+    sims.loc[hosted.index, 'node_name'] = node['name']
+    sims.loc[hosted.index, 'node_index'] = i
+
+  return sims
