@@ -374,7 +374,7 @@ EUR-12,DWD-BSH,V. Maurer,ROAM-NBS,ERA5,,evaluation,completed,2024-11,#EURcoupled
 EUR-12,DWD-BSH,V. Maurer,ROAM-NBS,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2026-06,#EURcoupled
 EUR-12,DWD-BSH,V. Maurer,ROAM-NBS,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2026-12,#EURcoupled
 EUR-12,DWD-BSH,V. Maurer,ROAM-NBS,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2026-12,#EURcoupled
-EUR-12,DWD-BSH,V. Maurer,ROAM-NBS,EC-Earth3-Veg,r1i1p1f1,historical,running,2025-07,#EURcoupled
+EUR-12,DWD-BSH,V. Maurer,ROAM-NBS,EC-Earth3-Veg,r1i1p1f1,historical,running,2026-07,#EURcoupled
 EUR-12,DWD-BSH,V. Maurer,ROAM-NBS,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2026-12,#EURcoupled
 EUR-12,DWD-BSH,V. Maurer,ROAM-NBS,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2026-12,#EURcoupled
 EUR-12,CNRM-MF,P. Nabat / S. Somot,CNRM-ALADIN64E1,ERA5,,evaluation,completed,2024-03,#EURcoupled #EURbalanced
