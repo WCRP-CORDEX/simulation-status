@@ -8,7 +8,6 @@
 #   - url: URL to access the data
 #   - availability: Description of data availability (e.g., "THREDDS", "Download", "OPeNDAP")
 #   - comment: Additional information about the server or data
-
 servers:
   - domain: AUS-20i
     institution: NCI Australia
@@ -45,3 +44,33 @@ servers:
     url: https://pavics.ouranos.ca/twitcher/ows/proxy/thredds/catalog/datasets/simulations/RCM-CMIP6/CORDEX/NAM-12/catalog.html
     availability: THREDDS
     comment: North American Ouranos data
+
+  - domain: EUR-12
+    institution: DKRZ
+    url: https://discover.dkrz.de/external/stac2.cloud.dkrz.de/fastapi/collections/cordex-cmip6
+    availability: STAC/Zarr
+    comment: Simulations by some CLMcom members with model ICON-CLM-202407-1-1. A few high-resolution simulations for non-official domain MEU-3 also available.
+
+  - domain: ARC-12
+    institution: HCLIMcom-METNo & NORCE-BCCR
+    url: https://polarres.ns8002k.sigma2.no/thredds/catalog/esg_cordex/CMIP6/RCM/ARC-12/catalog.html
+    availability: THREDDS
+    comment: PolarRes project.
+
+  - domain: EUR-12
+    institution: DMI
+    url: https://cordex.dmi.dk/thredds/fileServer/esg_cordex/CORDEX/CMIP6/DD/EUR-12/
+    availability: HTTP
+    comment : ""
+
+  - domain: ARC-12
+    institution: DMI
+    url: https://cordex.dmi.dk/thredds/fileServer/esg_cordex/PolarRes/ARC-12/
+    availability: HTTP
+    comment: PolarRes project.
+
+  - domain: ANT-12
+    institution: DMI & UU-IMAU
+    url: https://cordex.dmi.dk/thredds/fileServer/esg_cordex/PolarRes/ANT-12/
+    availability: HTTP
+    comment: PolarRes project simulations, most also in the CORDEX-CMIP6 list of simulations.
