@@ -31,7 +31,7 @@ for proj in ['CORDEX', 'CORDEX-Reklies']:
   logger.info(f'Retrieving {proj} variables ...')
   ctx = conn.new_context(project = proj)
   dids = [result.dataset_id for result in ctx.search(batch_size=1000, ignore_facet_check=True)]
-  datanode_part = re.compile('\|.*$')
+  datanode_part = re.compile(r'\|.*$')
   dataset_ids = [datanode_part.sub('', did).split('.') for did in dids]
   dflist.append(pd.DataFrame(dataset_ids))
 df = pd.concat(dflist)

@@ -1,15 +1,172 @@
 # CORDEX-CMIP6 Data Servers
 # This file collects information about servers hosting CORDEX-CMIP6 data
-# even if they are not (yet) on ESGF.
 #
-# To add a new server, create an entry with the following fields:
+# It has two sections :
+#    - "non-esgf" : A list of "custom" servers hosting data outside of the ESGF ecosystem.
+#    - "esgf" :  A list of ESGF data nodes hosting CORDEX-CMIP6 data with information about the status of publication.
+#
+# To add a new non-esgf server, create an entry with the following fields:
 #   - domain: CORDEX domain_id (e.g., AFR-12, etc.)
-#   - institution: Institution hosting the data
+#   - institution: Institution hosting the data (free text)
 #   - url: URL to access the data
 #   - availability: Description of data availability (e.g., "THREDDS", "Download", "OPeNDAP")
 #   - comment: Additional information about the server or data
+#
+# To add information about hosting on the ESGF, create an entry with the following fields:
+#  - name : Data node name (for example the hosting institution)
+#  - url : URL to the data node, if available.
+#  - index : The name of the ESGF index this node is (will be) publishing to : "west" (LLNI) or "east" (CEDA).
+#  - status : "planned" or "unmigrated" (up, but not yet ESGF-NG), "published" (up and ESGF-NG), status of the node.
+#  - volume : The estimated volume in TiB of data the node will hold (CORDEX-CMIP6 and CORDEX-CMIP7-AFT)
+#  - comment : Free text to better describe the node.
+#  - accepting_requests : True if this node is accepting request from groups to host their data.
+#  - simulations : A list of search terms that describe which simulations are going to be hosted on this node.
+#              Each element of the list if a mapping from columns of `CMIP6_downscaling_plans.csv` to a list of values.
+#              Allowed columns are : domain_id, institution_id, source_id, driving_source_id, driving_variant_label, driving_experiment_id
+esgf:
+  - name: Ouranos
+    url: https://esgf.ouranos.ca/
+    index: west
+    status: planned
+    volume: 650
+    comment: Private data node hosted at Ouranos for simulations produced there.
+    accepting_requests: False
+    simulations:
+      - institution_id: OURANOS
+  - name: IPSL
+    url: https://esgf.ipsl.fr/
+    index: east
+    status: unmigrated
+    volume: 1850
+    comment: Also has some CORDEX-CMIP5 data. Most space is reserved for specific groups, but some is open for additionnal groups.
+    accepting_requests: True
+    simulations:
+      # From S. Somot's answer
+      - domain_id: CAM-25
+        institution_id: CNRM
+      - domain_id: EUR-12
+        institution_id: CNRM-MF
+      - domain_id: MED-12
+        institution_id: CNRM
+        source_id: [ CNRM-RCSM6-SN, CNRM-RCSM6B-SN]
+      - domain_id: AUS-20i
+        institution_id: IRD-MF
+  - name: DWD
+    url : https://esgf-data.dwd.de/
+    index: east
+    status: unmigrated
+    volume: 2000 # I assumed 200 was a typo because at least 2000 is mentionned in the DPub survey
+    comment : Subnode of DKRZ. Only open to certain groups, limited storage.
+    accepting_requests: False
+    simulations:
+      # This is from H. Feldmann's answer, CLMcom-KIT also has 5 simulations with MIROC6, were they forgotten ?
+      # Also mentionned by C Steger's answer
+      - institution_id: CLMcom-KIT
+        source_id:  CCLM6-0-1
+      # From D. Risto's answer
+      - institution_id: CLMcom-GUF
+      # From C. Steger's answer
+      - institution_id: CLMcom-Hereon
+        source_id: CCLM6-0-1
+        driving_source_id: ERA5
+      - institution_id: CLMcom-Hereon
+        source_id: GCOAST-AHOI1-1
+        driving_source_id: ERA5
+      - source_id: ICON-CLM-202407-1-1
+        driving_source_id: [ERA5, MPI-ESM1-2-HR, EC-Earth3-Veg, MIROC6, CNRM-ESM2-1]
+      - source_id: ICON-CLM-202407-1-3
+        driving_experiment_id: [evaluation, historical]
+      - source_id: ICON-CLM-202407-1-2
+  - name: DMI
+    url: cordexesg.dmi.dk
+    index: east
+    status: unmigrated
+    volume: 163
+    comment: Only open to certain groups, storage depends on funding.
+    accepting_requests: False
+    simulations:
+      # From O.B. Christensen's and W.J. van de Berg's answers
+      - institution_id: [DMI, UU-IMAU]
+  - name: CCCma
+    url: http://crd-esgf-drc.ec.gc.ca/
+    index: west
+    status: unmigrated
+    volume: 1800
+    comment: Only for CCCma data.
+    accepting_requests: False
+    simulations:
+      # Didn't answer to the survey, but easy to guess
+      - institution_id: CCCma
+  - name: NCI
+    url: esgf.nci.org.au
+    index: null
+    status: unmigrated
+    volume: 1000
+    comment: Groups could publish their data through NCI with a paid contract.
+    accepting_requests: True
+    simulations:
+      # From S. Chapman's answer
+      - domain_id: AUS-20i
+        institution_id: UQ-DEC
+      # From E. Howard's answer. I'm assuming the evaluation run will be shared too, simply forgotten in the survey
+      - domain_id: AUS-20i
+        source_id: BARPA-R1-NN
+  - name: CMCC
+    url: https://esgf-node2.cmcc.it
+    index: east
+    status: unmigrated
+    volume: 10
+    comment: Will not migrate to ESGF-NG.
+    accepting_requests: False
+    simulations:
+      # From G. Ceci's answer
+      - domain_id: EUR-12
+        institution_id: CLMcom-CMCC
+        source_id: [CCLM6-0-1, CCLM6-0-1-URB]
+        driving_source_id: [CMCC-CM2-SR5, ERA5]
+  - name: RU-CORE
+    url: https://esg-dn1.ru.ac.th
+    index: null
+    status: unmigrated
+    volume: 700
+    accepting_requests: null
+    simulations:
+      # From T. Ngo-Duc's answer
+      - domain_id: SEA-25
+        institution_id: [UMT, UKM-UMT, MO, HKO, RU-CORE, USTH-HUS-IMHEN, USTH, BMKG, CCRC, CSIRO]  
+  - name: LIU
+    url: https://esg-dn1.nsc.liu.se/projects/esgf-liu
+    index: east
+    status: unmigrated
+    volume: null
+    comment: Hasn't responded to the survey.
+    accepting_requests: null
+    simulations:
+      - institution_id: HCLIMcom-SMHI  # 400
+  - name: CEDA
+    url: null
+    index: east
+    status: null
+    volume: null
+    comment : Hasn't responded to the survey.
+    accepting_requests: null
+    simulations:
+      # From Grace Redmond's answer
+      - domain_id: SEA-12
+        institution_id: MOHC
+  - name: Norwegian
+    url: null
+    index: east
+    status: null
+    volume: null
+    comment: Hasn't responded to the survey.
+    accepting_requests: null
+    simulations:
+      # From O. Landgren's answer
+      - domain_id: ARC-12
+        institution_id: HCLIMcom-METNo
 
-servers:
+non-esgf:
   - domain: AUS-20i
     institution: NCI Australia
     url: https://thredds.nci.org.au/thredds/catalog/catalogs/ig45/catalog.html
