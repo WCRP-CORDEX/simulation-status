@@ -111,6 +111,29 @@ esgf:
       # From E. Howard's answer. I'm assuming the evaluation run will be shared too, simply forgotten in the survey
       - domain_id: AUS-20i
         source_id: BARPA-R1-NN
+  - name: CMCC
+    url: https://esgf-node2.cmcc.it
+    index: east
+    status: unmigrated
+    volume: 10
+    comment: Will not migrate to ESGF-NG.
+    accepting_requests: False
+    simulations:
+      # From G. Ceci's answer
+      - domain_id: EUR-12
+        institution_id: CLMcom-CMCC
+        source_id: [CCLM6-0-1, CCLM6-0-1-URB]
+        driving_source_id: [CMCC-CM2-SR5, ERA5]
+  - name: RU-CORE
+    url: https://esg-dn1.ru.ac.th
+    index: null
+    status: unmigrated
+    volume: 700
+    accepting_requests: null
+    simulations:
+      # From T. Ngo-Duc's answer
+      - domain_id: SEA-25
+        institution_id: [UMT, UKM-UMT, MO, HKO, RU-CORE, USTH-HUS-IMHEN, USTH, BMKG, CCRC, CSIRO]  
   - name: LIU
     url: https://esg-dn1.nsc.liu.se/projects/esgf-liu
     index: east
@@ -131,30 +154,6 @@ esgf:
       # From Grace Redmond's answer
       - domain_id: SEA-12
         institution_id: MOHC
-  - name: CMCC
-    url: null
-    index: east
-    status: null
-    volume: null
-    comment: Hasn't responded to the survey.
-    accepting_requests: null
-    simulations:
-      # From G. Ceci's answer
-      - domain_id: EUR-12
-        institution_id: CLMcom-CMCC
-        source_id: [CCLM6-0-1, CCLM6-0-1-URB]
-        driving_source_id: [CMCC-CM2-SR5, ERA5]
-  - name: RU-CORE
-    url: https://rucore.ru.ac.th/SARCCIS
-    index: null
-    status: null
-    volume: null
-    comment: Hasn't responded to the survey.
-    accepting_requests: null
-    simulations:
-      # From T. Ngo-Duc's answer
-      - domain_id: SEA-25
-        institution_id: [UMT, UKM-UMT, MO, HKO, RU-CORE, USTH-HUS-IMHEN, USTH, BMKG, CCRC, CSIRO]
   - name: Norwegian
     url: null
     index: east
