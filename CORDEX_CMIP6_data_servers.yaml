@@ -165,6 +165,13 @@ esgf:
       # From O. Landgren's answer
       - domain_id: ARC-12
         institution_id: HCLIMcom-METNo
+  - name: ORNL
+    url: null
+    index: east
+    status: planned
+    volume: 2000
+    comment: Will prioritize CORDEX-NA and non-1hr CORE variables, but open to host more.
+    accepting_requests: True
 
 non-esgf:
   - domain: AUS-20i
