@@ -37,7 +37,7 @@ esgf:
     url: https://esgf.ipsl.fr/
     index: east
     status: unmigrated
-    volume: 1850
+    volume: null
     comment: Also has some CORDEX-CMIP5 data. Most space is reserved for specific groups, but some is open for additionnal groups.
     accepting_requests: True
     simulations:
@@ -55,7 +55,7 @@ esgf:
     url : https://esgf-data.dwd.de/
     index: east
     status: unmigrated
-    volume: 2000 # I assumed 200 was a typo because at least 2000 is mentionned in the DPub survey
+    volume: 2000 # PB: I assumed 200 was a typo because at least 2000 is mentionned in the DPub survey
     comment : Subnode of DKRZ. Only open to certain groups, limited storage.
     accepting_requests: False
     simulations:
@@ -101,7 +101,7 @@ esgf:
     url: esgf.nci.org.au
     index: null
     status: unmigrated
-    volume: 1000
+    volume: null
     comment: Groups could publish their data through NCI with a paid contract.
     accepting_requests: True
     simulations:
@@ -128,7 +128,7 @@ esgf:
     url: https://esg-dn1.ru.ac.th
     index: null
     status: unmigrated
-    volume: 700
+    volume: null
     accepting_requests: null
     simulations:
       # From T. Ngo-Duc's answer
@@ -169,12 +169,11 @@ esgf:
     url: null
     index: east
     status: planned
-    volume: 2000
+    volume: null
     comment: Will prioritize CORDEX-NA and non-1hr CORE variables, but open to host more.
     accepting_requests: True
 
 non-esgf:
-
   - domain: AUS-20i
     institution: NCI Australia
     url: https://thredds.nci.org.au/thredds/catalog/catalogs/ig45/catalog.html
