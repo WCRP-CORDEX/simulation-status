@@ -414,8 +414,8 @@ SAM-12,ICTP,E. Coppola,RegCM5-0,EC-Earth3-Veg,r1i1p1f1,historical,running,2026-0
 SAM-12,ICTP,E. Coppola,RegCM5-0,EC-Earth3-Veg,r1i1p1f1,ssp370,running,2026-02,#CORDEX-CORE
 SAM-12,ICTP,E. Coppola,RegCM5-0,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2026-02,#CORDEX-CORE
 SAM-12,ICTP,E. Coppola,RegCM5-0,MPI-ESM1-2-HR,r1i1p1f1,ssp370,running,2026-02,#CORDEX-CORE
-SAM-12,ICTP,E. Coppola / R. P. da Rocha,RegCM5-0,NorESM2-MM,r1i1p1f1,historical,running,2026-02,#CORDEX-CORE
-SAM-12,ICTP,E. Coppola / R. P. da Rocha,RegCM5-0,NorESM2-MM,r1i1p1f1,ssp370,planned,2026-04,#CORDEX-CORE
+SAM-12,USP,R. P. da Rocha,RegCM5-0,NorESM2-MM,r1i1p1f1,historical,running,2026-02,#CORDEX-CORE
+SAM-12,USP,R. P. da Rocha,RegCM5-0,NorESM2-MM,r1i1p1f1,ssp370,planned,2026-04,#CORDEX-CORE
 SAM-12,IFCA,J. Milovac / J. Fernandez,WRF461U,ERA5,,evaluation,running,2026-04,#CORDEX-CORE
 SAM-12,IFCA,J. Milovac / J. Fernandez,WRF461U,EC-Earth3-Veg,r1i1p1f1,historical,running,2026-04,#CORDEX-CORE
 SAM-12,IFCA,J. Milovac / J. Fernandez,WRF461U,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2026-04,#CORDEX-CORE
