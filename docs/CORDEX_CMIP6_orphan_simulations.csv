@@ -49,51 +49,6 @@ AUS-12,ICTP,E. Coppola,RegCM5-0,NorESM2-MM,r1i1p1f1,historical,running,2025-12,#
 AUS-12,ICTP,E. Coppola,RegCM5-0,NorESM2-MM,r1i1p1f1,ssp370,running,2025-12,#CORDEX-CORE
 AUS-12,ICTP,E. Coppola,RegCM5-0,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2025-12,#CORDEX-CORE
 AUS-12,ICTP,E. Coppola,RegCM5-0,MPI-ESM1-2-HR,r1i1p1f1,ssp370,running,2025-12,#CORDEX-CORE
-AUS-20i,CSIRO,M. Thatcher,CCAM-v2203-SN,ERA5,,evaluation,completed,2022-06,
-AUS-20i,CSIRO,M. Thatcher,CCAM-v2203-SN,ACCESS-CM2,r4i1p1f1,historical,completed,2023-11,
-AUS-20i,CSIRO,M. Thatcher,CCAM-v2203-SN,ACCESS-CM2,r4i1p1f1,ssp126,completed,2023-11,
-AUS-20i,CSIRO,M. Thatcher,CCAM-v2203-SN,ACCESS-CM2,r4i1p1f1,ssp370,completed,2023-11,
-AUS-20i,CSIRO,M. Thatcher,CCAM-v2203-SN,ACCESS-CM2,r4i1p1f1,ssp585,completed,2023-11,
-AUS-20i,CSIRO,M. Thatcher,CCAM-v2203-SN,ACCESS-ESM1-5,r6i1p1f1,historical,completed,2023-11,
-AUS-20i,CSIRO,M. Thatcher,CCAM-v2203-SN,ACCESS-ESM1-5,r6i1p1f1,ssp126,completed,2023-11,
-AUS-20i,CSIRO,M. Thatcher,CCAM-v2203-SN,ACCESS-ESM1-5,r6i1p1f1,ssp370,completed,2023-11,
-AUS-20i,CSIRO,M. Thatcher,CCAM-v2203-SN,CESM2,r1i1p1f1,historical,completed,2023-11,
-AUS-20i,CSIRO,M. Thatcher,CCAM-v2203-SN,CESM2,r1i1p1f1,ssp126,completed,2023-11,
-AUS-20i,CSIRO,M. Thatcher,CCAM-v2203-SN,CESM2,r1i1p1f1,ssp370,completed,2023-11,
-AUS-20i,CSIRO,M. Thatcher,CCAM-v2203-SN,CMCC-ESM2,r1i1p1f1,historical,completed,2023-11,
-AUS-20i,CSIRO,M. Thatcher,CCAM-v2203-SN,CMCC-ESM2,r1i1p1f1,ssp126,completed,2023-11,
-AUS-20i,CSIRO,M. Thatcher,CCAM-v2203-SN,CMCC-ESM2,r1i1p1f1,ssp370,completed,2023-11,
-AUS-20i,CSIRO,M. Thatcher,CCAM-v2203-SN,CNRM-ESM2-1,r1i1p1f2,historical,completed,2023-11,
-AUS-20i,CSIRO,M. Thatcher,CCAM-v2203-SN,CNRM-ESM2-1,r1i1p1f2,ssp126,completed,2023-11,
-AUS-20i,CSIRO,M. Thatcher,CCAM-v2203-SN,CNRM-ESM2-1,r1i1p1f2,ssp370,completed,2023-11,
-AUS-20i,CSIRO,M. Thatcher,CCAM-v2203-SN,EC-Earth3,r1i1p1f1,historical,completed,2023-11,
-AUS-20i,CSIRO,M. Thatcher,CCAM-v2203-SN,EC-Earth3,r1i1p1f1,ssp126,completed,2023-11,
-AUS-20i,CSIRO,M. Thatcher,CCAM-v2203-SN,EC-Earth3,r1i1p1f1,ssp370,completed,2023-11,
-AUS-20i,CSIRO,M. Thatcher,CCAM-v2203-SN,EC-Earth3,r1i1p1f1,ssp585,completed,2023-11,
-AUS-20i,CSIRO,M. Thatcher,CCAM-v2203-SN,NorESM2-MM,r1i1p1f1,historical,completed,2022-06,
-AUS-20i,CSIRO,M. Thatcher,CCAM-v2203-SN,NorESM2-MM,r1i1p1f1,ssp126,completed,2022-06,
-AUS-20i,CSIRO,M. Thatcher,CCAM-v2203-SN,NorESM2-MM,r1i1p1f1,ssp370,completed,2022-06,
-AUS-20i,NSW-DPE,G. di Virgilio,WRF412C1,ERA5,,evaluation,running,2024-03,#CORDEX-CORE
-AUS-20i,NSW-DPE,G. di Virgilio,WRF412C1,ACCESS-ESM1-5,r6i1p1f1,historical,completed,2023-11,
-AUS-20i,NSW-DPE,G. di Virgilio,WRF412C1,ACCESS-ESM1-5,r6i1p1f1,ssp126,completed,2023-11,
-AUS-20i,NSW-DPE,G. di Virgilio,WRF412C1,ACCESS-ESM1-5,r6i1p1f1,ssp245,planned,2025-12,
-AUS-20i,NSW-DPE,G. di Virgilio,WRF412C1,ACCESS-ESM1-5,r6i1p1f1,ssp370,completed,2023-11,
-AUS-20i,NSW-DPE,G. di Virgilio,WRF412C1,EC-Earth3-Veg,r1i1p1f1,historical,completed,2023-11,#CORDEX-CORE
-AUS-20i,NSW-DPE,G. di Virgilio,WRF412C1,EC-Earth3-Veg,r1i1p1f1,ssp126,completed,2023-11,
-AUS-20i,NSW-DPE,G. di Virgilio,WRF412C1,EC-Earth3-Veg,r1i1p1f1,ssp245,planned,2025-12,
-AUS-20i,NSW-DPE,G. di Virgilio,WRF412C1,EC-Earth3-Veg,r1i1p1f1,ssp370,completed,2023-11,#CORDEX-CORE
-AUS-20i,NSW-DPE,G. di Virgilio,WRF-R3,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2023-11,#CORDEX-CORE
-AUS-20i,NSW-DPE,G. di Virgilio,WRF-R3,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2023-11,
-AUS-20i,NSW-DPE,G. di Virgilio,WRF-R3,MPI-ESM1-2-HR,r1i1p1f1,ssp245,planned,2025-12,
-AUS-20i,NSW-DPE,G. di Virgilio,WRF-R3,MPI-ESM1-2-HR,r1i1p1f1,ssp370,completed,2023-11,#CORDEX-CORE
-AUS-20i,NSW-DPE,G. di Virgilio,WRF-R3,NorESM2-MM,r1i1p1f1,historical,running,2023-12,#CORDEX-CORE
-AUS-20i,NSW-DPE,G. di Virgilio,WRF-R3,NorESM2-MM,r1i1p1f1,ssp126,running,2024-03,
-AUS-20i,NSW-DPE,G. di Virgilio,WRF-R3,NorESM2-MM,r1i1p1f1,ssp245,planned,2025-12,
-AUS-20i,NSW-DPE,G. di Virgilio,WRF-R3,NorESM2-MM,r1i1p1f1,ssp370,running,2024-03,#CORDEX-CORE
-AUS-20i,NSW-DPE,G. di Virgilio,WRF412C1,UKESM1-0-LL,r1i1p1f2,historical,completed,2023-11,
-AUS-20i,NSW-DPE,G. di Virgilio,WRF412C1,UKESM1-0-LL,r1i1p1f2,ssp126,completed,2023-11,
-AUS-20i,NSW-DPE,G. di Virgilio,WRF412C1,UKESM1-0-LL,r1i1p1f2,ssp245,planned,2025-12,
-AUS-20i,NSW-DPE,G. di Virgilio,WRF412C1,UKESM1-0-LL,r1i1p1f2,ssp370,completed,2023-11,
 CAM-12,UCR,H. Hidalgo,ESD-BCSD/delta,ERA5,,evaluation,planned,2026-12,#ESD Method: BCSD (Wood et al. 2004) or delta (Navarro-Racines et al. 2020)
 CAM-12,UCR,H. Hidalgo,ESD-BCSD/delta,GFDL-ESM4,r1i1p1f1,historical,planned,2026-12,#ESD
 CAM-12,UCR,H. Hidalgo,ESD-BCSD/delta,GFDL-ESM4,r1i1p1f1,ssp126,planned,2026-12,#ESD
@@ -150,9 +105,9 @@ EAS-12,ICTP,E. Coppola,RegCM5-0,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2026-0
 EAS-12,ICTP,E. Coppola,RegCM5-0,MPI-ESM1-2-HR,r1i1p1f1,ssp370,running,2026-06,#CORDEX-CORE
 EAS-12,ICTP,E. Coppola,RegCM5-0,NorESM2-MM,r1i1p1f1,historical,running,2026-06,#CORDEX-CORE
 EAS-12,ICTP,E. Coppola,RegCM5-0,NorESM2-MM,r1i1p1f1,ssp370,running,2026-06,#CORDEX-CORE
-EAS-12,FUDAN,G. Zhang / J. Yuan,WRF461U,ERA5,,evaluation,planned,2026-07,#CORDEX-CORE
-EAS-12,FUDAN,G. Zhang / J. Yuan,WRF461U,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2026-09,#CORDEX-CORE
-EAS-12,FUDAN,G. Zhang / J. Yuan,WRF461U,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2026-10,#CORDEX-CORE
+EAS-12,IUM-FDU,G. Zhang / J. Yuan,WRF461U,ERA5,,evaluation,planned,2026-07,#CORDEX-CORE
+EAS-12,IUM-FDU,G. Zhang / J. Yuan,WRF461U,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2026-09,#CORDEX-CORE
+EAS-12,IUM-FDU,G. Zhang / J. Yuan,WRF461U,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2026-10,#CORDEX-CORE
 EAS-12,UNIST,U. Han / D.-H. Cha,WRF461U,EC-Earth3-Veg,r1i1p1f1,historical,planned,2026-09,#CORDEX-CORE
 EAS-12,UNIST,U. Han / D.-H. Cha,WRF461U,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2026-09,#CORDEX-CORE
 EAS-12,UNIST,U. Han / D.-H. Cha,WRF461U,NorESM2-MM,r1i1p1f1,historical,planned,2026-12,#CORDEX-CORE
@@ -414,8 +369,8 @@ SAM-12,ICTP,E. Coppola,RegCM5-0,EC-Earth3-Veg,r1i1p1f1,historical,running,2026-0
 SAM-12,ICTP,E. Coppola,RegCM5-0,EC-Earth3-Veg,r1i1p1f1,ssp370,running,2026-02,#CORDEX-CORE
 SAM-12,ICTP,E. Coppola,RegCM5-0,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2026-02,#CORDEX-CORE
 SAM-12,ICTP,E. Coppola,RegCM5-0,MPI-ESM1-2-HR,r1i1p1f1,ssp370,running,2026-02,#CORDEX-CORE
-SAM-12,ICTP,E. Coppola / R. P. da Rocha,RegCM5-0,NorESM2-MM,r1i1p1f1,historical,running,2026-02,#CORDEX-CORE
-SAM-12,ICTP,E. Coppola / R. P. da Rocha,RegCM5-0,NorESM2-MM,r1i1p1f1,ssp370,planned,2026-04,#CORDEX-CORE
+SAM-12,USP,R. P. da Rocha,RegCM5-0,NorESM2-MM,r1i1p1f1,historical,running,2026-02,#CORDEX-CORE
+SAM-12,USP,R. P. da Rocha,RegCM5-0,NorESM2-MM,r1i1p1f1,ssp370,planned,2026-04,#CORDEX-CORE
 SAM-12,IFCA,J. Milovac / J. Fernandez,WRF461U,ERA5,,evaluation,running,2026-04,#CORDEX-CORE
 SAM-12,IFCA,J. Milovac / J. Fernandez,WRF461U,EC-Earth3-Veg,r1i1p1f1,historical,running,2026-04,#CORDEX-CORE
 SAM-12,IFCA,J. Milovac / J. Fernandez,WRF461U,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2026-04,#CORDEX-CORE
@@ -515,13 +470,3 @@ WAS-12,MOHC,E. Buonomo,HadREM3-GA7-05,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,
 WAS-12,MOHC,E. Buonomo,HadREM3-GA7-05,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2026-06,#CORDEX-CORE
 WAS-12,MOHC,E. Buonomo,HadREM3-GA7-05,NorESM2-MM,r1i1p1f1,historical,planned,2026-06,#CORDEX-CORE
 WAS-12,MOHC,E. Buonomo,HadREM3-GA7-05,NorESM2-MM,r1i1p1f1,ssp370,planned,2026-06,#CORDEX-CORE
-WAS-25,IITM,T. P. Sabin,IITM-AGCM,ERA5,,evaluation,completed,2022-02,27 km resolution global model
-WAS-25,IITM,T. P. Sabin,IITM-AGCM,IITM-ESM,r1i1p1f1,historical,running,2023-12,27 km resolution global model forced by the SST of the driving GCM
-WAS-25,IITM,T. P. Sabin,IITM-AGCM,IITM-ESM,r1i1p1f1,ssp245,planned,2023-12,27 km resolution global model forced by the SST of the driving GCM
-WAS-25,IITM,T. P. Sabin,IITM-AGCM,IITM-ESM,r1i1p1f1,ssp585,planned,2023-12,27 km resolution global model forced by the SST of the driving GCM
-WAS-25,IITM,T. P. Sabin,IITM-AGCM,TBD,TBD,historical,planned,2023-12,27 km resolution global model forced by the SST of the driving GCM
-WAS-25,IITM,T. P. Sabin,IITM-AGCM,TBD,TBD,ssp245,planned,2023-12,27 km resolution global model forced by the SST of the driving GCM
-WAS-25,IITM,T. P. Sabin,IITM-AGCM,TBD,TBD,ssp585,planned,2023-12,27 km resolution global model forced by the SST of the driving GCM
-WAS-25,IITM,T. P. Sabin,IITM-AGCM,TBD2,TBD,historical,planned,2023-12,27 km resolution global model forced by the SST of the driving GCM
-WAS-25,IITM,T. P. Sabin,IITM-AGCM,TBD2,TBD,ssp245,planned,2023-12,27 km resolution global model forced by the SST of the driving GCM
-WAS-25,IITM,T. P. Sabin,IITM-AGCM,TBD2,TBD,ssp585,planned,2023-12,27 km resolution global model forced by the SST of the driving GCM
