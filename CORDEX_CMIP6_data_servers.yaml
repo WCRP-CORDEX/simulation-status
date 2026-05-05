@@ -107,7 +107,7 @@ esgf:
     simulations:
       # From NCI response to TF-CMIP7 survey: "all AUS-20i except IRD-MF"
       - domain_id: AUS-20i
-        institution_id: [BARPA-R1-NN, BOM	UQ-DEC, CSIRO, UQ-DEC, NSW-DPE]
+        institution_id: [BARPA-R1-NN, BOM, UQ-DEC, CSIRO, UQ-DEC, NSW-DPE]
   - name: CMCC
     url: https://esgf-node2.cmcc.it
     index: east
