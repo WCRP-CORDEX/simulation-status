@@ -105,12 +105,9 @@ esgf:
     comment: Groups could publish their data through NCI with a paid contract.
     accepting_requests: True
     simulations:
-      # From S. Chapman's answer
+      # From NCI response to TF-CMIP7 survey: "all AUS-20i except IRD-MF"
       - domain_id: AUS-20i
-        institution_id: UQ-DEC
-      # From E. Howard's answer. I'm assuming the evaluation run will be shared too, simply forgotten in the survey
-      - domain_id: AUS-20i
-        source_id: BARPA-R1-NN
+        institution_id: [BARPA-R1-NN, BOM	UQ-DEC, CSIRO, UQ-DEC, NSW-DPE]
   - name: CMCC
     url: https://esgf-node2.cmcc.it
     index: east
@@ -165,6 +162,16 @@ esgf:
       # From O. Landgren's answer
       - domain_id: ARC-12
         institution_id: HCLIMcom-METNo
+  - name: IITM
+    url: esg-cccr.tropmet.res.in
+    index: null
+    status: null
+    volume: null
+    comment: Hasn't responded to the survey.
+    accepting_requests: null
+    simulations:
+      # From early survey in TF-CMIP7
+      - domain_id: WAS-25
   - name: ORNL
     url: null
     index: east
