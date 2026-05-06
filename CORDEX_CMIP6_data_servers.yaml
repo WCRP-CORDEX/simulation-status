@@ -55,28 +55,14 @@ esgf:
     url : https://esgf-data.dwd.de/
     index: east
     status: unmigrated
-    volume: 2000 # PB: I assumed 200 was a typo because at least 2000 is mentionned in the DPub survey
+    volume: 1915
     comment : Subnode of DKRZ. Only open to certain groups, limited storage.
     accepting_requests: False
     simulations:
-      # This is from H. Feldmann's answer, CLMcom-KIT also has 5 simulations with MIROC6, were they forgotten ?
-      # Also mentionned by C Steger's answer
-      - institution_id: CLMcom-KIT
-        source_id:  CCLM6-0-1
-      # From D. Risto's answer
-      - institution_id: CLMcom-GUF
-      # From C. Steger's answer
-      - institution_id: CLMcom-Hereon
-        source_id: CCLM6-0-1
-        driving_source_id: ERA5
-      - institution_id: CLMcom-Hereon
-        source_id: GCOAST-AHOI1-1
-        driving_source_id: ERA5
-      - source_id: ICON-CLM-202407-1-1
-        driving_source_id: [ERA5, MPI-ESM1-2-HR, EC-Earth3-Veg, MIROC6, CNRM-ESM2-1]
-      - source_id: ICON-CLM-202407-1-3
-        driving_experiment_id: [evaluation, historical]
-      - source_id: ICON-CLM-202407-1-2
+      # Updated from e-mail exchange with C. Steger (might vary depending on total volume of data)
+      - domain_id: EUR-12
+        institution_id: [CLMcom-BTU, CLMcom-DWD, CLMcom-ETH, CLMcom-FZJ, CLMcom-GUF, CLMcom-Hereon, CLMcom-IMWM, CLMcom-KIT, CLMcom-KUL, CLMcom-LIST, CLMcom-WEGC]
+        
   - name: DMI
     url: cordexesg.dmi.dk
     index: east
