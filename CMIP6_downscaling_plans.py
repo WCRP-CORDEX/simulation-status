@@ -23,6 +23,8 @@ csv2datatable(
 </div>
 <p>
 This is an interactive table view of each of the CORDEX-CMIP6 simulations.
+ECD stands for "estimated completion date" and is the date when a simulation is expected to be completed, as reported by the modelling group.
+You can find <a href="https://wcrp-cordex.github.io/cordex-cmip6-cv/CORDEX-CMIP6_institution_id.html">here</a> the details for <span style="font-weight: italic;">institution_id</span> and <span style="font-weight: italic;">source_id</span>.
 The table can be sorted by the different columns.
 The search field can be used to filter the table.
 Several terms can be entered (e.g. "evaluation completed" or "mpi ssp585") to show the rows matching all terms.
