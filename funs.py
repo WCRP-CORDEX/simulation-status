@@ -10,6 +10,7 @@ span.planned {color: #F54d4d; font-weight: bold}
 span.running {color: #009900; font-weight: bold}
 span.completed {color: #17202a; font-weight: bold}
 span.published {color: #3399FF; font-weight: bold}
+span.cordex-core {text-decoration: underline; text-underline-offset: 0.15em;}
 
 span.unmigrated {color: #ca6f1e; font-weight: bold}
 
@@ -349,11 +350,13 @@ def generate_domain_table(dom_plans, collapse_institutions=True):
   pandas.DataFrame
       Styled pivot table ready for HTML export
   """
+  is_cordex_core = dom_plans.comments.fillna('').str.contains('#CORDEX-CORE', case=False, na=False)
   # Add HTML status column
   dom_plans = dom_plans.assign(
     htmlstatus=pd.Series(
       '<span sort="' + dom_plans.driving_experiment_id + '" class="' + 
-      dom_plans.status + '">' + dom_plans.driving_experiment_id + '</span>', 
+      (dom_plans.status + is_cordex_core.map(lambda flagged: ' cordex-core' if flagged else '')) +
+      '">' + dom_plans.driving_experiment_id + '</span>', 
       index=dom_plans.index
     )
   )
