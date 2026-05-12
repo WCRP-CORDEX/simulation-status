@@ -109,7 +109,7 @@ def generate_esgf_table(servers):
     <p style="text-align: justify;">
     This page collects information about servers hosting ESGF-NG data nodes with CORDEX-CMIP6 data.
     To add a new server or update existing information, please open an issue or pull request at <a href="https://github.com/WCRP-CORDEX/simulation-status">the GitHub repository</a>.
-    A raw list of simulations without ESGF node plans is available here: <a href="CORDEX_CMIP6_orphan_simulations.csv">CORDEX_CMIP6_orphan_simulations.csv</a>.
+    A list of simulations without ESGF node plans is available here: <a href="https://github.com/WCRP-CORDEX/simulation-status/blob/main/docs/CORDEX_CMIP6_orphan_simulations.csv">CORDEX_CMIP6_orphan_simulations.csv</a>.
     Some data is already published on servers outside the ESGF ecosystem, as listed on the <a href="CORDEX_CMIP6_data_servers.html">Data Servers</a> page.
     </p>
     '''
