@@ -24,6 +24,19 @@
 #              Each element of the list if a mapping from columns of `CMIP6_downscaling_plans.csv` to a list of values.
 #              Allowed columns are : domain_id, institution_id, source_id, driving_source_id, driving_variant_label, driving_experiment_id
 esgf:
+
+  - name: CINECA
+    url: 
+    index: east
+    status: planned
+    # From FUTURA meeting. To be confirmed
+    volume: 2000
+    comment: Did not respond to the survey, but is planning to host some extra CORDEX-CMIP6 data
+    accepting_requests: null 
+    simulations:
+      # From G. Giuliani (pers. comm.)
+      - institution_id: ICTP
+
   - name: Ouranos
     url: https://esgf.ouranos.ca/
     index: west
@@ -33,6 +46,7 @@ esgf:
     accepting_requests: False
     simulations:
       - institution_id: OURANOS
+
   - name: IPSL
     url: https://esgf.ipsl.fr/
     index: east
@@ -51,6 +65,7 @@ esgf:
         source_id: [ CNRM-RCSM6-SN, CNRM-RCSM6B-SN]
       - domain_id: AUS-20i
         institution_id: IRD-MF
+
   - name: DWD
     url : https://esgf-data.dwd.de/
     index: east
@@ -73,6 +88,7 @@ esgf:
     simulations:
       # From O.B. Christensen's and W.J. van de Berg's answers
       - institution_id: [DMI, UU-IMAU]
+
   - name: CCCma
     url: http://crd-esgf-drc.ec.gc.ca/
     index: west
@@ -83,6 +99,7 @@ esgf:
     simulations:
       # Didn't answer to the survey, but easy to guess
       - institution_id: CCCma
+
   - name: NCI
     url: esgf.nci.org.au
     index: null
@@ -94,6 +111,7 @@ esgf:
       # From NCI response to TF-CMIP7 survey: "all AUS-20i except IRD-MF"
       - domain_id: AUS-20i
         institution_id: [BARPA-R1-NN, BOM, UQ-DEC, CSIRO, UQ-DEC, NSW-DPE]
+
   - name: CMCC
     url: https://esgf-node2.cmcc.it
     index: east
@@ -107,6 +125,7 @@ esgf:
         institution_id: CLMcom-CMCC
         source_id: [CCLM6-0-1, CCLM6-0-1-URB]
         driving_source_id: [CMCC-CM2-SR5, ERA5]
+
   - name: RU-CORE
     url: https://esg-dn1.ru.ac.th
     index: null
@@ -117,6 +136,7 @@ esgf:
       # From T. Ngo-Duc's answer
       - domain_id: SEA-25
         institution_id: [UMT, UKM-UMT, MO, HKO, RU-CORE, USTH-HUS-IMHEN, USTH, BMKG, CCRC, CSIRO]  
+
   - name: LIU
     url: https://esg-dn1.nsc.liu.se/projects/esgf-liu
     index: east
@@ -126,6 +146,7 @@ esgf:
     accepting_requests: null
     simulations:
       - institution_id: HCLIMcom-SMHI  # 400
+
   - name: CEDA
     url: null
     index: east
@@ -134,9 +155,9 @@ esgf:
     comment : Hasn't responded to the survey.
     accepting_requests: null
     simulations:
-      # From Grace Redmond's answer
-      - domain_id: SEA-12
-        institution_id: MOHC
+      # From Grace Redmond's answer and E. Buonomo (pers. comm.)
+      - institution_id: MOHC
+
   - name: Norwegian
     url: null
     index: east
@@ -148,6 +169,7 @@ esgf:
       # From O. Landgren's answer
       - domain_id: ARC-12
         institution_id: HCLIMcom-METNo
+
   - name: IITM
     url: esg-cccr.tropmet.res.in
     index: null
@@ -158,6 +180,7 @@ esgf:
     simulations:
       # From early survey in TF-CMIP7
       - domain_id: WAS-25
+
   - name: ORNL
     url: null
     index: east
@@ -167,6 +190,7 @@ esgf:
     accepting_requests: True
 
 non-esgf:
+
   - domain: AUS-20i
     institution: NCI Australia
     url: https://thredds.nci.org.au/thredds/catalog/catalogs/ig45/catalog.html
