@@ -97,7 +97,6 @@ esgf:
     comment: Only for CCCma data.
     accepting_requests: False
     simulations:
-      # Didn't answer to the survey, but easy to guess
       - institution_id: CCCma
 
   - name: NCI
