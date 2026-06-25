@@ -156,6 +156,7 @@ AUS-20i,NSW-DPE,G. di Virgilio,WRF412C1,UKESM1-0-LL,r1i1p1f2,ssp126,completed,20
 AUS-20i,NSW-DPE,G. di Virgilio,WRF412C1,UKESM1-0-LL,r1i1p1f2,ssp245,planned,2025-12,
 AUS-20i,NSW-DPE,G. di Virgilio,WRF412C1,UKESM1-0-LL,r1i1p1f2,ssp370,completed,2023-11,
 AUS-20i,UQ-DEC,S. Chapman,CCAM-v2105,ERA5,,evaluation,completed,2023-11,
+AUS-20i,UQ-DEC,S. Chapman,CCAM-v2105,ACCESS-CM2,r2i1p1f1,ssp585,completed,2026-06,Branched off from CCAMoc-2112 historical run
 AUS-20i,UQ-DEC,S. Chapman,CCAM-v2105,ACCESS-ESM1-5,r6i1p1f1,historical,completed,2023-11,
 AUS-20i,UQ-DEC,S. Chapman,CCAM-v2105,ACCESS-ESM1-5,r6i1p1f1,ssp126,completed,2023-11,
 AUS-20i,UQ-DEC,S. Chapman,CCAM-v2105,ACCESS-ESM1-5,r6i1p1f1,ssp245,completed,2023-11,
@@ -164,10 +165,12 @@ AUS-20i,UQ-DEC,S. Chapman,CCAM-v2105,CMCC-ESM2,r1i1p1f1,historical,completed,202
 AUS-20i,UQ-DEC,S. Chapman,CCAM-v2105,CMCC-ESM2,r1i1p1f1,ssp126,completed,2023-11,
 AUS-20i,UQ-DEC,S. Chapman,CCAM-v2105,CMCC-ESM2,r1i1p1f1,ssp245,completed,2023-11,
 AUS-20i,UQ-DEC,S. Chapman,CCAM-v2105,CMCC-ESM2,r1i1p1f1,ssp370,completed,2023-11,
+AUS-20i,UQ-DEC,S. Chapman,CCAM-v2105,CNRM-CM6-1-HR,r1i1p1f2,ssp585,completed,2026-06,Branched off from CCAM-2112 historical run
 AUS-20i,UQ-DEC,S. Chapman,CCAM-v2105,EC-Earth3,r1i1p1f1,historical,completed,2023-11,
 AUS-20i,UQ-DEC,S. Chapman,CCAM-v2105,EC-Earth3,r1i1p1f1,ssp126,completed,2023-11,
 AUS-20i,UQ-DEC,S. Chapman,CCAM-v2105,EC-Earth3,r1i1p1f1,ssp245,completed,2023-11,
 AUS-20i,UQ-DEC,S. Chapman,CCAM-v2105,EC-Earth3,r1i1p1f1,ssp370,completed,2023-11,
+AUS-20i,UQ-DEC,S. Chapman,CCAM-v2105,EC-Earth3,r1i1p1f1,ssp585,completed,2026-06,
 AUS-20i,UQ-DEC,S. Chapman,CCAM-v2105,FGOALS-g3,r4i1p1f1,historical,completed,2023-11,
 AUS-20i,UQ-DEC,S. Chapman,CCAM-v2105,FGOALS-g3,r4i1p1f1,ssp126,completed,2023-11,
 AUS-20i,UQ-DEC,S. Chapman,CCAM-v2105,FGOALS-g3,r4i1p1f1,ssp245,completed,2023-11,
