@@ -252,7 +252,7 @@ CAM-12,GERICS,C. Teichmann,REMO2020-2-2,MPI-ESM1-2-HR,r1i1p1f1,historical,planne
 CAM-12,GERICS,C. Teichmann,REMO2020-2-2,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2026-12,#CORDEX-CORE
 CAM-12,GERICS,C. Teichmann,REMO2020-2-2,NorESM2-MM,r1i1p1f1,historical,planned,2026-12,#CORDEX-CORE
 CAM-12,GERICS,C. Teichmann,REMO2020-2-2,NorESM2-MM,r1i1p1f1,ssp370,planned,2026-12,#CORDEX-CORE
-CAM-12,ORNL,M. Ashfaq,RegCM5-0,ERA5,,evaluation,running,2026-06,#CORDEX-CORE
+CAM-12,ORNL,M. Ashfaq,RegCM5-0,ERA5,,evaluation,completed,2026-07,#CORDEX-CORE
 CAM-12,ORNL,M. Ashfaq,RegCM5-0,EC-Earth3-Veg,r1i1p1f1,historical,completed,2026-07,#CORDEX-CORE
 CAM-12,ORNL,M. Ashfaq,RegCM5-0,EC-Earth3-Veg,r1i1p1f1,ssp370,running,2026-09,#CORDEX-CORE
 CAM-12,ORNL,M. Ashfaq,RegCM5-0,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2026-07,#CORDEX-CORE
