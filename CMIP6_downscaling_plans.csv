@@ -373,9 +373,9 @@ EUR-12,CLMcom-DWD,C. Steger,ICON-CLM-202407-1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp245,co
 EUR-12,CLMcom-DWD,C. Steger,ICON-CLM-202407-1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp370,completed,2025-05,#EURbalanced #ManyGCM #ManySSP #UDAG #EURcoupled
 EUR-12,CLMcom-DWD,C. Steger,ICON-CLM-202407-1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp585,completed,2025-08,#ManyGCM #ManySSP #UDAG
 EUR-12,CLMcom-Hereon,B. Geyer,ICON-CLM-202407-1-1,EC-Earth3-Veg,r1i1p1f1,historical,completed,2025-05,#EURbalanced #ManyGCM #ManySSP #UDAG
-EUR-12,CLMcom-Hereon,B. Geyer,ICON-CLM-202407-1-1,EC-Earth3-Veg,r1i1p1f1,ssp126,completed,2025-08,#EURbalanced #ManyGCM #ManySSP #UDAG
+EUR-12,CLMcom-GERICS,K. Sieck,ICON-CLM-202407-1-1,EC-Earth3-Veg,r1i1p1f1,ssp126,completed,2025-08,#EURbalanced #ManyGCM #ManySSP #UDAG #PeriodExtension 2015-2150
 EUR-12,CLMcom-Hereon,B. Geyer,ICON-CLM-202407-1-1,EC-Earth3-Veg,r1i1p1f1,ssp245,completed,2025-12,#ManyGCM #ManySSP #UDAG
-EUR-12,CLMcom-Hereon,B. Geyer,ICON-CLM-202407-1-1,EC-Earth3-Veg,r1i1p1f1,ssp370,completed,2025-08,#EURbalanced #ManyGCM #ManySSP #UDAG
+EUR-12,CLMcom-GERICS,K. Sieck,ICON-CLM-202407-1-1,EC-Earth3-Veg,r1i1p1f1,ssp370,completed,2025-08,#EURbalanced #ManyGCM #ManySSP #UDAG #PeriodExtension 2015-2150
 EUR-12,CLMcom-Hereon,B. Geyer,ICON-CLM-202407-1-1,EC-Earth3-Veg,r1i1p1f1,ssp585,completed,2025-12,#ManyGCM #ManySSP #UDAG
 EUR-12,CLMcom-KIT,H. Feldmann,ICON-CLM-202407-1-1,MIROC6,r1i1p1f1,historical,completed,2025-05,#EURbalanced #ManyGCM #ManySSP #UDAG
 EUR-12,CLMcom-KIT,H. Feldmann,ICON-CLM-202407-1-1,MIROC6,r1i1p1f1,ssp126,completed,2025-08,#EURbalanced #ManyGCM #ManySSP #UDAG
@@ -408,7 +408,7 @@ EUR-12,DWD-BSH,V. Maurer,ROAM-NBS,EC-Earth3-Veg,r1i1p1f1,historical,completed,20
 EUR-12,DWD-BSH,V. Maurer,ROAM-NBS,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2026-12,#EURcoupled
 EUR-12,DWD-BSH,V. Maurer,ROAM-NBS,EC-Earth3-Veg,r1i1p1f1,ssp370,running,2026-12,#EURcoupled
 EUR-12,CNRM-MF,P. Nabat / S. Somot,CNRM-ALADIN64E1,ERA5,,evaluation,completed,2024-03,#EURcoupled #EURbalanced
-EUR-12,CNRM-MF,P. Nabat / S. Somot,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,historical,completed,2024-03,#EURcoupled #EURbalanced #ManySSP #EURintvar Started in 1850
+EUR-12,CNRM-MF,P. Nabat / S. Somot,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,historical,completed,2024-03,#EURcoupled #EURbalanced #ManySSP #EURintvar #PeriodExtension 1850-2014
 EUR-12,CNRM-MF,P. Nabat / S. Somot,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp126,completed,2024-09,#EURcoupled #EURbalanced #ManySSP #EURintvar
 EUR-12,CNRM-MF,P. Nabat / S. Somot,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp245,completed,2024-09,#EURcoupled #ManySSP
 EUR-12,CNRM-MF,P. Nabat / S. Somot,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp370,completed,2024-09,#EURcoupled #EURbalanced #ManySSP #EURintvar
@@ -775,8 +775,8 @@ SAM-12,IFCA,J. Milovac / J. Fernandez,WRF461U,EC-Earth3-Veg,r1i1p1f1,historical,
 SAM-12,IFCA,J. Milovac / J. Fernandez,WRF461U,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2026-10,#CORDEX-CORE
 SAM-12,IDL-FCUL,R. Cardoso,WRF461U,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2026-04,#CORDEX-CORE
 SAM-12,IDL-FCUL,R. Cardoso,WRF461U,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2026-04,#CORDEX-CORE
-SAM-12,SENAMHI-PER,G. Jacome,WRF461U,NorESM2-MM,r1i1p1f1,historical,planned,2026-08,#CORDEX-CORE
-SAM-12,SENAMHI-PER,G. Jacome,WRF461U,NorESM2-MM,r1i1p1f1,ssp370,planned,2026-08,#CORDEX-CORE
+SAM-12,SENAMHI-PER,G. Jacome,WRF461U,NorESM2-MM,r1i1p1f1,historical,running,2026-09,#CORDEX-CORE
+SAM-12,SENAMHI-PER,G. Jacome,WRF461U,NorESM2-MM,r1i1p1f1,ssp370,planned,2026-12,#CORDEX-CORE
 SAM-12,MOHC,E. Buonomo,HadREM3-GA7-05,ERA5,,evaluation,planned,2026-09,#CORDEX-CORE
 SAM-12,MOHC,E. Buonomo,HadREM3-GA7-05,EC-Earth3-Veg,r1i1p1f1,historical,planned,2026-09,#CORDEX-CORE
 SAM-12,MOHC,E. Buonomo,HadREM3-GA7-05,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2026-09,#CORDEX-CORE

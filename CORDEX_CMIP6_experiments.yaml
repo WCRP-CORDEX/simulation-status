@@ -64,6 +64,12 @@ EUR-12:
       This experiment explores RCM internal variability by perturbing the initial
       conditions or other slight changes (e.g. HPC machine sensitivity)
 
+  PeriodExtension:
+    title: Period extensions
+    description: >
+      This experiment explores longer simulation periods, either scenario extensions
+      beyond 2100, or historical extensions before 1950.
+
   ManyGCM:
     title: Many-GCM experiment
     description: >
