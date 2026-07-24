@@ -1,4 +1,5 @@
 domain_id,institution_id,contact,source_id,driving_source_id,driving_variant_label,driving_experiment_id,status,estimated_completion_date,comments
+AFR-12,CLMcom-CMCC,M. Raffa / M. Adinolfi / A. Campanale,ICON-CLM,ERA5,,evaluation,running,2026-10,
 AFR-12,GERICS,C. Teichmann,REMO2020-2-2,ERA5,,evaluation,planned,2026-09,#CORDEX-CORE
 AFR-12,GERICS,C. Teichmann,REMO2020-2-2,EC-Earth3-Veg,r1i1p1f1,historical,planned,2026-12,#CORDEX-CORE
 AFR-12,GERICS,C. Teichmann,REMO2020-2-2,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2026-12,#CORDEX-CORE
