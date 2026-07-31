@@ -34,8 +34,8 @@ esgf:
     comment: Did not respond to the survey, but is planning to host some extra CORDEX-CMIP6 data
     accepting_requests: null 
     simulations:
-      # From G. Giuliani (pers. comm.)
-      - institution_id: ICTP
+      # From G. Giuliani, A. Anav, M. Adinolfi (pers. comm.)
+      - institution_id: [ICTP, ENEA, CMCC]
 
   - name: Ouranos
     url: https://esgf.ouranos.ca/
@@ -111,19 +111,6 @@ esgf:
       - domain_id: AUS-20i
         institution_id: [BARPA-R1-NN, BOM, UQ-DEC, CSIRO, UQ-DEC, NSW-DPE]
 
-  - name: CMCC
-    url: https://esgf-node2.cmcc.it
-    index: east
-    status: unmigrated
-    volume: 10
-    comment: Will not migrate to ESGF-NG.
-    accepting_requests: False
-    simulations:
-      # From G. Ceci's answer
-      - domain_id: EUR-12
-        institution_id: CLMcom-CMCC
-        source_id: [CCLM6-0-1, CCLM6-0-1-URB]
-        driving_source_id: [CMCC-CM2-SR5, ERA5]
 
   - name: RU-CORE
     url: https://esg-dn1.ru.ac.th
@@ -182,11 +169,14 @@ esgf:
 
   - name: ORNL
     url: null
-    index: east
+    index: west
     status: planned
-    volume: null
+    volume: 1500
     comment: Will prioritize CORDEX-NA and non-1hr CORE variables, but open to host more.
     accepting_requests: True
+    simulations:
+      # F. Hoffman (pers. comm.)
+      - source_id: WRF461U
 
 non-esgf:
 
