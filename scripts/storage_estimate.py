@@ -18,12 +18,12 @@ experiment_factor = {'evaluation': 2020-1980+1, 'historical': 2014-1961+1}
 experiment_factor_default = 2100-2015+1
 
 domains = pd.read_csv(
-  'https://raw.githubusercontent.com/WCRP-CORDEX/domain-tables/refs/heads/main/CORDEX-CMIP5_rotated_grids.csv',
-  usecols=['domain_id', 'nlon', 'nlat']
+  'https://raw.githubusercontent.com/WCRP-CORDEX/domain-tables/refs/heads/main/CORDEX-CMIP6_grids.csv',
+  usecols=['domain_id', 'n_longitude', 'n_latitude']
 )
-domains['ngridcells'] = domains['nlon'] * domains['nlat']
+domains['ngridcells'] = domains['n_longitude'] * domains['n_latitude']
 ngridcells = (domains
-  .drop(columns=['nlon', 'nlat'])
+  .drop(columns=['n_longitude', 'n_latitude'])
   .set_index('domain_id')
   .to_dict()
   .get('ngridcells')
@@ -35,15 +35,19 @@ ngridcells['MED-25'] = ngridcells['MED-12']/4
 ngridcells['SEA-12'] = ngridcells['SEA-25']*4
 ngridcells['AFR-18'] = ngridcells['AFR-25']*2
 ngridcells['WAS-18'] = ngridcells['WAS-25']*2
+ngridcells['CAM-18'] = ngridcells['CAM-25']*2
 
 plans = pd.read_csv(
   'https://raw.githubusercontent.com/WCRP-CORDEX/simulation-status/refs/heads/main/CMIP6_downscaling_plans.csv',
-  usecols=['domain_id', 'institution_id', 'driving_experiment_id', 'status', 'comments']
+  usecols=['domain_id', 'institution_id', 'source_id', 'driving_experiment_id', 'status', 'comments']
 ).query('status in @statuses')
 
 # Filter out ESD plans as their output will likely contain very
 # limited variables and maximum at daily frequency
 plans = plans[~plans['comments'].str.contains('#ESD', na=False)]
+
+# /!\ Only WRF
+#plans = plans[plans['source_id'].str.contains('WRF', na=False)]
 
 simulation_count = plans.pivot_table(
   index = 'domain_id',
