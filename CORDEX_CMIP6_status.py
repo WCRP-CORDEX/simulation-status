@@ -1,10 +1,10 @@
 import pandas as pd
 from funs import html_header, html_footer, html_legend, table_props
-from funs import add_registration_info, generate_domain_table
+from funs import add_registration_info, generate_domain_table, load_cmip6_plans_with_publication_overlay
 
 collapse_institutions = True
 
-plans = pd.read_csv('CMIP6_downscaling_plans.csv', na_filter=False)
+plans = load_cmip6_plans_with_publication_overlay('CMIP6_downscaling_plans.csv')
 plans = add_registration_info(plans, cmip_era='CMIP6')
 domain_ids = sorted(list(set(plans.domain_id)))
 

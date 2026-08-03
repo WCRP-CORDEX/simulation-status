@@ -1,8 +1,11 @@
 import datetime
+import os
 import pandas as pd
 import requests
+import time
 from functools import reduce
 from operator import and_, or_
+from urllib.parse import parse_qs, urlencode, urlparse, urlunparse
 
 
 span_style = '''
@@ -70,6 +73,16 @@ html_legend = '''
 '''
 
 table_props = [('width', '100px')]
+
+
+CMIP6_SIMULATION_KEYS = [
+  'domain_id',
+  'institution_id',
+  'source_id',
+  'driving_source_id',
+  'driving_variant_label',
+  'driving_experiment_id',
+]
 
 def html_header(title = 'CORDEX-CMIP6 downscaling plans', mip_era='CMIP6'):
   return(f'''<!DOCTYPE html>
@@ -444,3 +457,221 @@ def assign_node_to_sim(simulations, nodes):
     sims.loc[hosted.index, 'node_index'] = i
 
   return sims
+
+
+def _normalize_variant_label(experiment_id, variant_label):
+  """Normalize variant labels to match the plans CSV convention."""
+  if str(experiment_id).strip().lower() == 'evaluation':
+    return ''
+  if pd.isna(variant_label):
+    return ''
+  return str(variant_label).strip()
+
+
+def _extract_asset_nodes(assets):
+  """Extract hosting node names from STAC assets, ignoring globus endpoints."""
+  def _clean_node(node_name):
+    if not node_name:
+      return None
+    node_name = str(node_name).strip()
+    if not node_name:
+      return None
+    if 'globus' in node_name.lower():
+      return None
+    return node_name
+
+  nodes = set()
+  for asset in (assets or {}).values():
+    if not isinstance(asset, dict):
+      continue
+
+    # Prefer alternate:name from STAC metadata when available.
+    alt_name = _clean_node(asset.get('alternate:name'))
+    if alt_name:
+      nodes.add(alt_name)
+      continue
+
+    href = asset.get('href', '')
+    if href:
+      host = urlparse(str(href)).hostname
+      host = _clean_node(host)
+      if host:
+        nodes.add(host)
+  return nodes
+
+
+def _version_to_yyyy_mm(version_value):
+  """Convert version format vYYYYMMDD or YYYYMMDD to YYYY-MM."""
+  s = str(version_value)
+  return f'{s[1:5]}-{s[5:7]}' if s.startswith('v') else f'{s[0:4]}-{s[4:6]}'
+
+
+def _iter_stac_features(items_url, timeout=60, paginate=True, limit=20000):
+  """Yield STAC features with optional rel=next pagination traversal."""
+  next_url = _ensure_limit_query(items_url, default_limit=limit)
+
+  if not paginate:
+    payload = _get_json_with_retries(next_url, timeout=timeout)
+    for feature in payload.get('features', []):
+      yield feature
+
+    number_returned = payload.get('numberReturned')
+    number_matched = payload.get('numberMatched')
+    if number_returned is not None and number_matched is not None and number_returned < number_matched:
+      print(
+        'Warning: STAC single-request mode returned '
+        f'{number_returned}/{number_matched} items. '
+        'Enable paginate=True for full traversal.'
+      )
+    return
+
+  seen_urls = set()
+  while next_url:
+    if next_url in seen_urls:
+      raise RuntimeError(f'Pagination loop detected in STAC response for URL: {next_url}')
+    seen_urls.add(next_url)
+
+    payload = _get_json_with_retries(next_url, timeout=timeout)
+
+    for feature in payload.get('features', []):
+      yield feature
+
+    next_link = None
+    for link in payload.get('links', []):
+      if link.get('rel') == 'next':
+        next_link = link.get('href')
+        break
+    next_url = next_link
+
+
+def _ensure_limit_query(items_url, default_limit=20000):
+  """Attach a sensible limit to STAC item queries if not present."""
+  parsed = urlparse(items_url)
+  query = parse_qs(parsed.query, keep_blank_values=True)
+  if 'limit' not in query:
+    query['limit'] = [str(default_limit)]
+    return urlunparse(parsed._replace(query=urlencode(query, doseq=True)))
+  return items_url
+
+
+def _get_json_with_retries(url, timeout=60, max_attempts=8, backoff_base_seconds=1.5):
+  """Fetch JSON with retry/backoff for transient STAC API failures."""
+  for attempt in range(1, max_attempts + 1):
+    try:
+      response = requests.get(url, timeout=timeout)
+      response.raise_for_status()
+      return response.json()
+    except requests.exceptions.RequestException as err:
+      status_code = getattr(getattr(err, 'response', None), 'status_code', None)
+      retriable = status_code in [429, 500, 502, 503, 504] or status_code is None
+      if attempt >= max_attempts or not retriable:
+        raise
+
+      wait_s = min(60.0, backoff_base_seconds * (2 ** (attempt - 1)))
+      print(
+        f'Warning: STAC request failed (attempt {attempt}/{max_attempts}, '
+        f'status={status_code}) for {url}. Retrying in {wait_s:.1f}s...'
+      )
+      time.sleep(wait_s)
+
+
+def get_cmip6_stac_publication_table(
+  items_url='https://api.stac.esgf.ceda.ac.uk/collections/CORDEX-CMIP6/items',
+  timeout=60,
+  paginate=True,
+  limit=20000,
+):
+  """Build simulation-level publication metadata from CORDEX-CMIP6 STAC items."""
+  rows = []
+  for feature in _iter_stac_features(
+    items_url=items_url,
+    timeout=timeout,
+    paginate=paginate,
+    limit=limit,
+  ):
+    props = feature.get('properties', {})
+    if not props.get('latest', False):
+      continue
+    if props.get('retracted', False):
+      continue
+
+    row = {
+      'domain_id': str(props.get('cordex-cmip6:domain_id', '')).strip(),
+      'institution_id': str(props.get('cordex-cmip6:institution_id', '')).strip(),
+      'source_id': str(props.get('cordex-cmip6:source_id', '')).strip(),
+      'driving_source_id': str(props.get('cordex-cmip6:driving_source_id', '')).strip(),
+      'driving_experiment_id': str(props.get('cordex-cmip6:driving_experiment_id', '')).strip(),
+      'driving_variant_label': _normalize_variant_label(
+        props.get('cordex-cmip6:driving_experiment_id', ''),
+        props.get('cordex-cmip6:driving_variant_label', ''),
+      ),
+      'estimated_completion_date': _version_to_yyyy_mm(props.get('version', '')),
+      'asset_nodes': _extract_asset_nodes(feature.get('assets')),
+      'n_datasets': 1,
+    }
+
+    if all(row[k] for k in ['domain_id', 'institution_id', 'source_id', 'driving_source_id', 'driving_experiment_id']):
+      rows.append(row)
+
+  if not rows:
+    return pd.DataFrame(columns=CMIP6_SIMULATION_KEYS + ['data_node', 'n_datasets'])
+
+  stac = pd.DataFrame(rows)
+  grouped = stac.groupby(CMIP6_SIMULATION_KEYS, as_index=False).agg(
+    estimated_completion_date=('estimated_completion_date', 'max'),
+    asset_nodes=('asset_nodes', lambda values: sorted(set().union(*values))),
+    n_datasets=('n_datasets', 'sum'),
+  )
+  grouped['data_node'] = grouped['asset_nodes'].apply(lambda nodes: ';'.join(nodes))
+  grouped.drop(columns=['asset_nodes'], inplace=True)
+  return grouped
+
+
+def apply_cmip6_publication_overlay(plans, publication, report_missing=True):
+  """Apply STAC publication metadata to a plans dataframe without any STAC calls."""
+  merged = plans.copy()
+
+  plan_key_map = merged.groupby(CMIP6_SIMULATION_KEYS, sort=False).indices
+  missing_publications = []
+
+  for _, pub_row in publication.iterrows():
+    key = tuple(pub_row[k] for k in CMIP6_SIMULATION_KEYS)
+    if key in plan_key_map:
+      idx = list(plan_key_map[key])
+      merged.loc[idx, 'status'] = 'published'
+      if pub_row.get('estimated_completion_date', ''):
+        merged.loc[idx, 'estimated_completion_date'] = pub_row['estimated_completion_date']
+    else:
+      missing_publications.append(pub_row)
+
+  if report_missing:
+    print(f'Published simulations found in plans: {len(publication) - len(missing_publications)}')
+    print(f'Published simulations missing from plans: {len(missing_publications)}')
+    if missing_publications:
+      missing_df = pd.DataFrame(missing_publications)
+      cols = CMIP6_SIMULATION_KEYS + ['estimated_completion_date', 'n_datasets', 'data_node']
+      print('\nPublished simulations missing from plans (first 20):')
+      print(missing_df[cols].head(20).to_string(index=False))
+
+  return merged
+
+
+def load_cmip6_plans_with_publication_overlay(
+  plans_csv='CMIP6_downscaling_plans.csv',
+  cache_csv='CMIP6_downscaling_plans_merged.csv',
+  report_missing=True,
+  use_cache=True,
+  refresh_cache=False,
+):
+  """Load the local merged cache; never call STAC from this helper."""
+  plans = pd.read_csv(plans_csv, na_filter=False)
+
+  if use_cache and not refresh_cache and os.path.exists(cache_csv):
+    cached = pd.read_csv(cache_csv, na_filter=False)
+    if list(cached.columns) == list(plans.columns):
+      return cached
+    print(f'Ignoring outdated cache schema in {cache_csv}; falling back to {plans_csv}.')
+
+  return plans
+
+

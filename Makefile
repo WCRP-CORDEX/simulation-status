@@ -15,6 +15,9 @@ update-cmip7:
 update-esgf:
 	python CORDEX_CMIP5_status_by_scenario.py
 
+update-cordex-cmip6-published:
+	python CORDEX_CMIP6_published_simulations.py
+
 global-progress:
 	python scripts/summary_table.py
 	python scripts/ecd_series.py

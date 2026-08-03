@@ -1,9 +1,17 @@
 import datetime
+import os
 import pandas as pd
 from funs import *
 
+merged_csv = 'CMIP6_downscaling_plans_merged.csv'
+plans = load_cmip6_plans_with_publication_overlay(
+  plans_csv='CMIP6_downscaling_plans.csv',
+  cache_csv=merged_csv,
+)
+source_csv = merged_csv if os.path.exists(merged_csv) else 'CMIP6_downscaling_plans.csv'
+
 csv2datatable(
-  'CMIP6_downscaling_plans.csv',
+  source_csv,
   'docs/CMIP6_downscaling_plans.html',
   title = 'CORDEX CMIP6 downscaling plans',
   intro = f'''
