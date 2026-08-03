@@ -35,7 +35,7 @@ esgf:
     accepting_requests: null 
     simulations:
       # From G. Giuliani, A. Anav, M. Adinolfi (pers. comm.)
-      - institution_id: [ICTP, ENEA, CMCC]
+      - institution_id: [ICTP, ENEA, CMCC, CLMcom-CMCC]
 
   - name: Ouranos
     url: https://esgf.ouranos.ca/
