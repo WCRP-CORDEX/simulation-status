@@ -14,7 +14,7 @@ def plot_simulation_progress(domain, bar_width=15):
     else:
         domain_data = data.copy()
     domain_data = domain_data.query("~comments.str.contains('#ESD', na = False)").copy()
-    valid_status = ['planned', 'running', 'completed']
+    valid_status = ['planned', 'running', 'completed', 'published']
     domain_data = domain_data.query("status in @valid_status").copy()
 
     domain_data['estimated_completion_date'] = pd.to_datetime(
@@ -23,13 +23,13 @@ def plot_simulation_progress(domain, bar_width=15):
 
     now = pd.Timestamp.now()
     #now = pd.Timestamp('2024-01-28')
-    future_completed_simulations = domain_data.query("status == 'completed' and estimated_completion_date > @now")
+    future_completed_simulations = domain_data.query("status in ['completed', 'published'] and estimated_completion_date > @now")
     if not future_completed_simulations.empty:
-        print(f"Warning: {len(future_completed_simulations)} completed simulations have dates in the future:")
+        print(f"Warning: {len(future_completed_simulations)} completed/published simulations have dates in the future:")
         print(future_completed_simulations)
-    past_incomplete_simulations = domain_data.query("status != 'completed' and estimated_completion_date < @now")
+    past_incomplete_simulations = domain_data.query("status in ['planned', 'running'] and estimated_completion_date < @now")
     if not past_incomplete_simulations.empty:
-        print(f"Warning: {len(past_incomplete_simulations)} uncomplete simulations have dates in the past:")
+        print(f"Warning: {len(past_incomplete_simulations)} incomplete simulations have dates in the past:")
         print(past_incomplete_simulations)
 
     # Handle simulations with past estimated completion dates
@@ -52,6 +52,7 @@ def plot_simulation_progress(domain, bar_width=15):
 
     # Count the simulations by status
     status_counts = domain_data['status'].value_counts()
+    published_count = status_counts.get('published', 0)
     completed_count = status_counts.get('completed', 0)
     running_count = status_counts.get('running', 0)
     planned_count = status_counts.get('planned', 0)
@@ -70,9 +71,9 @@ def plot_simulation_progress(domain, bar_width=15):
     ax1.set_ylabel('Cumulative Simulations')
 
     # Create a single stacked bar for today's counts
-    heights = [completed_count, running_count, planned_count]
-    colors = ['black', '#009900', '#F54d4d']
-    labels = ['Completed', 'Running', 'Planned']
+    heights = [published_count, completed_count, running_count, planned_count]
+    colors = ['#3399FF', 'black', '#009900', '#F54d4d']
+    labels = ['Published', 'Completed', 'Running', 'Planned']
 
     # Draw the stacked bar segments
     bottom = 0
