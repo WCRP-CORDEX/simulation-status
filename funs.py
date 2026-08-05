@@ -5,7 +5,7 @@ import requests
 import time
 from functools import reduce
 from operator import and_, or_
-from urllib.parse import parse_qs, urlencode, urlparse, urlunparse
+from urllib.parse import parse_qs, urlencode, urljoin, urlparse, urlunparse
 
 
 span_style = '''
@@ -506,7 +506,7 @@ def _version_to_yyyy_mm(version_value):
   return f'{s[1:5]}-{s[5:7]}' if s.startswith('v') else f'{s[0:4]}-{s[4:6]}'
 
 
-def _iter_stac_features(items_url, timeout=60, paginate=True, limit=20000):
+def _iter_stac_features(items_url, timeout=60, paginate=True, limit=1000):
   """Yield STAC features with optional rel=next pagination traversal."""
   next_url = _ensure_limit_query(items_url, default_limit=limit)
 
@@ -526,6 +526,7 @@ def _iter_stac_features(items_url, timeout=60, paginate=True, limit=20000):
     return
 
   seen_urls = set()
+  yielded_count = 0
   while next_url:
     if next_url in seen_urls:
       raise RuntimeError(f'Pagination loop detected in STAC response for URL: {next_url}')
@@ -534,6 +535,7 @@ def _iter_stac_features(items_url, timeout=60, paginate=True, limit=20000):
     payload = _get_json_with_retries(next_url, timeout=timeout)
 
     for feature in payload.get('features', []):
+      yielded_count += 1
       yield feature
 
     next_link = None
@@ -541,10 +543,17 @@ def _iter_stac_features(items_url, timeout=60, paginate=True, limit=20000):
       if link.get('rel') == 'next':
         next_link = link.get('href')
         break
-    next_url = next_link
+    number_matched = payload.get('numberMatched')
+    if not next_link and number_matched is not None and yielded_count < number_matched:
+      print(
+        'Warning: STAC pagination appears truncated: '
+        f'fetched {yielded_count}/{number_matched} items but no rel=next link was provided. '
+        'Try reducing limit further.'
+      )
+    next_url = urljoin(next_url, next_link) if next_link else None
 
 
-def _ensure_limit_query(items_url, default_limit=20000):
+def _ensure_limit_query(items_url, default_limit=1000):
   """Attach a sensible limit to STAC item queries if not present."""
   parsed = urlparse(items_url)
   query = parse_qs(parsed.query, keep_blank_values=True)
@@ -579,10 +588,12 @@ def get_cmip6_stac_publication_table(
   items_url='https://api.stac.esgf.ceda.ac.uk/collections/CORDEX-CMIP6/items',
   timeout=60,
   paginate=True,
-  limit=20000,
+  limit=1000,
+  dataset_ids_txt='CORDEX-CMIP6_dataset_ids.txt',
 ):
   """Build simulation-level publication metadata from CORDEX-CMIP6 STAC items."""
   rows = []
+  dataset_ids = []
   for feature in _iter_stac_features(
     items_url=items_url,
     timeout=timeout,
@@ -594,6 +605,10 @@ def get_cmip6_stac_publication_table(
       continue
     if props.get('retracted', False):
       continue
+
+    dataset_id = str(feature.get('id', '')).strip()
+    if dataset_id:
+      dataset_ids.append(dataset_id)
 
     row = {
       'domain_id': str(props.get('cordex-cmip6:domain_id', '')).strip(),
@@ -612,6 +627,12 @@ def get_cmip6_stac_publication_table(
 
     if all(row[k] for k in ['domain_id', 'institution_id', 'source_id', 'driving_source_id', 'driving_experiment_id']):
       rows.append(row)
+
+  if dataset_ids_txt:
+    with open(dataset_ids_txt, 'w') as f:
+      f.write('\n'.join(dataset_ids))
+      if dataset_ids:
+        f.write('\n')
 
   if not rows:
     return pd.DataFrame(columns=CMIP6_SIMULATION_KEYS + ['data_node', 'n_datasets'])
@@ -643,6 +664,25 @@ def apply_cmip6_publication_overlay(plans, publication, report_missing=True):
         merged.loc[idx, 'estimated_completion_date'] = pub_row['estimated_completion_date']
     else:
       missing_publications.append(pub_row)
+
+  if missing_publications:
+    # Add published simulations that were not declared in plans.
+    missing_df = pd.DataFrame(missing_publications)
+    appended = pd.DataFrame(columns=merged.columns)
+
+    for column in merged.columns:
+      if column in missing_df.columns:
+        appended[column] = missing_df[column]
+      elif column == 'contact':
+        appended[column] = 'unknown'
+      elif column == 'comments':
+        appended[column] = 'Not declared in CMIP6 downscaling plans'
+      elif column == 'status':
+        appended[column] = 'published'
+      else:
+        appended[column] = ''
+
+    merged = pd.concat([merged, appended], ignore_index=True)
 
   if report_missing:
     print(f'Published simulations found in plans: {len(publication) - len(missing_publications)}')

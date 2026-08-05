@@ -1,10 +1,12 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import datetime
+from pathlib import Path
 
 def plot_simulation_progress(domain, bar_width=15):
-    url = "https://raw.githubusercontent.com/WCRP-CORDEX/simulation-status/refs/heads/main/CMIP6_downscaling_plans.csv"
-    url = "CMIP6_downscaling_plans.csv"
+    url = Path("CMIP6_downscaling_plans_merged.csv")
+    if not url.exists():
+        url = Path("CMIP6_downscaling_plans.csv")
     data = pd.read_csv(url)
     if domain != 'all':
         #domain_data = data.query("domain_id == @domain and comments.str.contains('#EURbalanced')").copy()
