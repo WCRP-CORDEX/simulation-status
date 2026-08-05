@@ -1,11 +1,11 @@
 import numpy as np
 import pandas as pd
 import yaml
-from funs import html_header, html_footer, html_legend, table_props
+from funs import html_header, html_footer, html_legend, table_props, load_cmip6_plans_with_publication_overlay
 
 collapse_institutions = True
 
-plans = pd.read_csv('CMIP6_downscaling_plans.csv', na_filter=False)
+plans = load_cmip6_plans_with_publication_overlay('CMIP6_downscaling_plans.csv')
 
 with open('CORDEX_CMIP6_experiments.yaml') as fp:
   config = yaml.load(fp, Loader=yaml.FullLoader)

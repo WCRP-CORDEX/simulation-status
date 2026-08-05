@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 import pandas as pd
-from funs import html_header, html_footer, html_legend, table_props
+from funs import html_header, html_footer, html_legend, table_props, load_cmip6_plans_with_publication_overlay
 
-df = pd.read_csv('CMIP6_downscaling_plans.csv')
+df = load_cmip6_plans_with_publication_overlay('CMIP6_downscaling_plans.csv')
 
 # Drop unnecessary columns
 df.drop(

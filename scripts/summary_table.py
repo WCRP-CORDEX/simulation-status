@@ -167,7 +167,9 @@ def main() -> None:
     )
     args = parser.parse_args()
     
-    csv_path = Path("CMIP6_downscaling_plans.csv")
+    csv_path = Path("CMIP6_downscaling_plans_merged.csv")
+    if not csv_path.exists():
+        csv_path = Path("CMIP6_downscaling_plans.csv")
     
     # Determine output file name based on detail level
     if args.detailed:
