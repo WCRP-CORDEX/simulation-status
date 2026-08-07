@@ -1,5 +1,6 @@
 domain_id,institution_id,source_id,driving_source_id,driving_variant_label,driving_experiment_id,status,estimated_completion_date,data_node,n_datasets
-CAM-25,CNRM,CNRM-ALADIN64C1,ERA5,,evaluation,published,2026-07,esgf.ipsl.fr,9
+CAM-25,CNRM,CNRM-ALADIN64C1,ERA5,,evaluation,published,2026-07,esgf.ipsl.fr,375
+CAM-25,CNRM,CNRM-ALADIN64C1,NorESM2-MM,r1i1p1f1,historical,published,2026-08,esgf.ipsl.fr,377
 EUR-12,CLMcom-BTU,ICON-CLM-202407-1-1,CNRM-ESM2-1,r1i1p1f2,historical,published,2026-04,esgf1.dkrz.de,433
 EUR-12,CLMcom-BTU,ICON-CLM-202407-1-1,CNRM-ESM2-1,r1i1p1f2,ssp126,published,2026-04,esgf1.dkrz.de,433
 EUR-12,CLMcom-BTU,ICON-CLM-202407-1-1,CNRM-ESM2-1,r1i1p1f2,ssp245,published,2026-04,esgf1.dkrz.de,438
