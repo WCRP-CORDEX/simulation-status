@@ -69,14 +69,18 @@ def generate_non_esgf_table(servers):
 
 
 def generate_esgf_table(servers):
-    sims = pd.read_csv('CMIP6_downscaling_plans.csv')
-    sims = assign_node_to_sim(sims, servers)
+    plans = pd.read_csv('CMIP6_downscaling_plans.csv')
+    plans = assign_node_to_sim(plans, servers)
+    hostable = plans[plans.node_index != -1]
+
+    published = pd.read_csv('CMIP6_downscaling_published.csv')
+    node_urls = [s['url'] for s in servers]
+    published['node_index'] = published.data_node.apply(node_urls.index)
 
     nodes = pd.DataFrame(servers).drop(columns=['simulations'])
 
-    hosted = sims[sims.node_index != -1]
-    nodes['sim_pub'] = hosted[hosted.status == 'published'].groupby('node_index').domain_id.count()
-    nodes['sim_tot'] = hosted.groupby('node_index').domain_id.count()
+    nodes['sim_pub'] = published.groupby('node_index').domain_id.count()
+    nodes['sim_tot'] = hostable.groupby('node_index').domain_id.count()
     nodes['sim_pub'] = nodes['sim_pub'].fillna(0)
     nodes['sim_tot'] = nodes['sim_tot'].fillna(0)
     nodes['sim_count'] = nodes.apply(lambda row: f"{row.sim_pub:.0f} ({row.sim_tot:.0f} planned)", axis=1)
@@ -85,7 +89,7 @@ def generate_esgf_table(servers):
     nodes = nodes[['name', 'status', 'comment', 'index', 'accepting_requests', 'volume', 'sim_count', 'url']]
 
     # CSV with non-published simulations, for power users only.
-    orphans = sims[sims.node_index == -1].drop(columns=['node_name', 'node_url', 'node_index'])
+    orphans = plans[plans.node_index == -1].drop(columns=['node_name', 'node_url', 'node_index'])
     orphans.to_csv('docs/CORDEX_CMIP6_orphan_simulations.csv', index=False)
     # Create temporary CSV for processing and ensure cleanup
     with tempfile.NamedTemporaryFile(mode='w', suffix='.csv', delete=False) as tmp_file:
@@ -131,7 +135,6 @@ def generate_esgf_table(servers):
             title=title, 
             intro=intro, 
             rename_fields=rename_fields,
-            column_as_link='url',
         )
 
         print(f"Generated {htmlout} from Yaml file.")
