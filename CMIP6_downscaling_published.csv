@@ -1,4 +1,6 @@
 domain_id,institution_id,source_id,driving_source_id,driving_variant_label,driving_experiment_id,status,estimated_completion_date,data_node,n_datasets
+AUS-25,IRD-MF,CNRM-ALADIN64P1,CNRM-ESM2-1,r1i1p1f2,historical,published,2026-08,esgf.ipsl.fr,362
+AUS-25,IRD-MF,CNRM-ALADIN64P1,ERA5,,evaluation,published,2026-08,esgf.ipsl.fr,359
 CAM-25,CNRM,CNRM-ALADIN64C1,ERA5,,evaluation,published,2026-07,esgf.ipsl.fr,379
 CAM-25,CNRM,CNRM-ALADIN64C1,NorESM2-MM,r1i1p1f1,historical,published,2026-08,esgf.ipsl.fr,379
 CAM-25,CNRM,CNRM-ALADIN64C1,NorESM2-MM,r1i1p1f1,ssp585,published,2026-08,esgf.ipsl.fr,379
@@ -37,12 +39,12 @@ EUR-12,CNRM-MF,CNRM-ALADIN64E1,CMCC-CM2-SR5,r1i1p1f1,historical,published,2026-0
 EUR-12,CNRM-MF,CNRM-ALADIN64E1,CMCC-CM2-SR5,r1i1p1f1,ssp126,published,2026-08,esgf.ipsl.fr,379
 EUR-12,CNRM-MF,CNRM-ALADIN64E1,CMCC-CM2-SR5,r1i1p1f1,ssp370,published,2026-07,esgf.ipsl.fr,379
 EUR-12,CNRM-MF,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp126,published,2026-08,esgf.ipsl.fr,376
-EUR-12,CNRM-MF,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp245,published,2026-08,esgf.ipsl.fr,378
-EUR-12,CNRM-MF,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp370,published,2026-08,esgf.ipsl.fr,360
+EUR-12,CNRM-MF,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp245,published,2026-08,esgf.ipsl.fr,379
+EUR-12,CNRM-MF,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp370,published,2026-08,esgf.ipsl.fr,377
 EUR-12,CNRM-MF,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp585,published,2026-08,esgf.ipsl.fr,379
 EUR-12,CNRM-MF,CNRM-ALADIN64E1,ERA5,,evaluation,published,2026-06,esgf.ipsl.fr,379
 EUR-12,CNRM-MF,CNRM-ALADIN64E1,NorESM2-MM,r1i1p1f1,historical,published,2026-08,esgf.ipsl.fr,379
-EUR-12,CNRM-MF,CNRM-ALADIN64E1,NorESM2-MM,r1i1p1f1,ssp126,published,2026-08,esgf.ipsl.fr,378
+EUR-12,CNRM-MF,CNRM-ALADIN64E1,NorESM2-MM,r1i1p1f1,ssp126,published,2026-08,esgf.ipsl.fr,379
 EUR-12,CNRM-MF,CNRM-ALADIN64E1,NorESM2-MM,r1i1p1f1,ssp370,published,2026-08,esgf.ipsl.fr,379
 EUR-12,CNRM-MF,CNRM-ALADIN64E1,NorESM2-MM,r1i1p1f1,ssp585,published,2026-08,esgf.ipsl.fr,375
 NAM-12,OURANOS,CRCM5-SN,CNRM-ESM2-1,r1i1p1f2,historical,published,2026-05,esgf.ouranos.ca,263
