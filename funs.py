@@ -702,8 +702,9 @@ def load_cmip6_plans_with_publication_overlay(
   report_missing=True,
   use_cache=True,
   refresh_cache=False,
+  publication_csv='CMIP6_downscaling_published.csv',
 ):
-  """Load the local merged cache; never call STAC from this helper."""
+  """Load or build the local merged cache; never call STAC from this helper."""
   plans = pd.read_csv(plans_csv, na_filter=False)
 
   if use_cache and not refresh_cache and os.path.exists(cache_csv):
@@ -711,6 +712,17 @@ def load_cmip6_plans_with_publication_overlay(
     if list(cached.columns) == list(plans.columns):
       return cached
     print(f'Ignoring outdated cache schema in {cache_csv}; falling back to {plans_csv}.')
+
+  if os.path.exists(publication_csv):
+    publication = pd.read_csv(publication_csv, na_filter=False)
+    merged = apply_cmip6_publication_overlay(
+      plans,
+      publication,
+      report_missing=report_missing,
+    )
+    merged.to_csv(cache_csv, index=False)
+    print(f'Wrote {cache_csv}')
+    return merged
 
   return plans
 
