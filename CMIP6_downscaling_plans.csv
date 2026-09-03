@@ -261,11 +261,11 @@ CAM-12,ORNL,M. Ashfaq,RegCM5-0,MPI-ESM1-2-HR,r1i1p1f1,ssp370,running,2026-09,#CO
 CAM-12,ORNL,M. Ashfaq,RegCM5-0,NorESM2-MM,r1i1p1f1,historical,completed,2026-07,#CORDEX-CORE
 CAM-12,ORNL,M. Ashfaq,RegCM5-0,NorESM2-MM,r1i1p1f1,ssp370,running,2026-09,#CORDEX-CORE
 CAM-12,MOHC,E. Buonomo,HadREM3-GA7-05,ERA5,,evaluation,running,2026-09,#CORDEX-CORE
-CAM-12,MOHC,E. Buonomo,HadREM3-GA7-05,EC-Earth3-Veg,r1i1p1f1,historical,running,2026-09,#CORDEX-CORE
+CAM-12,MOHC,E. Buonomo,HadREM3-GA7-05,EC-Earth3-Veg,r1i1p1f1,historical,planned,2026-09,#CORDEX-CORE
 CAM-12,MOHC,E. Buonomo,HadREM3-GA7-05,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2026-09,#CORDEX-CORE
-CAM-12,MOHC,E. Buonomo,HadREM3-GA7-05,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2026-09,#CORDEX-CORE
+CAM-12,MOHC,E. Buonomo,HadREM3-GA7-05,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2026-09,#CORDEX-CORE
 CAM-12,MOHC,E. Buonomo,HadREM3-GA7-05,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2026-09,#CORDEX-CORE
-CAM-12,MOHC,E. Buonomo,HadREM3-GA7-05,NorESM2-MM,r1i1p1f1,historical,running,2026-09,#CORDEX-CORE
+CAM-12,MOHC,E. Buonomo,HadREM3-GA7-05,NorESM2-MM,r1i1p1f1,historical,planned,2026-09,#CORDEX-CORE
 CAM-12,MOHC,E. Buonomo,HadREM3-GA7-05,NorESM2-MM,r1i1p1f1,ssp370,planned,2026-09,#CORDEX-CORE
 CAM-18,BCCR,O. Gokturk / S. Sobolowski,WRF461U,ERA5,,evaluation,running,2026-09,#CORDEX-CORE
 CAM-18,CESGA,J.C. Fernandez-Alvarez,WRF461U,EC-Earth3-Veg,r1i1p1f1,historical,running,2026-10,#CORDEX-CORE
@@ -292,17 +292,10 @@ EAS-12,ICTP,E. Coppola,RegCM5-0,NorESM2-MM,r1i1p1f1,ssp370,running,2026-09,#CORD
 EAS-12,IUM-FDU,G. Zhang / J. Yuan,WRF461U,ERA5,,evaluation,running,2026-12,#CORDEX-CORE
 EAS-12,IUM-FDU,G. Zhang / J. Yuan,WRF461U,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2026-12,#CORDEX-CORE
 EAS-12,IUM-FDU,G. Zhang / J. Yuan,WRF461U,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2026-12,#CORDEX-CORE
-EAS-12,MOHC,E. Buonomo,HadREM3-GA7-05,ERA5,,evaluation,running,2026-09,#CORDEX-CORE
-EAS-12,MOHC,E. Buonomo,HadREM3-GA7-05,EC-Earth3-Veg,r1i1p1f1,historical,running,2026-09,#CORDEX-CORE
-EAS-12,MOHC,E. Buonomo,HadREM3-GA7-05,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2026-09,#CORDEX-CORE
-EAS-12,MOHC,E. Buonomo,HadREM3-GA7-05,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2026-09,#CORDEX-CORE
-EAS-12,MOHC,E. Buonomo,HadREM3-GA7-05,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2026-09,#CORDEX-CORE
-EAS-12,MOHC,E. Buonomo,HadREM3-GA7-05,NorESM2-MM,r1i1p1f1,historical,running,2026-09,#CORDEX-CORE
-EAS-12,MOHC,E. Buonomo,HadREM3-GA7-05,NorESM2-MM,r1i1p1f1,ssp370,planned,2026-09,#CORDEX-CORE
 EAS-12,UNIST,U. Han / D.-H. Cha,WRF461U,EC-Earth3-Veg,r1i1p1f1,historical,running,2026-09,#CORDEX-CORE
-EAS-12,UNIST,U. Han / D.-H. Cha,WRF461U,EC-Earth3-Veg,r1i1p1f1,ssp370,running,2026-12,#CORDEX-CORE
+EAS-12,UNIST,U. Han / D.-H. Cha,WRF461U,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2026-12,#CORDEX-CORE
 EAS-12,UNIST,U. Han / D.-H. Cha,WRF461U,NorESM2-MM,r1i1p1f1,historical,running,2026-09,#CORDEX-CORE
-EAS-12,UNIST,U. Han / D.-H. Cha,WRF461U,NorESM2-MM,r1i1p1f1,ssp370,running,2026-12,#CORDEX-CORE
+EAS-12,UNIST,U. Han / D.-H. Cha,WRF461U,NorESM2-MM,r1i1p1f1,ssp370,planned,2026-12,#CORDEX-CORE
 EAS-25,KNU,E.-C. Chang / U.-Y. Byun,GRIMs3-2,UKESM1-0-LL,r15i1p1f2,historical,completed,2022-12,see http://cordex-ea.climate.go.kr/cordex/models.do
 EAS-25,KNU,E.-C. Chang / U.-Y. Byun,GRIMs3-2,UKESM1-0-LL,r15i1p1f2,ssp126,completed,2022-12,
 EAS-25,KNU,E.-C. Chang / U.-Y. Byun,GRIMs3-2,UKESM1-0-LL,r15i1p1f2,ssp245,planned,2022-12,
@@ -328,12 +321,12 @@ EAS-25,UNIST,D.-H. Cha / S.-W. Shin,RegCM4-6,UKESM1-0-LL,r15i1p1f2,ssp126,comple
 EAS-25,UNIST,D.-H. Cha / S.-W. Shin,RegCM4-6,UKESM1-0-LL,r15i1p1f2,ssp245,planned,2022-12,
 EAS-25,UNIST,D.-H. Cha / S.-W. Shin,RegCM4-6,UKESM1-0-LL,r15i1p1f2,ssp370,planned,2022-12,
 EAS-25,UNIST,D.-H. Cha / S.-W. Shin,RegCM4-6,UKESM1-0-LL,r15i1p1f2,ssp585,completed,2022-12,
-EUR-12,EURO-CORDEX,,. Comunity selected GCMs,CMCC-CM2-SR5,r1i1p1f1,selected,selected,,Model selected in EURO-CORDEX GA 2022
-EUR-12,EURO-CORDEX,,. Comunity selected GCMs,CNRM-ESM2-1,r1i1p1f2,selected,selected,,Model selected in EURO-CORDEX GA 2022
-EUR-12,EURO-CORDEX,,. Comunity selected GCMs,EC-Earth3-Veg,r1i1p1f1,selected,selected,,Model selected in EURO-CORDEX GA 2022
-EUR-12,EURO-CORDEX,,. Comunity selected GCMs,MIROC6,r1i1p1f1,selected,selected,,Model selected in EURO-CORDEX GA 2022
-EUR-12,EURO-CORDEX,,. Comunity selected GCMs,MPI-ESM1-2-HR,r1i1p1f1,selected,selected,,Model selected in EURO-CORDEX GA 2022
-EUR-12,EURO-CORDEX,,. Comunity selected GCMs,NorESM2-MM,r1i1p1f1,selected,selected,,Model selected in EURO-CORDEX GA 2022
+EUR-12,EURO-CORDEX,,. Comunity selected GCMs,CMCC-CM2-SR5,r1i1p1f1,selected,selected,1900-01,Model selected in EURO-CORDEX GA 2022
+EUR-12,EURO-CORDEX,,. Comunity selected GCMs,CNRM-ESM2-1,r1i1p1f2,selected,selected,1900-01,Model selected in EURO-CORDEX GA 2022
+EUR-12,EURO-CORDEX,,. Comunity selected GCMs,EC-Earth3-Veg,r1i1p1f1,selected,selected,1900-01,Model selected in EURO-CORDEX GA 2022
+EUR-12,EURO-CORDEX,,. Comunity selected GCMs,MIROC6,r1i1p1f1,selected,selected,1900-01,Model selected in EURO-CORDEX GA 2022
+EUR-12,EURO-CORDEX,,. Comunity selected GCMs,MPI-ESM1-2-HR,r1i1p1f1,selected,selected,1900-01,Model selected in EURO-CORDEX GA 2022
+EUR-12,EURO-CORDEX,,. Comunity selected GCMs,NorESM2-MM,r1i1p1f1,selected,selected,1900-01,Model selected in EURO-CORDEX GA 2022
 EUR-12,AUTH,E. Katragkou / V. Pavlidis,WRF451Q,ERA5,,evaluation,completed,2026-05,#RCMintvar Realization r3
 EUR-12,AUTH,E. Katragkou / V. Pavlidis,WRF451Q,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2026-08,#EURbalanced #ManySSP #CORDEX-CORE
 EUR-12,AUTH,E. Katragkou / V. Pavlidis,WRF451Q,MPI-ESM1-2-HR,r1i1p1f1,ssp126,running,2026-12,#EURbalanced #ManySSP
@@ -402,9 +395,9 @@ EUR-12,CLMcom-BTU,A. Will,ICON-CLM-202407-1-1,CNRM-ESM2-1,r1i1p1f2,ssp245,comple
 EUR-12,CLMcom-BTU,A. Will,ICON-CLM-202407-1-1,CNRM-ESM2-1,r1i1p1f2,ssp370,completed,2025-08,#ManyGCM #ManySSP #UDAG
 EUR-12,CLMcom-BTU,A. Will,ICON-CLM-202407-1-1,CNRM-ESM2-1,r1i1p1f2,ssp585,completed,2025-12,#ManyGCM #ManySSP #UDAG
 EUR-12,CLMcom-ETH,M. Jaehn,ICON-CLM-202407-1-3,NorESM2-MM,r1i1p1f1,historical,completed,2025-09,#ManyGCM #ManySSP
-EUR-12,CLMcom-IMWM,A. Jaczewski,ICON-CLM-202407-1-3,NorESM2-MM,r1i1p1f1,ssp126,completed,2025-06,#ManyGCM #ManySSP
+EUR-12,CLMcom-IMWM,A. Jaczewski,ICON-CLM-202407-1-3,NorESM2-MM,r1i1p1f1,ssp126,running,2025-06,#ManyGCM #ManySSP
 EUR-12,CLMcom-ETH,M. Jaehn,ICON-CLM-202407-1-3,NorESM2-MM,r1i1p1f1,ssp245,completed,2025-12,#ManyGCM #ManySSP
-EUR-12,CLMcom-IMWM,A. Jaczewski,ICON-CLM-202407-1-3,NorESM2-MM,r1i1p1f1,ssp370,completed,2025-06,#ManyGCM #ManySSP
+EUR-12,CLMcom-IMWM,A. Jaczewski,ICON-CLM-202407-1-3,NorESM2-MM,r1i1p1f1,ssp370,planned,2025-06,#ManyGCM #ManySSP
 EUR-12,CLMcom-???,???,ICON-CLM-202407-1-3,NorESM2-MM,r1i1p1f1,ssp585,planned,2025-03,#ManyGCM #ManySSP
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI2-1,ERA5,,evaluation,planned,2026-12,#EURcoupled ORAS5 BC in the ocean
 EUR-12,CLMcom-Hereon,H. Hagemann,GCOAST-AHOI2-1,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2026-12,#EURcoupled
@@ -521,7 +514,7 @@ EUR-12,KNMI,C. T. van Dalum,RACMO23E,NorESM2-MM,r1i1p1f1,ssp370,completed,2024-0
 EUR-12,MOHC,E. Buonomo,HadREM3-GA7-05,ERA5,,evaluation,completed,2026-04,#CORDEX-CORE
 EUR-12,MOHC,E. Buonomo,HadREM3-GA7-05,EC-Earth3-Veg,r1i1p1f1,historical,completed,2026-06,#CORDEX-CORE
 EUR-12,MOHC,E. Buonomo,HadREM3-GA7-05,EC-Earth3-Veg,r1i1p1f1,ssp370,running,2026-09,#CORDEX-CORE
-EUR-12,MOHC,E. Buonomo,HadREM3-GA7-05,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2026-09,#CORDEX-CORE
+EUR-12,MOHC,E. Buonomo,HadREM3-GA7-05,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2026-09,#CORDEX-CORE
 EUR-12,MOHC,E. Buonomo,HadREM3-GA7-05,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2026-09,#CORDEX-CORE
 EUR-12,MOHC,E. Buonomo,HadREM3-GA7-05,NorESM2-MM,r1i1p1f1,historical,completed,2026-06,#CORDEX-CORE
 EUR-12,MOHC,E. Buonomo,HadREM3-GA7-05,NorESM2-MM,r1i1p1f1,ssp370,running,2026-09,#CORDEX-CORE
@@ -602,12 +595,12 @@ MED-12,ENEA,G. Sannino,ENEA-REG3,MPI-ESM1-2-HR,r1i1p1f1,ssp370,running,2025-12,
 MED-12,ENEA,G. Sannino,ENEA-REG3,EC-Earth3,r1i1p1f1,historical,running,2025-12,
 MED-12,ENEA,G. Sannino,ENEA-REG3,EC-Earth3,r1i1p1f1,ssp370,running,2025-12,
 MED-12,ICTP,E. Coppola,RegCM-ES1-1,ERA5,,evaluation,running,2025-09,
-MED-12,ICTP,E. Coppola,RegCM-ES1-1,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,,
-MED-12,ICTP,E. Coppola,RegCM-ES1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,,
-MED-12,ICTP,E. Coppola,RegCM-ES1-1,EC-Earth3-Veg,r1i1p1f1,historical,planned,,
-MED-12,ICTP,E. Coppola,RegCM-ES1-1,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,,
-MED-12,ICTP,E. Coppola,RegCM-ES1-1,NorESM2-MM,r1i1p1f1,historical,planned,,
-MED-12,ICTP,E. Coppola,RegCM-ES1-1,NorESM2-MM,r1i1p1f1,ssp370,planned,,
+MED-12,ICTP,E. Coppola,RegCM-ES1-1,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,1900-01,
+MED-12,ICTP,E. Coppola,RegCM-ES1-1,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,1900-01,
+MED-12,ICTP,E. Coppola,RegCM-ES1-1,EC-Earth3-Veg,r1i1p1f1,historical,planned,1900-01,
+MED-12,ICTP,E. Coppola,RegCM-ES1-1,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,1900-01,
+MED-12,ICTP,E. Coppola,RegCM-ES1-1,NorESM2-MM,r1i1p1f1,historical,planned,1900-01,
+MED-12,ICTP,E. Coppola,RegCM-ES1-1,NorESM2-MM,r1i1p1f1,ssp370,planned,1900-01,
 MED-12,IPSL,J. Polcher,RegIPSLv2,ERA5,,evaluation,planned,2023-12,
 MED-12,NKUA,J. Karagiorgos,MedX-CM,ERA5,,evaluation,planned,2025-12,
 MED-12,NKUA,J. Karagiorgos,MedX-CM,TBD,TBD,historical,planned,2026-12,
@@ -675,90 +668,143 @@ NAM-12,ORNL,M. Ashfaq,RegCM5-0,MPI-ESM1-2-HR,r1i1p1f1,ssp370,running,2026-06,#CO
 NAM-12,ORNL,M. Ashfaq,RegCM5-0,NorESM2-MM,r1i1p1f1,historical,running,2026-06,#CORDEX-CORE
 NAM-12,ORNL,M. Ashfaq,RegCM5-0,NorESM2-MM,r1i1p1f1,ssp370,running,2026-06,#CORDEX-CORE
 NAM-25,CCCma,J. Scinocca,CanRCM5-SN,ERA5,,evaluation,completed,2025-12,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r1i1p1f1,historical,completed,2025-12,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r2i1p1f1,historical,completed,2025-12,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r3i1p1f1,historical,completed,2025-12,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r4i1p1f1,historical,completed,2025-12,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r5i1p1f1,historical,completed,2025-12,
+NAM-25,CCCma,J.Scinocca,CanRCM5-SBCD,ERA5,r1i1p1f1,evaluation,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r1i1p1f1,historical,completed,2026-09,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r2i1p1f1,historical,completed,2026-09,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r3i1p1f1,historical,completed,2026-09,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r4i1p1f1,historical,completed,2026-09,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r5i1p1f1,historical,completed,2026-09,
 NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r1i1p1f1,ssp370,completed,2026-01,
 NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r2i1p1f1,ssp370,completed,2026-01,
 NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r3i1p1f1,ssp370,completed,2026-01,
 NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r4i1p1f1,ssp370,completed,2026-01,
 NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r5i1p1f1,ssp370,completed,2026-01,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r1i1p1f1,ssp126,completed,2026-02,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r2i1p1f1,ssp126,completed,2026-02,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r3i1p1f1,ssp126,completed,2026-02,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r4i1p1f1,ssp126,completed,2026-02,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r5i1p1f1,ssp126,completed,2026-02,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r1i1p1f1,ssp245,completed,2026-02,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r2i1p1f1,ssp245,completed,2026-02,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r3i1p1f1,ssp245,completed,2026-02,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r4i1p1f1,ssp245,completed,2026-02,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r5i1p1f1,ssp245,completed,2026-02,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r1i1p1f1,historical,planned,2026-03,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r2i1p1f1,historical,planned,2026-03,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r3i1p1f1,historical,planned,2026-03,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r4i1p1f1,historical,planned,2026-03,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r5i1p1f1,historical,planned,2026-03,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r1i1p1f1,ssp370,planned,2026-04,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r2i1p1f1,ssp370,planned,2026-04,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r3i1p1f1,ssp370,planned,2026-04,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r4i1p1f1,ssp370,planned,2026-04,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r5i1p1f1,ssp370,planned,2026-04,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r1i1p1f1,ssp126,planned,2026-04,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r2i1p1f1,ssp126,planned,2026-04,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r3i1p1f1,ssp126,planned,2026-04,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r4i1p1f1,ssp126,planned,2026-04,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r5i1p1f1,ssp126,planned,2026-04,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r1i1p1f1,ssp245,planned,2026-04,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r2i1p1f1,ssp245,planned,2026-04,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r3i1p1f1,ssp245,planned,2026-04,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r4i1p1f1,ssp245,planned,2026-04,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r5i1p1f1,ssp245,planned,2026-04,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r1i1p1f2,historical,planned,2026-03,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r2i1p1f2,historical,planned,2026-03,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r3i1p1f2,historical,planned,2026-03,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r4i1p1f2,historical,planned,2026-03,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r5i1p1f2,historical,planned,2026-03,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r1i1p1f2,ssp370,planned,2026-05,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r2i1p1f2,ssp370,planned,2026-05,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r3i1p1f2,ssp370,planned,2026-05,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r4i1p1f2,ssp370,planned,2026-05,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r5i1p1f2,ssp370,planned,2026-05,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r1i1p1f2,ssp126,planned,2026-05,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r2i1p1f2,ssp126,planned,2026-05,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r3i1p1f2,ssp126,planned,2026-05,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r4i1p1f2,ssp126,planned,2026-05,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r5i1p1f2,ssp126,planned,2026-05,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r1i1p1f2,ssp245,planned,2026-05,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r2i1p1f2,ssp245,planned,2026-05,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r3i1p1f2,ssp245,planned,2026-05,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r4i1p1f2,ssp245,planned,2026-05,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r5i1p1f2,ssp245,planned,2026-05,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,NorESM2-LM,r1i1p1f1,historical,planned,2026-06,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,NorESM2-LM,r1i1p1f1,ssp370,planned,2026-07,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,NorESM2-LM,r1i1p1f1,ssp126,planned,2026-07,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,NorESM2-LM,r1i1p1f1,ssp245,planned,2026-07,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,ACCESS-CM2,r4i1p1f1,historical,planned,2026-06,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,ACCESS-CM2,r4i1p1f1,ssp370,planned,2026-07,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,ACCESS-CM2,r4i1p1f1,ssp126,planned,2026-07,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,ACCESS-CM2,r4i1p1f1,ssp245,planned,2026-07,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,UKESM1-0-LL,r1i1p1f2,historical,planned,2026-06,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,UKESM1-0-LL,r1i1p1f2,ssp370,planned,2026-07,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,UKESM1-0-LL,r1i1p1f2,ssp126,planned,2026-07,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,UKESM1-0-LL,r1i1p1f2,ssp245,planned,2026-07,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,IPSL-CM6A-LR,r1i1p1f1,historical,planned,2026-06,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,IPSL-CM6A-LR,r1i1p1f1,ssp370,planned,2026-07,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,IPSL-CM6A-LR,r1i1p1f1,ssp126,planned,2026-07,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,IPSL-CM6A-LR,r1i1p1f1,ssp245,planned,2026-07,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CMCC-ESM2,r1i1p1f1,historical,planned,2026-06,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CMCC-ESM2,r1i1p1f1,ssp370,planned,2026-07,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CMCC-ESM2,r1i1p1f1,ssp126,planned,2026-07,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CMCC-ESM2,r1i1p1f1,ssp245,planned,2026-07,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,EC-Earth3,r1i1p1f1,historical,planned,2026-06,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,EC-Earth3,r1i1p1f1,ssp370,planned,2026-07,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,EC-Earth3,r1i1p1f1,ssp126,planned,2026-07,
-NAM-25,CCCma,J. Scinocca,CanRCM5-SN,EC-Earth3,r1i1p1f1,ssp245,planned,2026-07,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,CanESM5-1,r1i1p1f1,historical,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,CanESM5-1,r2i1p1f1,historical,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,CanESM5-1,r3i1p1f1,historical,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,CanESM5-1,r4i1p1f1,historical,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,CanESM5-1,r5i1p1f1,historical,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,CanESM5-1,r1i1p1f1,ssp370,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,CanESM5-1,r2i1p1f1,ssp370,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,CanESM5-1,r3i1p1f1,ssp370,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,CanESM5-1,r4i1p1f1,ssp370,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,CanESM5-1,r5i1p1f1,ssp370,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCR-SN,CanESM5-1,r1i1p1f1,historical,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCR-SN,CanESM5-1,r2i1p1f1,historical,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCR-SN,CanESM5-1,r3i1p1f1,historical,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCR-SN,CanESM5-1,r4i1p1f1,historical,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCR-SN,CanESM5-1,r5i1p1f1,historical,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCR-SN,CanESM5-1,r1i1p1f1,ssp370,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCR-SN,CanESM5-1,r2i1p1f1,ssp370,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCR-SN,CanESM5-1,r3i1p1f1,ssp370,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCR-SN,CanESM5-1,r4i1p1f1,ssp370,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCR-SN,CanESM5-1,r5i1p1f1,ssp370,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCR-SN,CanESM5-1,r1i1p1f1,ssp126,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCR-SN,CanESM5-1,r2i1p1f1,ssp126,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCR-SN,CanESM5-1,r3i1p1f1,ssp126,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCR-SN,CanESM5-1,r4i1p1f1,ssp126,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCR-SN,CanESM5-1,r5i1p1f1,ssp126,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCR-SN,CanESM5-1,r1i1p1f1,ssp245,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCR-SN,CanESM5-1,r2i1p1f1,ssp245,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCR-SN,CanESM5-1,r3i1p1f1,ssp245,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCR-SN,CanESM5-1,r4i1p1f1,ssp245,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCR-SN,CanESM5-1,r5i1p1f1,ssp245,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r1i1p1f1,historical,completed,2026-09,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r2i1p1f1,historical,completed,2026-09,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r3i1p1f1,historical,completed,2026-09,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r4i1p1f1,historical,completed,2026-09,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r5i1p1f1,historical,completed,2026-09,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r1i1p1f1,ssp370,running,2026-10,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r2i1p1f1,ssp370,running,2026-10,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r3i1p1f1,ssp370,running,2026-10,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r4i1p1f1,ssp370,running,2026-10,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MPI-ESM1-2-LR,r5i1p1f1,ssp370,running,2026-10,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MPI-ESM1-2-LR,r1i1p1f1,historical,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MPI-ESM1-2-LR,r2i1p1f1,historical,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MPI-ESM1-2-LR,r3i1p1f1,historical,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MPI-ESM1-2-LR,r4i1p1f1,historical,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MPI-ESM1-2-LR,r5i1p1f1,historical,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MPI-ESM1-2-LR,r1i1p1f1,ssp370,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MPI-ESM1-2-LR,r2i1p1f1,ssp370,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MPI-ESM1-2-LR,r3i1p1f1,ssp370,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MPI-ESM1-2-LR,r4i1p1f1,ssp370,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MPI-ESM1-2-LR,r5i1p1f1,ssp370,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MPI-ESM1-2-LR,r1i1p1f1,ssp126,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MPI-ESM1-2-LR,r2i1p1f1,ssp126,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MPI-ESM1-2-LR,r3i1p1f1,ssp126,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MPI-ESM1-2-LR,r4i1p1f1,ssp126,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MPI-ESM1-2-LR,r5i1p1f1,ssp126,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MPI-ESM1-2-LR,r1i1p1f1,ssp245,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MPI-ESM1-2-LR,r2i1p1f1,ssp245,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MPI-ESM1-2-LR,r3i1p1f1,ssp245,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MPI-ESM1-2-LR,r4i1p1f1,ssp245,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MPI-ESM1-2-LR,r5i1p1f1,ssp245,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r1i1p1f2,historical,completed,2026-09,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r2i1p1f2,historical,completed,2026-09,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r3i1p1f2,historical,completed,2026-09,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r4i1p1f2,historical,completed,2026-09,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r5i1p1f2,historical,completed,2026-09,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r1i1p1f2,ssp370,running,2026-10,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r2i1p1f2,ssp370,running,2026-10,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r3i1p1f2,ssp370,running,2026-10,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r4i1p1f2,ssp370,running,2026-10,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,MIROC-ES2L,r5i1p1f2,ssp370,running,2026-10,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MIROC-ES2L,r1i1p1f1,historical,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MIROC-ES2L,r2i1p1f1,historical,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MIROC-ES2L,r3i1p1f1,historical,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MIROC-ES2L,r4i1p1f1,historical,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MIROC-ES2L,r5i1p1f1,historical,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MIROC-ES2L,r1i1p1f1,ssp370,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MIROC-ES2L,r2i1p1f1,ssp370,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MIROC-ES2L,r3i1p1f1,ssp370,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MIROC-ES2L,r4i1p1f1,ssp370,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MIROC-ES2L,r5i1p1f1,ssp370,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MIROC-ES2L,r1i1p1f1,ssp126,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MIROC-ES2L,r2i1p1f1,ssp126,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MIROC-ES2L,r3i1p1f1,ssp126,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MIROC-ES2L,r4i1p1f1,ssp126,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MIROC-ES2L,r5i1p1f1,ssp126,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MIROC-ES2L,r1i1p1f1,ssp245,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MIROC-ES2L,r2i1p1f1,ssp245,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MIROC-ES2L,r3i1p1f1,ssp245,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MIROC-ES2L,r4i1p1f1,ssp245,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,MIROC-ES2L,r5i1p1f1,ssp245,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,NorESM2-LM,r1i1p1f1,historical,completed,2026-09,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,NorESM2-LM,r1i1p1f1,ssp370,running,2026-10,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,NorESM2-LM,r1i1p1f1,historical,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,NorESM2-LM,r1i1p1f1,ssp370,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,NorESM2-LM,r1i1p1f1,ssp126,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,NorESM2-LM,r1i1p1f1,ssp245,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,ACCESS-CM2,r4i1p1f1,historical,completed,2026-09,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,ACCESS-CM2,r4i1p1f1,ssp370,running,2026-10,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,ACCESS-CM2,r4i1p1f1,historical,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,ACCESS-CM2,r4i1p1f1,ssp370,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,ACCESS-CM2,r4i1p1f1,ssp126,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,ACCESS-CM2,r1i1p1f1,ssp245,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,UKESM1-0-LL,r1i1p1f1,historical,completed,2026-09,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,UKESM1-0-LL,r1i1p1f1,ssp370,running,2026-10,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,UKESM1-0-LL,r1i1p1f1,historical,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,UKESM1-0-LL,r1i1p1f1,ssp370,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,UKESM1-0-LL,r1i1p1f1,ssp126,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,UKESM1-0-LL,r1i1p1f1,ssp245,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,IPSL-CM6A-LR,r1i1p1f1,historical,completed,2026-09,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,IPSL-CM6A-LR,r1i1p1f1,ssp370,running,2026-10,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,IPSL-CM6A-LR,r1i1p1f1,historical,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,IPSL-CM6A-LR,r1i1p1f1,ssp370,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,IPSL-CM6A-LR,r1i1p1f1,ssp126,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,IPSL-CM6A-LR,r1i1p1f1,ssp245,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CMCC-ESM2,r1i1p1f1,historical,completed,2026-09,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CMCC-ESM2,r1i1p1f1,ssp370,running,2026-10,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,CMCC-ESM2,r1i1p1f1,historical,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,CMCC-ESM2,r1i1p1f1,ssp370,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,CMCC-ESM2,r1i1p1f1,ssp126,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,CMCC-ESM2,r1i1p1f1,ssp245,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,EC-Earth3,r1i1p1f1,historical,completed,2026-09,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SN,EC-Earth3,r1i1p1f1,ssp370,running,2026-10,
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,EC-Earth3,r1i1p1f1,historical,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,EC-Earth3,r1i1p1f1,ssp370,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,EC-Earth3,r1i1p1f1,ssp126,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD-SN,EC-Earth3,r1i1p1f1,ssp245,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
 MENA-25,DGM-UIZ,K. El Rhaz / M. Rachid,WRF,ERA5,,evaluation,completed,2022-01,
 MENA-25,DGM-UIZ,K. El Rhaz / M. Rachid,WRF,TBD,TBD,historical,planned,2023-12,paused due to resources limitations
 MENA-25,DGM-UIZ,K. El Rhaz / M. Rachid,WRF,TBD,TBD,ssp126,planned,2023-12,
@@ -787,11 +833,11 @@ SAM-12,IDL-FCUL,R. Cardoso,WRF461U,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2026-04
 SAM-12,SENAMHI-PER,G. Jacome,WRF461U,NorESM2-MM,r1i1p1f1,historical,running,2026-09,#CORDEX-CORE
 SAM-12,SENAMHI-PER,G. Jacome,WRF461U,NorESM2-MM,r1i1p1f1,ssp370,planned,2026-12,#CORDEX-CORE
 SAM-12,MOHC,E. Buonomo,HadREM3-GA7-05,ERA5,,evaluation,running,2026-09,#CORDEX-CORE
-SAM-12,MOHC,E. Buonomo,HadREM3-GA7-05,EC-Earth3-Veg,r1i1p1f1,historical,running,2026-09,#CORDEX-CORE
+SAM-12,MOHC,E. Buonomo,HadREM3-GA7-05,EC-Earth3-Veg,r1i1p1f1,historical,planned,2026-09,#CORDEX-CORE
 SAM-12,MOHC,E. Buonomo,HadREM3-GA7-05,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2026-09,#CORDEX-CORE
-SAM-12,MOHC,E. Buonomo,HadREM3-GA7-05,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2026-09,#CORDEX-CORE
+SAM-12,MOHC,E. Buonomo,HadREM3-GA7-05,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2026-09,#CORDEX-CORE
 SAM-12,MOHC,E. Buonomo,HadREM3-GA7-05,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2026-09,#CORDEX-CORE
-SAM-12,MOHC,E. Buonomo,HadREM3-GA7-05,NorESM2-MM,r1i1p1f1,historical,running,2026-09,#CORDEX-CORE
+SAM-12,MOHC,E. Buonomo,HadREM3-GA7-05,NorESM2-MM,r1i1p1f1,historical,planned,2026-09,#CORDEX-CORE
 SAM-12,MOHC,E. Buonomo,HadREM3-GA7-05,NorESM2-MM,r1i1p1f1,ssp370,planned,2026-09,#CORDEX-CORE
 SAM-25,UBA-CIMA-IFAECI,L. Fita,RegIPSL,ERA5,,evaluation,planned,2026-12,
 SAM-25,UBA-CIMA-IFAECI,L. Fita,RegIPSL,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2026-12,
@@ -826,7 +872,7 @@ SEA-12,MOHC,G. Redmond,HadREM3-GA7-05,EC-Earth3-Veg,r1i1p1f1,historical,complete
 SEA-12,MOHC,G. Redmond,HadREM3-GA7-05,EC-Earth3-Veg,r1i1p1f1,ssp370,completed,2025-01,#CORDEX-CORE
 SEA-12,MOHC,G. Redmond,HadREM3-GA7-05,NorESM2-MM,r1i1p1f1,historical,completed,2025-01,#CORDEX-CORE
 SEA-12,MOHC,G. Redmond,HadREM3-GA7-05,NorESM2-MM,r1i1p1f1,ssp370,completed,2025-01,#CORDEX-CORE
-SEA-12,MOHC,G. Redmond,HadREM3-GA7-05,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2026-09,#CORDEX-CORE
+SEA-12,MOHC,G. Redmond,HadREM3-GA7-05,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2026-09,#CORDEX-CORE
 SEA-12,MOHC,G. Redmond,HadREM3-GA7-05,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2026-09,#CORDEX-CORE
 SEA-12,MOHC,G. Redmond,HadREM3-GA7-05,UKESM1-0-LL,r1i1p1f2,historical,completed,2025-01,
 SEA-12,MOHC,G. Redmond,HadREM3-GA7-05,UKESM1-0-LL,r1i1p1f2,ssp370,completed,2025-01,
@@ -953,11 +999,11 @@ WAS-12,ORNL,M. Ashfaq,RegCM5-0,MPI-ESM1-2-HR,r1i1p1f1,ssp370,running,2026-09,#CO
 WAS-12,ORNL,M. Ashfaq,RegCM5-0,NorESM2-MM,r1i1p1f1,historical,completed,2026-07,#CORDEX-CORE
 WAS-12,ORNL,M. Ashfaq,RegCM5-0,NorESM2-MM,r1i1p1f1,ssp370,running,2026-09,#CORDEX-CORE
 WAS-12,MOHC,E. Buonomo,HadREM3-GA7-05,ERA5,,evaluation,running,2026-09,#CORDEX-CORE
-WAS-12,MOHC,E. Buonomo,HadREM3-GA7-05,EC-Earth3-Veg,r1i1p1f1,historical,running,2026-09,#CORDEX-CORE
+WAS-12,MOHC,E. Buonomo,HadREM3-GA7-05,EC-Earth3-Veg,r1i1p1f1,historical,planned,2026-09,#CORDEX-CORE
 WAS-12,MOHC,E. Buonomo,HadREM3-GA7-05,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2026-09,#CORDEX-CORE
-WAS-12,MOHC,E. Buonomo,HadREM3-GA7-05,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2026-09,#CORDEX-CORE
+WAS-12,MOHC,E. Buonomo,HadREM3-GA7-05,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2026-09,#CORDEX-CORE
 WAS-12,MOHC,E. Buonomo,HadREM3-GA7-05,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2026-09,#CORDEX-CORE
-WAS-12,MOHC,E. Buonomo,HadREM3-GA7-05,NorESM2-MM,r1i1p1f1,historical,running,2026-09,#CORDEX-CORE
+WAS-12,MOHC,E. Buonomo,HadREM3-GA7-05,NorESM2-MM,r1i1p1f1,historical,planned,2026-09,#CORDEX-CORE
 WAS-12,MOHC,E. Buonomo,HadREM3-GA7-05,NorESM2-MM,r1i1p1f1,ssp370,planned,2026-09,#CORDEX-CORE
 WAS-18,BCCR,S. Sobolowski / O. Gokturk,WRF461U,ERA5,,evaluation,completed,2026-05,#CORDEX-CORE
 WAS-18,BCCR,S. Sobolowski / O. Gokturk,WRF461U,NorESM2-MM,r1i1p1f1,historical,planned,2026-09,#CORDEX-CORE
