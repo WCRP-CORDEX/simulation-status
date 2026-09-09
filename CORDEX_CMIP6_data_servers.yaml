@@ -87,7 +87,7 @@ esgf:
     accepting_requests: False
     simulations:
       # From O.B. Christensen's and W.J. van de Berg's answers
-      - institution_id: [DMI, UU-IMAU]
+      - institution_id: [HCLIMcom-DMI, DMI, UU-IMAU]
 
   - name: CCCma
     url: crd-esgf-drc.ec.gc.ca
@@ -124,14 +124,17 @@ esgf:
         institution_id: [UMT, UKM-UMT, MO, HKO, RU-CORE, USTH-HUS-IMHEN, USTH, BMKG, CCRC, CSIRO]  
 
   - name: LIU
-    url: esg-dn1.nsc.liu.se/projects/esgf-liu
+    url: nsc.liu.se
     index: east
     status: unmigrated
     volume: null
     comment: Hasn't responded to the survey.
-    accepting_requests: null
+    accepting_requests: False
     simulations:
-      - institution_id: HCLIMcom-SMHI  # 400
+      # From M. Sahlin's answer to the survey
+      - institution_id: HCLIMcom-SMHI 
+      - domain_id: EUR-12
+        institution_id: HCLIMcom-METNo
 
   - name: CEDA
     url: null
