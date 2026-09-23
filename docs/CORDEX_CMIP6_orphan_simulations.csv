@@ -84,31 +84,6 @@ CAS-12,CLMcom-PIK,B. Fallah / I. Didovets,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,histo
 CAS-12,CLMcom-PIK,B. Fallah / I. Didovets,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2025-01,
 CAS-12,CLMcom-PIK,B. Fallah / I. Didovets,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,completed,2025-01,
 CAS-12,CLMcom-PIK,B. Fallah / I. Didovets,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp585,completed,2025-01,
-EAS-25,KNU,E.-C. Chang / U.-Y. Byun,GRIMs3-2,UKESM1-0-LL,r15i1p1f2,historical,completed,2022-12,see http://cordex-ea.climate.go.kr/cordex/models.do
-EAS-25,KNU,E.-C. Chang / U.-Y. Byun,GRIMs3-2,UKESM1-0-LL,r15i1p1f2,ssp126,completed,2022-12,
-EAS-25,KNU,E.-C. Chang / U.-Y. Byun,GRIMs3-2,UKESM1-0-LL,r15i1p1f2,ssp245,planned,2022-12,
-EAS-25,KNU,E.-C. Chang / U.-Y. Byun,GRIMs3-2,UKESM1-0-LL,r15i1p1f2,ssp370,planned,2022-12,
-EAS-25,KNU,E.-C. Chang / U.-Y. Byun,GRIMs3-2,UKESM1-0-LL,r15i1p1f2,ssp585,completed,2022-12,
-EAS-25,NIMS-KMA,Y.-H. Byun / J.-U. Kim,HadGEM3-RA,UKESM1-0-LL,r15i1p1f2,historical,completed,2022-12,HadGEM3-RA (UM v8.1) see http://cordex-ea.climate.go.kr/cordex/models.do
-EAS-25,NIMS-KMA,Y.-H. Byun / J.-U. Kim,HadGEM3-RA,UKESM1-0-LL,r15i1p1f2,ssp126,completed,2022-12,
-EAS-25,NIMS-KMA,Y.-H. Byun / J.-U. Kim,HadGEM3-RA,UKESM1-0-LL,r15i1p1f2,ssp245,completed,2024-12,
-EAS-25,NIMS-KMA,Y.-H. Byun / J.-U. Kim,HadGEM3-RA,UKESM1-0-LL,r15i1p1f2,ssp370,completed,2024-12,
-EAS-25,NIMS-KMA,Y.-H. Byun / J.-U. Kim,HadGEM3-RA,UKESM1-0-LL,r15i1p1f2,ssp585,completed,2022-12,
-EAS-25,PNU,J.-B. Ahn / G.-Y. Seo,WRF400,UKESM1-0-LL,r15i1p1f2,historical,completed,2022-12,see http://cordex-ea.climate.go.kr/cordex/models.do
-EAS-25,PNU,J.-B. Ahn / G.-Y. Seo,WRF400,UKESM1-0-LL,r15i1p1f2,ssp126,completed,2022-12,
-EAS-25,PNU,J.-B. Ahn / G.-Y. Seo,WRF400,UKESM1-0-LL,r15i1p1f2,ssp245,planned,2022-12,
-EAS-25,PNU,J.-B. Ahn / G.-Y. Seo,WRF400,UKESM1-0-LL,r15i1p1f2,ssp370,planned,2022-12,
-EAS-25,PNU,J.-B. Ahn / G.-Y. Seo,WRF400,UKESM1-0-LL,r15i1p1f2,ssp585,completed,2022-12,
-EAS-25,POSTECH,S.-K. Min / S.-Y. Jo,COSMO-CLM5-0-9,UKESM1-0-LL,r15i1p1f2,historical,completed,2022-12,see http://cordex-ea.climate.go.kr/cordex/models.do
-EAS-25,POSTECH,S.-K. Min / S.-Y. Jo,COSMO-CLM5-0-9,UKESM1-0-LL,r15i1p1f2,ssp126,completed,2022-12,
-EAS-25,POSTECH,S.-K. Min / S.-Y. Jo,COSMO-CLM5-0-9,UKESM1-0-LL,r15i1p1f2,ssp245,completed,2022-12,
-EAS-25,POSTECH,S.-K. Min / S.-Y. Jo,COSMO-CLM5-0-9,UKESM1-0-LL,r15i1p1f2,ssp370,completed,2022-12,
-EAS-25,POSTECH,S.-K. Min / S.-Y. Jo,COSMO-CLM5-0-9,UKESM1-0-LL,r15i1p1f2,ssp585,completed,2022-12,
-EAS-25,UNIST,D.-H. Cha / S.-W. Shin,RegCM4-6,UKESM1-0-LL,r15i1p1f2,historical,completed,2022-12,RegCM v4.6.1 see http://cordex-ea.climate.go.kr/cordex/models.do We have completed the ERA-Interim evaluation runs. ERA5 evaluation runs not planned yet.
-EAS-25,UNIST,D.-H. Cha / S.-W. Shin,RegCM4-6,UKESM1-0-LL,r15i1p1f2,ssp126,completed,2022-12,
-EAS-25,UNIST,D.-H. Cha / S.-W. Shin,RegCM4-6,UKESM1-0-LL,r15i1p1f2,ssp245,planned,2022-12,
-EAS-25,UNIST,D.-H. Cha / S.-W. Shin,RegCM4-6,UKESM1-0-LL,r15i1p1f2,ssp370,planned,2022-12,
-EAS-25,UNIST,D.-H. Cha / S.-W. Shin,RegCM4-6,UKESM1-0-LL,r15i1p1f2,ssp585,completed,2022-12,
 EUR-12,EURO-CORDEX,,. Comunity selected GCMs,CMCC-CM2-SR5,r1i1p1f1,selected,selected,,Model selected in EURO-CORDEX GA 2022
 EUR-12,EURO-CORDEX,,. Comunity selected GCMs,CNRM-ESM2-1,r1i1p1f2,selected,selected,,Model selected in EURO-CORDEX GA 2022
 EUR-12,EURO-CORDEX,,. Comunity selected GCMs,EC-Earth3-Veg,r1i1p1f1,selected,selected,,Model selected in EURO-CORDEX GA 2022
