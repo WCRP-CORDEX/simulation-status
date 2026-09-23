@@ -123,6 +123,17 @@ esgf:
       - domain_id: SEA-25
         institution_id: [UMT, UKM-UMT, MO, HKO, RU-CORE, USTH-HUS-IMHEN, USTH, BMKG, CCRC, CSIRO]  
 
+  - name: APEC
+    url: esgf.apcc21.org 
+    index: null
+    status: unmigrated
+    volume: 55
+    comment: 
+    accepting_requests: False
+    simulations:
+      - domain_id: EAS-25
+        institution_id: [KNU, NIMS-KMA, UNIST, PNU, POSTECH]
+
   - name: LIU
     url: nsc.liu.se
     index: east
