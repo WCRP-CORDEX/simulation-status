@@ -63,7 +63,7 @@ esgf:
       - domain_id: MED-12
         institution_id: CNRM
         source_id: [ CNRM-RCSM6-SN, CNRM-RCSM6B-SN]
-      - domain_id: AUS-20i
+      - domain_id: AUS-25
         institution_id: IRD-MF
 
   - name: DWD
