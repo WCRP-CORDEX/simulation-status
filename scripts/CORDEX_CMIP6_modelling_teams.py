@@ -83,12 +83,33 @@ and the CORDEX-CMIP6 CV. Use the search box (case-sensitive) as domain filter or
 {body}
 </tbody></table>
 <script>
+function getParam(name) {{
+  return new URLSearchParams(window.location.search).get(name) || '';
+}}
+function setParam(name, value) {{
+  var url = new URL(window.location);
+  if (value) url.searchParams.set(name, value); else url.searchParams.delete(name);
+  window.history.replaceState({{}}, '', url);
+}}
 $(document).ready(function() {{
-  var t = $('#t').DataTable({{pageLength: 50, lengthMenu: [20, 50, 100, 200], order: [[0, 'asc'], [1, 'asc']], search: {{caseInsensitive: false}}}});
-  $('#dom').on('change', function() {{
-    var v = this.value;
-    t.column(0).search(v ? '^' + v + '$' : '', true, false).draw();
+  var order = [[0, 'asc'], [1, 'asc']];
+  try {{ if (getParam('order')) order = JSON.parse(getParam('order')); }} catch (e) {{}}
+  var t = $('#t').DataTable({{
+    pageLength: parseInt(getParam('length')) || 50,
+    lengthMenu: [20, 50, 100, 200],
+    order: order,
+    search: {{caseInsensitive: false}}
   }});
+  function filterDomain(v) {{
+    t.column(0).search(v ? '^' + v + '$' : '', true, false).draw();
+  }}
+  var dom = getParam('domain');
+  if (dom) {{ $('#dom').val(dom); filterDomain($('#dom').val()); }}
+  if (getParam('search')) t.search(getParam('search')).draw();
+  $('#dom').on('change', function() {{ filterDomain(this.value); setParam('domain', this.value); }});
+  t.on('search.dt', function() {{ setParam('search', t.search()); }});
+  t.on('length.dt', function(e, s, len) {{ setParam('length', len == 50 ? '' : len); }});
+  t.on('order.dt', function() {{ setParam('order', JSON.stringify(t.order())); }});
 }});
 </script>
 </body></html>
