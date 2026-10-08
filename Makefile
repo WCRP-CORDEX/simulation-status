@@ -7,6 +7,7 @@ update:
 	python CORDEX_CMIP6_status_by_scenario.py
 	python CORDEX_CMIP6_status_by_experiment.py
 	python CORDEX_CMIP6_data_servers.py
+	python scripts/CORDEX_CMIP6_modelling_teams.py
 
 update-cmip7:
 	python CMIP7_downscaling_plans.py

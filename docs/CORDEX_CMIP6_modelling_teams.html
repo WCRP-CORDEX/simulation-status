@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>CORDEX-CMIP6 modelling teams by domain</title>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+<style>
+body {font-family: "Montserrat", sans-serif; padding: 15px;}
+.logo {text-align: center; margin-bottom: 20px;}
+th, td {text-align: left; padding: 2px;}
+a {color: DodgerBlue; text-decoration: none;}
+</style></head><body>
+<div class="logo">
+<img src="https://cordex.org/wp-content/uploads/2025/02/CORDEX_RGB_logo_baseline_positive-300x133.png" alt="CORDEX Logo">
+<h1>CORDEX-CMIP6 modelling teams by domain</h1>
+</div>
+<p>Modelling teams and models per CORDEX domain, as registered in the downscaling plans
+and the CORDEX-CMIP6 CV. Use the search box (case-sensitive) as domain filter or for any other view.</p>
+<p>Domain: <select id="dom"><option value="">All</option><option value="AFR">AFR</option><option value="ANT">ANT</option><option value="ARC">ARC</option><option value="AUS">AUS</option><option value="CAM">CAM</option><option value="EAS">EAS</option><option value="EUR">EUR</option><option value="MED">MED</option><option value="NAM">NAM</option><option value="SAM">SAM</option><option value="SEA">SEA</option><option value="WAS">WAS</option></select></p>
+<table id="t" class="display"><thead><tr><th>domain</th><th>institution_id</th><th>institution</th><th>source_id</th></tr></thead>
+<tbody>
+<tr><td>AFR</td><td>CLMcom-CMCC</td><td>Climate Limited-area Modelling Community (CLMcom) partner: Euro-Mediterranean Center on Climate Change (CMCC Foundation), Caserta, Italy</td><td><a href="https://www.clm-community.eu/ICON-CLM/">ICON-CLM-202604-1-1</a></td></tr>
+<tr><td>AFR</td><td>GERICS</td><td>Climate Service Center Germany, Helmholtz Centre hereon GmbH, Hamburg, Germany</td><td><a href="https://www.remo-rcm.de">REMO2020-2-2</a></td></tr>
+<tr><td>AFR</td><td>ICTP</td><td>The Abdus Salam International Centre for Theoretical Physics, Trieste, Italy</td><td><a href="https://doi.org/10.1007/s00382-025-07913-3">RegCM5-0</a></td></tr>
+<tr><td>AFR</td><td>IFCA</td><td>Instituto de Fisica de Cantabria (IFCA), CSIC-Universidad de Cantabria, Santander, Spain</td><td><a href="https://github.com/CORDEX-WRF-community/cordex-core-cmip6">WRF461U</a></td></tr>
+<tr><td>AFR</td><td>MOHC</td><td>Met Office Hadley Centre, Exeter, UK</td><td><a href="https://view.es-doc.org/?renderMethod=id&amp;project=cordexp&amp;id=43837930-998b-4c0b-b481-f40b4884ddf1&amp;version=1&amp;client=esdoc-search">HadREM3-GA7-05</a></td></tr>
+<tr><td>AFR</td><td>ULL</td><td>Universidad de La Laguna, La Laguna (Canary Islands), Spain</td><td><a href="https://github.com/CORDEX-WRF-community/cordex-core-cmip6">WRF461U</a></td></tr>
+<tr><td>ANT</td><td>BAS</td><td>British Antarctic Survey, Cambridge, United Kingdom</td><td><a href="https://doi.org/10.5194/gmd-16-1713-2023">MetUM</a></td></tr>
+<tr><td>ANT</td><td>UU-IMAU</td><td>Utrecht University, Institute for Marine and Atmospheric Research Utrecht (IMAU), Utrecht, The Netherlands</td><td><a href="https://tc.copernicus.org/articles/18/4065/2024/">RACMO24p-NN</a></td></tr>
+<tr><td>ARC</td><td>BAS</td><td>British Antarctic Survey, Cambridge, United Kingdom</td><td><a href="https://doi.org/10.5194/gmd-16-1713-2023">MetUM</a></td></tr>
+<tr><td>ARC</td><td>HCLIMcom-METNo</td><td>HARMONIE Climate Modelling Community (HCLIMcom) partner: Norwegian Meteorological Institute (METNo), Oslo, Norway</td><td><a href="https://zenodo.org/records/11424181">HCLIM43-ALADIN</a></td></tr>
+<tr><td>ARC</td><td>UU-IMAU</td><td>Utrecht University, Institute for Marine and Atmospheric Research Utrecht (IMAU), Utrecht, The Netherlands</td><td><a href="https://tc.copernicus.org/articles/18/4065/2024/">RACMO24p-NN</a></td></tr>
+<tr><td>AUS</td><td>BOM</td><td>Bureau of Meteorology, Melbourne, Australia</td><td><a href="http://www.bom.gov.au/research/publications/researchreports/BRR-069.pdf">BARPA-R1-NN</a></td></tr>
+<tr><td>AUS</td><td>CSIRO</td><td>Commonwealth Scientific and Industrial Research Organisation, Canberra, Australia</td><td><a href="https://research.csiro.au/ccam/">CCAMoc-v2203-SN</a></td></tr>
+<tr><td>AUS</td><td>GERICS</td><td>Climate Service Center Germany, Helmholtz Centre hereon GmbH, Hamburg, Germany</td><td><a href="https://www.remo-rcm.de">REMO2020-2-2</a></td></tr>
+<tr><td>AUS</td><td>ICTP</td><td>The Abdus Salam International Centre for Theoretical Physics, Trieste, Italy</td><td><a href="https://doi.org/10.1007/s00382-025-07913-3">RegCM5-0</a></td></tr>
+<tr><td>AUS</td><td>IRD-MF</td><td>IRD [Institut de Recherche pour le Developpement, Noumea (New Caledonia), France]; MF [Meteo France, Toulouse, France]</td><td><a href="http://www.umr-cnrm.fr/spip.php?article125&amp;lang=en">CNRM-ALADIN64P1</a></td></tr>
+<tr><td>AUS</td><td>UQ-DEC</td><td>UQ [University of Queensland, Brisbane, Australia]; DEC [Department of Energy and Climate, Brisbane, Australia]</td><td><a href="https://research.csiro.au/ccam/scientific-description/">CCAM-v2105</a>, <a href="https://research.csiro.au/ccam/scientific-description/">CCAM-v2112</a>, <a href="https://research.csiro.au/ccam/scientific-description/">CCAMoc-v2112</a></td></tr>
+<tr><td>CAM</td><td>CESGA</td><td>Galicia Supercomputing Center (CESGA), Climate System Research Unit, Santiago de Compostela (Galicia), Spain</td><td><a href="https://github.com/CORDEX-WRF-community/cordex-core-cmip6">WRF461U</a></td></tr>
+<tr><td>CAM</td><td>CNRM</td><td>Centre National de Recherches Meteorologiques, Toulouse, France</td><td><a href="https://www.umr-cnrm.fr/spip.php?article125&amp;lang=en">CNRM-ALADIN64C1</a></td></tr>
+<tr><td>CAM</td><td>GERICS</td><td>Climate Service Center Germany, Helmholtz Centre hereon GmbH, Hamburg, Germany</td><td><a href="https://www.remo-rcm.de">REMO2020-2-2</a></td></tr>
+<tr><td>CAM</td><td>MOHC</td><td>Met Office Hadley Centre, Exeter, UK</td><td><a href="https://view.es-doc.org/?renderMethod=id&amp;project=cordexp&amp;id=43837930-998b-4c0b-b481-f40b4884ddf1&amp;version=1&amp;client=esdoc-search">HadREM3-GA7-05</a></td></tr>
+<tr><td>EAS</td><td>ICTP</td><td>The Abdus Salam International Centre for Theoretical Physics, Trieste, Italy</td><td><a href="https://doi.org/10.1007/s00382-025-07913-3">RegCM5-0</a></td></tr>
+<tr><td>EAS</td><td>IUM-FDU</td><td>IUM [Institute of Urban Meteorology, China Meteorological Administration,  Beijing, China]; FDU [Fudan University, Shanghai, China]</td><td><a href="https://github.com/CORDEX-WRF-community/cordex-core-cmip6">WRF461U</a></td></tr>
+<tr><td>EAS</td><td>MOHC</td><td>Met Office Hadley Centre, Exeter, UK</td><td><a href="https://view.es-doc.org/?renderMethod=id&amp;project=cordexp&amp;id=43837930-998b-4c0b-b481-f40b4884ddf1&amp;version=1&amp;client=esdoc-search">HadREM3-GA7-05</a></td></tr>
+<tr><td>EAS</td><td>UNIST</td><td>Ulsan National Institute of Science and Technology, Ulsan, South Korea</td><td><a href="https://github.com/CORDEX-WRF-community/cordex-core-cmip6">WRF461U</a></td></tr>
+<tr><td>EUR</td><td>AUTH</td><td>Department of Meteorology and Climatology, Aristotle University of Thessaloniki, Thessaloniki, Greece</td><td><a href="https://github.com/CORDEX-WRF-community/euro-cordex-cmip6">WRF451Q</a></td></tr>
+<tr><td>EUR</td><td>BCCR-UCAN</td><td>BCCR [Bjerknes Center for Climate Research (BCCR), NORCE Norwegian Research Center, Bergen, Norway]; UCAN [Instituto de Fisica de Cantabria (IFCA), CSIC-Universidad de Cantabria, Santander, Spain]</td><td><a href="https://github.com/CORDEX-WRF-community/euro-cordex-cmip6">WRF451Q</a></td></tr>
+<tr><td>EUR</td><td>CESAM-UA</td><td>Center for Environmental and Marine Studies (CESAM), Aveiro University (UA), Aveiro, Portugal</td><td><a href="https://github.com/CORDEX-WRF-community/euro-cordex-cmip6">WRF451Q</a></td></tr>
+<tr><td>EUR</td><td>CLMcom-BTU</td><td>Climate Limited-area Modelling Community (CLMcom) partner: Brandenburgische Technische Universitaet Cottbus-Senftenberg, Cottbus, Germany</td><td><a href="https://www.clm-community.eu/ICON-CLM/">ICON-CLM-202407-1-1</a></td></tr>
+<tr><td>EUR</td><td>CLMcom-CMCC</td><td>Climate Limited-area Modelling Community (CLMcom) partner: Euro-Mediterranean Center on Climate Change (CMCC Foundation), Caserta, Italy</td><td><a href="https://www.clm-community.eu/COSMO-CLM/Overview">CCLM6-0-1</a>, <a href="https://www.clm-community.eu/COSMO-CLM/Overview">CCLM6-0-1-URB</a>, <a href="https://www.clm-community.eu/ICON-CLM/">ICON-CLM-202407-1-1</a></td></tr>
+<tr><td>EUR</td><td>CLMcom-DWD</td><td>Climate Limited-area Modelling Community (CLMcom) partner: Deutscher Wetterdienst, Offenbach am Main, Germany</td><td><a href="https://www.clm-community.eu/ICON-CLM/">ICON-CLM-202407-1-1</a>, <a href="https://www.clm-community.eu/ICON-CLM/">ICON-CLM-202407-1-2</a></td></tr>
+<tr><td>EUR</td><td>CLMcom-ETH</td><td>Climate Limited-area Modelling Community (CLMcom) partner: Federal Institute of Technology Zurich, Zurich, Switzerland</td><td><a href="https://github.com/C2SM/icon-clm_patch">ICON-CLM-202407-1-3</a></td></tr>
+<tr><td>EUR</td><td>CLMcom-FZJ</td><td>Climate Limited-area Modelling Community (CLMcom) partner: Forschungszentrum Juelich (FZJ), Juelich, Germany</td><td><a href="https://www.clm-community.eu/COSMO-CLM/Overview">CCLM6-0-1</a>, <a href="https://www.clm-community.eu/ICON-CLM/">ICON-CLM-202407-1-1</a>, <a href="https://github.com/HPSCTerrSys/TSMP">TSMP1-140-E</a></td></tr>
+<tr><td>EUR</td><td>CLMcom-GERICS</td><td>Climate Limited-area Modelling Community (CLMcom) partner: Climate Service Center Germany, Hamburg, Germany</td><td><a href="https://www.clm-community.eu/ICON-CLM/">ICON-CLM-202407-1-1</a></td></tr>
+<tr><td>EUR</td><td>CLMcom-GUF</td><td>Climate Limited-area Modelling Community (CLMcom) partner: Goethe University Frankfurt, Frankfurt am Main, Germany</td><td><a href="https://www.clm-community.eu/COSMO-CLM/Overview/">CCLM5-0-9-NEMOMED12-3-6</a></td></tr>
+<tr><td>EUR</td><td>CLMcom-Hereon</td><td>Climate Limited-area Modelling Community (CLMcom) partner: Helmholtz-Zentrum Hereon, Geesthacht, Germany</td><td><a href="https://www.clm-community.eu/COSMO-CLM/Overview">CCLM6-0-1</a>, <a href="https://doi.org/10.3390/atmos11030227">GCOAST-AHOI1-1</a>, <a href="https://egusphere.copernicus.org/preprints/2024/egusphere-2024-923/">GCOAST-AHOI2-1</a>, <a href="https://doi.org/10.3390/atmos11030227">GCOAST-AHOIB1-1</a>, <a href="https://www.clm-community.eu/ICON-CLM/">ICON-CLM-202407-1-1</a></td></tr>
+<tr><td>EUR</td><td>CLMcom-IMWM</td><td>Climate Limited-area Modelling Community (CLMcom) partner: Institute of Meteorology and Water Management, Warsaw, Poland</td><td><a href="https://www.clm-community.eu/COSMO-CLM/Overview">CCLM6-0-1</a>, <a href="https://github.com/C2SM/icon-clm_patch">ICON-CLM-202407-1-3</a></td></tr>
+<tr><td>EUR</td><td>CLMcom-KIT</td><td>Climate Limited-area Modelling Community (CLMcom) partner: Karlsruhe Institute of Technology, Eggenstein-Leopoldshafen, Germany</td><td><a href="https://www.clm-community.eu/COSMO-CLM/Overview">CCLM6-0-1</a>, <a href="https://www.clm-community.eu/ICON-CLM/">ICON-CLM-202407-1-1</a></td></tr>
+<tr><td>EUR</td><td>CLMcom-KUL</td><td>Climate Limited-area Modelling Community (CLMcom) partner: KU Leuven, Leuven, Belgium</td><td><a href="https://www.clm-community.eu/COSMO-CLM/Overview/">CCLM6-0-1-URB-ESG</a></td></tr>
+<tr><td>EUR</td><td>CLMcom-LIST</td><td>Climate Limited-area Modelling Community (CLMcom) partner: Luxembourg Institute of Science and Technology, Esch-sur-Alzette, Luxembourg</td><td><a href="https://www.clm-community.eu/COSMO-CLM/Overview">CCLM6-0-1</a></td></tr>
+<tr><td>EUR</td><td>CLMcom-WEGC</td><td>Climate Limited-area Modelling Community (CLMcom) partner: Wegener Center for Climate and Global Change, University of Graz, Graz, Austria</td><td><a href="https://www.clm-community.eu/ICON-CLM/">ICON-CLM-202407-1-1</a>, <a href="https://www.clm-community.eu/ICON-CLM/">ICON-CLM-202407-1-2</a></td></tr>
+<tr><td>EUR</td><td>CNR-ISAC</td><td>Italian National Research Council, Institute of Atmospheric Sciences and Climate, Lecce, Italy</td><td><a href="https://doi.org/10.1007/s00382-025-07913-3">RegCM5-0</a></td></tr>
+<tr><td>EUR</td><td>CNRM-MF</td><td>CNRM [Centre National de Recherches Meteorologiques, Toulouse, France]; MF [Meteo France, Toulouse, France]</td><td><a href="http://www.umr-cnrm.fr/spip.php?article125&amp;lang=en">CNRM-ALADIN64E1</a></td></tr>
+<tr><td>EUR</td><td>CYI</td><td>Climate and Atmosphere Research Center (CARE-C), The Cyprus Institute, Nicosia, Cyprus</td><td><a href="https://github.com/CORDEX-WRF-community/cordex-core-cmip6">WRF461U</a></td></tr>
+<tr><td>EUR</td><td>DWD-BSH</td><td>DWD [Deutscher Wetterdienst, Offenbach am Main, Germany]; BSH [Bundesamt fuer Seeschifffahrt und Hydrographie, Hamburg, Germany]</td><td><a href="https://doi.org/10.5194/gmd-19-543-2026">ROAM-NBS</a></td></tr>
+<tr><td>EUR</td><td>GERICS</td><td>Climate Service Center Germany, Helmholtz Centre hereon GmbH, Hamburg, Germany</td><td><a href="https://www.remo-rcm.de">REMO2020-2-2</a>, <a href="https://www.remo-rcm.de">REMO2020-2-2-MR2</a>, <a href="https://www.remo-rcm.de">REMO2020-2-2-TEB</a>, <a href="https://www.remo-rcm.de">REMO2020-2-2-iMOVE</a>, <a href="https://www.remo-rcm.de">REMO2020-2-2-iMOVE-LUC</a></td></tr>
+<tr><td>EUR</td><td>HCLIMcom-DMI</td><td>HARMONIE Climate Modelling Community (HCLIMcom) partner: Danish Meteorological Institute (DMI), Copenhagen, Denmark</td><td><a href="https://zenodo.org/records/11424181">HCLIM43-ALADIN</a></td></tr>
+<tr><td>EUR</td><td>HCLIMcom-METNo</td><td>HARMONIE Climate Modelling Community (HCLIMcom) partner: Norwegian Meteorological Institute (METNo), Oslo, Norway</td><td><a href="https://zenodo.org/records/11424181">HCLIM43-ALADIN</a></td></tr>
+<tr><td>EUR</td><td>HCLIMcom-SMHI</td><td>HARMONIE Climate Modelling Community (HCLIMcom) partner: Swedish Meteorological and Hydrological Institute (SMHI), Norrkoping, Sweden</td><td><a href="https://zenodo.org/records/11424181">HCLIM43-ALADIN</a></td></tr>
+<tr><td>EUR</td><td>ICTP</td><td>The Abdus Salam International Centre for Theoretical Physics, Trieste, Italy</td><td><a href="https://doi.org/10.1007/s00382-025-07913-3">RegCM5-0</a></td></tr>
+<tr><td>EUR</td><td>IDL-FCUL</td><td>Instituto Dom Luiz, Faculdade de Ciencias, Universidade de Lisboa, Lisboa, Portugal</td><td><a href="https://github.com/CORDEX-WRF-community/euro-cordex-cmip6">WRF451Q</a></td></tr>
+<tr><td>EUR</td><td>IFCA</td><td>Instituto de Fisica de Cantabria (IFCA), CSIC-Universidad de Cantabria, Santander, Spain</td><td><a href="https://github.com/CORDEX-WRF-community/cordex-core-cmip6">WRF461U</a></td></tr>
+<tr><td>EUR</td><td>KNMI</td><td>Royal Netherlands Meteorological Institute, De Bilt, The Netherlands</td><td><a href="https://cdn.knmi.nl/system/data_center_publications/files/000/071/902/original/KNMI23_climate_scenarios_scientific_report_WR23-02.pdf">RACMO23E</a></td></tr>
+<tr><td>EUR</td><td>MOHC</td><td>Met Office Hadley Centre, Exeter, UK</td><td><a href="https://view.es-doc.org/?renderMethod=id&amp;project=cordexp&amp;id=43837930-998b-4c0b-b481-f40b4884ddf1&amp;version=1&amp;client=esdoc-search">HadREM3-GA7-05</a></td></tr>
+<tr><td>EUR</td><td>RMIB-UGent</td><td>RMIB [Royal Meteorological Institute of Belgium, Brussels, Belgium]; UGent [Ghent University, Ghent, Belgium]</td><td><a href="https://gmd.copernicus.org/articles/11/257/2018/">ALARO1-SFX</a></td></tr>
+<tr><td>EUR</td><td>TASK-IMWM</td><td>TASK [Centre of Informatics TASK, Gdansk University of Technology, Gdansk, Poland]; IMWM [Institute of Meteorology and Water Management, Warsaw, Poland]</td><td><a href="https://github.com/CORDEX-WRF-community/euro-cordex-cmip6">WRF451Q</a></td></tr>
+<tr><td>MED</td><td>CLMcom-GUF</td><td>Climate Limited-area Modelling Community (CLMcom) partner: Goethe University Frankfurt, Frankfurt am Main, Germany</td><td><a href="https://www.clm-community.eu/COSMO-CLM/Overview/">CCLM5-0-9-NEMOMED12-3-6</a></td></tr>
+<tr><td>MED</td><td>CNRM</td><td>Centre National de Recherches Meteorologiques, Toulouse, France</td><td><a href="http://www.umr-cnrm.fr/spip.php?article125&amp;lang=en">CNRM-ALADIN64M1-SN</a>, <a href="https://www.umr-cnrm.fr/spip.php?article1098">CNRM-RCSM6-SN</a>, <a href="https://www.umr-cnrm.fr/spip.php?article1098">CNRM-RCSM6B-SN</a></td></tr>
+<tr><td>MED</td><td>ENEA</td><td>Italian National Agency for New Technologies, Energy and the Environment, Rome, Italy</td><td><a href="https://link.springer.com/article/10.1007/s00382-023-07064-3">ENEA-REG2</a>, <a href="https://link.springer.com/article/10.1007/s00382-023-07064-3">ENEA-REG3</a></td></tr>
+<tr><td>MED</td><td>ICTP</td><td>The Abdus Salam International Centre for Theoretical Physics, Trieste, Italy</td><td><a href="https://doi.org/10.1029/2019MS001812">RegCM-ES1-1</a></td></tr>
+<tr><td>MED</td><td>NKUA</td><td>Department of Physics, National and Kapodistrian University of Athens, Athens, Greece</td><td><a href="https://doi.org/10.1029/2024JC021985">MedX-CM</a></td></tr>
+<tr><td>NAM</td><td>CCCma</td><td>Canadian Centre for Climate Modelling and Analysis, Environment and Climate Change Canada, Victoria (British Columbia), Canada</td><td><a href="https://gitlab.com/cccma/canesm">CanRCM5-SN</a></td></tr>
+<tr><td>NAM</td><td>CORNELL</td><td>Cornell University, Ithaca (New York), USA</td><td><a href="https://github.com/levinzx/NA-CORDEX-CMIP6-CORNELL">WRF461T-SN</a></td></tr>
+<tr><td>NAM</td><td>GERICS</td><td>Climate Service Center Germany, Helmholtz Centre hereon GmbH, Hamburg, Germany</td><td><a href="https://www.remo-rcm.de">REMO2020-2-2</a></td></tr>
+<tr><td>NAM</td><td>NCAR</td><td>NSF National Center for Atmospheric Research, Boulder (Colorado), USA</td><td><a href="https://github.com/NCAR/NA-CORDEX-CMIP6">WRF461S-SN</a></td></tr>
+<tr><td>NAM</td><td>OURANOS</td><td>Ouranos Consortium, Montreal (Quebec), Canada</td><td><a href="https://zenodo.org/doi/10.5281/zenodo.11061924">CRCM5-SN</a></td></tr>
+<tr><td>SAM</td><td>GERICS</td><td>Climate Service Center Germany, Helmholtz Centre hereon GmbH, Hamburg, Germany</td><td><a href="https://www.remo-rcm.de">REMO2020-2-2</a></td></tr>
+<tr><td>SAM</td><td>ICTP</td><td>The Abdus Salam International Centre for Theoretical Physics, Trieste, Italy</td><td><a href="https://doi.org/10.1007/s00382-025-07913-3">RegCM5-0</a></td></tr>
+<tr><td>SAM</td><td>IDL-FCUL</td><td>Instituto Dom Luiz, Faculdade de Ciencias, Universidade de Lisboa, Lisboa, Portugal</td><td><a href="https://github.com/CORDEX-WRF-community/cordex-core-cmip6">WRF461U</a></td></tr>
+<tr><td>SAM</td><td>IFCA</td><td>Instituto de Fisica de Cantabria (IFCA), CSIC-Universidad de Cantabria, Santander, Spain</td><td><a href="https://github.com/CORDEX-WRF-community/cordex-core-cmip6">WRF461U</a></td></tr>
+<tr><td>SAM</td><td>MOHC</td><td>Met Office Hadley Centre, Exeter, UK</td><td><a href="https://view.es-doc.org/?renderMethod=id&amp;project=cordexp&amp;id=43837930-998b-4c0b-b481-f40b4884ddf1&amp;version=1&amp;client=esdoc-search">HadREM3-GA7-05</a></td></tr>
+<tr><td>SAM</td><td>SENAMHI-PER</td><td>National Meteorology and Hydrology Service of Peru, Lima, Peru</td><td><a href="https://github.com/CORDEX-WRF-community/cordex-core-cmip6">WRF461U</a></td></tr>
+<tr><td>SAM</td><td>UNSW-CCRC</td><td>Climate Change Research Centre, University of New South Wales, Sydney, Australia</td><td><a href="https://research.csiro.au/ccam/">CCAM-v2507-SN</a></td></tr>
+<tr><td>SEA</td><td>GERICS</td><td>Climate Service Center Germany, Helmholtz Centre hereon GmbH, Hamburg, Germany</td><td><a href="https://www.remo-rcm.de">REMO2020-2-2</a></td></tr>
+<tr><td>SEA</td><td>MOHC</td><td>Met Office Hadley Centre, Exeter, UK</td><td><a href="https://view.es-doc.org/?renderMethod=id&amp;project=cordexp&amp;id=43837930-998b-4c0b-b481-f40b4884ddf1&amp;version=1&amp;client=esdoc-search">HadREM3-GA7-05</a></td></tr>
+<tr><td>SEA</td><td>UNSW-CCRC</td><td>Climate Change Research Centre, University of New South Wales, Sydney, Australia</td><td><a href="https://research.csiro.au/ccam/">CCAM-v2307conv17-SN</a>, <a href="https://research.csiro.au/ccam/">CCAM-v2307conv21-SN</a></td></tr>
+<tr><td>WAS</td><td>CYI</td><td>Climate and Atmosphere Research Center (CARE-C), The Cyprus Institute, Nicosia, Cyprus</td><td><a href="https://github.com/CORDEX-WRF-community/cordex-core-cmip6">WRF461U</a></td></tr>
+<tr><td>WAS</td><td>GERICS</td><td>Climate Service Center Germany, Helmholtz Centre hereon GmbH, Hamburg, Germany</td><td><a href="https://www.remo-rcm.de">REMO2020-2-2</a></td></tr>
+<tr><td>WAS</td><td>MOHC</td><td>Met Office Hadley Centre, Exeter, UK</td><td><a href="https://view.es-doc.org/?renderMethod=id&amp;project=cordexp&amp;id=43837930-998b-4c0b-b481-f40b4884ddf1&amp;version=1&amp;client=esdoc-search">HadREM3-GA7-05</a></td></tr>
+</tbody></table>
+<script>
+$(document).ready(function() {
+  var t = $('#t').DataTable({pageLength: 50, lengthMenu: [20, 50, 100, 200], order: [[0, 'asc'], [1, 'asc']], search: {caseInsensitive: false}});
+  $('#dom').on('change', function() {
+    var v = this.value;
+    t.column(0).search(v ? '^' + v + '$' : '', true, false).draw();
+  });
+});
+</script>
+</body></html>

@@ -7,6 +7,8 @@ compression_factor = 0.6
 bytes_to_TB = 1.0e-12
 priorities = ['CORE', 'TIER1']#, 'TIER2']
 statuses = ['published', 'completed', 'running', 'planned']
+no_stale = True
+only_cordex_core = False
 
 # Number of time records per year
 frequency_factor = {'mon': 12, 'day': 365, '6hr': 365*4, '1hr': 365*24}
@@ -39,12 +41,23 @@ ngridcells['CAM-18'] = ngridcells['CAM-25']*2
 
 plans = pd.read_csv(
   'https://raw.githubusercontent.com/WCRP-CORDEX/simulation-status/refs/heads/main/CMIP6_downscaling_plans.csv',
-  usecols=['domain_id', 'institution_id', 'source_id', 'driving_experiment_id', 'status', 'comments']
+  usecols=['domain_id', 'institution_id', 'source_id', 'driving_experiment_id', 'status', 'estimated_completion_date', 'comments']
 ).query('status in @statuses')
+
+if no_stale:
+  # Drop planned simulations with no completion date or more than a year in the past
+  cutoff = pd.Timestamp.today().to_period('M') - 12
+  date = pd.PeriodIndex(pd.to_datetime(plans['estimated_completion_date'], format='%Y-%m', errors='coerce'), freq='M')
+  stale = (plans['status'] == 'planned') & (date.isna() | (date < cutoff))
+  print(f'/!\ Dropping {stale.sum()} stale planned simulations with no completion date or more than a year in the past')
+  plans = plans[~stale]
 
 # Filter out ESD plans as their output will likely contain very
 # limited variables and maximum at daily frequency
 plans = plans[~plans['comments'].str.contains('#ESD', na=False)]
+
+if only_cordex_core:
+  plans = plans[plans['comments'].str.contains('#CORDEX-CORE', na=False)]
 
 # /!\ Only WRF
 #plans = plans[plans['source_id'].str.contains('WRF', na=False)]
