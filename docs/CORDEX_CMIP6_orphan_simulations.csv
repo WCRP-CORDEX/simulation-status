@@ -128,10 +128,8 @@ EUR-12,GERICS,D. Rechid / C. Pop,REMO2020-2-2-iMOVE,ERA5,,evaluation,completed,2
 EUR-12,GERICS,D. Rechid / C. Pop,REMO2020-2-2-iMOVE-LUC,ERA5,,evaluation,completed,2025-05,#EURcoupled #LUCAS simulation with annually-changing land use
 EUR-12,GERICS,D. Rechid / C. Pop,REMO2020-2-2-iMOVE,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2025-07,#EURcoupled #LUCAS
 EUR-12,GERICS,D. Rechid / C. Pop,REMO2020-2-2-iMOVE-LUC,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2025-07,#EURcoupled #LUCAS
-EUR-12,GERICS,D. Rechid / C. Pop,REMO2020-2-2-iMOVE,MPI-ESM1-2-HR,r1i1p1f1,ssp126,running,2025-09,#EURcoupled #LUCAS
-EUR-12,GERICS,D. Rechid / C. Pop,REMO2020-2-2-iMOVE-LUC,MPI-ESM1-2-HR,r1i1p1f1,ssp126,running,2025-09,#EURcoupled #LUCAS
-EUR-12,GERICS,D. Rechid / C. Pop,REMO2020-2-2-iMOVE,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2025-07,#EURcoupled #LUCAS
-EUR-12,GERICS,D. Rechid / C. Pop,REMO2020-2-2-iMOVE,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2025-09,#EURcoupled #LUCAS
+EUR-12,GERICS,D. Rechid / C. Pop,REMO2020-2-2-iMOVE,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2025-09,#EURcoupled #LUCAS
+EUR-12,GERICS,D. Rechid / C. Pop,REMO2020-2-2-iMOVE-LUC,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2025-09,#EURcoupled #LUCAS
 EUR-12,GERICS,J.P. Pietikäinen,REMO2020-2-2-TEB,ERA5,,evaluation,completed,2025-11,
 EUR-12,CNR-ISAC,R. D'Agostino,RegCM5-0,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2026-01,#EURbalanced
 EUR-12,IDL-FCUL,P. Soares / R. M. Cardoso,WRF451Q,ERA5,,evaluation,completed,2024-08,#EURbalanced #RCMintvar Realization r1 #CORDEX-CORE
