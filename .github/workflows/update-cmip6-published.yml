@@ -1,0 +1,54 @@
+name: Update published CMIP6 simulations
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '27 5 * * 6'
+
+permissions:
+  contents: write
+
+jobs:
+  update-published:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -el {0}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup conda
+        uses: conda-incubator/setup-miniconda@v3
+        with:
+          environment-file: environment.yml
+
+      - name: Update published CMIP6 simulations
+        id: published
+        run: |
+          conda activate test
+          make update-cordex-cmip6-published
+          if git diff --quiet -- CMIP6_downscaling_published.csv; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Update derived tables
+        if: steps.published.outputs.changed == 'true'
+        run: |
+          conda activate test
+          make update
+
+      - name: Commit changes
+        run: |
+          if [[ -z "$(git status --porcelain)" ]]; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name 'GitHub Actions'
+          git config user.email 'actions@github.com'
+          git add -A
+          git commit -m "[Actions] Update published CMIP6 simulations"
+          git push
