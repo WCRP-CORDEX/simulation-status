@@ -579,9 +579,6 @@ EUR-12,CLMcom-GUF,D. Risto,CCLM5-0-9-NEMOMED12-3-6,EC-Earth3-Veg,r12i1p1f1,ssp58
 MED-12,CLMcom-GUF,D. Risto,CCLM5-0-9-NEMOMED12-3-6,ERA5,,evaluation,completed,2024-05,This sim. contributes to both EUR- and MED-CORDEX
 MED-12,CLMcom-GUF,D. Risto,CCLM5-0-9-NEMOMED12-3-6,EC-Earth3-Veg,r12i1p1f1,historical,completed,2022-05,This sim. contributes to both EUR- and MED-CORDEX
 MED-12,CLMcom-GUF,D. Risto,CCLM5-0-9-NEMOMED12-3-6,EC-Earth3-Veg,r12i1p1f1,ssp585,completed,2022-05,This sim. contributes to both EUR- and MED-CORDEX
-MED-12,CLMcom-IMS,P. Khain / L. Uzan / E. Vadislavski,ICON-OASIS-NEMO,ERA5,,evaluation,planned,2024-12,
-MED-12,CLMcom-IMS,P. Khain / L. Uzan / E. Vadislavski,ICON-OASIS-NEMO,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2024-12,
-MED-12,CLMcom-IMS,P. Khain / L. Uzan / E. Vadislavski,ICON-OASIS-NEMO,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2024-12,
 MED-12,CNRM,S. Somot,CNRM-RCSM6-SN,CNRM-ESM2-1,r1i1p1f2,historical,completed,2022-12,
 MED-12,CNRM,S. Somot,CNRM-RCSM6-SN,CNRM-ESM2-1,r1i1p1f2,ssp585,completed,2022-12,
 MED-12,CNRM,S. Somot,CNRM-RCSM6B-SN,ERA5,,evaluation,completed,2025-01,1980-2022
@@ -614,7 +611,6 @@ MED-12,NKUA,J. Karagiorgos,MedX-CM,ERA5,,evaluation,planned,2025-12,
 MED-12,NKUA,J. Karagiorgos,MedX-CM,TBD,TBD,historical,planned,2026-12,
 MED-12,NKUA,J. Karagiorgos,MedX-CM,TBD,TBD,ssp126,planned,2026-12,
 MED-12,NKUA,J. Karagiorgos,MedX-CM,TBD,TBD,ssp370,planned,2026-12,
-MED-12,UBEL,V. Djurdjevic,EBUPOM2e,ERA5,,evaluation,planned,2023-12,
 MED-25,LMD,L. Li,LMDZ4-NEMOMED8v2,ERA5,,evaluation,completed,2024-01,1979-2021
 MED-25,LMD,L. Li,LMDZ4-NEMOMED8v2,TBD,TBD,historical,planned,2024-12,
 NAM-12,CORNELL,X. Zhou / S.C. Pryor,WRF461T-SN,MPI-ESM1-2-LR,r1i1p1f1,historical,running,2025-12,
