@@ -305,8 +305,8 @@ EAS-12,UNIST,U. Han / D.-H. Cha,WRF461U,NorESM2-MM,r1i1p1f1,historical,running,2
 EAS-12,UNIST,U. Han / D.-H. Cha,WRF461U,NorESM2-MM,r1i1p1f1,ssp370,running,2026-12,#CORDEX-CORE
 EAS-25,KNU,E.-C. Chang / U.-Y. Byun,GRIMs3-2,UKESM1-0-LL,r15i1p1f2,historical,completed,2022-12,see http://cordex-ea.climate.go.kr/cordex/models.do
 EAS-25,KNU,E.-C. Chang / U.-Y. Byun,GRIMs3-2,UKESM1-0-LL,r15i1p1f2,ssp126,completed,2022-12,
-EAS-25,KNU,E.-C. Chang / U.-Y. Byun,GRIMs3-2,UKESM1-0-LL,r15i1p1f2,ssp245,planned,2022-12,
-EAS-25,KNU,E.-C. Chang / U.-Y. Byun,GRIMs3-2,UKESM1-0-LL,r15i1p1f2,ssp370,planned,2022-12,
+EAS-25,KNU,E.-C. Chang / U.-Y. Byun,GRIMs3-2,UKESM1-0-LL,r15i1p1f2,ssp245,completed,2022-12,
+EAS-25,KNU,E.-C. Chang / U.-Y. Byun,GRIMs3-2,UKESM1-0-LL,r15i1p1f2,ssp370,completed,2022-12,
 EAS-25,KNU,E.-C. Chang / U.-Y. Byun,GRIMs3-2,UKESM1-0-LL,r15i1p1f2,ssp585,completed,2022-12,
 EAS-25,NIMS-KMA,Y.-H. Byun / J.-U. Kim,HadGEM3-RA,UKESM1-0-LL,r15i1p1f2,historical,completed,2022-12,HadGEM3-RA (UM v8.1) see http://cordex-ea.climate.go.kr/cordex/models.do
 EAS-25,NIMS-KMA,Y.-H. Byun / J.-U. Kim,HadGEM3-RA,UKESM1-0-LL,r15i1p1f2,ssp126,completed,2022-12,
@@ -315,8 +315,8 @@ EAS-25,NIMS-KMA,Y.-H. Byun / J.-U. Kim,HadGEM3-RA,UKESM1-0-LL,r15i1p1f2,ssp370,c
 EAS-25,NIMS-KMA,Y.-H. Byun / J.-U. Kim,HadGEM3-RA,UKESM1-0-LL,r15i1p1f2,ssp585,completed,2022-12,
 EAS-25,PNU,J.-B. Ahn / G.-Y. Seo,WRF400,UKESM1-0-LL,r15i1p1f2,historical,completed,2022-12,see http://cordex-ea.climate.go.kr/cordex/models.do
 EAS-25,PNU,J.-B. Ahn / G.-Y. Seo,WRF400,UKESM1-0-LL,r15i1p1f2,ssp126,completed,2022-12,
-EAS-25,PNU,J.-B. Ahn / G.-Y. Seo,WRF400,UKESM1-0-LL,r15i1p1f2,ssp245,planned,2022-12,
-EAS-25,PNU,J.-B. Ahn / G.-Y. Seo,WRF400,UKESM1-0-LL,r15i1p1f2,ssp370,planned,2022-12,
+EAS-25,PNU,J.-B. Ahn / G.-Y. Seo,WRF400,UKESM1-0-LL,r15i1p1f2,ssp245,completed,2024-12,
+EAS-25,PNU,J.-B. Ahn / G.-Y. Seo,WRF400,UKESM1-0-LL,r15i1p1f2,ssp370,completed,2024-12,
 EAS-25,PNU,J.-B. Ahn / G.-Y. Seo,WRF400,UKESM1-0-LL,r15i1p1f2,ssp585,completed,2022-12,
 EAS-25,POSTECH,S.-K. Min / S.-Y. Jo,COSMO-CLM5-0-9,UKESM1-0-LL,r15i1p1f2,historical,completed,2022-12,see http://cordex-ea.climate.go.kr/cordex/models.do
 EAS-25,POSTECH,S.-K. Min / S.-Y. Jo,COSMO-CLM5-0-9,UKESM1-0-LL,r15i1p1f2,ssp126,completed,2022-12,
@@ -325,8 +325,8 @@ EAS-25,POSTECH,S.-K. Min / S.-Y. Jo,COSMO-CLM5-0-9,UKESM1-0-LL,r15i1p1f2,ssp370,
 EAS-25,POSTECH,S.-K. Min / S.-Y. Jo,COSMO-CLM5-0-9,UKESM1-0-LL,r15i1p1f2,ssp585,completed,2022-12,
 EAS-25,UNIST,D.-H. Cha / S.-W. Shin,RegCM4-6,UKESM1-0-LL,r15i1p1f2,historical,completed,2022-12,RegCM v4.6.1 see http://cordex-ea.climate.go.kr/cordex/models.do We have completed the ERA-Interim evaluation runs. ERA5 evaluation runs not planned yet.
 EAS-25,UNIST,D.-H. Cha / S.-W. Shin,RegCM4-6,UKESM1-0-LL,r15i1p1f2,ssp126,completed,2022-12,
-EAS-25,UNIST,D.-H. Cha / S.-W. Shin,RegCM4-6,UKESM1-0-LL,r15i1p1f2,ssp245,planned,2022-12,
-EAS-25,UNIST,D.-H. Cha / S.-W. Shin,RegCM4-6,UKESM1-0-LL,r15i1p1f2,ssp370,planned,2022-12,
+EAS-25,UNIST,D.-H. Cha / S.-W. Shin,RegCM4-6,UKESM1-0-LL,r15i1p1f2,ssp245,completed,2024-12,
+EAS-25,UNIST,D.-H. Cha / S.-W. Shin,RegCM4-6,UKESM1-0-LL,r15i1p1f2,ssp370,completed,2024-12,
 EAS-25,UNIST,D.-H. Cha / S.-W. Shin,RegCM4-6,UKESM1-0-LL,r15i1p1f2,ssp585,completed,2022-12,
 EUR-12,EURO-CORDEX,,. Comunity selected GCMs,CMCC-CM2-SR5,r1i1p1f1,selected,selected,,Model selected in EURO-CORDEX GA 2022
 EUR-12,EURO-CORDEX,,. Comunity selected GCMs,CNRM-ESM2-1,r1i1p1f2,selected,selected,,Model selected in EURO-CORDEX GA 2022
@@ -597,10 +597,10 @@ MED-12,ENEA,G. Sannino,ENEA-REG2,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,202
 MED-12,ENEA,G. Sannino,ENEA-REG2,MPI-ESM1-2-HR,r1i1p1f1,ssp126,completed,2023-05,Not to be published in ESGF but available on request
 MED-12,ENEA,G. Sannino,ENEA-REG2,MPI-ESM1-2-HR,r1i1p1f1,ssp245,completed,2023-05,Not to be published in ESGF but available on request
 MED-12,ENEA,G. Sannino,ENEA-REG2,MPI-ESM1-2-HR,r1i1p1f1,ssp585,completed,2023-05,Not to be published in ESGF but available on request
-MED-12,ENEA,G. Sannino,ENEA-REG3,ERA5,,evaluation,running,2025-12,
-MED-12,ENEA,G. Sannino,ENEA-REG3,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2025-12,
+MED-12,ENEA,G. Sannino,ENEA-REG3,ERA5,,evaluation,completed,2025-12,
+MED-12,ENEA,G. Sannino,ENEA-REG3,MPI-ESM1-2-HR,r1i1p1f1,historical,completed,2025-12,
 MED-12,ENEA,G. Sannino,ENEA-REG3,MPI-ESM1-2-HR,r1i1p1f1,ssp370,running,2025-12,
-MED-12,ENEA,G. Sannino,ENEA-REG3,EC-Earth3,r1i1p1f1,historical,running,2025-12,
+MED-12,ENEA,G. Sannino,ENEA-REG3,EC-Earth3,r1i1p1f1,historical,completed,2025-12,
 MED-12,ENEA,G. Sannino,ENEA-REG3,EC-Earth3,r1i1p1f1,ssp370,running,2025-12,
 MED-12,ICTP,E. Coppola,RegCM-ES1-1,ERA5,,evaluation,running,2025-09,
 MED-12,ICTP,E. Coppola,RegCM-ES1-1,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,,
