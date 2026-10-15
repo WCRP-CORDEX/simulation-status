@@ -43,8 +43,8 @@ for domain_id in domain_ids:
   dom_plans = plans[plans.domain_id == domain_id] if domain_id != 'All' else source_id_to_family(plans.copy())
   tags = sorted(list(set(filter(lambda x: x.startswith('#'), dom_plans.comments.str.split(' ').agg('sum')))))
   dconf = config[domain_id] if domain_id in config else dict()
-  if not tags:
-    continue
+  #if not tags:
+  #  continue
   f.write(f'''<h2 id="{domain_id}">{domain_id}<a href="#top">^</a></h2>
     The following experiments contribute to CORDEX {domain_id} domain:
     <ul class="twocol">'''

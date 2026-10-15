@@ -135,3 +135,16 @@ EUR-12:
       combinations to provide output for additional combinations and/or
       scenarios.
 
+NAM-25:
+
+  RuntimeBA:
+    title: Runtime bias adjusted ensemble
+    description: >
+      The North America CORDEX Runtime Bias Adjusted ensemble is a collection of RCM simulations that have been bias-adjusted in real-time during the simulation process.
+      The CanRCM5-SBC ensemble comprises regional climate simulations using Systematic Bias Correction (SBC) to address biases inherited from driving Earth System Models (ESMs) or introduced within the regional modelling chain.
+      It includes two variants: CanRCM5-SBCD, which uses diagnostic bias correction of atmospheric lateral-boundary conditions, and CanRCM5-SBCR, which applies empirical runtime bias correction (ERBC) and requires re-execution of the global model.
+    url: https://zenodo.org/doi/10.5281/zenodo.22238923
+    condition:
+      - source_id.str.match('.*-SBCR-.*') | source_id.str.match('.*-SBCD-.*')
+
+ 

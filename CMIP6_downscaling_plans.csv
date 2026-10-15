@@ -534,43 +534,6 @@ EUR-12,RMIB-UGent,K. Vandelanotte,ALARO1-SFX,EC-Earth3-Veg,r1i1p1f1,ssp585,runni
 EUR-12,IFCA,J. Fernandez / J. Milovac,WRF461U,ERA5,,evaluation,planned,2026-09,#CORDEX-CORE
 EUR-12,CYI,G. Zittis,WRF461U,EC-Earth3-Veg,r1i1p1f1,historical,running,2026-09,#CORDEX-CORE
 EUR-12,CYI,G. Zittis,WRF461U,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2026-09,#CORDEX-CORE
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,ERA5,,evaluation,planned,2026-06,#ESD
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,CMCC-CM2-SR5,r1i1p1f1,historical,planned,2026-06,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,CMCC-CM2-SR5,r1i1p1f1,ssp119,planned,2026-12,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,CMCC-CM2-SR5,r1i1p1f1,ssp126,planned,2026-06,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,CMCC-CM2-SR5,r1i1p1f1,ssp245,planned,2026-12,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,CMCC-CM2-SR5,r1i1p1f1,ssp370,planned,2026-06,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,CMCC-CM2-SR5,r1i1p1f1,ssp585,planned,2026-12,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,CNRM-ESM2-1,r1i1p1f2,historical,planned,2026-06,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,CNRM-ESM2-1,r1i1p1f2,ssp119,planned,2026-12,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2026-06,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,CNRM-ESM2-1,r1i1p1f2,ssp245,planned,2026-12,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2026-06,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,CNRM-ESM2-1,r1i1p1f2,ssp585,planned,2026-12,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,EC-Earth3-Veg,r1i1p1f1,historical,planned,2026-06,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,EC-Earth3-Veg,r1i1p1f1,ssp119,planned,2026-12,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2026-06,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,EC-Earth3-Veg,r1i1p1f1,ssp245,planned,2026-12,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2026-06,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,EC-Earth3-Veg,r1i1p1f1,ssp585,planned,2026-12,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,MIROC6,r1i1p1f1,historical,planned,2026-06,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,MIROC6,r1i1p1f1,ssp119,planned,2026-12,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,MIROC6,r1i1p1f1,ssp126,planned,2026-06,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,MIROC6,r1i1p1f1,ssp245,planned,2026-12,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,MIROC6,r1i1p1f1,ssp370,planned,2026-06,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,MIROC6,r1i1p1f1,ssp585,planned,2026-12,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2026-06,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,MPI-ESM1-2-HR,r1i1p1f1,ssp119,planned,2026-12,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2026-06,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,MPI-ESM1-2-HR,r1i1p1f1,ssp245,planned,2026-12,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2026-06,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,MPI-ESM1-2-HR,r1i1p1f1,ssp585,planned,2026-12,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,NorESM2-MM,r1i1p1f1,historical,planned,2026-06,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,NorESM2-MM,r1i1p1f1,ssp119,planned,2026-12,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,NorESM2-MM,r1i1p1f1,ssp126,planned,2026-06,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,NorESM2-MM,r1i1p1f1,ssp245,planned,2026-12,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,NorESM2-MM,r1i1p1f1,ssp370,planned,2026-06,#ESD #ManySSP
-EUR-12,IFCA,J. M. Gutierrez / J. Gonzalez-Abad,DeepESD,NorESM2-MM,r1i1p1f1,ssp585,planned,2026-12,#ESD #ManySSP
 EUR-12,CLMcom-GUF,D. Risto,CCLM5-0-9-NEMOMED12-3-6,ERA5,,evaluation,completed,2024-05,#EURcoupled This sim. contributes to both EUR- and MED-CORDEX
 EUR-12,CLMcom-GUF,D. Risto,CCLM5-0-9-NEMOMED12-3-6,EC-Earth3-Veg,r12i1p1f1,historical,completed,2022-05,#EURcoupled This sim. contributes to both EUR- and MED-CORDEX
 EUR-12,CLMcom-GUF,D. Risto,CCLM5-0-9-NEMOMED12-3-6,EC-Earth3-Veg,r12i1p1f1,ssp585,completed,2022-05,#EURcoupled This sim. contributes to both EUR- and MED-CORDEX
@@ -675,7 +638,7 @@ NAM-12,ORNL,M. Ashfaq,RegCM5-0,MPI-ESM1-2-HR,r1i1p1f1,ssp370,running,2026-06,#CO
 NAM-12,ORNL,M. Ashfaq,RegCM5-0,NorESM2-MM,r1i1p1f1,historical,running,2026-06,#CORDEX-CORE
 NAM-12,ORNL,M. Ashfaq,RegCM5-0,NorESM2-MM,r1i1p1f1,ssp370,running,2026-06,#CORDEX-CORE
 NAM-25,CCCma,J. Scinocca,CanRCM5-SN,ERA5,,evaluation,completed,2025-12,
-NAM-25,CCCma,J.Scinocca,CanRCM5-SBCD,ERA5,r1i1p1f1,evaluation,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
+NAM-25,CCCma,J. Scinocca,CanRCM5-SBCD,ERA5,,evaluation,completed,2026-09,Systematic bias corrected version (see https://zenodo.org/doi/10.5281/zenodo.22238923)
 NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r1i1p1f1,historical,completed,2026-09,
 NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r2i1p1f1,historical,completed,2026-09,
 NAM-25,CCCma,J. Scinocca,CanRCM5-SN,CanESM5-1,r3i1p1f1,historical,completed,2026-09,
