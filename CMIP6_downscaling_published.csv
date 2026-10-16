@@ -5,6 +5,15 @@ AUS-25,IRD-MF,CNRM-ALADIN64P1,ERA5,,evaluation,published,2026-08,esgf.ipsl.fr,35
 CAM-25,CNRM,CNRM-ALADIN64C1,ERA5,,evaluation,published,2026-07,esgf.ipsl.fr,379
 CAM-25,CNRM,CNRM-ALADIN64C1,NorESM2-MM,r1i1p1f1,historical,published,2026-08,esgf.ipsl.fr,379
 CAM-25,CNRM,CNRM-ALADIN64C1,NorESM2-MM,r1i1p1f1,ssp585,published,2026-08,esgf.ipsl.fr,379
+CEUX-3,CLMcom-BTU,ICON-CLM-202410-2-1-x2yn2,EC-Earth3-Veg,r1i1p1f1,ssp126,published,2026-04,esgf1.dkrz.de,335
+CEUX-3,CLMcom-DWD,ICON-CLM-202410-2-1-x2yn2,MIROC6,r1i1p1f1,ssp126,published,2026-04,esgf1.dkrz.de,335
+CEUX-3,CLMcom-DWD,ICON-CLM-202410-2-1-x2yn2,MIROC6,r1i1p1f1,ssp370,published,2026-04,esgf1.dkrz.de,335
+CEUX-3,CLMcom-DWD,ICON-CLM-202410-2-1-x2yn2,MPI-ESM1-2-HR,r1i1p1f1,historical,published,2026-04,esgf1.dkrz.de,335
+CEUX-3,CLMcom-DWD,ICON-CLM-202410-2-1-x2yn2,MPI-ESM1-2-HR,r1i1p1f1,ssp126,published,2026-04,esgf1.dkrz.de,335
+CEUX-3,CLMcom-DWD,ICON-CLM-202410-2-1-x2yn2,MPI-ESM1-2-HR,r1i1p1f1,ssp370,published,2026-04,esgf1.dkrz.de,335
+CEUX-3,CLMcom-GERICS,ICON-CLM-202410-2-1-x2yn2,EC-Earth3-Veg,r1i1p1f1,ssp370,published,2026-04,esgf1.dkrz.de,335
+CEUX-3,CLMcom-Hereon,ICON-CLM-202410-2-1-x2yn2,EC-Earth3-Veg,r1i1p1f1,historical,published,2026-04,esgf1.dkrz.de,335
+CEUX-3,CLMcom-KIT,ICON-CLM-202410-2-1-x2yn2,MIROC6,r1i1p1f1,historical,published,2026-04,esgf1.dkrz.de,335
 EUR-12,CLMcom-BTU,ICON-CLM-202407-1-1,CNRM-ESM2-1,r1i1p1f2,historical,published,2026-04,esgf1.dkrz.de,433
 EUR-12,CLMcom-BTU,ICON-CLM-202407-1-1,CNRM-ESM2-1,r1i1p1f2,ssp126,published,2026-04,esgf1.dkrz.de,433
 EUR-12,CLMcom-BTU,ICON-CLM-202407-1-1,CNRM-ESM2-1,r1i1p1f2,ssp245,published,2026-04,esgf1.dkrz.de,438
@@ -39,6 +48,7 @@ EUR-12,CLMcom-WEGC,ICON-CLM-202407-1-1,CMCC-CM2-SR5,r1i1p1f1,historical,publishe
 EUR-12,CNRM-MF,CNRM-ALADIN64E1,CMCC-CM2-SR5,r1i1p1f1,historical,published,2026-07,esgf.ipsl.fr,379
 EUR-12,CNRM-MF,CNRM-ALADIN64E1,CMCC-CM2-SR5,r1i1p1f1,ssp126,published,2026-08,esgf.ipsl.fr,379
 EUR-12,CNRM-MF,CNRM-ALADIN64E1,CMCC-CM2-SR5,r1i1p1f1,ssp370,published,2026-07,esgf.ipsl.fr,379
+EUR-12,CNRM-MF,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,historical,published,2026-08,esgf.ipsl.fr,4
 EUR-12,CNRM-MF,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp126,published,2026-08,esgf.ipsl.fr,376
 EUR-12,CNRM-MF,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp245,published,2026-08,esgf.ipsl.fr,379
 EUR-12,CNRM-MF,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp370,published,2026-08,esgf.ipsl.fr,377
