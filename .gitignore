@@ -3,3 +3,5 @@ venv/
 oryx-build-commands.txt
 __pycache__/
 *.pyc
+CMIP6_downscaling_plans_merged.csv
+CORDEX-CMIP6_dataset_ids.txt
