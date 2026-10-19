@@ -229,6 +229,12 @@ non-esgf:
     url: https://pavics.ouranos.ca/twitcher/ows/proxy/thredds/catalog/datasets/simulations/RCM-CMIP6/CORDEX/NAM-12/catalog.html
     availability: THREDDS
     comment: North American Ouranos data
+  
+  - domain: NAM-12
+    institution: NCAR
+    url: https://gdex.ucar.edu/datasets/d103294
+    availability: HTTPS/Globus
+    comment: North American NCAR data
 
   - domain: EUR-12
     institution: DKRZ
