@@ -49,6 +49,6 @@ jobs:
           fi
           git config user.name 'GitHub Actions'
           git config user.email 'actions@github.com'
-          git add -A
+          git add --update
           git commit -m "[Actions] Update published CMIP6 simulations"
           git push
