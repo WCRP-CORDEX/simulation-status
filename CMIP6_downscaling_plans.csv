@@ -28,7 +28,7 @@ AFR-18,ULL,J.C. Perez / A. Gonzalez,WRF461U,MPI-ESM1-2-HR,r1i1p1f1,historical,ru
 AFR-18,ULL,J.C. Perez / A. Gonzalez,WRF461U,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2027-04,#CORDEX-CORE
 AFR-18,BCCR,O. Gokturk / S. Sobolowski,WRF461U,NorESM2-MM,r1i1p1f1,historical,planned,2027-02,#CORDEX-CORE
 AFR-18,BCCR,O. Gokturk / S. Sobolowski,WRF461U,NorESM2-MM,r1i1p1f1,ssp370,planned,2027-02,#CORDEX-CORE
-ANT-12,BAS,E. Gilbert / A. Orr,MetUM,ERA5,,evaluation,completed,2025-04,
+ANT-12,BAS,A. Orr,MetUM,ERA5,,evaluation,completed,2025-04,
 ANT-12,DMI,R. Mottram / A. Torres,HCLIM43-ALADIN,ERA5,,evaluation,completed,2025-12,
 ANT-12,DMI,R. Mottram / A. Torres,HCLIM43-ALADIN,MPI-ESM1-2-LR,r1i1p1f1,historical,completed,2025-12,
 ANT-12,DMI,R. Mottram / A. Torres,HCLIM43-ALADIN,MPI-ESM1-2-LR,r1i1p1f1,ssp370,completed,2025-12,
@@ -49,7 +49,7 @@ ARC-12,AWI,J. Landwehrs / A. Rinke,ICON-CLM-2-6-6-1-1,CNRM-ESM2-1,r1i1p1f2,histo
 ARC-12,AWI,J. Landwehrs / A. Rinke,ICON-CLM-2-6-6-1-1,CNRM-ESM2-1,r1i1p1f2,ssp370,completed,2024-09,
 ARC-12,AWI,J. Landwehrs / A. Rinke,ICON-CLM-202401-1-1,NorESM2-MM,r1i1p1f1,historical,completed,2024-05,
 ARC-12,AWI,J. Landwehrs / A. Rinke,ICON-CLM-202401-1-1,NorESM2-MM,r1i1p1f1,ssp370,completed,2024-09,
-ARC-12,BAS,E. Gilbert / A. Orr,MetUM,ERA5,,evaluation,completed,2025-04,
+ARC-12,BAS,A. Orr,MetUM,ERA5,,evaluation,completed,2025-04,
 ARC-12,HCLIMcom-METNo,O. Landgren,HCLIM43-ALADIN,ERA5,,evaluation,completed,2024-05,
 ARC-12,HCLIMcom-METNo,O. Landgren,HCLIM43-ALADIN,NorESM2-MM,r1i1p1f1,historical,completed,2024-05,
 ARC-12,HCLIMcom-METNo,O. Landgren,HCLIM43-ALADIN,NorESM2-MM,r1i1p1f1,ssp370,completed,2024-08,

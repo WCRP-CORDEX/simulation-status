@@ -31,7 +31,7 @@ status = colors.keys()
 
 def get_ymax(exp):
   if exp.startswith('ssp'):
-    return(125 if domain_set == 'all' else 15)
+    return(150 if domain_set == 'all' else 15)
   elif exp.startswith('hist'):
     return(60  if domain_set == 'all' else 15)
   elif exp.startswith('eval'):
