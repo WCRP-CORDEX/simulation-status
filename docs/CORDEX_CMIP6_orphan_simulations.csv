@@ -6,7 +6,7 @@ AFR-12,GERICS,C. Teichmann,REMO2020-2-2,MPI-ESM1-2-HR,r1i1p1f1,historical,planne
 AFR-12,GERICS,C. Teichmann,REMO2020-2-2,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2026-12,#CORDEX-CORE
 AFR-12,GERICS,C. Teichmann,REMO2020-2-2,NorESM2-MM,r1i1p1f1,historical,planned,2026-12,#CORDEX-CORE
 AFR-12,GERICS,C. Teichmann,REMO2020-2-2,NorESM2-MM,r1i1p1f1,ssp370,planned,2026-12,#CORDEX-CORE
-ANT-12,BAS,E. Gilbert / A. Orr,MetUM,ERA5,,evaluation,completed,2025-04,
+ANT-12,BAS,A. Orr,MetUM,ERA5,,evaluation,completed,2025-04,
 ANT-12,ULiege,X. Fettweis / D. Maure,MAR3-13,ERA5,,evaluation,completed,2024-12,
 ANT-12,ULiege,X. Fettweis / D. Maure,MAR3-13,CESM2,r11i1p1f1,historical,completed,2024-12,
 ANT-12,ULiege,X. Fettweis / D. Maure,MAR3-13,CESM2,r11i1p1f1,ssp370,completed,2024-12,
@@ -17,7 +17,7 @@ ARC-12,AWI,J. Landwehrs / A. Rinke,ICON-CLM-2-6-6-1-1,CNRM-ESM2-1,r1i1p1f2,histo
 ARC-12,AWI,J. Landwehrs / A. Rinke,ICON-CLM-2-6-6-1-1,CNRM-ESM2-1,r1i1p1f2,ssp370,completed,2024-09,
 ARC-12,AWI,J. Landwehrs / A. Rinke,ICON-CLM-202401-1-1,NorESM2-MM,r1i1p1f1,historical,completed,2024-05,
 ARC-12,AWI,J. Landwehrs / A. Rinke,ICON-CLM-202401-1-1,NorESM2-MM,r1i1p1f1,ssp370,completed,2024-09,
-ARC-12,BAS,E. Gilbert / A. Orr,MetUM,ERA5,,evaluation,completed,2025-04,
+ARC-12,BAS,A. Orr,MetUM,ERA5,,evaluation,completed,2025-04,
 ARC-12,NORCE-BCCR,P. A. Mooney / C. De Falco / J. Negrel,WRF412v1,ERA5,,evaluation,completed,2024-01,
 ARC-12,NORCE-BCCR,P. A. Mooney / C. De Falco / J. Negrel,WRF412v1,CNRM-ESM2-1,r1i1p1f2,historical,completed,2024-10,
 ARC-12,NORCE-BCCR,P. A. Mooney / C. De Falco / J. Negrel,WRF412v1,CNRM-ESM2-1,r1i1p1f2,ssp370,completed,2025-01,

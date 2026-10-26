@@ -75,7 +75,15 @@ def generate_esgf_table(servers):
 
     published = pd.read_csv('CMIP6_downscaling_published.csv')
     node_urls = [s['url'] for s in servers]
-    published['node_index'] = published.data_node.apply(node_urls.index)
+
+    def find_node(data_node):
+        for i, url in enumerate(node_urls):
+            if url and (data_node == url or str(data_node).endswith('.' + url.strip())):
+                return i
+        return -1
+
+    published['node_index'] = published.data_node.apply(find_node)
+    published = published[published.node_index != -1]
 
     nodes = pd.DataFrame(servers).drop(columns=['simulations'])
 

@@ -135,11 +135,11 @@ esgf:
         institution_id: [KNU, NIMS-KMA, UNIST, PNU, POSTECH]
 
   - name: LIU
-    url: nsc.liu.se
+    url: esg-dn5.nsc.liu.se
     index: east
-    status: unmigrated
+    status: published
     volume: null
-    comment: Hasn't responded to the survey.
+    comment: 
     accepting_requests: False
     simulations:
       # From M. Sahlin's answer to the survey
