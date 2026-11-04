@@ -18,13 +18,13 @@ DATA_PATHS = (Path("CMIP6_downscaling_plans_merged.csv"), Path("CMIP6_downscalin
 
 GCM_ROWS = (
     ("EC-Earth3-Veg", "EC-Earth3-Veg", "E"),
-    ("MPI-ESM1-2-H", "MPI-ESM1-2-H", "M"),
+    ("MPI-ESM1-2-HR", "MPI-ESM1-2-HR", "M"),
     ("NorESM2-MM", "NorESM2-MM", "N"),
 )
 RCM_COLUMNS = (
-    ("HadREM", "HadREM", "H"),
-    ("RegCM", "RegCM", "R"),
-    ("WRF", "WRF", "W"),
+    ("HadREM3", "HadREM", "H"),
+    ("RegCM5", "RegCM", "R"),
+    ("WRF4", "WRF", "W"),
 )
 STATUSES = ("published", "completed", "running", "planned")
 STATUS_PRIORITY = {"published": 0, "completed": 1, "running": 2, "planned": 3}
@@ -49,9 +49,10 @@ DOMAIN_CENTERS = {
     "AUS": (0.90, 0.34),
 }
 
-GRID_SIZE = 0.05
+GRID_SIZE = 0.07
 CELL_GAP = 0.00
 DOMAIN_LABEL_Y_OFFSET = 0.04
+SHOW_MATRIX_LABELS = False  # False hides the RCM/GCM letters around each in-map matrix
 
 
 def load_simulations(experiment: str) -> pd.DataFrame:
@@ -167,10 +168,13 @@ def draw_domain_grid(
                     transform=ax.transAxes,
                     facecolor=STATUS_COLORS.get(status, MISSING_COLOR),
                     edgecolor="white",
-                    linewidth=0.6,
+                    linewidth=1,
                     zorder=4,
                 )
             )
+
+    if not SHOW_MATRIX_LABELS:
+        return
 
     for column_index, (_, _, label) in enumerate(RCM_COLUMNS):
         ax.text(
@@ -198,6 +202,56 @@ def draw_domain_grid(
             fontsize=6,
             fontweight="bold",
             zorder=5,
+        )
+
+
+def draw_matrix_legend(ax, axes_aspect: float) -> None:
+    """Draw a black 3x3 key with GCM/RCM names in the lower right, outside the map."""
+    cell_width = 0.02
+    cell_height = cell_width * axes_aspect
+    left = 1.0 - 2 * cell_width
+    top = 0 + 3 * cell_height
+
+    for column_index, (rcm_name, _, _) in enumerate(RCM_COLUMNS):
+        ax.text(
+            left + (column_index + 0.5) * cell_width,
+            top + 0.005,
+            rcm_name,
+            transform=ax.transAxes,
+            rotation=45,
+            rotation_mode="anchor",
+            ha="left",
+            va="bottom",
+            fontsize=10,
+            fontweight="bold",
+            clip_on=False,
+        )
+
+    for row_index, (gcm_name, _,_) in enumerate(GCM_ROWS):
+        y = top - (row_index + 1) * cell_height
+        for column_index in range(3):
+            ax.add_patch(
+                Rectangle(
+                    (left + column_index * cell_width, y),
+                    cell_width,
+                    cell_height,
+                    transform=ax.transAxes,
+                    facecolor="black",
+                    edgecolor="white",
+                    linewidth=1,
+                    clip_on=False,
+                )
+            )
+        ax.text(
+            left - 0.005,
+            y + cell_height / 2,
+            gcm_name,
+            transform=ax.transAxes,
+            ha="right",
+            va="center",
+            fontsize=10,
+            fontweight="bold",
+            clip_on=False,
         )
 
 
@@ -245,6 +299,7 @@ def main() -> None:
     axes_aspect = ax.bbox.width / ax.bbox.height
     for domain in DOMAIN_CENTERS:
         draw_domain_grid(ax, domain, cell_statuses, axes_aspect)
+    draw_matrix_legend(ax, axes_aspect)
 
     for path in (output_path, output_path.with_suffix(".png")):
         figure.savefig(path, bbox_inches="tight", dpi=300)
