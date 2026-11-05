@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from datetime import datetime
 from pathlib import Path
 
-def plot_simulation_progress(domain, bar_width=15):
+def plot_simulation_progress(domain, bar_width=15, core_only=True):
     url = Path("CMIP6_downscaling_plans_merged.csv")
     if not url.exists():
         url = Path("CMIP6_downscaling_plans.csv")
@@ -14,6 +14,8 @@ def plot_simulation_progress(domain, bar_width=15):
     else:
         domain_data = data.copy()
     domain_data = domain_data.query("~comments.str.contains('#ESD', na = False)").copy()
+    if core_only:
+        domain_data = domain_data.query("comments.str.contains('#CORDEX-CORE', na = False)").copy()
     valid_status = ['planned', 'running', 'completed', 'published']
     domain_data = domain_data.query("status in @valid_status").copy()
 
@@ -58,7 +60,7 @@ def plot_simulation_progress(domain, bar_width=15):
     planned_count = status_counts.get('planned', 0)
 
     # Create the plot
-    fig, ax1 = plt.subplots(figsize=(9, 4.5))
+    fig, ax1 = plt.subplots(figsize=(5 if core_only else 9, 4.5))
 
     # Step plot for cumulative simulations
     ax1.step(
@@ -94,14 +96,19 @@ def plot_simulation_progress(domain, bar_width=15):
     ax2.set_ylim(ax1.get_ylim())  # Mirror the limits of the primary y-axis
 
     ax1.legend(loc='upper left')
-    plt.title(f'Cumulative number of simulations over time (CORDEX Domain: {domain})')
+    if core_only:
+        plt.title(f'CORDEX-CORE simulations over time')
+    else:
+        plt.title(f'Cumulative number of simulations over time (CORDEX Domain: {domain})')
     plt.tight_layout()
-    plt.savefig('docs/ecd_series.svg')
+    suffix = '__core' if core_only else ''
+    plt.savefig(f'docs/ecd_series{suffix}.svg')
+    plt.savefig(f'docs/ecd_series{suffix}.png', dpi=300, bbox_inches='tight')
     # Show the plot
     #plt.show()
 
 # Example usage:
 #plot_simulation_progress(domain="MED-12", bar_width=25)
 #plot_simulation_progress(domain="EUR-12", bar_width=25)
-plot_simulation_progress(domain="all", bar_width=25)
+plot_simulation_progress(domain="all", bar_width=25, core_only=False)
 

@@ -79,4 +79,7 @@ else:
     plt.legend(title='Status', loc='upper center')
 plt.tight_layout()
 suffix = '__core' if domain_set == 'core' else ''
-plt.savefig(f'docs/CORDEX_{mip_era}_global_progress__{experiment.upper()}{suffix}.svg', bbox_inches='tight')
+output_base = f'docs/CORDEX_{mip_era}_global_progress__{experiment.upper()}{suffix}'
+plt.savefig(f'{output_base}.svg', bbox_inches='tight')
+plt.savefig(f'{output_base}.png', dpi=300, bbox_inches='tight')
+print(f"Plot saved to {output_base}.png/svg")

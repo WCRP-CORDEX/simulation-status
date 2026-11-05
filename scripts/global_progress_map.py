@@ -176,8 +176,8 @@ plt.title(title, fontsize=14, fontweight='bold')
 plt.tight_layout()
 
 suffix = '__core' if domain_set == 'core' else ''
-# plt.savefig(f'docs/CORDEX_{mip_era}_global_progress_map__{experiment.UPPER()}{suffix}.png',
-#             dpi=300, bbox_inches='tight')
+plt.savefig(f'docs/CORDEX_{mip_era}_global_progress_map__{experiment.upper()}{suffix}.png',
+            dpi=300, bbox_inches='tight')
 plt.savefig(f'docs/CORDEX_{mip_era}_global_progress_map__{experiment.upper()}{suffix}.svg',
             bbox_inches='tight')
 print(f"\nMap saved to docs/CORDEX_{mip_era}_global_progress_map__{experiment.upper()}{suffix}.png/svg")
