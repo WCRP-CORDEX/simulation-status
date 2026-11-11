@@ -2,15 +2,29 @@ domain_id,institution_id,contact,source_id,driving_source_id,driving_variant_lab
 CAM-12,CNRM,S. Somot,CNRM-RCSM,TBD,TBD,evaluation,planned,2029-01,
 CAM-12,CNRM,S. Somot,CNRM-RCSM,TBD,TBD,historical,planned,2029-01,
 CAM-12,CNRM,S. Somot,CNRM-RCSM,TBD,TBD,scen7-h,planned,2029-01,
-EUR-12,UCAN,J. Milovac / J. Fernandez,WRF461U,EC-Earth3-ESM-1-1,r1i1p1f1,esm-hist,planned,2027-01,
-EUR-12,UCAN,J. Milovac / J. Fernandez,WRF461U,EC-Earth3-ESM-1-1,r1i1p1f1,esm-scen7-hl,planned,2027-03,
 EUR-12,AUTH,E. Katragkou,WRF,ERA5,,evaluation,planned,2026-12,
 EUR-12,AUTH,E. Katragkou,WRF,TBD,TBD,historical,planned,2026-12,
 EUR-12,AUTH,E. Katragkou,WRF,TBD,TBD,TBD,planned,2027-03,
-EUR-12,CLMcom-DWD,C. Steger,ICON-CLM,TBD,TBD,TBD,planned,TBD,
+EUR-12,CLMcom-CMCC,M. Adinolfi,ICON-CLM,EC-Earth3-ESM-1-1,r1i1p1f1,esm-hist,planned,2027-03,#FUTURA
+EUR-12,CLMcom-CMCC,M. Adinolfi,ICON-CLM,EC-Earth3-ESM-1-1,r1i1p1f1,esm-scen7-h,planned,2027-03,#FUTURA
+EUR-12,CLMcom-DWD,C. Steger,ICON-CLM,ICON-XPP,r1i1p1f1,historical,planned,2027-03,
+EUR-12,CLMcom-DWD,C. Steger,ICON-CLM,ICON-XPP,r1i1p1f1,scen7-h,planned,2027-03,
+EUR-12,CLMcom-DWD,C. Steger,ICON-CLM,ICON-XPP,r1i1p1f1,scen7-vl,planned,2027-03,
+EUR-12,CNRM,S. Somot,CNRM-ALADIN,CNRM-ESM2-1e,r6i1p1f1,esm-hist,planned,2029-03,#FUTURA
+EUR-12,CNRM,S. Somot,CNRM-ALADIN,CNRM-ESM2-1e,r6i1p1f1,esm-scen7-h,planned,2027-03,#FUTURA
 EUR-12,CNRM,S. Somot,CNRM-RCSM,TBD,TBD,evaluation,planned,2029-01,
 EUR-12,CNRM,S. Somot,CNRM-RCSM,TBD,TBD,historical,planned,2029-01,
 EUR-12,CNRM,S. Somot,CNRM-RCSM,TBD,TBD,scen7-h,planned,2029-01,
+EUR-12,GERICS,C. Teichmann,REMO,EC-Earth3-ESM-1-1,r1i1p1f1,esm-hist,planned,2027-01,#FUTURA
+EUR-12,GERICS,C. Teichmann,REMO,EC-Earth3-ESM-1-1,r1i1p1f1,esm-scen7-hl,planned,2027-03,#FUTURA
+EUR-12,ICTP,E. Coppola,RegCM5,EC-Earth3-ESM-1-1,r1i1p1f1,esm-hist,planned,2027-01,
+EUR-12,ICTP,E. Coppola,RegCM5,EC-Earth3-ESM-1-1,r1i1p1f1,esm-scen7-hl,planned,2027-03,
+EUR-12,IFCA,J. Milovac / J. Fernandez,WRF461U,EC-Earth3-ESM-1-1,r1i1p1f1,esm-hist,planned,2027-01,#FUTURA
+EUR-12,IFCA,J. Milovac / J. Fernandez,WRF461U,EC-Earth3-ESM-1-1,r1i1p1f1,esm-scen7-hl,planned,2027-03,#FUTURA
+EUR-12,MOHC,E. Buonomo,HadREM,EC-Earth3-ESM-1-1,r1i1p1f1,esm-hist,planned,2027-01,#FUTURA
+EUR-12,MOHC,E. Buonomo,HadREM,EC-Earth3-ESM-1-1,r1i1p1f1,esm-scen7-hl,planned,2027-03,#FUTURA
+EUR-12,SMHI,F. Wang,HCLIM-ALADIN,EC-Earth3-ESM-1-1,r1i1p1f1,esm-hist,planned,2027-03,#FUTURA
+EUR-12,SMHI,F. Wang,HCLIM-ALADIN,EC-Earth3-ESM-1-1,r1i1p1f1,esm-scen7-h,planned,2027-03,#FUTURA
 MED-12,CNRM,S. Somot,CNRM-RCSM,TBD,TBD,evaluation,planned,2029-01,
 MED-12,CNRM,S. Somot,CNRM-RCSM,TBD,TBD,historical,planned,2029-01,
 MED-12,CNRM,S. Somot,CNRM-RCSM,TBD,TBD,scen7-h,planned,2029-01,
