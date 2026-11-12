@@ -23,8 +23,8 @@ EUR-12,IFCA,J. Milovac / J. Fernandez,WRF461U,EC-Earth3-ESM-1-1,r1i1p1f1,esm-his
 EUR-12,IFCA,J. Milovac / J. Fernandez,WRF461U,EC-Earth3-ESM-1-1,r1i1p1f1,esm-scen7-hl,planned,2027-03,#FUTURA
 EUR-12,MOHC,E. Buonomo,HadREM,EC-Earth3-ESM-1-1,r1i1p1f1,esm-hist,planned,2027-01,#FUTURA
 EUR-12,MOHC,E. Buonomo,HadREM,EC-Earth3-ESM-1-1,r1i1p1f1,esm-scen7-hl,planned,2027-03,#FUTURA
-EUR-12,SMHI,F. Wang,HCLIM-ALADIN,EC-Earth3-ESM-1-1,r1i1p1f1,esm-hist,planned,2027-03,#FUTURA
-EUR-12,SMHI,F. Wang,HCLIM-ALADIN,EC-Earth3-ESM-1-1,r1i1p1f1,esm-scen7-h,planned,2027-03,#FUTURA
+EUR-12,HCLIMcom-SMHI,F. Wang,HCLIM46-ALADIN,EC-Earth3-ESM-1-1,r1i1p1f1,esm-hist,planned,2027-03,#FUTURA
+EUR-12,HCLIMcom-SMHI,F. Wang,HCLIM46-ALADIN,EC-Earth3-ESM-1-1,r1i1p1f1,esm-scen7-h,planned,2027-03,#FUTURA
 MED-12,CNRM,S. Somot,CNRM-RCSM,TBD,TBD,evaluation,planned,2029-01,
 MED-12,CNRM,S. Somot,CNRM-RCSM,TBD,TBD,historical,planned,2029-01,
 MED-12,CNRM,S. Somot,CNRM-RCSM,TBD,TBD,scen7-h,planned,2029-01,
