@@ -51,7 +51,7 @@ EUR-12,CNRM-MF,CNRM-ALADIN64E1,CMCC-CM2-SR5,r1i1p1f1,ssp370,published,2026-07,es
 EUR-12,CNRM-MF,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,historical,published,2026-08,esgf.ipsl.fr,295
 EUR-12,CNRM-MF,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp126,published,2026-08,esgf.ipsl.fr,376
 EUR-12,CNRM-MF,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp245,published,2026-08,esgf.ipsl.fr,379
-EUR-12,CNRM-MF,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp370,published,2026-08,esgf.ipsl.fr,376
+EUR-12,CNRM-MF,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp370,published,2026-11,esgf.ipsl.fr,377
 EUR-12,CNRM-MF,CNRM-ALADIN64E1,CNRM-ESM2-1,r1i1p1f2,ssp585,published,2026-08,esgf.ipsl.fr,379
 EUR-12,CNRM-MF,CNRM-ALADIN64E1,ERA5,,evaluation,published,2026-06,esgf.ipsl.fr,379
 EUR-12,CNRM-MF,CNRM-ALADIN64E1,NorESM2-MM,r1i1p1f1,historical,published,2026-08,esgf.ipsl.fr,379
@@ -80,7 +80,7 @@ EUR-12,HCLIMcom-SMHI,HCLIM43-ALADIN,MIROC6,r1i1p1f1,ssp370,published,2026-09,esg
 EUR-12,HCLIMcom-SMHI,HCLIM43-ALADIN,MPI-ESM1-2-HR,r1i1p1f1,historical,published,2026-09,esg-dn5.nsc.liu.se,45
 EUR-12,HCLIMcom-SMHI,HCLIM43-ALADIN,MPI-ESM1-2-HR,r1i1p1f1,ssp126,published,2026-09,esg-dn5.nsc.liu.se,45
 EUR-12,HCLIMcom-SMHI,HCLIM43-ALADIN,MPI-ESM1-2-HR,r1i1p1f1,ssp370,published,2026-09,esg-dn5.nsc.liu.se,45
-MED-12,CNRM,CNRM-RCSM6B-SN,ERA5,,evaluation,published,2026-08,esgf.ipsl.fr,356
+MED-12,CNRM,CNRM-RCSM6B-SN,ERA5,,evaluation,published,2026-08,esgf.ipsl.fr,359
 MED-12,CNRM,CNRM-RCSM6B-SN,NorESM2-MM,r1i1p1f1,historical,published,2026-09,esgf.ipsl.fr,354
 NAM-12,OURANOS,CRCM5-SN,CNRM-ESM2-1,r1i1p1f2,historical,published,2026-05,esgf.ouranos.ca,263
 NAM-12,OURANOS,CRCM5-SN,CNRM-ESM2-1,r1i1p1f2,ssp126,published,2026-05,esgf.ouranos.ca,248
