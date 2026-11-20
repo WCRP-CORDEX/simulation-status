@@ -25,10 +25,10 @@ def source_id_to_family(plansdf):
     'CNRM-ALADIN': ['CNRM-ALADIN64E1','CNRM-ALADIN64P1','CNRM-RCSM6B', 'RCSM6'],
     'ICON': ['ICON-CLM-202407-1-1', 'GCOAST-AHOI2-1','ICON-CLM','ICON-OASIS-NEMO', 'ROAM-NBS'],
     'RACMO': ['RACMO23E','RACMO24P'],
-    'HadRM': ['HadGEM3-RA','HadREM3-GA7-05'],
+    'HadRM': ['HadGEM3-RA','HadREM3-GA7-05','BARPA-R1-NN'],
     'REMO': ['REMO2020-2-2-iMOVE','REMO2020-2-2-iMOVE-LUC','REMO2020-2-2'],
     'RegCM': ['RegCM-ES','RegCM4-6','RegCM4-NH','RegCM4-NH-exp16','RegCM5','RegCM5-0','RegCM5-exp16'],
-    'WRF': ['WRF-R3','WRF400','WRF412C1', 'WRF451','WRF451Q', 'WRF451R', 'WRF461S-SN', 'WRF461T-SN','RegIPSL', 'WRF461U']
+    'WRF': ['NARCliM2-0-WRF412R3','WRF400','NARCliM2-0-WRF412R5', 'WRF451','WRF451Q', 'WRF451R', 'WRF461S-SN', 'WRF461T-SN','RegIPSL', 'WRF461U']
   }
   model_to_family = {model: family for family, models in family_mapping.items() for model in models}
   plansdf['source_id'] = plansdf['source_id'].apply(lambda x: model_to_family.get(x, x))

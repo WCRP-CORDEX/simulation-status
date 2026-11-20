@@ -122,7 +122,18 @@ def addtag(word, field):
   if (field == 'comments') and word.startswith('#'):
     rval = f'<span class="tag">{word[1:]}</span>'
   elif (field == 'comments') and word.startswith('http'):
-    rval = f'<a href="{word}">{word}</a>'
+    url = word
+    # trim trailing punctuation and unbalanced closing brackets from URL
+    closing_pairs = {')': '(', ']': '[', '}': '{'}
+    while url:
+      if url[-1] in '.,!?;:':
+        url = url[:-1]
+      elif url[-1] in closing_pairs and url.count(url[-1]) > url.count(closing_pairs[url[-1]]):
+        url = url[:-1]
+      else:
+        break
+    trailing = word[len(url):]
+    rval = f'<a href="{url}">{url}</a>{trailing}'
   elif (field == 'status') and word in ['selected', 'planned', 'running', 'completed', 'unmigrated', 'published']:
     rval = f'<span class="{word}">{word}</span>'
   return(rval)
