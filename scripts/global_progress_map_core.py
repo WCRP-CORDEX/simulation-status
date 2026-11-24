@@ -22,9 +22,9 @@ GCM_ROWS = (
     ("NorESM2-MM", "NorESM2-MM", "N"),
 )
 RCM_COLUMNS = (
-    ("HadREM3", "HadREM", "H"),
-    ("RegCM5", "RegCM", "R"),
-    ("WRF4", "WRF", "W"),
+    ("HadREM3", ("HadREM", "BARPA-R1-NN"), "H"),
+    ("RegCM5", ("RegCM",), "R"),
+    ("WRF4", ("WRF", "NARCliM2-0-WRF"), "W"),
 )
 STATUSES = ("published", "completed", "running", "planned")
 STATUS_PRIORITY = {"published": 0, "completed": 1, "running": 2, "planned": 3}
@@ -96,8 +96,10 @@ def classify_simulations(simulations: pd.DataFrame) -> dict[tuple[str, str, str]
         rcm = next(
             (
                 rcm_key
-                for rcm_key, rcm_match, _ in RCM_COLUMNS
-                if rcm_match.lower() in row.source_id.lower()
+                for rcm_key, rcm_prefixes, _ in RCM_COLUMNS
+                if row.source_id.lower().startswith(
+                    tuple(prefix.lower() for prefix in rcm_prefixes)
+                )
             ),
             None,
         )
