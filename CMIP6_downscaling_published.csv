@@ -80,8 +80,8 @@ EUR-12,HCLIMcom-SMHI,HCLIM43-ALADIN,MIROC6,r1i1p1f1,ssp370,published,2026-09,esg
 EUR-12,HCLIMcom-SMHI,HCLIM43-ALADIN,MPI-ESM1-2-HR,r1i1p1f1,historical,published,2026-09,esg-dn5.nsc.liu.se,45
 EUR-12,HCLIMcom-SMHI,HCLIM43-ALADIN,MPI-ESM1-2-HR,r1i1p1f1,ssp126,published,2026-09,esg-dn5.nsc.liu.se,45
 EUR-12,HCLIMcom-SMHI,HCLIM43-ALADIN,MPI-ESM1-2-HR,r1i1p1f1,ssp370,published,2026-09,esg-dn5.nsc.liu.se,45
-MED-12,CNRM,CNRM-RCSM6B-SN,ERA5,,evaluation,published,2026-08,esgf.ipsl.fr,359
-MED-12,CNRM,CNRM-RCSM6B-SN,NorESM2-MM,r1i1p1f1,historical,published,2026-09,esgf.ipsl.fr,354
+MED-12,CNRM,CNRM-RCSM6B-SN,ERA5,,evaluation,published,2026-08,esgf.ipsl.fr,384
+MED-12,CNRM,CNRM-RCSM6B-SN,NorESM2-MM,r1i1p1f1,historical,published,2026-09,esgf.ipsl.fr,378
 NAM-12,OURANOS,CRCM5-SN,CNRM-ESM2-1,r1i1p1f2,historical,published,2026-05,esgf.ouranos.ca,263
 NAM-12,OURANOS,CRCM5-SN,CNRM-ESM2-1,r1i1p1f2,ssp126,published,2026-05,esgf.ouranos.ca,248
 NAM-12,OURANOS,CRCM5-SN,CNRM-ESM2-1,r1i1p1f2,ssp245,published,2026-05,esgf.ouranos.ca,251
@@ -108,4 +108,3 @@ NAM-12,OURANOS,CRCM5-SN,NorESM2-MM,r1i1p1f1,historical,published,2026-01,esgf.ou
 NAM-12,OURANOS,CRCM5-SN,NorESM2-MM,r1i1p1f1,ssp126,published,2026-03,esgf.ouranos.ca,263
 NAM-12,OURANOS,CRCM5-SN,NorESM2-MM,r1i1p1f1,ssp245,published,2026-03,esgf.ouranos.ca,263
 NAM-12,OURANOS,CRCM5-SN,NorESM2-MM,r1i1p1f1,ssp370,published,2026-02,esgf.ouranos.ca,263
-NAM-25,CCCma,CanRCM5-SN,CanESM5-1,r1i1p1f2,historical,published,2025-01,crd-esgf-drc.ec.gc.ca,2
